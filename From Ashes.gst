@@ -91,5 +91,14 @@
     <rule name="Brute" id="4b97-6f8b-7669-f38a" hidden="false">
       <description>This Unit&apos;s HP counts as double when generating Storm Attack dice</description>
     </rule>
+    <rule name="Rapid Fire (16&quot;/11+)" id="bb24-2bc0-e3c8-d176" hidden="false">
+      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    </rule>
+    <rule name="Free Command: Defence Fire" id="5deb-d9d6-7bfc-3478" hidden="false">
+      <description>This Squad may attempts a free Engage Reaction with each Defence Fire weapon</description>
+    </rule>
+    <rule name="Barrage" id="977a-72f5-8575-939a" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
+      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+    </rule>
   </sharedRules>
 </gameSystem>

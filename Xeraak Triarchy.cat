@@ -487,6 +487,66 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
+    <entryLink import="true" name="Drop Pods" hidden="false" id="336a-de2f-4eaa-1b37" type="selectionEntry" targetId="396b-c3fb-ccef-7c32">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="5"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="5" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="f1fe-0252-7747-0acc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="f1fe-0252-7747-0acc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="15" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="f1fe-0252-7747-0acc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="20" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="f1fe-0252-7747-0acc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="25" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="6" field="selections" scope="self" childId="f1fe-0252-7747-0acc" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="d142-0fad-78ca-4a6d" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vector Assault Walker" hidden="false" id="26a1-2823-1683-77e2" type="selectionEntry" targetId="c0c6-2699-f5bf-dfaa">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5cbb-1548-2a40-9bae" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="0fd5-d5d4-1089-b53d" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vector Assault Walker" hidden="false" id="8ceb-0fb3-0da4-2938" type="selectionEntry" targetId="c0c6-2699-f5bf-dfaa">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8b3f-8ea8-a55f-4dff" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Unknown" id="1d5d-4d7a-fa30-1e68" targetId="0826-4b5a-0d9b-aede" importRootEntries="false"/>
