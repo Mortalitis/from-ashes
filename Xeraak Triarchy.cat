@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Xeraak Triarchy" id="543f-70ad-8bf6-db9c" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="83ce-bb0a-9d0c-da3e" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c2c1-502c-342e-1e4f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="db64-6969-dc10-776b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="f51c-6d9b-8ba6-bbd2" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="6d42-bb26-bbc3-3ddd" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="2d4e-8c96-e668-7ccb" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Additional Squads" hidden="false" id="eaef-4c3d-1ee6-5250" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="1122-0e32-e883-ee5f" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="172a-e69c-9814-b698" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Xeraak Triarchy - HyOrg" id="a576-ac6e-b156-fe2a" hidden="false">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="8c86-8c0d-1d51-c3b9" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3d13-f172-bbfc-d7e5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e0d8-12be-6792-da81" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="0809-4d92-bf43-f1f1" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="4b6d-1114-8474-df1e" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="c246-7568-0255-2d71" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Additional Squads" hidden="false" id="4986-b911-6b7b-bfca" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e244-8f1b-ec78-41e1" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="baac-5596-c308-7518" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Biological Experimentation" id="1c5c-0976-93fc-a750" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+          <description>HyOrg Harvester Shield Mechs, Harvester Combat Mechs and Revenant Combat Cyborgs gain the Agile ability. In addition Revenant Combat Cyborgs and Revenant Berserker Cyborgs can reroll failed dice when attempting the Reassemble ability</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Agile" id="520f-eafe-f6ad-d125" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+      </infoLinks>
+    </forceEntry>
+    <forceEntry name="Xeraak Triarchy - HyKem" id="e0c9-d5f8-34c7-a7a2" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="898c-5a73-d689-0a9e" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="382a-2a5c-7439-90ef" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fc35-c737-b18d-b270" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="9afc-71af-6051-60f6" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="69fc-b633-c428-dd91" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d0f2-dbef-14fa-f85a" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Additional Squads" hidden="false" id="48f6-987e-78bb-5e63" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="7405-06c8-8d30-4d69" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="eaee-53b5-fcf8-165e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Advanced Shield Tech" id="0c31-5fd1-1d94-5a48" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+          <description>HyKem Squads with any Shield Tokens gain the Layered Plasma Shield ability</description>
+        </rule>
+        <rule name="Layered Plasma Shield" id="1a58-2561-481e-8627" hidden="false">
+          <description>Add 1 to this Unit&apos;s shield armour value</description>
+        </rule>
+      </rules>
+    </forceEntry>
+    <forceEntry name="Xeraak Triarchy - HyFaz" id="e3af-6cbe-8054-4605" hidden="false">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="8c59-7416-ba23-dbf1" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b7d5-4c01-522f-91b5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3da8-a6b1-d7a9-6feb" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="67ed-d0f5-ccf4-67f0" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="d91b-134e-7325-e843" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="9402-5042-135c-3199" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Additional Squads" hidden="false" id="b2f6-0ada-67cf-d81d" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e7f9-1073-0ad6-4ce3" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="7111-adaa-ff14-e2c0" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Quantum Tech" id="7eab-eac8-2153-0cf2" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+          <description>Revenant Combat Cyborgs &amp; Revenant Berserker Cyborgs Arc Blades ability works on an 11+. In addition when HyFaz Meta Command Units use their Shield Projection ability they can attempt a Discipline test. If passed do not remove their Shield Token. Lastly, HyFaz Squads with any Shield Tokens gain the Quantum Shunt ability.</description>
+        </rule>
+        <rule name="Quantum Shunt" id="ee4e-8baf-51e0-4eee" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+          <description>Once per turn during an Advance Command this Squad changes it Move value to 4D4 for the duration of the Command, ignoring other Units and terrain as it moves (but cannot end overlapping)</description>
+        </rule>
+      </rules>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink import="true" name="Meta Command Unit" hidden="false" id="ebd0-e4fa-d351-d773" type="selectionEntry" targetId="5cbb-1548-2a40-9bae">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="6833-957a-d605-0c37" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Meta Command Unit" hidden="false" id="7889-7cb1-e98e-4fa6" type="selectionEntry" targetId="5cbb-1548-2a40-9bae">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="496f-d092-a2e8-e5cc" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Meta Command Unit" hidden="false" id="9c7a-8618-b649-5e57" type="selectionEntry" targetId="5cbb-1548-2a40-9bae">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="f352-6f84-11d4-01e5" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Hunchback Gun Cyborgs" hidden="false" id="bf4d-5214-82d4-960a" type="selectionEntry" publicationId="38b2-0d05-f0c9-eb32" page="11" targetId="373a-6b4c-ee15-ea56">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="642b-6cc5-5181-6313" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="14" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="28" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Hunchback Gun Cyborgs" hidden="false" id="f6dc-f417-2fe1-dd06" type="selectionEntry" targetId="373a-6b4c-ee15-ea56">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c2be-0a16-f33c-e381" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="14" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="28" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Revenant Combat Cyborgs" hidden="false" id="77f9-a5fc-5d71-ff0f" type="selectionEntry" targetId="16c9-bb8f-0933-793a">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="ed9d-0322-001b-c99f" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Revenant Combat Cyborgs" hidden="false" id="80d0-4351-b22b-39bf" type="selectionEntry" targetId="16c9-bb8f-0933-793a">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8875-5d04-e4de-386d" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Meta Overseer Synapse Unit" hidden="false" id="44a5-eea8-8b82-b83e" type="selectionEntry" targetId="5130-3125-71c1-88d4">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="6bad-42bb-d03a-2269" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="10"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Meta Overseer Synapse Unit" hidden="false" id="447f-db12-4150-985b" type="selectionEntry" targetId="5130-3125-71c1-88d4">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="fc54-c347-024b-85c4" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="10"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Revenant Berserker Cyborgs" hidden="false" id="7b68-3443-5e65-d895" type="selectionEntry" targetId="cbc5-c772-a0e8-4092">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="9a16-5fe4-b0a4-8335" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="fcf4-64e3-20b5-cb2e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Revenant Berserker Cyborgs" hidden="false" id="704a-7414-2aae-0d3c" type="selectionEntry" targetId="cbc5-c772-a0e8-4092">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="88ab-6387-7554-7cd8" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="fcf4-64e3-20b5-cb2e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Centaur Scout Cyborgs" hidden="false" id="a2c5-ec61-caf4-1fc9" type="selectionEntry" targetId="23c3-f858-d21e-38b7">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="84df-00c8-120e-405e" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="36"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Centaur Scout Cyborgs" hidden="false" id="a0f3-61e6-9858-322d" type="selectionEntry" targetId="23c3-f858-d21e-38b7">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="067d-3c68-7095-0761" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="36"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Harvester Shield Mechs" hidden="false" id="3c03-6127-0741-622c" type="selectionEntry" targetId="60a2-d87f-26be-0b00">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8793-cdfa-5789-03c1" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Harvester Combat Mechs" hidden="false" id="977a-fba5-afcd-1add" type="selectionEntry" targetId="8493-892d-1a52-c173">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="9b1a-9b10-acf1-6dde" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Overlord Gun Walker" hidden="false" id="915e-e971-0b20-3a6b" type="selectionEntry" targetId="875d-8f9f-b347-10ed">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="e2bf-fe1d-cdcd-e0a6" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5cbb-1548-2a40-9bae" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaper Combat Walker" hidden="false" id="0b10-c29b-e9e9-c9ea" type="selectionEntry" targetId="7c18-fc38-4912-170c">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="3073-09d2-c127-4db1" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Leader [12&quot;]" id="93d4-f154-b98b-e8f1" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
+      </infoLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="115"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaper Combat Walker" hidden="false" id="1f49-db2b-5f0c-c94e" type="selectionEntry" targetId="7c18-fc38-4912-170c">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="e469-ce81-6651-de65" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5cbb-1548-2a40-9bae" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="115"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaper Combat Walker" hidden="false" id="d9c1-395f-76bb-8c8b" type="selectionEntry" targetId="7c18-fc38-4912-170c">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="bc73-232a-8a19-9a3b" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="115"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Overlord Gun Walker" hidden="false" id="b3cb-eb1b-f268-81f7" type="selectionEntry" targetId="875d-8f9f-b347-10ed">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="7177-f9eb-38a3-6377" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Dominator Support Walker" hidden="false" id="b04a-80bb-fd44-f0d7" type="selectionEntry" targetId="41cc-a29b-03cd-e10c">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="4eb1-5e05-d6f2-f973" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5cbb-1548-2a40-9bae" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="90"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Dominator Support Walker" hidden="false" id="1ce3-1de5-ce5c-6b24" type="selectionEntry" targetId="41cc-a29b-03cd-e10c">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c5de-8032-136d-cb61" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="90"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Unknown" id="1d5d-4d7a-fa30-1e68" targetId="0826-4b5a-0d9b-aede" importRootEntries="false"/>
+  </catalogueLinks>
+</catalogue>
