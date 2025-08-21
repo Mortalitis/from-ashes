@@ -5,9 +5,8 @@ Current Game Version: 0.1.2
 Progress
 
 Xeraak Triarchy: First pass completed
-
-[*]Scaryn Federated Alliance (SFA): TO-DO
-[*]Verse Dominion: TO-DO
+-Scaryn Federated Alliance (SFA): TO-DO
+- Verse Dominion: TO-DO
 Sol Enclaves: TO-DO
 Sol Enclaves (Dominion Vassal): TO-DO
 Sol Enclaves (Freemen of the Republic): TO-DO
