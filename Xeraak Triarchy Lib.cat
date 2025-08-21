@@ -1044,6 +1044,29 @@
             <cost name="Req" typeId="Requisition" value="12"/>
             <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
+          <profiles>
+            <profile name="Plasma Missile Pods" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="1a68-a897-38bf-75b9">
+              <characteristics>
+                <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
+                <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">5</characteristic>
+                <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+                <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">5</characteristic>
+                <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
+                <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">5</characteristic>
+                <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
+                <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">5</characteristic>
+                <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
+                <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">5</characteristic>
+                <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
+                <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
+                <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Plasma Blasters" hidden="false" id="ca17-2adb-f295-32e7">
           <costs>
