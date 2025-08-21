@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -99,6 +99,24 @@
     </rule>
     <rule name="Barrage" id="977a-72f5-8575-939a" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
       <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Burn" id="501b-9357-716d-184b" hidden="false">
+      <description>Squads taking hits from this weapon must roll a Skill Test. If failed must reroll successful Armour Saves</description>
+    </rule>
+    <rule name="Leader [8&quot;]" id="78bb-a184-55f3-2be9" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="All-Terrain Vehicle" id="8682-665f-1c16-9774" hidden="false">
+      <description>This Unit ignores the Slow effect when moving though Accessible Terrain</description>
+    </rule>
+    <rule name="Rapid Fire (16&quot;/12+)" id="12fd-78ee-e505-2fba" hidden="false">
+      <description>When Engaging targets within 16&quot; Accuracy rolls of 12+ (after rerolls) become 2 hits instead of 1</description>
+    </rule>
+    <rule name="Slow Reload" id="c534-2c5e-d2ab-c844" hidden="false">
+      <description>One use per Turn</description>
+    </rule>
+    <rule name="Anti-Armour" id="9c3e-550c-cf1d-5745" hidden="false">
+      <description>Units with an Enclosed value of 1 or more must reroll successful Armour saves against hits from this weapon</description>
     </rule>
   </sharedRules>
 </gameSystem>
