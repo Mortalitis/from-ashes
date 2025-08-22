@@ -3,7 +3,7 @@
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
-    <categoryEntry name="Additional Squads" id="19e5-b1b6-d85b-9709" hidden="false"/>
+    <categoryEntry name="Support Squads" id="19e5-b1b6-d85b-9709" hidden="false"/>
   </categoryEntries>
   <publications>
     <publication name="Github" id="f1c7-fccd-023f-8f92" hidden="false" publisherUrl="https://github.com/Mortalitis/from-ashes"/>

@@ -20,6 +20,13 @@
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="1122-0e32-e883-ee5f" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="172a-e69c-9814-b698" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="172a-e69c-9814-b698">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -46,6 +53,13 @@
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e244-8f1b-ec78-41e1" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="baac-5596-c308-7518" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="baac-5596-c308-7518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
       <rules>
@@ -76,6 +90,13 @@
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="7405-06c8-8d30-4d69" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="eaee-53b5-fcf8-165e" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="eaee-53b5-fcf8-165e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
       <costs>
@@ -114,6 +135,13 @@
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e7f9-1073-0ad6-4ce3" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="7111-adaa-ff14-e2c0" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="7111-adaa-ff14-e2c0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
       <rules>
