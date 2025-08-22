@@ -1033,9 +1033,6 @@
     <rule name="Extra Weapon" id="cf63-b1b2-84c6-1b5d" hidden="false">
       <description>This weapon can be used in addition to any others</description>
     </rule>
-    <rule name="Flame Weapon" id="7841-74bf-efd5-5422" hidden="false">
-      <description>Ignores terrain negative rerolls and terrain armour bonuses</description>
-    </rule>
     <rule name="Free Command: Scuttle" id="f0be-b5e7-dc96-43c4" hidden="false">
       <description>If this Unit successfully Reacts or Engages, it may pivot on its centre in order to face the attacker</description>
     </rule>
