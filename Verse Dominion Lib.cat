@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f78a-9b71-02cb-0454" name="Verse Dominion Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f78a-9b71-02cb-0454" name="Verse Dominion Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Shock Bolt (1)" id="bad0-9c8b-df01-4061" hidden="false">
       <description>Squads targeted by this weapon must roll a Skill Test for each hit. If any fail an used Order must become Unique. If there are no unused Orders then a Command becomes Unique instead.</description>
@@ -60,9 +60,6 @@
     </rule>
     <rule name="Erratic Warhead (D4+4)" id="c18d-d499-9a29-e285" hidden="false">
       <description>After Accuracy rolls, roll a D4+4. This is the weapon&apos;s AP value for this Command</description>
-    </rule>
-    <rule name="Advisor Weapon" id="3935-1ff5-1b61-e3e0" hidden="false">
-      <description>This weapon may be used in addition to any others the Unit carries</description>
     </rule>
     <rule name="Erratic Warhead (D4+2)" id="8756-3dd8-a218-bd8c" hidden="false">
       <description>After Accuracy rolls, roll a D4+2. This is the weapon&apos;s AP value for this Command</description>
