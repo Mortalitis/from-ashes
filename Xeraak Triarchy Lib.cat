@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -678,7 +678,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (2)" id="fceb-bb83-a238-a11c" hidden="false" type="rule" targetId="f70b-1cf0-f319-259a"/>
-                <infoLink name="Assault Move (4&quot;)" id="0c09-658a-df14-32c5" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+                <infoLink name="Assault Move (3&quot;)" id="0c09-658a-df14-32c5" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
                 <infoLink name="Plasma (12+)" id="d882-633c-1a26-0602" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
                 <infoLink name="Flame Weapon" id="697b-75f7-0b53-ed72" hidden="false" type="rule" targetId="7841-74bf-efd5-5422"/>
                 <infoLink name="Burn" id="ca18-6464-cb77-0922" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
@@ -955,7 +955,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Assault Move (4&quot;)" id="8734-616e-2fb7-a9a5" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+                <infoLink name="Assault Move (3&quot;)" id="8734-616e-2fb7-a9a5" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
                 <infoLink name="Barrage" id="b7de-9012-be7b-79b4" hidden="false" type="rule" targetId="977a-72f5-8575-939a"/>
                 <infoLink name="Plasma (11+)" id="506f-6ce7-dbfa-1a3b" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
               </infoLinks>
@@ -1032,15 +1032,6 @@
     </rule>
     <rule name="Extra Weapon" id="cf63-b1b2-84c6-1b5d" hidden="false">
       <description>This weapon can be used in addition to any others</description>
-    </rule>
-    <rule name="Flame Weapon" id="7841-74bf-efd5-5422" hidden="false">
-      <description>Ignores terrain negative rerolls and terrain armour bonuses</description>
-    </rule>
-    <rule name="Free Command: Run &amp; Gun (1)" id="b2a5-aecd-db49-13b8" hidden="false">
-      <description>After completing an Advance Command, Retreat or Unique Command (while dismounted), this unit may immediately carry out a free Engage using this weapon, but counts as having only 1 attack</description>
-    </rule>
-    <rule name="Free Command: Run &amp; Gun (2)" id="f70b-1cf0-f319-259a" hidden="false">
-      <description>After completing an Advance Command, Retreat or Unique Command (while dismounted), this unit may immediately carry out a free Engage using this weapon, but counts as having only 2 attacks</description>
     </rule>
     <rule name="Free Command: Scuttle" id="f0be-b5e7-dc96-43c4" hidden="false">
       <description>If this Unit successfully Reacts or Engages, it may pivot on its centre in order to face the attacker</description>
@@ -1192,7 +1183,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Assault Move (4&quot;)" id="ae83-f8c7-a8ab-2855" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+            <infoLink name="Assault Move (3&quot;)" id="ae83-f8c7-a8ab-2855" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
             <infoLink name="Plasma (12+)" id="6513-1236-bab8-168e" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
             <infoLink name="Free Command: Defence Fire" id="4107-6f85-799c-9bab" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
           </infoLinks>
@@ -1231,7 +1222,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Free Command: Run &amp; Gun (1)" id="9e6d-e7a8-89dc-c5b3" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
-            <infoLink name="Assault Move (4&quot;)" id="723c-478b-b455-9762" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+            <infoLink name="Assault Move (3&quot;)" id="723c-478b-b455-9762" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
             <infoLink name="Plasma (11+)" id="ed55-6ad3-24ec-4427" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
           </infoLinks>
         </selectionEntry>
@@ -1265,9 +1256,9 @@
           </profiles>
           <infoLinks>
             <infoLink name="Free Command: Run &amp; Gun (2)" id="47f6-3b86-f557-c8b0" hidden="false" type="rule" targetId="f70b-1cf0-f319-259a"/>
-            <infoLink name="Assault Move (4&quot;)" id="22ab-b845-fa7b-2a57" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+            <infoLink name="Assault Move (3&quot;)" id="22ab-b845-fa7b-2a57" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
             <infoLink name="Plasma (12+)" id="03dc-f204-a9a1-5bf0" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
-            <infoLink name="Rapid Fire (16&quot;/11+)" id="0aab-08b3-ee15-440c" hidden="false" type="rule" targetId="bb24-2bc0-e3c8-d176"/>
+            <infoLink name="Rapid Fire (24&quot;/11+)" id="0aab-08b3-ee15-440c" hidden="false" type="rule" targetId="bb24-2bc0-e3c8-d176"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Compound Optics" hidden="false" id="3ed7-b912-0ac8-41e5">

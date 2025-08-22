@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -135,6 +135,42 @@
     </rule>
     <rule name="Transport [6x Infantry]" id="2871-d593-3956-ca1e" hidden="false">
       <description>See the Unit Abilities section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Advisor Weapon" id="3935-1ff5-1b61-e3e0" hidden="false">
+      <description>This weapon may be used in addition to any others the Unit carries</description>
+    </rule>
+    <rule name="Anti-Personnel" id="f53d-858b-f158-bcaf" hidden="false">
+      <description>Enclosed 0 Units must reroll successful Armour Saves against hits from this weapon</description>
+    </rule>
+    <rule name="Free Command: Run &amp; Gun (2)" id="f70b-1cf0-f319-259a" hidden="false">
+      <description>After completing an Advance Command, Retreat or Unique Command (while dismounted), this unit may immediately carry out a free Engage using this weapon, but counts as having only 2 attacks</description>
+    </rule>
+    <rule name="Free Command: Run &amp; Gun (1)" id="b2a5-aecd-db49-13b8" hidden="false">
+      <description>After completing an Advance Command, Retreat or Unique Command (while dismounted), this unit may immediately carry out a free Engage using this weapon, but counts as having only 1 attack</description>
+    </rule>
+    <rule name="Flame Weapon" id="7841-74bf-efd5-5422" hidden="false">
+      <description>Ignores terrain negative rerolls and terrain armour bonuses</description>
+    </rule>
+    <rule name="Incendiary" id="da2f-0fa9-9b66-8882" hidden="false">
+      <description>Saves of a 12 against this weapon will always cause damage, regardless of the Armour value</description>
+    </rule>
+    <rule name="Spearhead" id="2a3b-0701-bfd9-85de" hidden="false">
+      <description>When this Squad activates (not Ordered or as a Reaction) the owning player may also nominate up to 3 other friendly Vehicle Squads to Form Up wit it. In addition, these may be within the Unit&apos;s Leader ranger instead of the usual 1&quot; (see the main From Ashes rules).</description>
+    </rule>
+    <rule name="Leader [18&quot;]" id="cf4b-e9a0-d530-1456" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="Transport [1x Infantry]" id="d69f-afa2-e259-8641" hidden="false">
+      <description>See the Unit Abilities section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Transport [2x Infantry]" id="820d-e281-04dd-91bb" hidden="false">
+      <description>See the Unit Abilities section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Transport [4x Infantry]" id="295d-d0eb-5534-d631" hidden="false">
+      <description>See the Unit Abilities section of the main From Ashes rules</description>
+    </rule>
+    <rule name="High Explosive" id="b359-6a8f-90e3-aa49" hidden="false">
+      <description>Any surplus Damage dice may be used against the next enemy Unit in the target Squad</description>
     </rule>
   </sharedRules>
 </gameSystem>

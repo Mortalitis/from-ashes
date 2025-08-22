@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f78a-9b71-02cb-0454" name="Verse Dominion Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f78a-9b71-02cb-0454" name="Verse Dominion Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Shock Bolt (1)" id="bad0-9c8b-df01-4061" hidden="false">
       <description>Squads targeted by this weapon must roll a Skill Test for each hit. If any fail an used Order must become Unique. If there are no unused Orders then a Command becomes Unique instead.</description>
@@ -15,9 +15,6 @@
     </rule>
     <rule name="Vhokys Drugs (1-2)" id="9444-a927-fe72-e1ab" hidden="false">
       <description>When this Unit fails an Armour save, roll a D12; on a 1-2 it is ignored. In addition Storm Target&apos;s reroll Armour saved of 1-2</description>
-    </rule>
-    <rule name="Incendiary" id="da2f-0fa9-9b66-8882" hidden="false">
-      <description>Saves of a 12 against this weapon will always cause damage, regardless of the Armour value</description>
     </rule>
     <rule name="Scatter Shot" id="321f-4a1a-01c4-1ef8" hidden="false">
       <description>Ignores terrain negative rerolls and terrain armour bonuses</description>
@@ -43,9 +40,6 @@
     <rule name="Track Pods" id="dfc1-4a82-3ed3-fe9a" hidden="false">
       <description>Reroll failed Slow terrain tests. In addition this Unit counts as Move 4&quot; rather than 0&quot; if it suffers an M-Kill</description>
     </rule>
-    <rule name="Spearhead" id="2a3b-0701-bfd9-85de" hidden="false">
-      <description>When this Squad activates (not Ordered or as a Reaction) the owning player may also nominate up to 3 other friendly Vehicle Squads to Form Up wit it. In addition, these may be within the Unit&apos;s Leader ranger instead of the usual 1&quot; (see the main From Ashes rules).</description>
-    </rule>
     <rule name="Exposed Gunner" id="a320-67e8-764c-f2c6" hidden="false">
       <description>If this weapon causes any hits, reduce the host Unit&apos;s Enclosed value by 1 for this Command</description>
     </rule>
@@ -60,9 +54,6 @@
     </rule>
     <rule name="Erratic Warhead (D4+4)" id="c18d-d499-9a29-e285" hidden="false">
       <description>After Accuracy rolls, roll a D4+4. This is the weapon&apos;s AP value for this Command</description>
-    </rule>
-    <rule name="Advisor Weapon" id="3935-1ff5-1b61-e3e0" hidden="false">
-      <description>This weapon may be used in addition to any others the Unit carries</description>
     </rule>
     <rule name="Erratic Warhead (D4+2)" id="8756-3dd8-a218-bd8c" hidden="false">
       <description>After Accuracy rolls, roll a D4+2. This is the weapon&apos;s AP value for this Command</description>
@@ -90,9 +81,6 @@
     </rule>
     <rule name="Guided Missile" id="cffa-962d-ad20-3f88" hidden="false">
       <description>Reroll failed Accuracy rolls if this Squad has not yet moved this turn</description>
-    </rule>
-    <rule name="High Explosive" id="b359-6a8f-90e3-aa49" hidden="false">
-      <description>Any surplus Damage dice may be used against the next enemy Unit in the target Squad</description>
     </rule>
     <rule name="Squash Head" id="6523-1286-87cf-d103" hidden="false">
       <description>Target Units within buildings, ruins and bunkers must reroll successful Armour Saves</description>
@@ -359,6 +347,32 @@
             <entryLink import="true" name="Heavy Smoke Rocket" hidden="false" id="6c37-8f14-f270-7b00" type="selectionEntry" targetId="0684-3811-9ca1-0ab9" sortIndex="3"/>
             <entryLink import="true" name="Incendiary Grenades" hidden="false" id="512b-4776-23e1-9e92" type="selectionEntry" targetId="0c93-6bbf-851a-a3c4" sortIndex="4"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Special Advance Command: Boosters" id="bc29-0c4c-21b4-07ed" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Heavy Skimmer Plate" id="601c-5f82-d083-2c53" hidden="false" type="rule" targetId="0a17-2b65-672c-604e"/>
+            <infoLink name="Shock Field" id="cc24-ff71-a6ef-3381" hidden="false" type="rule" targetId="3f94-26ae-7625-b845"/>
+            <infoLink name="Track Pods" id="4190-b956-5521-d072" hidden="false" type="rule" targetId="dfc1-4a82-3ed3-fe9a"/>
+            <infoLink name="Leader [8&quot;]" id="2cc7-2061-eb30-bd0e" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
+            <infoLink name="Pyromaniac" id="774c-bdc0-4105-674c" hidden="false" type="rule" targetId="8b43-95e4-4972-ee77"/>
+            <infoLink name="Spearhead" id="a5af-4e57-0d9b-01d5" hidden="false" type="rule" targetId="2a3b-0701-bfd9-85de"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Rhino Dominus" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="099b-0c90-9fdc-77d7">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">5+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">5</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">7&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">13/12/11</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">6</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
