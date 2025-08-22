@@ -91,8 +91,8 @@
     <rule name="Brute" id="4b97-6f8b-7669-f38a" hidden="false">
       <description>This Unit&apos;s HP counts as double when generating Storm Attack dice</description>
     </rule>
-    <rule name="Rapid Fire (16&quot;/11+)" id="bb24-2bc0-e3c8-d176" hidden="false">
-      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    <rule name="Rapid Fire (24&quot;/11+)" id="bb24-2bc0-e3c8-d176" hidden="false">
+      <description>When Engaging targets within 24&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
     </rule>
     <rule name="Free Command: Defence Fire" id="5deb-d9d6-7bfc-3478" hidden="false">
       <description>This Squad may attempts a free Engage Reaction with each Defence Fire weapon</description>
@@ -123,6 +123,15 @@
     </rule>
     <rule name="Full Auto" id="fc3f-a880-8a26-e2f4" hidden="false">
       <description>Before rolling Attacks you may choose to reroll Accuracy dice but the target may reroll failed Armour saves</description>
+    </rule>
+    <rule name="Rapid Fire (16&quot;/11+)" id="3ba9-85cd-b8fc-eab2" hidden="false">
+      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    </rule>
+    <rule name="Ripple Fire" id="f106-284c-05d9-c8ee" hidden="false">
+      <description>Reroll Accuracy rolls of a 1-2</description>
+    </rule>
+    <rule name="Thermobaric" id="7115-a696-463f-0f0b" hidden="false">
+      <description>Ignores terrain Armour bonuses and Units in terrain must reroll successful Armour saves</description>
     </rule>
   </sharedRules>
 </gameSystem>

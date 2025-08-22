@@ -15,7 +15,7 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="06c2-c180-fee0-bad9" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="a814-24a5-f7de-ad96" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="a814-24a5-f7de-ad96" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9e0b-c4ea-c0ca-420e" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="1982-e88d-c51b-0f44" includeChildSelections="false"/>
@@ -48,7 +48,7 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="99e3-efa0-8797-0ef5" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="120f-1317-9127-0ab2" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="120f-1317-9127-0ab2" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="305d-15e6-800b-65ed" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="f80a-4dd0-1cc0-1eec" includeChildSelections="false"/>
@@ -86,7 +86,7 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5ab4-8c08-237d-57ab" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="2cee-26b5-4c5e-b1aa" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="2cee-26b5-4c5e-b1aa" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="33d5-3426-34b5-1df6" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="4e7c-e348-3024-e92a" includeChildSelections="false"/>
@@ -124,7 +124,7 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="499a-261f-d832-a387" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="38cc-c79e-c720-9246" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="38cc-c79e-c720-9246" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3ccf-9c83-36c7-fa5f" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="6aee-ddb9-af48-4edc" includeChildSelections="false"/>
@@ -162,7 +162,7 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="56d3-75fd-d02d-bf6a" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="702e-2b0b-841d-b2e6" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="702e-2b0b-841d-b2e6" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8cda-be36-f49c-ba0d" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="bace-d416-b490-83b6" includeChildSelections="false"/>
@@ -211,7 +211,7 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="65ed-1fd5-e9a2-6bfe" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="474b-e451-f628-c697" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="474b-e451-f628-c697" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e326-7f68-8e64-cb0e" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="d12e-6467-e15a-2cda" includeChildSelections="false"/>
@@ -263,7 +263,7 @@
     </entryLink>
     <entryLink import="true" name="Ringleader Command Unit" hidden="false" id="296a-053d-27fe-4532" type="selectionEntry" targetId="e5b4-9e79-0e22-840e">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="49af-e0a5-fd93-5a47" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="49af-e0a5-fd93-5a47" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="20"/>
@@ -297,7 +297,7 @@
     </entryLink>
     <entryLink import="true" name="Reaver Archon" hidden="false" id="4cfc-b4c3-68ba-c4c2" type="selectionEntry" targetId="727b-1679-dfae-adf7">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="353a-d402-b0c3-323d" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="353a-d402-b0c3-323d" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="45"/>
@@ -331,7 +331,7 @@
     </entryLink>
     <entryLink import="true" name="Rhino Dominus" hidden="false" id="aae9-0d00-cab3-5684" type="selectionEntry" targetId="bbc3-573d-de68-ef57">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="2a77-b165-00c3-25cc" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="2a77-b165-00c3-25cc" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="120"/>
@@ -403,12 +403,146 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="b1d5-e4b8-c24a-f9b3" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="b1d5-e4b8-c24a-f9b3" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="58"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
       </costs>
+    </entryLink>
+    <entryLink import="true" name="Utegon Assault Mutants" hidden="false" id="864f-2892-b0a8-c47f" type="selectionEntry" targetId="2b36-413e-1cc2-9506">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="20" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="40" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="93b0-c96c-4503-7f75" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="40"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Gorath Shock Mutants" hidden="false" id="ebb5-47c6-2adf-527f" type="selectionEntry" targetId="b32e-82b4-01ba-5187">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="3f2f-d85b-45d5-2d4b" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="e392-f906-d5e0-eb00" type="selectionEntry" targetId="88c3-9a4b-90e8-0ab0">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="eb88-5e78-e8ae-d0e4" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="5aa9-5f69-ef6d-a971" type="selectionEntry" targetId="88c3-9a4b-90e8-0ab0">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8385-3e9e-2c7f-e7bf" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Rocket Buggy" hidden="false" id="0a5f-5a10-1fce-7b91" type="selectionEntry" targetId="3fe6-695d-eb84-da2a">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="6c37-2eaa-b7e4-979e" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Rocket Buggy" hidden="false" id="5f30-234d-5acb-e02c" type="selectionEntry" targetId="3fe6-695d-eb84-da2a">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="cb4a-9805-8093-5a6d" primary="true" name="Support Squads"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
 </catalogue>
