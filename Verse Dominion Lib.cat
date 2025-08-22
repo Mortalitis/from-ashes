@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="f78a-9b71-02cb-0454" name="Verse Dominion Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Shock Bolt (1)" id="bad0-9c8b-df01-4061" hidden="false">
+      <description>Squads targeted by this weapon must roll a Skill Test for each hit. If any fail an used Order must become Unique. If there are no unused Orders then a Command becomes Unique instead.</description>
+    </rule>
+    <rule name="Shock Bolt (3)" id="3e5b-2a0f-1053-c663" hidden="false">
+      <description>Squads targeted by this weapon must roll 3 Skill Tests. If any fail an used Order must become Unique. If there are no unused Orders then a Command becomes Unique instead.</description>
+    </rule>
+    <rule name="Zealot" id="88c5-b86f-11ba-0f01" hidden="false">
+      <description>When dismounted friendly dismounted Squads within 5&quot; (including itself) can reroll passed or failed Discipline tests</description>
+    </rule>
+    <rule name="Pyromaniac" id="8b43-95e4-4972-ee77" hidden="false">
+      <description>This Squad can reroll failed Accuracy rolls with it Incendiary Grenades</description>
+    </rule>
+    <rule name="Vhokys Drugs (1-2)" id="9444-a927-fe72-e1ab" hidden="false">
+      <description>When this Unit fails an Armour save, roll a D12; on a 1-2 it is ignored. In addition Storm Target&apos;s reroll Armour saved of 1-2</description>
+    </rule>
+    <rule name="Incendiary" id="da2f-0fa9-9b66-8882" hidden="false">
+      <description>Saves of a 12 against this weapon will always cause damage, regardless of the Armour value</description>
+    </rule>
+    <rule name="Scatter Shot" id="321f-4a1a-01c4-1ef8" hidden="false">
+      <description>Ignores terrain negative rerolls and terrain armour bonuses</description>
+    </rule>
+    <rule name="Special Advance Command: Boosters" id="20b6-b3c0-e174-c0cc" hidden="false">
+      <description>Roll a D4; on a 1 count its Move as 5&quot; for this Command, otherwise increase Move by the number rolled for this Command</description>
+    </rule>
+    <rule name="Skimmer Plate" id="6400-8aef-a5ee-765c" hidden="false">
+      <description>Roll a D12 each time this Unit loses an HP. On an 1-2 the HP is not lost</description>
+    </rule>
+    <rule name="Mobile Altar" id="1319-a6df-b6b3-fd29" hidden="false">
+      <description>When this Squad attempts to Order another Squad, it can move 5&quot; before attempting the Order. Note this does not count as an Advance Command for the purposes of Agile</description>
+    </rule>
+    <rule name="Protect Me You Fools!" id="2442-59c7-81d0-c393" hidden="false">
+      <description>This Unit counts as a Lone Wolf despite not being an Infantry Unit. In addition friendly Reaver Squads Block as if they were Infantry Squads. See the Unit Types section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Heavy Skimmer Plate" id="0a17-2b65-672c-604e" hidden="false">
+      <description>Roll a D12 each time this Unit loses an HP. On an 1-3 the HP is not lost</description>
+    </rule>
+    <rule name="Shock Field" id="3f94-26ae-7625-b845" hidden="false">
+      <description>After finishing a move, an enemy Unit within 2&quot; must pass a Skill Test or count and Unused Order as Unique, or a Command if there are no Unused Orders</description>
+    </rule>
+    <rule name="Track Pods" id="dfc1-4a82-3ed3-fe9a" hidden="false">
+      <description>Reroll failed Slow terrain tests. In addition this Unit counts as Move 4&quot; rather than 0&quot; if it suffers an M-Kill</description>
+    </rule>
+    <rule name="Spearhead" id="2a3b-0701-bfd9-85de" hidden="false">
+      <description>When this Squad activates (not Ordered or as a Reaction) the owning player may also nominate up to 3 other friendly Vehicle Squads to Form Up wit it. In addition, these may be within the Unit&apos;s Leader ranger instead of the usual 1&quot; (see the main From Ashes rules).</description>
+    </rule>
+    <rule name="Exposed Gunner" id="a320-67e8-764c-f2c6" hidden="false">
+      <description>If this weapon causes any hits, reduce the host Unit&apos;s Enclosed value by 1 for this Command</description>
+    </rule>
+    <rule name="Charge Up! (D4+2)" id="3097-20dc-c4bd-a966" hidden="false">
+      <description>Before choosing a target roll D4+2 for this weapons AP value for this Command</description>
+    </rule>
+    <rule name="Galvanic Detonation (3)" id="f118-2660-8ef4-ee9e" hidden="false">
+      <description>If this weapon successfully hits, roll three D12s after resolving damage. If one or more score 10+, place and extra Blast Marker and the target loses an additional HP</description>
+    </rule>
+    <rule name="Smoke Blast (3)" id="b8ac-de73-8001-a1bc" hidden="false">
+      <description>For each hit place 3 Smoke Markers in base contact and as close to the target as possible</description>
+    </rule>
+    <rule name="Erratic Warhead (D4+4)" id="c18d-d499-9a29-e285" hidden="false">
+      <description>After Accuracy rolls, roll a D4+4. This is the weapon&apos;s AP value for this Command</description>
+    </rule>
+    <rule name="Advisor Weapon" id="3935-1ff5-1b61-e3e0" hidden="false">
+      <description>This weapon may be used in addition to any others the Unit carries</description>
+    </rule>
+    <rule name="Erratic Warhead (D4+2)" id="8756-3dd8-a218-bd8c" hidden="false">
+      <description>After Accuracy rolls, roll a D4+2. This is the weapon&apos;s AP value for this Command</description>
+    </rule>
+    <rule name="Tunneling Ascent" id="e3b8-0bce-9a2d-0fb1" hidden="false">
+      <description>When this Squad is at the FOB. it may be chosen to activate like any other Squad, despite not actually being in the AO. If they are activated in this way, they are immediately placed in the AO via the Scatter ability from the Unit Abilities section of the main From Ashes rules. Once in the AO roll a D12; on a 5+ they must spend a single Command as Advance, otherwise count both as Advance.</description>
+    </rule>
+    <rule name="Burrowing Terror" id="2e77-867f-f692-574b" hidden="false">
+      <description>This Squad can attempt to Storm 10&quot; rather than 8&quot;. In addition, when this Unit Storms and the target Squad chooses Engage as a Reaction during Step 2, the Target suffers and [Accuracy → 1] penalty</description>
+    </rule>
+    <rule name="Charge Up! (D4+1)" id="1d24-c5ef-03d5-b59f" hidden="false">
+      <description>Before choosing a target roll D4+1 for this weapons AP value for this Command</description>
+    </rule>
+    <rule name="Galvanic Detonation (1)" id="85ab-e1b1-c98e-274f" hidden="false">
+      <description>After resolving damage roll a D12 for each Hit scored on the target Squad. If one or more score 10+, place and extra Blast Marker and the target loses an additional HP</description>
+    </rule>
+    <rule name="Vhokys Drugs (1-3)" id="ed3b-71e5-a9be-6375" hidden="false">
+      <description>When this Unit fails an Armour save, roll a D12; on a 1-2 it is ignored. In addition Storm Target&apos;s reroll Armour saved of 1-2</description>
+    </rule>
+    <rule name="Incendiary Rounds" id="8251-2a55-e30e-c8e0" hidden="false">
+      <description>Enclosed 0 Units must reroll Armour Saves of a 1-2 against hits from this weapon</description>
+    </rule>
+    <rule name="Erratic Warhead (D4+3)" id="47cc-1f45-2061-cc26" hidden="false">
+      <description>After Accuracy rolls, roll a D4+3. This is the weapon&apos;s AP value for this Command</description>
+    </rule>
+    <rule name="Guided Missile" id="cffa-962d-ad20-3f88" hidden="false">
+      <description>Reroll failed Accuracy rolls if this Squad has not yet moved this turn</description>
+    </rule>
+    <rule name="High Explosive" id="b359-6a8f-90e3-aa49" hidden="false">
+      <description>Any surplus Damage dice may be used against the next enemy Unit in the target Squad</description>
+    </rule>
+    <rule name="Squash Head" id="6523-1286-87cf-d103" hidden="false">
+      <description>Target Units within buildings, ruins and bunkers must reroll successful Armour Saves</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Ringleader Command Unit" hidden="false" id="e5b4-9e79-0e22-840e">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ringleader" hidden="false" id="0b4b-05fa-2a1c-2dc4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="a648-e2e0-5bad-b3e2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2036-2bf0-533f-5742-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2036-2bf0-533f-5742-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shotgun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="f8b1-821b-ebfa-ce4c">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">2+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">5+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">10</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">0</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Scatter Shot" id="b107-a9d0-0435-93f4" hidden="false" type="rule" targetId="321f-4a1a-01c4-1ef8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="276c-03a1-c97c-42a6" type="selectionEntry" targetId="0c93-6bbf-851a-a3c4"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="931c-98be-5cd5-7757-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="931c-98be-5cd5-7757-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ringleader" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="d22b-a74d-2317-fe74">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">6</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Leader [8&quot;]" id="8f87-7e52-350a-d56a" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
+            <infoLink name="Zealot" id="4254-5089-bbc1-74b3" hidden="false" type="rule" targetId="88c5-b86f-11ba-0f01"/>
+            <infoLink name="Pyromaniac" id="6708-5d27-0494-bfdc" hidden="false" type="rule" targetId="8b43-95e4-4972-ee77"/>
+            <infoLink name="Vhokys Drugs (1-2)" id="22fe-6d80-03e9-9480" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
+            <infoLink name="Brute" id="c83d-3aa0-3efb-4902" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="0c93-6bbf-851a-a3c4">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5b0-5a24-ba03-9669-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5b0-5a24-ba03-9669-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Incendiary Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="5cb1-1e7b-dd30-e444">
+          <characteristics>
+            <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
+            <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">0</characteristic>
+            <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+            <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">0</characteristic>
+            <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">N/A</characteristic>
+            <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">N/A</characteristic>
+            <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
+            <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
+            <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
+            <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
+            <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+            <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+            <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Grenade Attack" id="9c40-641c-b87e-7d9d" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+        <infoLink name="Ignores Cover" id="d94d-fa46-f148-b985" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+        <infoLink name="Burn" id="f234-0717-c9c9-d4de" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
+        <infoLink name="Incendiary" id="8e9d-2862-a3d8-a7fb" hidden="false" type="rule" targetId="da2f-0fa9-9b66-8882"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reaver Archon" hidden="false" id="727b-1679-dfae-adf7">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Reaver Archon" hidden="false" id="71cc-8103-02dd-25fb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05d8-d0fe-a02c-b0fb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d8-d0fe-a02c-b0fb-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="a666-2d75-205f-9fca">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b012-574f-ed22-0fe4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b012-574f-ed22-0fe4-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shotgun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="a456-6bcf-af03-9070">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">2+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">5+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">10</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">0</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Scatter Shot" id="08d9-fbfe-fab8-aebd" hidden="false" type="rule" targetId="321f-4a1a-01c4-1ef8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Reaver Archon" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="291d-7bd6-f497-aae1">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">5+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">1</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">10&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">11/10/9</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Special Advance Command: Boosters" id="af14-4ff1-5c05-598e" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Skimmer Plate" id="8a40-f020-a86e-d152" hidden="false" type="rule" targetId="6400-8aef-a5ee-765c"/>
+            <infoLink name="All-Terrain Vehicle" id="f861-c797-b358-10db" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
+            <infoLink name="Agile" id="cbef-5ef9-3574-0479" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+            <infoLink name="Leader [8&quot;]" id="d77a-282c-bd72-b03d" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
+            <infoLink name="Zealot" id="8148-2b27-a6e0-8183" hidden="false" type="rule" targetId="88c5-b86f-11ba-0f01"/>
+            <infoLink name="Mobile Altar" id="220b-236a-08cf-b532" hidden="false" type="rule" targetId="1319-a6df-b6b3-fd29"/>
+            <infoLink name="Protect Me You Fools!" id="1d8b-bd62-ba7f-b492" hidden="false" type="rule" targetId="2442-59c7-81d0-c393"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhino Dominus" hidden="false" id="bbc3-573d-de68-ef57">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Rhino Dominus" hidden="false" id="ae39-a29e-280a-952b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81d9-9bbb-c16f-86ab-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81d9-9bbb-c16f-86ab-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pintle HMG" hidden="false" id="af5a-5483-6319-1247" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec59-45b8-07e9-d7f2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec59-45b8-07e9-d7f2-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pintle HMG" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="154d-7b40-2ee6-2712">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">3</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">3</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">7+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">9+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">2</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">2</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Exposed Gunner" id="c7f8-d326-fcd6-39f5" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
+                <infoLink name="Assault Move (3&quot;)" id="c6c1-6713-a9d5-ae29" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+                <infoLink name="Free Command: Defence Fire" id="397d-b831-52d8-1eba" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                <infoLink name="Rapid Fire (16&quot;/12+)" id="acac-0d63-46be-0df0" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shock Cannon" hidden="false" id="9f12-e962-4bcc-cfaa" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4250-390b-2da9-f788-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4250-390b-2da9-f788-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shock Cannon" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="7fcc-f9b2-ad78-57ac">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">D4+2</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">D4+2</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">D4+2</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">9+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">D4+2</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">10+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">D4+2</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">3</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">4</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="6fef-3245-aa2c-761c" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+                <infoLink name="Charge Up! (D4+2)" id="8e30-6c4c-e556-29b8" hidden="false" type="rule" targetId="3097-20dc-c4bd-a966"/>
+                <infoLink name="Galvanic Detonation (3)" id="c3c7-20ae-2a41-8f2e" hidden="false" type="rule" targetId="f118-2660-8ef4-ee9e"/>
+                <infoLink name="Shock Bolt (3)" id="e56b-2f7f-65e4-83ed" hidden="false" type="rule" targetId="3e5b-2a0f-1053-c663"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Smoke Rocket" hidden="false" id="6c37-8f14-f270-7b00" type="selectionEntry" targetId="0684-3811-9ca1-0ab9" sortIndex="3"/>
+            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="512b-4776-23e1-9e92" type="selectionEntry" targetId="0c93-6bbf-851a-a3c4" sortIndex="4"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Smoke Rocket" hidden="false" id="0684-3811-9ca1-0ab9">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cff6-7655-b282-6c67-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cff6-7655-b282-6c67-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Heavy Smoke Rocket" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="cdd6-5b93-d7ba-ad83">
+          <characteristics>
+            <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+            <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">D4+4</characteristic>
+            <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+            <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">D4+4</characteristic>
+            <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
+            <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">D4+4</characteristic>
+            <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">10+</characteristic>
+            <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">D4+4</characteristic>
+            <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">10+</characteristic>
+            <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">D4+4</characteristic>
+            <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+            <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+            <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Slow Reload" id="10ee-43ce-ac3b-26a0" hidden="false" type="rule" targetId="c534-2c5e-d2ab-c844"/>
+        <infoLink name="Smoke Blast (3)" id="d672-0d35-30cd-a329" hidden="false" type="rule" targetId="b8ac-de73-8001-a1bc"/>
+        <infoLink name="Assault Move (5&quot;, Stabilised)" id="6ed4-afb8-b250-4d78" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+        <infoLink name="Erratic Warhead (D4+4)" id="51a4-6d5e-203b-3e8a" hidden="false" type="rule" targetId="c18d-d499-9a29-e285"/>
+        <infoLink name="Anti-Armour" id="0765-6925-bdf0-2833" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vanguard Infantry Cohort" hidden="false" id="2e0e-55ff-1cf7-4064">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vanguard Rifleman" hidden="false" id="c5c4-0ae0-479f-f04a" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e5ac-14a6-0126-cf2f" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="d368-2e5f-ab2b-4670" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Firearms" hidden="false" id="4295-af64-ccdd-d067" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e07d-cb0f-2e68-65dc-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e07d-cb0f-2e68-65dc-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Firearms" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="b6eb-74a0-60db-1e91">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">1</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">8+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">1</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">0</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">0</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault Move (3&quot;)" id="ab91-9ecd-29c7-e883" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+                <infoLink name="Rapid Fire (16&quot;/12+)" id="a2a9-9746-95fb-f345" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
+                <infoLink name="Full Auto" id="22ad-bc4a-e426-259e" hidden="false" type="rule" targetId="fc3f-a880-8a26-e2f4"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="b224-3ee9-1473-8a58" type="selectionEntry" targetId="0c93-6bbf-851a-a3c4" sortIndex="2"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Vhokys Drugs (1-2)" id="188b-18b6-d8a7-095b" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Vanguard Rifleman" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="d750-868f-d8a5-0e20">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">5</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Vanguard Rocket Trooper" hidden="false" id="7777-9b5b-b7d4-f2ff" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="f624-40a7-5440-bee5" type="selectionEntry" targetId="0c93-6bbf-851a-a3c4" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8d67-b87c-fb2d-70ea" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d4f8-7d6a-d544-0ca4" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Vhokys Drugs (1-2)" id="f37f-28c2-8ea3-fb13" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="RPGs" hidden="false" id="5b5f-49fd-eb7d-8b1e" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21f4-5cdf-2f0d-35f1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21f4-5cdf-2f0d-35f1-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="RPGs" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="67d5-c07b-cef0-32b1">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">D4+2</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">8+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">D4+2</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">10+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">D4+2</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">12+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">D4+2</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">D4+2</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP-1</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Erratic Warhead (D4+2)" id="e6b4-b253-1035-3544" hidden="false" type="rule" targetId="8756-3dd8-a218-bd8c"/>
+                <infoLink name="Anti-Armour" id="cb65-dc25-37d3-3ee8" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Vanguard Rocket Trooper" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="a656-01b0-5106-aa51">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">5</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">2</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="46ea-4e9f-bea4-08bc" type="selectionEntryGroup" targetId="e059-85c1-24c3-d61b" sortIndex="3"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Utegon Assault Mutants" hidden="false" id="2b36-413e-1cc2-9506">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Utegon" hidden="false" id="7496-2af6-5b8f-2fd3">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d6eb-5124-8fbd-c19b" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d858-39ea-ee8a-4a16" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Utegon" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="586b-ec1b-8a69-64ce">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Walker</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">8&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Tunneling Ascent" id="9762-7cd3-645e-ca49" hidden="false" type="rule" targetId="e3b8-0bce-9a2d-0fb1"/>
+            <infoLink name="Vhokys Drugs (1-2)" id="31fe-9454-732c-7ee5" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
+            <infoLink name="Brute" id="996d-da99-2400-5af3" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+            <infoLink name="Agile" id="ae9b-4c20-94e6-b9df" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+            <infoLink name="Burrowing Terror" id="4bbe-7dc2-363e-5d51" hidden="false" type="rule" targetId="2e77-867f-f692-574b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gorath Shock Mutants" hidden="false" id="b32e-82b4-01ba-5187">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Gorath" hidden="false" id="a9db-78c3-2592-565a">
+          <profiles>
+            <profile name="Gorath" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="b77c-9f98-d40d-b734">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Walker</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0fd5-1f97-9fe6-f883-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0fd5-1f97-9fe6-f883-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Vhokys Drugs (1-3)" id="c147-79ae-77dd-2747" hidden="false" type="rule" targetId="ed3b-71e5-a9be-6375"/>
+            <infoLink name="Brute" id="3f35-15f7-51d3-e66e" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Shock Rifles" hidden="false" id="8d85-46d0-bdda-9da5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0919-661c-624a-649d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0919-661c-624a-649d-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Heavy Shock Rifles" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="fa30-dd8b-0c76-a5f8">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">D4+1</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">D4+1</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">D4+1</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">10+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">D4+1</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">D4+1</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Charge Up! (D4+1)" id="71d3-85cb-c5eb-c602" hidden="false" type="rule" targetId="1d24-c5ef-03d5-b59f"/>
+                <infoLink name="Galvanic Detonation (1)" id="3371-057e-abfb-08c6" hidden="false" type="rule" targetId="85ab-e1b1-c98e-274f"/>
+                <infoLink name="Shock Bolt (1)" id="e926-8ad7-5507-1c2a" hidden="false" type="rule" targetId="bad0-9c8b-df01-4061"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reaver Attack Buggy" hidden="false" id="88c3-9a4b-90e8-0ab0">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Reaver Attack" hidden="false" id="fe60-0d87-d2b5-aff9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3d1-6db1-ac1f-49d4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3d1-6db1-ac1f-49d4-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Reaver Attack" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="30e2-c723-ce4e-5871">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">1</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">10&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">11/10/9</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Special Advance Command: Boosters" id="958d-3262-569b-5b75" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Skimmer Plate" id="1fce-fdc6-43b8-530d" hidden="false" type="rule" targetId="6400-8aef-a5ee-765c"/>
+            <infoLink name="Agile" id="aa86-14e7-0277-eb6e" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+            <infoLink name="All-Terrain Vehicle" id="fb3a-d706-9d69-5d9a" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
+            <infoLink name="Recon" id="fb37-a381-1181-87b1" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Attack Buggy Weapons" id="f8d7-ec52-7855-7a3b" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chaingun" hidden="false" id="7ee1-febd-027d-8a64">
+                  <profiles>
+                    <profile name="Chaingun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="f121-00f1-d397-3da0">
+                      <characteristics>
+                        <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                        <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
+                        <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+                        <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
+                        <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
+                        <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
+                        <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
+                        <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">1</characteristic>
+                        <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
+                        <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">1</characteristic>
+                        <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">4</characteristic>
+                        <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                        <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Assault Move (4&quot;)" id="2a83-addc-2ec7-82f6" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
+                    <infoLink name="Free Command: Defence Fire" id="cf0b-2de8-ec21-f236" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                    <infoLink name="Incendiary Rounds" id="20d2-b3d4-d2c7-c2ea" hidden="false" type="rule" targetId="8251-2a55-e30e-c8e0"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Rocket Launcher" hidden="false" id="c565-3efa-a437-5f60">
+                  <profiles>
+                    <profile name="Rocket Launcher" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="8757-d77a-3267-057d">
+                      <characteristics>
+                        <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                        <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">D4+3</characteristic>
+                        <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+                        <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">D4+3</characteristic>
+                        <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
+                        <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">D4+3</characteristic>
+                        <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
+                        <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">D4+3</characteristic>
+                        <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
+                        <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">D4+3</characteristic>
+                        <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+                        <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                        <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Assault Move (4&quot;)" id="40e5-f764-986b-9da8" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
+                    <infoLink name="Guided Missile" id="2186-574e-c271-5058" hidden="false" type="rule" targetId="cffa-962d-ad20-3f88"/>
+                    <infoLink name="Erratic Warhead (D4+3)" id="e177-8654-83a6-9f4a" hidden="false" type="rule" targetId="47cc-1f45-2061-cc26"/>
+                    <infoLink name="Anti-Armour" id="7a5d-a694-83a0-43aa" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c982-ccc9-0db0-7afb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bfac-062c-6a2e-11ed"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Reaver Attack" hidden="false" id="6731-ba18-57a1-1b1c">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="334d-7ef5-4a2b-5a92" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e89-5fbb-bb0c-beb7" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Reaver Attack" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="4154-cca7-de17-e782">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">1</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">10&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">11/10/9</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Special Advance Command: Boosters" id="a930-559e-7e59-4d5e" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Skimmer Plate" id="d3f2-b063-484f-b179" hidden="false" type="rule" targetId="6400-8aef-a5ee-765c"/>
+            <infoLink name="Agile" id="65bd-4b56-15df-bf37" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+            <infoLink name="All-Terrain Vehicle" id="4701-c6e9-c7b2-64a1" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
+            <infoLink name="Recon" id="ac28-4436-e125-4ec8" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Attack Buggy Weapons" id="6b8f-aaf5-2194-1735" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Chaingun" hidden="false" id="99fb-8ad2-ba95-0c49">
+                  <profiles>
+                    <profile name="Chaingun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="f96d-e5b5-81e4-1044">
+                      <characteristics>
+                        <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                        <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
+                        <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+                        <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
+                        <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
+                        <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
+                        <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
+                        <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">1</characteristic>
+                        <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
+                        <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">1</characteristic>
+                        <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">4</characteristic>
+                        <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                        <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Assault Move (4&quot;)" id="ad27-f036-cf1b-c524" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
+                    <infoLink name="Free Command: Defence Fire" id="7fad-d270-3986-0b10" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                    <infoLink name="Incendiary Rounds" id="32b3-0b05-9248-54ce" hidden="false" type="rule" targetId="8251-2a55-e30e-c8e0"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Rocket Launcher" hidden="false" id="08c7-d5f4-4983-b501">
+                  <profiles>
+                    <profile name="Rocket Launcher" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="cfc0-6789-8eb7-ebd0">
+                      <characteristics>
+                        <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                        <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">D4+3</characteristic>
+                        <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+                        <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">D4+3</characteristic>
+                        <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
+                        <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">D4+3</characteristic>
+                        <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
+                        <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">D4+3</characteristic>
+                        <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
+                        <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">D4+3</characteristic>
+                        <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+                        <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                        <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Assault Move (4&quot;)" id="2146-56f5-b3eb-67b1" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
+                    <infoLink name="Guided Missile" id="9101-5da0-5425-b5dd" hidden="false" type="rule" targetId="cffa-962d-ad20-3f88"/>
+                    <infoLink name="Erratic Warhead (D4+3)" id="69e2-6bfc-35db-cb0f" hidden="false" type="rule" targetId="47cc-1f45-2061-cc26"/>
+                    <infoLink name="Anti-Armour" id="1c88-f926-87d7-2fe2" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4b14-cd8b-722d-4392" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7a01-dbcb-780e-fd14"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="30"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reaver Rocket Buggy" hidden="false" id="3fe6-695d-eb84-da2a">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Reaver Rocket Buggy" hidden="false" id="830f-c05f-f706-cf08">
+          <profiles>
+            <profile name="Reaver Rocket Buggy" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="8258-ce08-62cd-4646">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">2</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">10&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">11/10/9</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b4f-0a43-4f83-ad5d" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6974-dc21-ba6c-93cc" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reaver Rocket Pod" hidden="false" id="5800-aed8-7620-da1e">
+              <infoLinks>
+                <infoLink name="Barrage" id="2abd-875c-84c8-5550" hidden="false" type="rule" targetId="977a-72f5-8575-939a"/>
+                <infoLink name="Ripple Fire" id="bef7-c1c0-e887-7837" hidden="false" type="rule" targetId="f106-284c-05d9-c8ee"/>
+                <infoLink name="Thermobaric" id="ec3f-16e2-8963-b528" hidden="false" type="rule" targetId="7115-a696-463f-0f0b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e4c-7726-cf43-7276-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e4c-7726-cf43-7276-max"/>
+              </constraints>
+              <profiles>
+                <profile name="Reaver Rocket Pod" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="705b-19b0-1b1c-1d7f">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">0</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">0</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">0</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">9+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">0</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Special Advance Command: Boosters" id="f9ed-f48b-7d11-2ea3" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Skimmer Plate" id="41a0-6705-cb7a-b810" hidden="false" type="rule" targetId="6400-8aef-a5ee-765c"/>
+            <infoLink name="Agile" id="3222-4967-704b-0fde" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+            <infoLink name="All-Terrain Vehicle" id="2205-63ee-9663-f288" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Taurus APC" hidden="false" id="3961-7778-e1f4-b512">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Taurus" hidden="false" id="ea37-d2d0-fb8b-75a4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b3f-f5a5-8af8-b753-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b3f-f5a5-8af8-b753-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Taurus" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="d430-02be-032f-7d69">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">5</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">7&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">13/12/11</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">6</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pintle HMG" hidden="false" id="fb6a-e4ee-e0f4-b253" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64a2-eff1-0856-4592-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64a2-eff1-0856-4592-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pintle HMG" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="e285-fc15-bf6d-62f1">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">3</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">3</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">9+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">2</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">2</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Exposed Gunner" id="a355-8441-e336-79c0" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
+                <infoLink name="Assault Move (4&quot;)" id="1b45-2ace-6798-49cd" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
+                <infoLink name="Free Command: Defence Fire" id="6365-2271-3c56-e348" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                <infoLink name="Rapid Fire (16&quot;/12+)" id="0db1-95cc-171f-17ac" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Smoke Rocket" hidden="false" id="6363-768e-0f67-f590" type="selectionEntry" targetId="0684-3811-9ca1-0ab9" sortIndex="2"/>
+            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="76d7-e1ac-2d0c-a45c" type="selectionEntry" targetId="0c93-6bbf-851a-a3c4" sortIndex="3"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Special Advance Command: Boosters" id="2c73-5b74-44d6-a798" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Heavy Skimmer Plate" id="69f9-2ce1-3fdf-b630" hidden="false" type="rule" targetId="0a17-2b65-672c-604e"/>
+            <infoLink name="Shock Field" id="a332-f4a0-dbeb-e530" hidden="false" type="rule" targetId="3f94-26ae-7625-b845"/>
+            <infoLink name="Track Pods" id="c32c-df3e-b481-79d5" hidden="false" type="rule" targetId="dfc1-4a82-3ed3-fe9a"/>
+            <infoLink name="Transport [6x Infantry]" id="76b1-941f-1995-7295" hidden="false" type="rule" targetId="2871-d593-3956-ca1e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhino Assault Tank" hidden="false" id="f138-8dd4-ed7d-aefa">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Rhino" hidden="false" id="7b6e-f761-3482-aa56">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pintle HMG" hidden="false" id="bed7-0e63-a951-e5f4" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15c0-78b3-5554-ee9f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15c0-78b3-5554-ee9f-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pintle HMG" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="b160-870d-a656-3bb0">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">3</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">3</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">9+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">2</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">2</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Exposed Gunner" id="f972-187f-bb19-49fe" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
+                <infoLink name="Assault Move (4&quot;)" id="0f6d-9180-8fd4-3f53" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
+                <infoLink name="Free Command: Defence Fire" id="f73c-62e0-27d9-9aa1" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                <infoLink name="Rapid Fire (16&quot;/12+)" id="4398-c6bd-b2d3-20fc" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="140mm Cannon" hidden="false" id="65a8-e7ae-52f2-ddf5" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="566a-1ebc-0b47-e046-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="566a-1ebc-0b47-e046-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="140mm Cannon" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="8c1f-fa43-cf36-e7ea">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">7</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">7</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">6</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">9+</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">6</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">10+</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">6</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">3</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">3</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">3</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="b7e2-65fe-aa78-bd3f" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+                <infoLink name="High Explosive" id="f4b8-3622-7ae8-2e85" hidden="false" type="rule" targetId="b359-6a8f-90e3-aa49"/>
+                <infoLink name="Squash Head" id="0252-fed5-e711-ed90" hidden="false" type="rule" targetId="6523-1286-87cf-d103"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Smoke Rocket" hidden="false" id="7897-7a08-9b23-80c9" type="selectionEntry" targetId="0684-3811-9ca1-0ab9" sortIndex="3"/>
+            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="23d4-e710-21d5-d139" type="selectionEntry" targetId="0c93-6bbf-851a-a3c4" sortIndex="4"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Special Advance Command: Boosters" id="b44b-4b53-beaa-2ad9" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Heavy Skimmer Plate" id="c59b-5b82-d449-ec4d" hidden="false" type="rule" targetId="0a17-2b65-672c-604e"/>
+            <infoLink name="Shock Field" id="c4ec-ef1a-256f-8946" hidden="false" type="rule" targetId="3f94-26ae-7625-b845"/>
+            <infoLink name="Track Pods" id="c2d0-7947-5978-f6a4" hidden="false" type="rule" targetId="dfc1-4a82-3ed3-fe9a"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Rhino" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="45a9-af32-0036-34c9">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">5</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">7&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">13/12/11</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">6</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dd9-4102-fea3-f4f0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dd9-4102-fea3-f4f0-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Infantry Upgrades" id="e059-85c1-24c3-d61b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Preacher Upgrade" hidden="false" id="7d5f-ae05-091f-d1ae">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2506-73a5-e092-f158"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f855-16c7-58f5-d114"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="623a-18cd-e4a7-a982">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="981b-3ff7-260f-3795-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="981b-3ff7-260f-3795-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shotgun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="d137-793d-7910-ef1d">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">2+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">5+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">10</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">0</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small arms</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Scatter Shot" id="79c8-9338-92b3-4888" hidden="false" type="rule" targetId="321f-4a1a-01c4-1ef8"/>
+                <infoLink name="Advisor Weapon" id="cb45-a716-6bf1-a4fc" hidden="false" type="rule" targetId="3935-1ff5-1b61-e3e0"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="10"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Attachment" id="9247-1f4a-502b-e98a" hidden="false">
+              <description>Must be attached to the base of a Squad&apos;s RPG Units who have an HP of no more than 2. That Unit gains the following
+
+
+- Increase HP by 1 (does not increase the number of attacks for the RPGs)
+- Increase OP by 1
+- Receive a Shotgun weapon
+- Gain the Zealot ability</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Zealot" id="f835-0cbc-c5b6-380c" hidden="false" type="rule" targetId="88c5-b86f-11ba-0f01"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ringleader Upgrade" hidden="false" id="d4e8-8c7a-bd06-be61">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ba6a-8182-4ab7-1e23"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42c7-d552-2a10-91e4"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="b0ce-d42d-03fe-f8de">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c51-f71d-c1e3-0ef3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c51-f71d-c1e3-0ef3-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shotgun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="6000-34bb-eee3-07fe">
+                  <characteristics>
+                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">2+</characteristic>
+                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
+                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">5+</characteristic>
+                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
+                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">10</characteristic>
+                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">0</characteristic>
+                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
+                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
+                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
+                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small arms</characteristic>
+                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Scatter Shot" id="3ce8-95d5-760e-ed6d" hidden="false" type="rule" targetId="321f-4a1a-01c4-1ef8"/>
+                <infoLink name="Advisor Weapon" id="6fe2-8d79-4ab1-5236" hidden="false" type="rule" targetId="3935-1ff5-1b61-e3e0"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="10"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Attachment" id="69a8-a882-d769-ae61" hidden="false">
+              <description>Must be attached to the base of a Squad&apos;s RPG Units who have an HP of no more than 2. That Unit gains the following
+
+
+- Increase HP by 2 (does not increase the number of attacks for the RPGs)
+- Increase OP by 1
+- Receive a Shotgun weapon
+- Gain the Pyromaniac and Brute abilities</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Pyromaniac" id="37d6-5818-365a-d62a" hidden="false" type="rule" targetId="8b43-95e4-4972-ee77"/>
+            <infoLink name="Brute" id="5bd5-7e23-2be2-29db" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

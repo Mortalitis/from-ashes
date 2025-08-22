@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Xeraak Triarchy" id="543f-70ad-8bf6-db9c" hidden="false">
       <categoryLinks>
@@ -15,11 +15,18 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="2d4e-8c96-e668-7ccb" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="eaef-4c3d-1ee6-5250" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="eaef-4c3d-1ee6-5250" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="1122-0e32-e883-ee5f" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="172a-e69c-9814-b698" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="172a-e69c-9814-b698">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -41,11 +48,18 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="c246-7568-0255-2d71" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="4986-b911-6b7b-bfca" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="4986-b911-6b7b-bfca" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e244-8f1b-ec78-41e1" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="baac-5596-c308-7518" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="baac-5596-c308-7518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
       <rules>
@@ -71,11 +85,18 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d0f2-dbef-14fa-f85a" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="48f6-987e-78bb-5e63" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="48f6-987e-78bb-5e63" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="7405-06c8-8d30-4d69" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="eaee-53b5-fcf8-165e" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="eaee-53b5-fcf8-165e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
       <costs>
@@ -109,11 +130,18 @@
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="9402-5042-135c-3199" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Additional Squads" hidden="false" id="b2f6-0ada-67cf-d81d" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Support Squads" hidden="false" id="b2f6-0ada-67cf-d81d" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e7f9-1073-0ad6-4ce3" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="force" shared="true" id="7111-adaa-ff14-e2c0" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="7111-adaa-ff14-e2c0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
       <rules>
@@ -135,6 +163,13 @@
         <cost name="Req" typeId="Requisition" value="25"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Meta Command Unit" hidden="false" id="7889-7cb1-e98e-4fa6" type="selectionEntry" targetId="5cbb-1548-2a40-9bae">
       <categoryLinks>
@@ -143,7 +178,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -154,7 +189,7 @@
     </entryLink>
     <entryLink import="true" name="Meta Command Unit" hidden="false" id="9c7a-8618-b649-5e57" type="selectionEntry" targetId="5cbb-1548-2a40-9bae">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="f352-6f84-11d4-01e5" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="f352-6f84-11d4-01e5" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="25"/>
@@ -168,7 +203,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="14" field="Requisition">
@@ -199,7 +234,7 @@
     </entryLink>
     <entryLink import="true" name="Hunchback Gun Cyborgs" hidden="false" id="f6dc-f417-2fe1-dd06" type="selectionEntry" targetId="373a-6b4c-ee15-ea56">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c2be-0a16-f33c-e381" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c2be-0a16-f33c-e381" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="28"/>
@@ -235,7 +270,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="1" field="32f3-2311-8978-b603">
@@ -266,7 +301,7 @@
     </entryLink>
     <entryLink import="true" name="Revenant Combat Cyborgs" hidden="false" id="80d0-4351-b22b-39bf" type="selectionEntry" targetId="16c9-bb8f-0933-793a">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8875-5d04-e4de-386d" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8875-5d04-e4de-386d" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="50"/>
@@ -302,7 +337,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -313,7 +348,7 @@
     </entryLink>
     <entryLink import="true" name="Meta Overseer Synapse Unit" hidden="false" id="447f-db12-4150-985b" type="selectionEntry" targetId="5130-3125-71c1-88d4">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="fc54-c347-024b-85c4" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="fc54-c347-024b-85c4" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="10"/>
@@ -327,7 +362,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="10" field="Requisition">
@@ -343,7 +378,7 @@
     </entryLink>
     <entryLink import="true" name="Revenant Berserker Cyborgs" hidden="false" id="704a-7414-2aae-0d3c" type="selectionEntry" targetId="cbc5-c772-a0e8-4092">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="88ab-6387-7554-7cd8" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="88ab-6387-7554-7cd8" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="20"/>
@@ -364,7 +399,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="7c18-fc38-4912-170c" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -375,7 +410,7 @@
     </entryLink>
     <entryLink import="true" name="Centaur Scout Cyborgs" hidden="false" id="a0f3-61e6-9858-322d" type="selectionEntry" targetId="23c3-f858-d21e-38b7">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="067d-3c68-7095-0761" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="067d-3c68-7095-0761" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="36"/>
@@ -384,7 +419,7 @@
     </entryLink>
     <entryLink import="true" name="Harvester Shield Mechs" hidden="false" id="3c03-6127-0741-622c" type="selectionEntry" targetId="60a2-d87f-26be-0b00">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8793-cdfa-5789-03c1" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8793-cdfa-5789-03c1" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="70"/>
@@ -393,7 +428,7 @@
     </entryLink>
     <entryLink import="true" name="Harvester Combat Mechs" hidden="false" id="977a-fba5-afcd-1add" type="selectionEntry" targetId="8493-892d-1a52-c173">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="9b1a-9b10-acf1-6dde" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="9b1a-9b10-acf1-6dde" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="70"/>
@@ -407,7 +442,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5cbb-1548-2a40-9bae" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ebd0-e4fa-d351-d773" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -427,6 +462,13 @@
         <cost name="Req" typeId="Requisition" value="115"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ebd0-e4fa-d351-d773" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Reaper Combat Walker" hidden="false" id="1f49-db2b-5f0c-c94e" type="selectionEntry" targetId="7c18-fc38-4912-170c">
       <categoryLinks>
@@ -435,7 +477,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5cbb-1548-2a40-9bae" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ebd0-e4fa-d351-d773" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -446,7 +488,7 @@
     </entryLink>
     <entryLink import="true" name="Reaper Combat Walker" hidden="false" id="d9c1-395f-76bb-8c8b" type="selectionEntry" targetId="7c18-fc38-4912-170c">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="bc73-232a-8a19-9a3b" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="bc73-232a-8a19-9a3b" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="115"/>
@@ -455,7 +497,7 @@
     </entryLink>
     <entryLink import="true" name="Overlord Gun Walker" hidden="false" id="b3cb-eb1b-f268-81f7" type="selectionEntry" targetId="875d-8f9f-b347-10ed">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="7177-f9eb-38a3-6377" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="7177-f9eb-38a3-6377" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="100"/>
@@ -469,7 +511,7 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5cbb-1548-2a40-9bae" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ebd0-e4fa-d351-d773" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -480,7 +522,7 @@
     </entryLink>
     <entryLink import="true" name="Dominator Support Walker" hidden="false" id="1ce3-1de5-ce5c-6b24" type="selectionEntry" targetId="41cc-a29b-03cd-e10c">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c5de-8032-136d-cb61" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c5de-8032-136d-cb61" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="90"/>
@@ -519,14 +561,14 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="d142-0fad-78ca-4a6d" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="d142-0fad-78ca-4a6d" primary="true" name="Support Squads"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Vector Assault Walker" hidden="false" id="26a1-2823-1683-77e2" type="selectionEntry" targetId="c0c6-2699-f5bf-dfaa">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5cbb-1548-2a40-9bae" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ebd0-e4fa-d351-d773" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -540,7 +582,7 @@
     </entryLink>
     <entryLink import="true" name="Vector Assault Walker" hidden="false" id="8ceb-0fb3-0da4-2938" type="selectionEntry" targetId="c0c6-2699-f5bf-dfaa">
       <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8b3f-8ea8-a55f-4dff" primary="true" name="Additional Squads"/>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8b3f-8ea8-a55f-4dff" primary="true" name="Support Squads"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="100"/>
@@ -549,6 +591,6 @@
     </entryLink>
   </entryLinks>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Unknown" id="1d5d-4d7a-fa30-1e68" targetId="0826-4b5a-0d9b-aede" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Xeraak Triarchy Lib" id="1d5d-4d7a-fa30-1e68" targetId="0826-4b5a-0d9b-aede" importRootEntries="false"/>
   </catalogueLinks>
 </catalogue>

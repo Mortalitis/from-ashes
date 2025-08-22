@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
-    <categoryEntry name="Additional Squads" id="19e5-b1b6-d85b-9709" hidden="false"/>
+    <categoryEntry name="Support Squads" id="19e5-b1b6-d85b-9709" hidden="false"/>
   </categoryEntries>
   <publications>
     <publication name="Github" id="f1c7-fccd-023f-8f92" hidden="false" publisherUrl="https://github.com/Mortalitis/from-ashes"/>
@@ -70,7 +70,7 @@
     <rule name="Assault Move (5&quot;, Stabilised)" id="057f-77b8-2c9e-e67b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
       <description>See the Weapons Special Rules section of the main From Ashes rules</description>
     </rule>
-    <rule name="Assault Move (4&quot;)" id="aaff-02cd-c899-c6d0" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
+    <rule name="Assault Move (3&quot;)" id="aaff-02cd-c899-c6d0" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
       <description>See the Weapons Special Rules section of the main From Ashes rules</description>
     </rule>
     <rule name="Smokescreen" id="67d7-fb01-15af-53b1" hidden="false" page="19">
@@ -91,14 +91,50 @@
     <rule name="Brute" id="4b97-6f8b-7669-f38a" hidden="false">
       <description>This Unit&apos;s HP counts as double when generating Storm Attack dice</description>
     </rule>
-    <rule name="Rapid Fire (16&quot;/11+)" id="bb24-2bc0-e3c8-d176" hidden="false">
-      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    <rule name="Rapid Fire (24&quot;/11+)" id="bb24-2bc0-e3c8-d176" hidden="false">
+      <description>When Engaging targets within 24&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
     </rule>
     <rule name="Free Command: Defence Fire" id="5deb-d9d6-7bfc-3478" hidden="false">
       <description>This Squad may attempts a free Engage Reaction with each Defence Fire weapon</description>
     </rule>
     <rule name="Barrage" id="977a-72f5-8575-939a" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
       <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Burn" id="501b-9357-716d-184b" hidden="false">
+      <description>Squads taking hits from this weapon must roll a Skill Test. If failed must reroll successful Armour Saves</description>
+    </rule>
+    <rule name="Leader [8&quot;]" id="78bb-a184-55f3-2be9" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="All-Terrain Vehicle" id="8682-665f-1c16-9774" hidden="false">
+      <description>This Unit ignores the Slow effect when moving though Accessible Terrain</description>
+    </rule>
+    <rule name="Rapid Fire (16&quot;/12+)" id="12fd-78ee-e505-2fba" hidden="false">
+      <description>When Engaging targets within 16&quot; Accuracy rolls of 12+ (after rerolls) become 2 hits instead of 1</description>
+    </rule>
+    <rule name="Slow Reload" id="c534-2c5e-d2ab-c844" hidden="false">
+      <description>One use per Turn</description>
+    </rule>
+    <rule name="Anti-Armour" id="9c3e-550c-cf1d-5745" hidden="false">
+      <description>Units with an Enclosed value of 1 or more must reroll successful Armour saves against hits from this weapon</description>
+    </rule>
+    <rule name="Assault Move (4&quot;)" id="0c3f-c936-3653-194b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
+      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Full Auto" id="fc3f-a880-8a26-e2f4" hidden="false">
+      <description>Before rolling Attacks you may choose to reroll Accuracy dice but the target may reroll failed Armour saves</description>
+    </rule>
+    <rule name="Rapid Fire (16&quot;/11+)" id="3ba9-85cd-b8fc-eab2" hidden="false">
+      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    </rule>
+    <rule name="Ripple Fire" id="f106-284c-05d9-c8ee" hidden="false">
+      <description>Reroll Accuracy rolls of a 1-2</description>
+    </rule>
+    <rule name="Thermobaric" id="7115-a696-463f-0f0b" hidden="false">
+      <description>Ignores terrain Armour bonuses and Units in terrain must reroll successful Armour saves</description>
+    </rule>
+    <rule name="Transport [6x Infantry]" id="2871-d593-3956-ca1e" hidden="false">
+      <description>See the Unit Abilities section of the main From Ashes rules</description>
     </rule>
   </sharedRules>
 </gameSystem>

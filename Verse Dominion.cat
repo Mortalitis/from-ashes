@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="7653-3930-b67f-7396" name="Verse Dominion" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Verse Dominion" id="f17d-d5b3-a46c-4335" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="1c89-abdb-dd4f-7966" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a4e1-90c0-ab79-f326" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7daf-7a94-78bb-162f" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="456d-3eb8-40e8-e83a" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="e049-c8ed-92c1-e241" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="06c2-c180-fee0-bad9" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="a814-24a5-f7de-ad96" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9e0b-c4ea-c0ca-420e" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="1982-e88d-c51b-0f44" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="1982-e88d-c51b-0f44">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Verse Dominion - Lykash" id="d613-04c8-2d2a-ad30" hidden="false">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="6599-a7ba-6194-ca1e" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f7d8-e7cd-86d7-11b1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b0cb-3bce-996f-c9d6" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="ca62-e90a-6397-117e" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="71bb-7f63-d603-9ea1" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="99e3-efa0-8797-0ef5" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="120f-1317-9127-0ab2" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="305d-15e6-800b-65ed" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="f80a-4dd0-1cc0-1eec" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="f80a-4dd0-1cc0-1eec">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Improved Storms and Alloy" id="7ec9-8d3a-9460-30a3" hidden="false">
+          <description>Reroll failed Skimmer Plate rolls</description>
+        </rule>
+      </rules>
+    </forceEntry>
+    <forceEntry name="Verse Dominion - Sothis" id="9157-68b5-c810-e816" hidden="false">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="62dd-a7e5-1f54-aa68" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8d08-8b6c-38d5-23f8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1202-3afa-0bb3-271f" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="7b59-7441-8917-9fba" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="620a-2a2e-68e5-5b24" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5ab4-8c08-237d-57ab" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="2cee-26b5-4c5e-b1aa" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="33d5-3426-34b5-1df6" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="4e7c-e348-3024-e92a" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="4e7c-e348-3024-e92a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Pious Devotees" id="e0d8-b50b-2806-a232" hidden="false">
+          <description>Sothis Ringleader Units and and Reaver Archons increase their Zealot range to 8&quot;. In addition all Squads unaffected by the Zealot ability can reroll failed Discipline rolls of a 1-2</description>
+        </rule>
+      </rules>
+    </forceEntry>
+    <forceEntry name="Verse Dominion - Cicero" id="47cc-7e91-2c13-0980" hidden="false">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="3889-d015-b11b-1f0b" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="09dc-07c6-0e65-21b7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8482-c10a-fe60-aba7" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="24b1-aad9-d97b-5b9f" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="8cb8-883d-b695-7212" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="499a-261f-d832-a387" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="38cc-c79e-c720-9246" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3ccf-9c83-36c7-fa5f" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="6aee-ddb9-af48-4edc" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="6aee-ddb9-af48-4edc">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Mutagens" id="5e42-70e0-d7e9-ea28" hidden="false">
+          <description>Cicero Squads may reroll failed Vhokys Drugs rolls</description>
+        </rule>
+      </rules>
+    </forceEntry>
+    <forceEntry name="Verse Dominion - Spire" id="a536-d90d-bbf3-bd6c" hidden="false">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="6927-bb8a-a1d2-edc9" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4393-3d45-c7f4-8846" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="19b9-3156-de62-ae7d" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="1db5-a6cc-ac7b-e8f2" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="bc6f-478d-5308-f8a1" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="56d3-75fd-d02d-bf6a" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="702e-2b0b-841d-b2e6" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8cda-be36-f49c-ba0d" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="bace-d416-b490-83b6" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="bace-d416-b490-83b6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <rules>
+        <rule name="Advanced Shock Tech" id="92fa-1fed-b8f9-c1f1" hidden="false">
+          <description>Spire Shock weapons can reroll the damage value generating dice. In addition all Incendiary Grenades lose the Burn ability but gain the Shock Bolt (1) ability</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Shock Bolt (1)" id="6367-3a40-be38-53d3" hidden="false" type="rule" targetId="bad0-9c8b-df01-4061"/>
+      </infoLinks>
+    </forceEntry>
+    <forceEntry name="Verse Dominion - Carnis" id="4043-e1d9-51eb-5d9e" hidden="false">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Purified Formula" id="8564-adb7-8c43-f1a4" hidden="false">
+          <description>Replace the Vhokys Drugs ability with the Carnis Augmentation ability</description>
+        </rule>
+        <rule name="Carnis Augmentation" id="9b33-60ad-f2da-37e8" hidden="false">
+          <description>When this Unit loses an HP, roll a D12; on a 1-2 (1-3 for Goraths) it is ignored. In addition, reroll Storm Damage dice and Accuracy Dice of a 1-2</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="31e9-9bc5-999e-d4e0" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8c52-4a59-5393-c11f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8feb-05b4-37d7-6c63" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="5475-abca-21cf-466e" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="23b0-a8e1-6726-c5ba" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="65ed-1fd5-e9a2-6bfe" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="474b-e451-f628-c697" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e326-7f68-8e64-cb0e" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="d12e-6467-e15a-2cda" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="d12e-6467-e15a-2cda">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Verse Dominion Lib" id="4c38-3b4b-7b89-24f1" targetId="f78a-9b71-02cb-0454"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Ringleader Command Unit" hidden="false" id="e585-e046-b328-fd12" type="selectionEntry" targetId="e5b4-9e79-0e22-840e">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="ce3e-7607-a8b5-a84c" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="424d-cf07-b8b5-f54a" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d5bd-e03b-7a1a-930c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Ringleader Command Unit" hidden="false" id="5f1f-17d9-1ff6-58b2" type="selectionEntry" targetId="e5b4-9e79-0e22-840e">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="424d-cf07-b8b5-f54a" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d5bd-e03b-7a1a-930c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="ffdd-5817-790a-f32a" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ringleader Command Unit" hidden="false" id="296a-053d-27fe-4532" type="selectionEntry" targetId="e5b4-9e79-0e22-840e">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="49af-e0a5-fd93-5a47" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Archon" hidden="false" id="424d-cf07-b8b5-f54a" type="selectionEntry" targetId="727b-1679-dfae-adf7">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="d2a9-dd9d-8398-d274" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="45"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Reaver Archon" hidden="false" id="06d8-0a04-c333-3230" type="selectionEntry" targetId="727b-1679-dfae-adf7">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="e6eb-4768-828f-a5e7" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="45"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Archon" hidden="false" id="4cfc-b4c3-68ba-c4c2" type="selectionEntry" targetId="727b-1679-dfae-adf7">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="353a-d402-b0c3-323d" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="45"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Rhino Dominus" hidden="false" id="d5bd-e03b-7a1a-930c" type="selectionEntry" targetId="bbc3-573d-de68-ef57">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="a645-2001-97ac-358d" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="120"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Rhino Dominus" hidden="false" id="b8e2-49f7-7a7c-8845" type="selectionEntry" targetId="bbc3-573d-de68-ef57">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="c982-beb1-a5a6-549e" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="120"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Rhino Dominus" hidden="false" id="aae9-0d00-cab3-5684" type="selectionEntry" targetId="bbc3-573d-de68-ef57">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="2a77-b165-00c3-25cc" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="120"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="426e-0956-f6a7-0b71" type="selectionEntry" targetId="2e0e-55ff-1cf7-4064">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="9" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="424d-cf07-b8b5-f54a" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d5bd-e03b-7a1a-930c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="78c2-1fff-366c-f7be" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="58"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="a953-9c62-ff4d-a00b" type="selectionEntry" targetId="2e0e-55ff-1cf7-4064">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="9" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="b1d5-e4b8-c24a-f9b3" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="58"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Utegon Assault Mutants" hidden="false" id="864f-2892-b0a8-c47f" type="selectionEntry" targetId="2b36-413e-1cc2-9506">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="20" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="40" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="93b0-c96c-4503-7f75" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="40"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Gorath Shock Mutants" hidden="false" id="ebb5-47c6-2adf-527f" type="selectionEntry" targetId="b32e-82b4-01ba-5187">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="3f2f-d85b-45d5-2d4b" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="e392-f906-d5e0-eb00" type="selectionEntry" targetId="88c3-9a4b-90e8-0ab0">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="eb88-5e78-e8ae-d0e4" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="5aa9-5f69-ef6d-a971" type="selectionEntry" targetId="88c3-9a4b-90e8-0ab0">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8385-3e9e-2c7f-e7bf" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Rocket Buggy" hidden="false" id="0a5f-5a10-1fce-7b91" type="selectionEntry" targetId="3fe6-695d-eb84-da2a">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="6c37-2eaa-b7e4-979e" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Reaver Rocket Buggy" hidden="false" id="5f30-234d-5acb-e02c" type="selectionEntry" targetId="3fe6-695d-eb84-da2a">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="cb4a-9805-8093-5a6d" primary="true" name="Support Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rhino Assault Tank" hidden="false" id="0ccd-4868-4926-22ca" type="selectionEntry" targetId="f138-8dd4-ed7d-aefa">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="4206-d340-dec9-bf43" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="85"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Rhino Assault Tank" hidden="false" id="3e7a-8d54-64f5-3e8b" type="selectionEntry" targetId="f138-8dd4-ed7d-aefa">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c953-f7a4-3189-73de" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="85"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Taurus APC" hidden="false" id="df24-ccc1-be0f-4939" type="selectionEntry" targetId="3961-7778-e1f4-b512">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="34c3-0ba7-a56e-0add" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Taurus APC" hidden="false" id="d3bd-4758-9e51-34ef" type="selectionEntry" targetId="3961-7778-e1f4-b512">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="10e5-88a7-1113-c43c" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+  </entryLinks>
+</catalogue>
