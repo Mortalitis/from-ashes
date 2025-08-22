@@ -133,5 +133,8 @@
     <rule name="Thermobaric" id="7115-a696-463f-0f0b" hidden="false">
       <description>Ignores terrain Armour bonuses and Units in terrain must reroll successful Armour saves</description>
     </rule>
+    <rule name="Transport [6x Infantry]" id="2871-d593-3956-ca1e" hidden="false">
+      <description>See the Unit Abilities section of the main From Ashes rules</description>
+    </rule>
   </sharedRules>
 </gameSystem>
