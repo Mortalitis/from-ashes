@@ -70,7 +70,7 @@
     <rule name="Assault Move (5&quot;, Stabilised)" id="057f-77b8-2c9e-e67b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
       <description>See the Weapons Special Rules section of the main From Ashes rules</description>
     </rule>
-    <rule name="Assault Move (4&quot;)" id="aaff-02cd-c899-c6d0" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
+    <rule name="Assault Move (3&quot;)" id="aaff-02cd-c899-c6d0" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
       <description>See the Weapons Special Rules section of the main From Ashes rules</description>
     </rule>
     <rule name="Smokescreen" id="67d7-fb01-15af-53b1" hidden="false" page="19">
@@ -117,6 +117,12 @@
     </rule>
     <rule name="Anti-Armour" id="9c3e-550c-cf1d-5745" hidden="false">
       <description>Units with an Enclosed value of 1 or more must reroll successful Armour saves against hits from this weapon</description>
+    </rule>
+    <rule name="Assault Move (4&quot;)" id="0c3f-c936-3653-194b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
+      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Full Auto" id="fc3f-a880-8a26-e2f4" hidden="false">
+      <description>Before rolling Attacks you may choose to reroll Accuracy dice but the target may reroll failed Armour saves</description>
     </rule>
   </sharedRules>
 </gameSystem>

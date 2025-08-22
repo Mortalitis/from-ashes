@@ -296,5 +296,77 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="426e-0956-f6a7-0b71" type="selectionEntry" targetId="2e0e-55ff-1cf7-4064">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="9" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="727b-1679-dfae-adf7" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bbc3-573d-de68-ef57" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="78c2-1fff-366c-f7be" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="58"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="a953-9c62-ff4d-a00b" type="selectionEntry" targetId="2e0e-55ff-1cf7-4064">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="9" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="b1d5-e4b8-c24a-f9b3" primary="true" name="Additional Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="58"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+    </entryLink>
   </entryLinks>
 </catalogue>
