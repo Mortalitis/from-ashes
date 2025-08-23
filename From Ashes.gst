@@ -193,6 +193,33 @@
     <rule name="Rapid Fire (16&quot;/11+)" id="4e93-d3ff-d8ad-31a1" hidden="false">
       <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
     </rule>
+    <rule name="AA Weapon" id="de2d-a740-8992-c1e9" hidden="false">
+      <description>When targeting Flyers roll a Skill Test for this Squad. If passed ignore the Distant Target rule</description>
+    </rule>
+    <rule name="Burst Fire (6)" id="fcc7-8395-859d-e7ac" hidden="false">
+      <description>If this weapon has not yet been used this turn, the owning player can choose to increase it&apos;s Attacks to 6, bit cannot be used again for the rest of the turn</description>
+    </rule>
+    <rule name="Radar" id="94dc-2e38-a987-6eb0" hidden="false">
+      <description>This weapon ignores Flyer Unit&apos;s Arial Target Flyer rule</description>
+    </rule>
+    <rule name="Lock-On" id="6fdf-1f44-b7bb-0294" hidden="false">
+      <description>Reroll failed Accuracy rolls against Flyers with Enclosed 1+</description>
+    </rule>
+    <rule name="Command Post" id="063d-ef93-56a8-ac09" hidden="false">
+      <description>Mounted Leader&apos;s have the Raven&apos;s LOS and increase their Leader range to 18&quot;. This stacks with similar effects.</description>
+    </rule>
+    <rule name="Unique Command: Comms Jammer" id="2ef4-fe65-027e-ef27" hidden="false">
+      <description>When a Squad passes a Discipline test to take an Order, the Raven may attempt a Discipline test (this is automatically passed if within the Raven&apos;s Leader range) - if passed, the Ordered Squad must successfully pass an additional Discipline test otherwise the Order is lost. This Ability may come from the Raven&apos;s Order capacity instead of it&apos;s Commands</description>
+    </rule>
+    <rule name="Crew Operated" id="b917-605b-a7b8-acf7" hidden="false">
+      <description>Use the transported Unit&apos;s best Discipline value for the Drop Pod&apos;s Discipline</description>
+    </rule>
+    <rule name="Orbital Drop" id="7930-2bd6-c120-a01a" hidden="false">
+      <description>This Squad must always be deployed at the FOB. The first time it activates it uses the Scatter ability from the Unit Abilities section of the main From Ashes rules instead of a normal Command. Once it has landed it counts as a Vehicle instead of a Flyer and cannot be chosen to activate for the rest of the battle.</description>
+    </rule>
+    <rule name="Auxiliary" id="79e3-d0fa-6443-e95c" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
+      <description>This Unity is not counted when establishing the Detachment&apos;s Morale Value or counted towards Routed when destroyed</description>
+    </rule>
   </sharedRules>
   <infoLinks>
     <infoLink name="Top Attack (10+)" id="b661-7fc0-05e2-f8f2" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>

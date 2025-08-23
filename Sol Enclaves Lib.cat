@@ -357,7 +357,7 @@
               <infoLinks>
                 <infoLink name="Heavy Weapon" id="aebe-3c3c-6659-08eb" hidden="false" type="rule" targetId="b189-6327-964b-4a61"/>
                 <infoLink name="Optics" id="d311-062c-a27b-2270" hidden="false" type="rule" targetId="190b-27d3-420f-919f"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="9269-a439-5e51-8ea5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="9269-a439-5e51-8ea5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="M13 Pistols" hidden="false" id="68c8-8a9f-6b7d-d9e9" sortIndex="2">
@@ -630,7 +630,7 @@
               <infoLinks>
                 <infoLink name="Heavy Weapon" id="3489-913a-dcdd-7336" hidden="false" type="rule" targetId="b189-6327-964b-4a61"/>
                 <infoLink name="Optics" id="3904-c8b7-744f-1801" hidden="false" type="rule" targetId="190b-27d3-420f-919f"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="fb55-c198-cb85-dcbd" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="fb55-c198-cb85-dcbd" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="M13 Pistols" hidden="false" id="0cac-7c4f-40a5-313f" sortIndex="2">
@@ -1345,7 +1345,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="8b97-3ae3-50cb-78c8" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="63e3-2f9e-b4d0-3764" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="63e3-2f9e-b4d0-3764" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="da18-f8c2-e758-9d81" hidden="false">
@@ -1518,7 +1518,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="5c25-5b17-d31c-2ea8" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="6421-9661-c8cc-ffc7" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="6421-9661-c8cc-ffc7" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="5bf5-34b0-a854-8f13" hidden="false">
@@ -1821,7 +1821,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="a83d-d46a-15db-dbbd" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="b290-7a3c-ac40-98e6" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="b290-7a3c-ac40-98e6" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="0efb-6826-81c2-070b" hidden="false">
@@ -1978,7 +1978,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="e6c5-6379-40a3-7f32" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="62a9-c108-acf1-4c97" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="62a9-c108-acf1-4c97" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="500a-1682-e30e-7e63" hidden="false">
@@ -2144,7 +2144,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="9a7c-dbef-302f-5ee1" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="e8c4-a7d1-0d73-6959" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="e8c4-a7d1-0d73-6959" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="62b5-0c2a-1deb-6bc3" hidden="false">
@@ -2311,7 +2311,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="de23-6a76-9b30-dee4" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="17f0-0584-0870-66b5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="17f0-0584-0870-66b5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="9a42-05fa-7a62-a79d" hidden="false">
@@ -2404,24 +2404,6 @@
     </rule>
     <rule name="Fast Embark" id="34d1-6538-e9ef-8925" hidden="false">
       <description>Squads may mount this Unit as a Reaction as part of Step 2 of an enemy Storm Command</description>
-    </rule>
-    <rule name="Command Post" id="063d-ef93-56a8-ac09" hidden="false">
-      <description>Mounted Leader&apos;s have the Raven&apos;s LOS and increase their Leader range to 18&quot;. This stacks with similar effects.</description>
-    </rule>
-    <rule name="Unique Command: Comms Jammer" id="2ef4-fe65-027e-ef27" hidden="false">
-      <description>When a Squad passes a Discipline test to take an Order, the Raven may attempt a Discipline test (this is automatically passed if within the Raven&apos;s Leader range) - if passed, the Ordered Squad must successfully pass an additional Discipline test otherwise the Order is lost. This Ability may come from the Raven&apos;s Order capacity instead of it&apos;s Commands</description>
-    </rule>
-    <rule name="Burst Fire (6)" id="fcc7-8395-859d-e7ac" hidden="false">
-      <description>If this weapon has not yet been used this turn, the owning player can choose to increase it&apos;s Attacks to 6, bit cannot be used again for the rest of the turn</description>
-    </rule>
-    <rule name="Radar" id="94dc-2e38-a987-6eb0" hidden="false">
-      <description>This weapon ignores Flyer Unit&apos;s Arial Target Flyer rule</description>
-    </rule>
-    <rule name="AA Weapon" id="de2d-a740-8992-c1e9" hidden="false">
-      <description>When targeting Flyers roll a Skill Test for this Squad. If passed ignore the Distant Target rule</description>
-    </rule>
-    <rule name="Lock-On" id="6fdf-1f44-b7bb-0294" hidden="false">
-      <description>Reroll failed Accuracy rolls against Flyers with Enclosed 1+</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>

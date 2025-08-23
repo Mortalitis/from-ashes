@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -1018,9 +1018,6 @@
     <rule name="Arc Burst" id="ddab-d8a7-4b0b-e7c9" hidden="false">
       <description>Place a Blast Marker by the target for each HP Lost (if destroyed, place the marker before the target is removed)</description>
     </rule>
-    <rule name="Auxiliary" id="79e3-d0fa-6443-e95c" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
-      <description>This Unity is not counted when establishing the Detachment&apos;s Morale Value or counted towards Routed when destroyed</description>
-    </rule>
     <rule name="Berserk" id="b4a2-e55e-16dd-7c10" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
       <description>This Unit receives two Storm bonus Attacks instead of one. Additionally when this Squad starts a Command (including Overwatch) within 8&quot; if an enemy Unit, roll a Discipline test. If passed this Unit acts as normal otherwise they must attempt to Storm the closest enemy Unit</description>
     </rule>
@@ -1099,12 +1096,6 @@
     </rule>
     <rule name="Transport (1x Infantry, excl. Hunchback and Centaurs)" id="0921-0554-301a-9f6b" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="23">
       <description>See the Unit Abilities section of the main From Ashes rules</description>
-    </rule>
-    <rule name="Orbital Drop" id="7930-2bd6-c120-a01a" hidden="false">
-      <description>This Squad must always be deployed at the FOB. The first time it activates it uses the Scatter ability from the Unit Abilities section of the main From Ashes rules instead of a normal Command. Once it has landed it counts as a Vehicle instead of a Flyer and cannot be chosen to activate for the rest of the battle.</description>
-    </rule>
-    <rule name="Crew Operated" id="b917-605b-a7b8-acf7" hidden="false">
-      <description>Use the transported Unit&apos;s best Discipline value for the Drop Pod&apos;s Discipline</description>
     </rule>
     <rule name="Individual Craft" id="1486-c434-3e19-a28a" hidden="false">
       <description>Hits allocated to this Unit only ever generate 1 Damage Dice per Hit. In addition, whenever this Unit loses an HP, a Unit mounted within also loses an HP.</description>
