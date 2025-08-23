@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -1257,6 +1257,9 @@
             <cost name="Req" typeId="Requisition" value="5"/>
             <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Compound Optics" id="31ec-1cb9-1a75-dbe5" hidden="false" type="rule" targetId="1d8a-ce56-2e1b-e77d"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
