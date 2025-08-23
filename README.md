@@ -7,8 +7,7 @@ Progress
 - Xeraak Triarchy: First pass completed
 - Verse Dominion: First pass completed
 - Sol Enclaves/Sol Enclaves (Paragons of Old Earth): First pass completed
-
-- Scaryn Federated Alliance (SFA): In Progress
+- Scaryn Federated Alliance (SFA): First pass completed
 
 - Devin Pact: TO-DO
 - Sol Enclaves (Dominion Vassal): TO-DO
