@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -11,7 +11,7 @@
     <publication name="From Ashes Main Rules" id="5652-0742-890a-1e22" hidden="false" publisher="From-Ashes-Main-Rules-0.1.2.pdf" publisherUrl="https://voidscarminiatures.com/from-ashes-rules-downloads/" shortName="From Ashes Main Rules" publicationDate="2 July 2025"/>
   </publications>
   <costTypes>
-    <costType name="Req" id="Requisition" defaultCostLimit="0"/>
+    <costType name="Req" id="Requisition" defaultCostLimit="500"/>
     <costType name="Morale" id="32f3-2311-8978-b603" defaultCostLimit="-1" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -124,8 +124,8 @@
     <rule name="Full Auto" id="fc3f-a880-8a26-e2f4" hidden="false">
       <description>Before rolling Attacks you may choose to reroll Accuracy dice but the target may reroll failed Armour saves</description>
     </rule>
-    <rule name="Rapid Fire (16&quot;/11+)" id="3ba9-85cd-b8fc-eab2" hidden="false">
-      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    <rule name="Rapid Fire (8&quot;/10+)" id="3ba9-85cd-b8fc-eab2" hidden="false">
+      <description>When Engaging targets within 8&quot; Accuracy rolls of 10+ (after rerolls) become 2 hits instead of 1</description>
     </rule>
     <rule name="Ripple Fire" id="f106-284c-05d9-c8ee" hidden="false">
       <description>Reroll Accuracy rolls of a 1-2</description>
@@ -172,5 +172,57 @@
     <rule name="High Explosive" id="b359-6a8f-90e3-aa49" hidden="false">
       <description>Any surplus Damage dice may be used against the next enemy Unit in the target Squad</description>
     </rule>
+    <rule name="Top Attack (10+)" id="b485-729f-0972-dde8" hidden="false">
+      <description>If this weapon&apos;s Accuracy roll scores an 10+ and successfully hits, the attacking player may choose which arc is hit, regardless of whichever arc they are currently in</description>
+    </rule>
+    <rule name="Top Attack (11+)" id="fa30-8339-09cc-55d5" hidden="false">
+      <description>If this weapon&apos;s Accuracy roll scores an 11+ and successfully hits, the attacking player may choose which arc is hit, regardless of whichever arc they are currently in</description>
+    </rule>
+    <rule name="Unique Command: Boost the Signal" id="f216-6748-8ce2-4ed9" hidden="false">
+      <description>Increase this Squad&apos;s Leader range by 12&quot; for the rest of the turn</description>
+    </rule>
+    <rule name="Radio" id="c624-2e96-d693-89ce" hidden="false">
+      <description>Any Friendly Leader can extend their Leader range by 4&quot; when attempting to Order this Squad</description>
+    </rule>
+    <rule name="Sidearms" id="6a33-85d0-d353-5615" hidden="false">
+      <description>See Unit Abilities from the main From Ashes rules</description>
+    </rule>
+    <rule name="Kinetic Energy Round" id="5d71-8226-7401-ef0e" hidden="false">
+      <description>Ignores Fast Target and add the targets Enclosed value to the AP value of this weapon</description>
+    </rule>
+    <rule name="Rapid Fire (16&quot;/11+)" id="4e93-d3ff-d8ad-31a1" hidden="false">
+      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    </rule>
+    <rule name="AA Weapon" id="de2d-a740-8992-c1e9" hidden="false">
+      <description>When targeting Flyers roll a Skill Test for this Squad. If passed ignore the Distant Target rule</description>
+    </rule>
+    <rule name="Burst Fire (6)" id="fcc7-8395-859d-e7ac" hidden="false">
+      <description>If this weapon has not yet been used this turn, the owning player can choose to increase it&apos;s Attacks to 6, bit cannot be used again for the rest of the turn</description>
+    </rule>
+    <rule name="Radar" id="94dc-2e38-a987-6eb0" hidden="false">
+      <description>This weapon ignores Flyer Unit&apos;s Arial Target Flyer rule</description>
+    </rule>
+    <rule name="Lock-On" id="6fdf-1f44-b7bb-0294" hidden="false">
+      <description>Reroll failed Accuracy rolls against Flyers with Enclosed 1+</description>
+    </rule>
+    <rule name="Command Post" id="063d-ef93-56a8-ac09" hidden="false">
+      <description>Mounted Leader&apos;s have the Raven&apos;s LOS and increase their Leader range to 18&quot;. This stacks with similar effects.</description>
+    </rule>
+    <rule name="Unique Command: Comms Jammer" id="2ef4-fe65-027e-ef27" hidden="false">
+      <description>When a Squad passes a Discipline test to take an Order, the Raven may attempt a Discipline test (this is automatically passed if within the Raven&apos;s Leader range) - if passed, the Ordered Squad must successfully pass an additional Discipline test otherwise the Order is lost. This Ability may come from the Raven&apos;s Order capacity instead of it&apos;s Commands</description>
+    </rule>
+    <rule name="Crew Operated" id="b917-605b-a7b8-acf7" hidden="false">
+      <description>Use the transported Unit&apos;s best Discipline value for the Drop Pod&apos;s Discipline</description>
+    </rule>
+    <rule name="Orbital Drop" id="7930-2bd6-c120-a01a" hidden="false">
+      <description>This Squad must always be deployed at the FOB. The first time it activates it uses the Scatter ability from the Unit Abilities section of the main From Ashes rules instead of a normal Command. Once it has landed it counts as a Vehicle instead of a Flyer and cannot be chosen to activate for the rest of the battle.</description>
+    </rule>
+    <rule name="Auxiliary" id="79e3-d0fa-6443-e95c" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
+      <description>This Unity is not counted when establishing the Detachment&apos;s Morale Value or counted towards Routed when destroyed</description>
+    </rule>
   </sharedRules>
+  <infoLinks>
+    <infoLink name="Top Attack (10+)" id="b661-7fc0-05e2-f8f2" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
+    <infoLink name="Top Attack (10+)" id="2f2d-49cc-7b6c-b8ab" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
+  </infoLinks>
 </gameSystem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="30d3-125d-4f6c-158d" name="Sol Enclaves Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="30d3-125d-4f6c-158d" name="Sol Enclaves Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Guardsmen Command Unit" hidden="false" id="0d27-a4eb-b89b-83ef">
       <selectionEntries>
@@ -82,7 +82,7 @@
           </selectionEntries>
           <infoLinks>
             <infoLink name="Leader [12&quot;]" id="b0d7-822a-17b1-9b4a" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
-            <infoLink name="Unique Command - Boost the Signal" id="8439-bb23-3bd9-55fc" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
+            <infoLink name="Unique Command: Boost the Signal" id="8439-bb23-3bd9-55fc" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
             <infoLink name="Heirloom Scimitar" id="946e-c39e-1945-bbec" hidden="false" type="rule" targetId="ca6d-a21a-e8ef-6fc8"/>
             <infoLink name="Guard" id="eb64-f941-cb84-d9ee" hidden="false" type="rule" targetId="1d70-9615-1292-a2bc"/>
             <infoLink name="Inspirational Hero" id="bc6a-1f91-9c2f-2b20" hidden="false" type="rule" targetId="c5cc-2701-61d1-b83b"/>
@@ -357,7 +357,7 @@
               <infoLinks>
                 <infoLink name="Heavy Weapon" id="aebe-3c3c-6659-08eb" hidden="false" type="rule" targetId="b189-6327-964b-4a61"/>
                 <infoLink name="Optics" id="d311-062c-a27b-2270" hidden="false" type="rule" targetId="190b-27d3-420f-919f"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="9269-a439-5e51-8ea5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="9269-a439-5e51-8ea5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="M13 Pistols" hidden="false" id="68c8-8a9f-6b7d-d9e9" sortIndex="2">
@@ -630,7 +630,7 @@
               <infoLinks>
                 <infoLink name="Heavy Weapon" id="3489-913a-dcdd-7336" hidden="false" type="rule" targetId="b189-6327-964b-4a61"/>
                 <infoLink name="Optics" id="3904-c8b7-744f-1801" hidden="false" type="rule" targetId="190b-27d3-420f-919f"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="fb55-c198-cb85-dcbd" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="fb55-c198-cb85-dcbd" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="M13 Pistols" hidden="false" id="0cac-7c4f-40a5-313f" sortIndex="2">
@@ -1345,7 +1345,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="8b97-3ae3-50cb-78c8" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="63e3-2f9e-b4d0-3764" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="63e3-2f9e-b4d0-3764" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="da18-f8c2-e758-9d81" hidden="false">
@@ -1518,7 +1518,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="5c25-5b17-d31c-2ea8" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="6421-9661-c8cc-ffc7" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="6421-9661-c8cc-ffc7" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="5bf5-34b0-a854-8f13" hidden="false">
@@ -1821,7 +1821,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="a83d-d46a-15db-dbbd" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="b290-7a3c-ac40-98e6" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="b290-7a3c-ac40-98e6" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="0efb-6826-81c2-070b" hidden="false">
@@ -1978,7 +1978,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="e6c5-6379-40a3-7f32" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="62a9-c108-acf1-4c97" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="62a9-c108-acf1-4c97" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="500a-1682-e30e-7e63" hidden="false">
@@ -2144,7 +2144,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="9a7c-dbef-302f-5ee1" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="e8c4-a7d1-0d73-6959" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="e8c4-a7d1-0d73-6959" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="62b5-0c2a-1deb-6bc3" hidden="false">
@@ -2165,7 +2165,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="06ba-3a53-fb11-2624" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Paragons Anvil Tank Crew" hidden="false" id="2b53-be01-f01b-d4ad" type="selectionEntry" targetId="9659-7622-eca0-3610" sortIndex="5">
+            <entryLink import="true" name="Paragon Anvil Tank Crew" hidden="false" id="2b53-be01-f01b-d4ad" type="selectionEntry" targetId="9659-7622-eca0-3610" sortIndex="5">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1487-0e0c-4c5a-1fde" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ba0-38f3-9495-9975" includeChildSelections="false"/>
@@ -2311,7 +2311,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="de23-6a76-9b30-dee4" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Rapid Fire (16&quot;/11+)" id="17f0-0584-0870-66b5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
+                <infoLink name="Rapid Fire (8&quot;/10+)" id="17f0-0584-0870-66b5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
               <rules>
                 <rule name="Coaxial" id="9a42-05fa-7a62-a79d" hidden="false">
@@ -2341,7 +2341,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7afd-3e05-99f6-629a-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Paragons Anvil Tank Crew" hidden="false" id="caa4-1aea-f1be-3271" type="selectionEntry" targetId="9659-7622-eca0-3610">
+            <entryLink import="true" name="Paragon Anvil Tank Crew" hidden="false" id="caa4-1aea-f1be-3271" type="selectionEntry" targetId="9659-7622-eca0-3610">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8ceb-a8f7-fe6e-7ba8" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eb9-9e32-3e1a-f439" includeChildSelections="false"/>
@@ -2363,17 +2363,11 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule name="Unique Command: Boost the Signal" id="f216-6748-8ce2-4ed9" hidden="false">
-      <description>Increase this Squad&apos;s Leader range by 12&quot; for the rest of the turn</description>
-    </rule>
     <rule name="Heirloom Scimitar" id="ca6d-a21a-e8ef-6fc8" hidden="false">
       <description>For each successful Storm hit, roll another Storm Attack. These Attacks do not roll again however.</description>
     </rule>
     <rule name="Inspirational Hero" id="c5cc-2701-61d1-b83b" hidden="false">
       <description>When this Squad is dismounted, friendly dismounted Squads within 5&quot; can change their Discipline value to 4+</description>
-    </rule>
-    <rule name="Radio" id="c624-2e96-d693-89ce" hidden="false">
-      <description>Any Friendly Leader can extend their Leader range by 4&quot; when attempting to Order this Squad</description>
     </rule>
     <rule name="Salvo Fire" id="de0e-e787-5d69-47d1" hidden="false">
       <description>If this Unit has full HP and this weapon has not been used this turn, the owning player can choose to increase its Attacks to 2 but cannot be used for the rest of the turn</description>
@@ -2410,27 +2404,6 @@
     </rule>
     <rule name="Fast Embark" id="34d1-6538-e9ef-8925" hidden="false">
       <description>Squads may mount this Unit as a Reaction as part of Step 2 of an enemy Storm Command</description>
-    </rule>
-    <rule name="Command Post" id="063d-ef93-56a8-ac09" hidden="false">
-      <description>Mounted Leader&apos;s have the Raven&apos;s LOS and increase their Leader range to 18&quot;. This stacks with similar effects.</description>
-    </rule>
-    <rule name="Unique Command: Comms Jammer" id="2ef4-fe65-027e-ef27" hidden="false">
-      <description>When a Squad passes a Discipline test to take an Order, the Raven may attempt a Discipline test (this is automatically passed if within the Raven&apos;s Leader range) - if passed, the Ordered Squad must successfully pass an additional Discipline test otherwise the Order is lost. This Ability may come from the Raven&apos;s Order capacity instead of it&apos;s Commands</description>
-    </rule>
-    <rule name="Burst Fire (6)" id="fcc7-8395-859d-e7ac" hidden="false">
-      <description>If this weapon has not yet been used this turn, the owning player can choose to increase it&apos;s Attacks to 6, bit cannot be used again for the rest of the turn</description>
-    </rule>
-    <rule name="Radar" id="94dc-2e38-a987-6eb0" hidden="false">
-      <description>This weapon ignores Flyer Unit&apos;s Arial Target Flyer rule</description>
-    </rule>
-    <rule name="AA Weapon" id="de2d-a740-8992-c1e9" hidden="false">
-      <description>When targeting Flyers roll a Skill Test for this Squad. If passed ignore the Distant Target rule</description>
-    </rule>
-    <rule name="Lock-On" id="6fdf-1f44-b7bb-0294" hidden="false">
-      <description>Reroll failed Accuracy rolls against Flyers with Enclosed 1+</description>
-    </rule>
-    <rule name="Kinetic Energy Round" id="5d71-8226-7401-ef0e" hidden="false">
-      <description>Ignores Fast Target and add the targets Enclosed value to the AP value of this weapon</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
@@ -2473,8 +2446,7 @@
               <description>Instead of being bought as its own Unit this model from the Guardsmen Command Unit must be attached to another Sol Enclave Guardsmen Riflemen or Anti-Tank Squad. This model needs to be glued onto the base of one of the host Squad&apos;s Units who have an HP of no more than 3. This Unit now benefits from the following:
 - Increase HP by 1 (does not increase the number of attacks when firing M606 rockets)
 - Increase any Leader ability range in the same Squad by 4&quot;
-- Receives the Radio and Unique Command: Boost the Signal abilities
-</description>
+- Receives the Radio and Unique Command: Boost the Signal abilities</description>
             </rule>
           </rules>
           <infoLinks>
@@ -2489,12 +2461,12 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Hammerhead Upgrades" id="3637-befc-cf0b-7e30" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Rangefinder" hidden="false" id="3c1c-7aba-2a21-d2d9" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
+        <entryLink import="true" name="Rangefinder Upgrade" hidden="false" id="3c1c-7aba-2a21-d2d9" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
           <modifiers>
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Tank Commander" hidden="false" id="c982-5fa5-3da7-9500" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
+        <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="c982-5fa5-3da7-9500" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
           <modifiers>
             <modifier type="set" value="20" field="Requisition"/>
           </modifiers>
@@ -2518,12 +2490,12 @@
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Rangefinder" hidden="false" id="d83e-97ae-c7fb-0c41" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
+        <entryLink import="true" name="Rangefinder Upgrade" hidden="false" id="d83e-97ae-c7fb-0c41" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
           <modifiers>
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Tank Commander" hidden="false" id="6641-6622-7a21-0e8f" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
+        <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="6641-6622-7a21-0e8f" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
           <modifiers>
             <modifier type="set" value="15" field="Requisition"/>
           </modifiers>
@@ -2547,12 +2519,12 @@
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Rangefinder" hidden="false" id="1746-a764-2e13-d66a" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
+        <entryLink import="true" name="Rangefinder Upgrade" hidden="false" id="1746-a764-2e13-d66a" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
           <modifiers>
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Tank Commander" hidden="false" id="45b3-0262-f5a8-4e01" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
+        <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="45b3-0262-f5a8-4e01" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
           <modifiers>
             <modifier type="set" value="15" field="Requisition"/>
           </modifiers>
