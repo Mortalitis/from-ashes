@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -221,8 +221,4 @@
       <description>This Unity is not counted when establishing the Detachment&apos;s Morale Value or counted towards Routed when destroyed</description>
     </rule>
   </sharedRules>
-  <infoLinks>
-    <infoLink name="Top Attack (10+)" id="b661-7fc0-05e2-f8f2" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
-    <infoLink name="Top Attack (10+)" id="2f2d-49cc-7b6c-b8ab" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
-  </infoLinks>
 </gameSystem>
