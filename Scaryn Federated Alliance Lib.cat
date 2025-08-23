@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="36c0-b435-6935-ad36" name="Scaryn Federated Alliance Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Pathfinder Anti-Tank Squad" hidden="false" id="f9ff-7f8d-2e63-09f3"/>
+    <selectionEntry type="unit" import="true" name="Pathfinder LMG Gunners" hidden="false" id="0010-f7fd-c067-b5d3"/>
+    <selectionEntry type="unit" import="true" name="Pathfinder Railgunners" hidden="false" id="a349-4672-bc33-5440"/>
+    <selectionEntry type="unit" import="true" name="Pathfinder Command Unit" hidden="false" id="18a6-c217-6845-bd88"/>
+    <selectionEntry type="unit" import="true" name="Pathfinder Dragoons" hidden="false" id="352d-ad56-297c-64e5"/>
+    <selectionEntry type="unit" import="true" name="Pathfinder Riflemen" hidden="false" id="53fb-b2c4-563b-cd0a"/>
+    <selectionEntry type="upgrade" import="true" name="Pathfinder Medic Upgrade" hidden="false" id="f974-5111-7cd9-bebe"/>
+    <selectionEntry type="unit" import="true" name="Bullfrog APC" hidden="false" id="7a8e-a6d8-b60c-8de1"/>
+    <selectionEntry type="unit" import="true" name="Aurora MRS" hidden="false" id="7863-2d93-d2ad-fd42"/>
+    <selectionEntry type="unit" import="true" name="Grendel APC" hidden="false" id="9d0b-06b9-4f35-65a4"/>
+    <selectionEntry type="unit" import="true" name="Snapdragon SPAAG" hidden="false" id="afb8-8015-b269-d862"/>
+    <selectionEntry type="unit" import="true" name="Raven Command Vehicle" hidden="false" id="0c69-7f1f-bdbf-7096"/>
+    <selectionEntry type="unit" import="true" name="Hammerhead IFV" hidden="false" id="2f08-0717-9d9b-6376"/>
+    <selectionEntry type="unit" import="true" name="Lancer CRV" hidden="false" id="5b64-aa0c-80f8-f5dd"/>
+    <selectionEntry type="unit" import="true" name="Anvil Battle Tank" hidden="false" id="a15a-2066-e584-a0f6"/>
+    <selectionEntry type="unit" import="true" name="Anvil HEMR Battle Tank" hidden="false" id="b68d-839d-dbc5-fa3a"/>
+    <selectionEntry type="unit" import="true" name="Harpoon Glide Pods" hidden="false" id="d29c-3997-abf2-b813"/>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Pathfinder Upgrades" id="e199-403f-7da7-5804" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Pathfinder Medic Upgrade" hidden="false" id="e1e2-5590-0c94-a793" type="selectionEntry" targetId="f974-5111-7cd9-bebe"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pathfinder Officer Upgrade" hidden="false" id="2fcc-efc5-0fb7-18e9"/>
+        <selectionEntry type="upgrade" import="true" name="Pathfinder Radioman Upgrade" hidden="false" id="3a9c-7a9a-9268-21c4"/>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hammerhead/Grendel Upgrades" id="516c-6084-2016-0b83" hidden="false"/>
+    <selectionEntryGroup name="Bullfrog Upgrades" id="8675-c485-3c9d-ddf2" hidden="false"/>
+    <selectionEntryGroup name="Raven Upgrades" id="7649-e56f-26a5-25c6" hidden="false"/>
+    <selectionEntryGroup name="Aurora Upgrades" id="0d7c-164b-496f-f4da" hidden="false"/>
+    <selectionEntryGroup name="Lancer Upgrades" id="f689-923f-dd7a-fb3a" hidden="false"/>
+    <selectionEntryGroup name="Snapdragon Upgrades" id="c5bb-252d-a08e-8d9b" hidden="false"/>
+    <selectionEntryGroup name="Anvil Upgrades" id="88ec-3990-63b1-9d4a" hidden="false"/>
+  </sharedSelectionEntryGroups>
+</catalogue>

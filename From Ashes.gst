@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -11,7 +11,7 @@
     <publication name="From Ashes Main Rules" id="5652-0742-890a-1e22" hidden="false" publisher="From-Ashes-Main-Rules-0.1.2.pdf" publisherUrl="https://voidscarminiatures.com/from-ashes-rules-downloads/" shortName="From Ashes Main Rules" publicationDate="2 July 2025"/>
   </publications>
   <costTypes>
-    <costType name="Req" id="Requisition" defaultCostLimit="0"/>
+    <costType name="Req" id="Requisition" defaultCostLimit="500"/>
     <costType name="Morale" id="32f3-2311-8978-b603" defaultCostLimit="-1" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -171,6 +171,12 @@
     </rule>
     <rule name="High Explosive" id="b359-6a8f-90e3-aa49" hidden="false">
       <description>Any surplus Damage dice may be used against the next enemy Unit in the target Squad</description>
+    </rule>
+    <rule name="Top Attack (10+)" id="b485-729f-0972-dde8" hidden="false">
+      <description>If this weapon&apos;s Accuracy roll scores an 10+ and successfully hits, the attacking player may choose which arc is hit, regardless of whichever arc they are currently in</description>
+    </rule>
+    <rule name="Top Attack (11+)" id="fa30-8339-09cc-55d5" hidden="false">
+      <description>If this weapon&apos;s Accuracy roll scores an 11+ and successfully hits, the attacking player may choose which arc is hit, regardless of whichever arc they are currently in</description>
     </rule>
   </sharedRules>
 </gameSystem>

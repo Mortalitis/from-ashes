@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="30d3-125d-4f6c-158d" name="Sol Enclaves Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="30d3-125d-4f6c-158d" name="Sol Enclaves Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Guardsmen Command Unit" hidden="false" id="0d27-a4eb-b89b-83ef">
       <selectionEntries>
@@ -82,7 +82,7 @@
           </selectionEntries>
           <infoLinks>
             <infoLink name="Leader [12&quot;]" id="b0d7-822a-17b1-9b4a" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
-            <infoLink name="Unique Command - Boost the Signal" id="8439-bb23-3bd9-55fc" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
+            <infoLink name="Unique Command: Boost the Signal" id="8439-bb23-3bd9-55fc" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
             <infoLink name="Heirloom Scimitar" id="946e-c39e-1945-bbec" hidden="false" type="rule" targetId="ca6d-a21a-e8ef-6fc8"/>
             <infoLink name="Guard" id="eb64-f941-cb84-d9ee" hidden="false" type="rule" targetId="1d70-9615-1292-a2bc"/>
             <infoLink name="Inspirational Hero" id="bc6a-1f91-9c2f-2b20" hidden="false" type="rule" targetId="c5cc-2701-61d1-b83b"/>
@@ -2165,7 +2165,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="06ba-3a53-fb11-2624" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Paragons Anvil Tank Crew" hidden="false" id="2b53-be01-f01b-d4ad" type="selectionEntry" targetId="9659-7622-eca0-3610" sortIndex="5">
+            <entryLink import="true" name="Paragon Anvil Tank Crew" hidden="false" id="2b53-be01-f01b-d4ad" type="selectionEntry" targetId="9659-7622-eca0-3610" sortIndex="5">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1487-0e0c-4c5a-1fde" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ba0-38f3-9495-9975" includeChildSelections="false"/>
@@ -2341,7 +2341,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7afd-3e05-99f6-629a-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Paragons Anvil Tank Crew" hidden="false" id="caa4-1aea-f1be-3271" type="selectionEntry" targetId="9659-7622-eca0-3610">
+            <entryLink import="true" name="Paragon Anvil Tank Crew" hidden="false" id="caa4-1aea-f1be-3271" type="selectionEntry" targetId="9659-7622-eca0-3610">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8ceb-a8f7-fe6e-7ba8" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eb9-9e32-3e1a-f439" includeChildSelections="false"/>
@@ -2473,8 +2473,7 @@
               <description>Instead of being bought as its own Unit this model from the Guardsmen Command Unit must be attached to another Sol Enclave Guardsmen Riflemen or Anti-Tank Squad. This model needs to be glued onto the base of one of the host Squad&apos;s Units who have an HP of no more than 3. This Unit now benefits from the following:
 - Increase HP by 1 (does not increase the number of attacks when firing M606 rockets)
 - Increase any Leader ability range in the same Squad by 4&quot;
-- Receives the Radio and Unique Command: Boost the Signal abilities
-</description>
+- Receives the Radio and Unique Command: Boost the Signal abilities</description>
             </rule>
           </rules>
           <infoLinks>
@@ -2489,12 +2488,12 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Hammerhead Upgrades" id="3637-befc-cf0b-7e30" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Rangefinder" hidden="false" id="3c1c-7aba-2a21-d2d9" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
+        <entryLink import="true" name="Rangefinder Upgrade" hidden="false" id="3c1c-7aba-2a21-d2d9" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
           <modifiers>
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Tank Commander" hidden="false" id="c982-5fa5-3da7-9500" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
+        <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="c982-5fa5-3da7-9500" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
           <modifiers>
             <modifier type="set" value="20" field="Requisition"/>
           </modifiers>
@@ -2518,12 +2517,12 @@
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Rangefinder" hidden="false" id="d83e-97ae-c7fb-0c41" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
+        <entryLink import="true" name="Rangefinder Upgrade" hidden="false" id="d83e-97ae-c7fb-0c41" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
           <modifiers>
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Tank Commander" hidden="false" id="6641-6622-7a21-0e8f" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
+        <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="6641-6622-7a21-0e8f" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
           <modifiers>
             <modifier type="set" value="15" field="Requisition"/>
           </modifiers>
@@ -2547,12 +2546,12 @@
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Rangefinder" hidden="false" id="1746-a764-2e13-d66a" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
+        <entryLink import="true" name="Rangefinder Upgrade" hidden="false" id="1746-a764-2e13-d66a" type="selectionEntry" targetId="fcf2-a7c2-fc43-5384">
           <modifiers>
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Tank Commander" hidden="false" id="45b3-0262-f5a8-4e01" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
+        <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="45b3-0262-f5a8-4e01" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
           <modifiers>
             <modifier type="set" value="15" field="Requisition"/>
           </modifiers>
