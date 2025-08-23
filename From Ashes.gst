@@ -124,8 +124,8 @@
     <rule name="Full Auto" id="fc3f-a880-8a26-e2f4" hidden="false">
       <description>Before rolling Attacks you may choose to reroll Accuracy dice but the target may reroll failed Armour saves</description>
     </rule>
-    <rule name="Rapid Fire (16&quot;/11+)" id="3ba9-85cd-b8fc-eab2" hidden="false">
-      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    <rule name="Rapid Fire (8&quot;/10+)" id="3ba9-85cd-b8fc-eab2" hidden="false">
+      <description>When Engaging targets within 8&quot; Accuracy rolls of 10+ (after rerolls) become 2 hits instead of 1</description>
     </rule>
     <rule name="Ripple Fire" id="f106-284c-05d9-c8ee" hidden="false">
       <description>Reroll Accuracy rolls of a 1-2</description>
@@ -178,5 +178,24 @@
     <rule name="Top Attack (11+)" id="fa30-8339-09cc-55d5" hidden="false">
       <description>If this weapon&apos;s Accuracy roll scores an 11+ and successfully hits, the attacking player may choose which arc is hit, regardless of whichever arc they are currently in</description>
     </rule>
+    <rule name="Unique Command: Boost the Signal" id="f216-6748-8ce2-4ed9" hidden="false">
+      <description>Increase this Squad&apos;s Leader range by 12&quot; for the rest of the turn</description>
+    </rule>
+    <rule name="Radio" id="c624-2e96-d693-89ce" hidden="false">
+      <description>Any Friendly Leader can extend their Leader range by 4&quot; when attempting to Order this Squad</description>
+    </rule>
+    <rule name="Sidearms" id="6a33-85d0-d353-5615" hidden="false">
+      <description>See Unit Abilities from the main From Ashes rules</description>
+    </rule>
+    <rule name="Kinetic Energy Round" id="5d71-8226-7401-ef0e" hidden="false">
+      <description>Ignores Fast Target and add the targets Enclosed value to the AP value of this weapon</description>
+    </rule>
+    <rule name="Rapid Fire (16&quot;/11+)" id="4e93-d3ff-d8ad-31a1" hidden="false">
+      <description>When Engaging targets within 16&quot; Accuracy rolls of 11+ (after rerolls) become 2 hits instead of 1</description>
+    </rule>
   </sharedRules>
+  <infoLinks>
+    <infoLink name="Top Attack (10+)" id="b661-7fc0-05e2-f8f2" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
+    <infoLink name="Top Attack (10+)" id="2f2d-49cc-7b6c-b8ab" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
+  </infoLinks>
 </gameSystem>

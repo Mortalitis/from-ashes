@@ -2363,17 +2363,11 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule name="Unique Command: Boost the Signal" id="f216-6748-8ce2-4ed9" hidden="false">
-      <description>Increase this Squad&apos;s Leader range by 12&quot; for the rest of the turn</description>
-    </rule>
     <rule name="Heirloom Scimitar" id="ca6d-a21a-e8ef-6fc8" hidden="false">
       <description>For each successful Storm hit, roll another Storm Attack. These Attacks do not roll again however.</description>
     </rule>
     <rule name="Inspirational Hero" id="c5cc-2701-61d1-b83b" hidden="false">
       <description>When this Squad is dismounted, friendly dismounted Squads within 5&quot; can change their Discipline value to 4+</description>
-    </rule>
-    <rule name="Radio" id="c624-2e96-d693-89ce" hidden="false">
-      <description>Any Friendly Leader can extend their Leader range by 4&quot; when attempting to Order this Squad</description>
     </rule>
     <rule name="Salvo Fire" id="de0e-e787-5d69-47d1" hidden="false">
       <description>If this Unit has full HP and this weapon has not been used this turn, the owning player can choose to increase its Attacks to 2 but cannot be used for the rest of the turn</description>
@@ -2428,9 +2422,6 @@
     </rule>
     <rule name="Lock-On" id="6fdf-1f44-b7bb-0294" hidden="false">
       <description>Reroll failed Accuracy rolls against Flyers with Enclosed 1+</description>
-    </rule>
-    <rule name="Kinetic Energy Round" id="5d71-8226-7401-ef0e" hidden="false">
-      <description>Ignores Fast Target and add the targets Enclosed value to the AP value of this weapon</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>

@@ -6,22 +6,22 @@
   <forceEntries>
     <forceEntry name="Scaryn Federated Alliance" id="9fea-43ee-296a-7fcd" hidden="false">
       <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="2be7-4ec7-8a75-96be" targetId="a9a7-132c-6641-0946" type="categoryEntry">
+        <categoryLink name="Detachment Commander" hidden="false" id="2be7-4ec7-8a75-96be" targetId="a9a7-132c-6641-0946">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb59-8385-ef85-3dfa"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e89b-15e8-a24f-9dd4"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="b366-3d40-4241-0353" targetId="0e7c-b40e-8e07-6f1c" type="categoryEntry">
+        <categoryLink name="Core Squads" hidden="false" id="b366-3d40-4241-0353" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c212-d98b-879d-30df"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5c43-8c7b-3f67-b03f"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5c43-8c7b-3f67-b03f"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="7f15-313a-50ca-d426" targetId="19e5-b1b6-d85b-9709" type="categoryEntry">
+        <categoryLink name="Support Squads" hidden="false" id="7f15-313a-50ca-d426" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="714c-301b-647c-a0de"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="4507-34d7-bc0b-7c19"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4507-34d7-bc0b-7c19"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -37,13 +37,13 @@
         <categoryLink name="Core Squads" hidden="false" id="8b6f-764f-107e-df9f" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="02a8-c768-b8f2-c825"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1028-2dbb-7b39-0d0d"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1028-2dbb-7b39-0d0d"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Support Squads" hidden="false" id="3da0-82cd-4921-7828" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="81fb-b594-d67f-7f76"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="3455-3308-7895-96cb"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3455-3308-7895-96cb"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -68,13 +68,13 @@
         <categoryLink name="Core Squads" hidden="false" id="e78a-0b9d-b9b2-da53" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d6ff-2908-6c5c-a202"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1fac-7341-6d8e-3162"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1fac-7341-6d8e-3162"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Support Squads" hidden="false" id="dbf1-10fe-1431-363f" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5190-8756-43a2-11f8"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="7752-bee0-20fa-63ac"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7752-bee0-20fa-63ac"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -87,6 +87,9 @@
           <description>All Kybal Pathfinders receive the Improved Servo Motors ability and Kybal Vehicle Units upgrade their Stabilisers special rule to Advanced Stabilisers</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Advanced Stabilisers" id="32bf-cc88-177e-ffc5" hidden="false" type="rule" targetId="4959-0133-75f3-a375"/>
+      </infoLinks>
     </forceEntry>
     <forceEntry name="Scaryn Federated Alliance - Deygra" id="e2aa-d0f7-54b0-aa75" hidden="false">
       <categoryLinks>
@@ -99,13 +102,13 @@
         <categoryLink name="Core Squads" hidden="false" id="9aff-b1f9-570a-7eb3" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d962-cbab-11f2-5f96"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="07ee-cb53-b7ca-a993"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="07ee-cb53-b7ca-a993"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Support Squads" hidden="false" id="5e2e-33f8-c999-7169" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8ca9-86fd-70d4-f950"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="5a65-7753-de5d-a5f9"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5a65-7753-de5d-a5f9"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -130,13 +133,13 @@
         <categoryLink name="Core Squads" hidden="false" id="22be-abdd-4b6a-ed78" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6311-f916-23c0-374c"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="700c-7953-33fe-850b"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="700c-7953-33fe-850b"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Support Squads" hidden="false" id="90da-44d9-134a-fddc" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a7b9-c724-2d85-7b16"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="31f7-f84a-0112-69cc"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="31f7-f84a-0112-69cc"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -150,7 +153,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Top Attack (10+)" id="b661-7fc0-05e2-f8f2" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
+        <infoLink name="Top Attack (10+)" id="26ae-61c6-1383-aa36" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
       </infoLinks>
     </forceEntry>
     <forceEntry name="Scaryn Federated Alliance - Borego" id="2de9-e96c-7245-9b96" hidden="false">
@@ -164,13 +167,13 @@
         <categoryLink name="Core Squads" hidden="false" id="2214-7e97-1473-3c43" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f005-058e-aba7-1eef"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0254-e30f-d329-a3f4"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0254-e30f-d329-a3f4"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Support Squads" hidden="false" id="899a-517e-0e76-fc40" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9edf-c3c7-f456-ce98"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="79d9-7218-6461-5c4f"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="79d9-7218-6461-5c4f"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -185,12 +188,48 @@
       </rules>
     </forceEntry>
   </forceEntries>
-  <sharedRules>
-    <rule name="Improved Servo Motors" id="9cfb-a782-32da-e38b" hidden="false">
-      <description>When an Infantry Squad uses Assault Move rill a Discipline test. If passed they move 6&quot; instead of 4&quot;</description>
-    </rule>
-    <rule name="Advanced Stabilisers" id="4959-0133-75f3-a375" hidden="false">
-      <description>When a Squad uses Stabilised roll a Discipline tests. If passed they move their normal move instead of 5&quot;</description>
-    </rule>
-  </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Bullfrog APC" hidden="false" id="a460-c4c6-981d-d1d2" type="selectionEntry" targetId="7a8e-a6d8-b60c-8de1">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="4420-540b-b7f9-4ade" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Borego Mods</comment>
+          <modifiers>
+            <modifier type="set" value="7&quot;" field="863f-c803-2ef3-b555" affects="self.entries.profiles.Unit"/>
+            <modifier type="set" value="12/12/10" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="35"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Bullfrog APC" hidden="false" id="03d7-50c0-73e1-9db6" type="selectionEntry" targetId="7a8e-a6d8-b60c-8de1">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="3aa1-4f2f-770f-c04a" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Borego Mods</comment>
+          <modifiers>
+            <modifier type="set" value="7&quot;" field="863f-c803-2ef3-b555" affects="self.entries.profiles.Unit"/>
+            <modifier type="set" value="12/12/10" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="35"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+  </entryLinks>
 </catalogue>
