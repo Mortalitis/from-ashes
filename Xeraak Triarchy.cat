@@ -24,7 +24,6 @@
         <categoryLink name="Support Squads" hidden="false" id="469e-25ad-b3d7-0fbb" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5523-c239-3c59-392b"/>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="840b-35fa-064b-41a4-min"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="840b-35fa-064b-41a4-max"/>
           </constraints>
           <modifiers>
