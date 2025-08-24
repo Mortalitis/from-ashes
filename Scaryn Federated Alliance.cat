@@ -1,191 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="26d0-ece6-9126-7ee3" name="Scaryn Federated Alliance" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="26d0-ece6-9126-7ee3" name="Scaryn Federated Alliance" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Scaryn Federated Alliance Lib" id="0b4b-306a-53e6-7c0e" targetId="36c0-b435-6935-ad36"/>
   </catalogueLinks>
   <forceEntries>
-    <forceEntry name="Scaryn Federated Alliance" id="9fea-43ee-296a-7fcd" hidden="false">
+    <forceEntry name="Scaryn Federated Alliance" id="79d1-3b5d-0e95-4b15" hidden="false">
       <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="2be7-4ec7-8a75-96be" targetId="a9a7-132c-6641-0946">
+        <categoryLink name="Configuration" hidden="false" id="54c7-6097-15f4-06da" targetId="857e-b03a-a081-0acc" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb59-8385-ef85-3dfa"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e89b-15e8-a24f-9dd4"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3231-4c70-34eb-fd88"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4077-2d92-2b82-f74f"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="b366-3d40-4241-0353" targetId="0e7c-b40e-8e07-6f1c">
+        <categoryLink name="Detachment Commander" hidden="false" id="4dad-0dd7-50b1-42ea" targetId="a9a7-132c-6641-0946" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c212-d98b-879d-30df"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5c43-8c7b-3f67-b03f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89ed-7c76-4379-ecb3"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c5b-f06d-9a3c-e4d1"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="7f15-313a-50ca-d426" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Core Squads" hidden="false" id="01c1-0e11-82b0-3ef0" targetId="0e7c-b40e-8e07-6f1c" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="714c-301b-647c-a0de"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4507-34d7-bc0b-7c19"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3db2-371e-10b7-deed"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5fd7-a677-a29d-6914"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="8071-9606-be3c-1311" targetId="19e5-b1b6-d85b-9709" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="74bb-01fd-3ffe-22c9"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f16c-fdf5-3297-1b83"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Scaryn Federated Alliance - Zenith Alpha" id="929b-a0d4-00ae-3f25" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="59e0-de46-ab20-0384" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7156-c311-8887-e3d9"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="892a-dcfc-fe1f-b5bf"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="8b6f-764f-107e-df9f" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="02a8-c768-b8f2-c825"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1028-2dbb-7b39-0d0d"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="3da0-82cd-4921-7828" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="81fb-b594-d67f-7f76"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3455-3308-7895-96cb"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <rules>
-        <rule name="Mechanised Assault" id="898a-4f04-cbde-fd5b" hidden="false">
-          <description>When a Zenith Alpha Squad dismounts, roll a Discipline test. If passed, the Command counts as coming from the Squad&apos;s Order capacity rather than their Commands. In addition, Zenith Alpha Infantry Squads can Form Up with Zenith Alpha Vehicles.</description>
-        </rule>
-      </rules>
-    </forceEntry>
-    <forceEntry name="Scaryn Federated Alliance - Kybal" id="0db5-a322-07df-85c8" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="4f39-c170-2b3e-6d0f" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66ad-a72f-9371-ab6d"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aba0-029f-2d9d-60e2"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="e78a-0b9d-b9b2-da53" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d6ff-2908-6c5c-a202"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1fac-7341-6d8e-3162"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="dbf1-10fe-1431-363f" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5190-8756-43a2-11f8"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7752-bee0-20fa-63ac"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <rules>
-        <rule name="Shock and Awe" id="e368-31da-56b4-121f" hidden="false">
-          <description>All Kybal Pathfinders receive the Improved Servo Motors ability and Kybal Vehicle Units upgrade their Stabilisers special rule to Advanced Stabilisers</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Advanced Stabilisers" id="32bf-cc88-177e-ffc5" hidden="false" type="rule" targetId="4959-0133-75f3-a375"/>
-      </infoLinks>
-    </forceEntry>
-    <forceEntry name="Scaryn Federated Alliance - Deygra" id="e2aa-d0f7-54b0-aa75" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="0779-cf04-072c-23db" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45fa-d28f-e139-7478"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8166-5e3b-45b8-7d2f"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="9aff-b1f9-570a-7eb3" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d962-cbab-11f2-5f96"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="07ee-cb53-b7ca-a993"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="5e2e-33f8-c999-7169" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8ca9-86fd-70d4-f950"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5a65-7753-de5d-a5f9"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <rules>
-        <rule name="Shoot And Scoot" id="ab0e-a586-ece8-b121" hidden="false">
-          <description>When a Deygra Vehicle Squad finishes an Engage Command (including as part of Stabilised) and before Reactions, it may attempt a Discipline test. If passed, the Squad can immediately Retreat (remembering Vehicle Unit&apos;s global rule Reverse). This Retreat comes from the Order capacity rather than their Commands.</description>
-        </rule>
-      </rules>
-    </forceEntry>
-    <forceEntry name="Scaryn Federated Alliance - Seinar" id="141b-68c3-950d-2d3b" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="c835-e606-baa1-3e8b" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bf3-f37a-6f1d-3619"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5335-8c90-a3cf-c44e"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="22be-abdd-4b6a-ed78" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6311-f916-23c0-374c"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="700c-7953-33fe-850b"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="90da-44d9-134a-fddc" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a7b9-c724-2d85-7b16"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="31f7-f84a-0112-69cc"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <rules>
-        <rule name="Advanced Military Tech" id="4ef1-3e10-151d-424e" hidden="false">
-          <description>Smoke Grenades result in a [Accuracy → 2] instead of [Accuracy → 1]. In Addition, MB17 LAWS, Hammerhead Missile Launchers and Snapdragon Dual Missile Launchers receive the Top Attack special ability</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Top Attack (10+)" id="26ae-61c6-1383-aa36" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
-      </infoLinks>
-    </forceEntry>
-    <forceEntry name="Scaryn Federated Alliance - Borego" id="2de9-e96c-7245-9b96" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="89ed-12e2-c723-2c3c" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8d3-0635-4457-26c3"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00fc-65bf-84e4-6013"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="2214-7e97-1473-3c43" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f005-058e-aba7-1eef"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0254-e30f-d329-a3f4"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="899a-517e-0e76-fc40" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9edf-c3c7-f456-ce98"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="79d9-7218-6461-5c4f"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <rules>
-        <rule name="Urban Fighters" id="5f06-7e03-bed3-c663" hidden="false">
-          <description>Borego Infantry Squads can reroll Discipline tests when attempting to Overwatch. In addition, Borego Vehicles reduce their Move value by 1 but increase their Side Armour by 1</description>
-        </rule>
-      </rules>
     </forceEntry>
   </forceEntries>
   <entryLinks>
@@ -201,7 +46,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -230,7 +75,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -255,7 +100,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -341,7 +186,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -370,7 +215,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -403,7 +248,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -424,7 +269,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -453,7 +298,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -479,7 +324,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -503,7 +348,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -529,7 +374,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -558,7 +403,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -579,7 +424,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -608,7 +453,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -629,7 +474,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -646,7 +491,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -675,7 +520,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -700,7 +545,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -725,7 +570,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -754,7 +599,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -775,7 +620,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -804,7 +649,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -833,7 +678,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -861,7 +706,7 @@
             <modifier type="increment" value="1" field="bb04-e232-a0f9-6503" affects="self.entries.profiles.Unit" position="2"/>
           </modifiers>
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2de9-e96c-7245-9b96" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="f770-f6b4-dc03-30e1" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifierGroup>
       </modifierGroups>
@@ -1522,4 +1367,101 @@
       </modifiers>
     </entryLink>
   </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Subfaction" id="6dfb-3ca6-3cb1-00bc" hidden="false" defaultSelectionEntryId="f4e0-1ede-47e4-1bd0">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="f4e0-1ede-47e4-1bd0" sortIndex="1">
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="92da-68a1-6a04-358c" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Seinar (Advanced Military Tech)" hidden="false" id="9872-12ac-466c-59c7" sortIndex="2">
+          <rules>
+            <rule name="Advanced Military Tech" id="4ef1-3e10-151d-424e" hidden="false">
+              <description>Smoke Grenades result in a [Accuracy → 2] instead of [Accuracy → 1]. In Addition, MB17 LAWS, Hammerhead Missile Launchers and Snapdragon Dual Missile Launchers receive the Top Attack special ability</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Top Attack (10+)" id="26ae-61c6-1383-aa36" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
+          </infoLinks>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="08b7-e9ce-0c60-f5c1" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kybal (Shock and Awe)" hidden="false" id="0d06-53d1-a49c-07c4" sortIndex="3">
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="6f9e-be0d-b2da-e7bb" primary="false" name="Configuration"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Advanced Stabilisers" id="32bf-cc88-177e-ffc5" hidden="false" type="rule" targetId="4959-0133-75f3-a375"/>
+          </infoLinks>
+          <rules>
+            <rule name="Shock and Awe" id="e368-31da-56b4-121f" hidden="false">
+              <description>All Kybal Pathfinders receive the Improved Servo Motors ability and Kybal Vehicle Units upgrade their Stabilisers special rule to Advanced Stabilisers</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Deygra (Shoot And Scoot)" hidden="false" id="bccf-e697-60f7-0bcb" sortIndex="4">
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="23a4-f58e-519b-dcf4" primary="false" name="Configuration"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Shoot And Scoot" id="ab0e-a586-ece8-b121" hidden="false">
+              <description>When a Deygra Vehicle Squad finishes an Engage Command (including as part of Stabilised) and before Reactions, it may attempt a Discipline test. If passed, the Squad can immediately Retreat (remembering Vehicle Unit&apos;s global rule Reverse). This Retreat comes from the Order capacity rather than their Commands.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Zenith Alpha (Mechanised Assault)" hidden="false" id="8693-23f7-8597-bcdb" sortIndex="5">
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="ba75-87f6-0681-030d" primary="false" name="Configuration"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Mechanised Assault" id="898a-4f04-cbde-fd5b" hidden="false">
+              <description>When a Zenith Alpha Squad dismounts, roll a Discipline test. If passed, the Command counts as coming from the Squad&apos;s Order capacity rather than their Commands. In addition, Zenith Alpha Infantry Squads can Form Up with Zenith Alpha Vehicles.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Borego (Urban Fighters)" hidden="false" id="f770-f6b4-dc03-30e1" sortIndex="6">
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="d582-f53e-8d70-19b0" primary="false" name="Configuration"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Urban Fighters" id="5f06-7e03-bed3-c663" hidden="false">
+              <description>Borego Infantry Squads can reroll Discipline tests when attempting to Overwatch. In addition, Borego Vehicles reduce their Move value by 1 but increase their Side Armour by 1</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8dc-d4a3-dd46-a005" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8a1-f9fb-1aaf-23c7" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Subfaction" hidden="false" id="5c09-c07f-c858-e7b4">
+      <entryLinks>
+        <entryLink import="true" name="Subfaction" hidden="false" id="ca1e-18de-d304-d827" type="selectionEntryGroup" targetId="6dfb-3ca6-3cb1-00bc"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="857e-b03a-a081-0acc" id="fee1-99b5-b7b0-a03d" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
