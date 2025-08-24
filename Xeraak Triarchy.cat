@@ -1,157 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
-    <forceEntry name="Xeraak Triarchy" id="543f-70ad-8bf6-db9c" hidden="false">
+    <forceEntry name="Xeraak Triarchy - Test" id="d392-58f6-e0a3-942c" hidden="false">
       <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="83ce-bb0a-9d0c-da3e" targetId="a9a7-132c-6641-0946">
+        <categoryLink name="Configuration" hidden="false" id="fcd1-5e50-ddbc-737e" targetId="857e-b03a-a081-0acc">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c2c1-502c-342e-1e4f" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="db64-6969-dc10-776b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff6f-66df-d95d-150e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2692-d2ec-db9c-3475"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="f51c-6d9b-8ba6-bbd2" targetId="0e7c-b40e-8e07-6f1c">
+        <categoryLink name="Detachment Commander" hidden="false" id="bfc0-ed5c-3b13-c718" targetId="a9a7-132c-6641-0946" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="6d42-bb26-bbc3-3ddd" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="2d4e-8c96-e668-7ccb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a7c-b07c-d1c3-73f3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e8b-df43-150d-85b1"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="eaef-4c3d-1ee6-5250" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Core Squads" hidden="false" id="8dbc-4280-c2e1-1b6a" targetId="0e7c-b40e-8e07-6f1c" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="1122-0e32-e883-ee5f" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="172a-e69c-9814-b698" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1269-0577-debb-3331"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="10b5-c8bb-bfea-3e2c"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="469e-25ad-b3d7-0fbb" targetId="19e5-b1b6-d85b-9709" type="categoryEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5523-c239-3c59-392b"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="840b-35fa-064b-41a4-min"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="840b-35fa-064b-41a4-max"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="1" field="172a-e69c-9814-b698">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b10-c29b-e9e9-c9ea" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
         </categoryLink>
       </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Xeraak Triarchy - HyOrg" id="a576-ac6e-b156-fe2a" hidden="false">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="8c86-8c0d-1d51-c3b9" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3d13-f172-bbfc-d7e5" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e0d8-12be-6792-da81" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="0809-4d92-bf43-f1f1" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="4b6d-1114-8474-df1e" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="c246-7568-0255-2d71" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="4986-b911-6b7b-bfca" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e244-8f1b-ec78-41e1" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="baac-5596-c308-7518" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="baac-5596-c308-7518">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-      <rules>
-        <rule name="Biological Experimentation" id="1c5c-0976-93fc-a750" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
-          <description>HyOrg Harvester Shield Mechs, Harvester Combat Mechs and Revenant Combat Cyborgs gain the Agile ability. In addition Revenant Combat Cyborgs and Revenant Berserker Cyborgs can reroll failed dice when attempting the Reassemble ability</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Agile" id="520f-eafe-f6ad-d125" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
-      </infoLinks>
-    </forceEntry>
-    <forceEntry name="Xeraak Triarchy - HyKem" id="e0c9-d5f8-34c7-a7a2" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="898c-5a73-d689-0a9e" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="382a-2a5c-7439-90ef" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fc35-c737-b18d-b270" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="9afc-71af-6051-60f6" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="69fc-b633-c428-dd91" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d0f2-dbef-14fa-f85a" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="48f6-987e-78bb-5e63" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="7405-06c8-8d30-4d69" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="eaee-53b5-fcf8-165e" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="eaee-53b5-fcf8-165e">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <rules>
-        <rule name="Advanced Shield Tech" id="0c31-5fd1-1d94-5a48" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
-          <description>HyKem Squads with any Shield Tokens gain the Layered Plasma Shield ability</description>
-        </rule>
-        <rule name="Layered Plasma Shield" id="1a58-2561-481e-8627" hidden="false">
-          <description>Add 1 to this Unit&apos;s shield armour value</description>
-        </rule>
-      </rules>
-    </forceEntry>
-    <forceEntry name="Xeraak Triarchy - HyFaz" id="e3af-6cbe-8054-4605" hidden="false">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="8c59-7416-ba23-dbf1" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b7d5-4c01-522f-91b5" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3da8-a6b1-d7a9-6feb" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="67ed-d0f5-ccf4-67f0" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="d91b-134e-7325-e843" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="9402-5042-135c-3199" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="b2f6-0ada-67cf-d81d" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e7f9-1073-0ad6-4ce3" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="7111-adaa-ff14-e2c0" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="7111-adaa-ff14-e2c0">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-      <rules>
-        <rule name="Quantum Tech" id="7eab-eac8-2153-0cf2" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
-          <description>Revenant Combat Cyborgs &amp; Revenant Berserker Cyborgs Arc Blades ability works on an 11+. In addition when HyFaz Meta Command Units use their Shield Projection ability they can attempt a Discipline test. If passed do not remove their Shield Token. Lastly, HyFaz Squads with any Shield Tokens gain the Quantum Shunt ability.</description>
-        </rule>
-        <rule name="Quantum Shunt" id="ee4e-8baf-51e0-4eee" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
-          <description>Once per turn during an Advance Command this Squad changes it Move value to 4D4 for the duration of the Command, ignoring other Units and terrain as it moves (but cannot end overlapping)</description>
-        </rule>
-      </rules>
     </forceEntry>
   </forceEntries>
   <entryLinks>
@@ -593,4 +477,141 @@
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Xeraak Triarchy Lib" id="1d5d-4d7a-fa30-1e68" targetId="0826-4b5a-0d9b-aede" importRootEntries="false"/>
   </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Subfaction" id="048e-2ea7-8dfb-a015" hidden="false" defaultSelectionEntryId="7f1c-1f36-415d-eb35">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e0f-2fce-8876-9498"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59ac-23ad-2f77-ac87"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="7f1c-1f36-415d-eb35" sortIndex="1" defaultAmount="">
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="ded9-9742-2193-1c15" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="HyFaz (Quantum Tech)" hidden="false" id="7009-d118-43c3-f8ae" sortIndex="3">
+          <rules>
+            <rule name="Quantum Tech" id="6d9c-3466-c057-c6ac" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+              <description>Revenant Combat Cyborgs &amp; Revenant Berserker Cyborgs Arc Blades ability works on an 11+. In addition when HyFaz Meta Command Units use their Shield Projection ability they can attempt a Discipline test. If passed do not remove their Shield Token. Lastly, HyFaz Squads with any Shield Tokens gain the Quantum Shunt ability.</description>
+            </rule>
+            <rule name="Quantum Shunt" id="dd4b-51f7-9c39-3618" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+              <description>Once per turn during an Advance Command this Squad changes it Move value to 4D4 for the duration of the Command, ignoring other Units and terrain as it moves (but cannot end overlapping)</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="3401-d980-2a49-eb8b" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="HyKem (Advanced Shield Tech)" hidden="false" id="eb20-e274-651b-17b2" sortIndex="2">
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="1d61-ae23-ac34-8da1" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Advanced Shield Tech" id="af3f-d03b-ebe3-9a0b" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+              <description>HyKem Squads with any Shield Tokens gain the Layered Plasma Shield ability</description>
+            </rule>
+            <rule name="Layered Plasma Shield" id="f515-1619-3c3c-e670" hidden="false">
+              <description>Add 1 to this Unit&apos;s shield armour value</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="HyOrg (Biological Experimentation)" hidden="false" id="8f94-6c0a-0814-3801" sortIndex="4">
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Biological Experimentation" id="ab81-7048-6838-b935" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+              <description>HyOrg Harvester Shield Mechs, Harvester Combat Mechs and Revenant Combat Cyborgs gain the Agile ability. In addition Revenant Combat Cyborgs and Revenant Berserker Cyborgs can reroll failed dice when attempting the Reassemble ability</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="4267-81b3-e345-e4ae" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Subfaction" hidden="false" id="c5ba-44bf-748d-ec42">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Subfaction" id="1b19-9dfc-f3e9-1b69" hidden="false" defaultSelectionEntryId="8d93-7cc1-d3eb-e688">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="8d93-7cc1-d3eb-e688" defaultAmount="" sortIndex="1">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="e75b-01c8-df22-4fac" targetId="857e-b03a-a081-0acc" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="HyKem" hidden="false" id="a323-0b3f-c2d4-2e51" sortIndex="3">
+              <costs>
+                <cost name="Req" typeId="Requisition" value="25"/>
+                <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="3aba-b1fc-3819-2d5f" targetId="857e-b03a-a081-0acc" primary="false"/>
+              </categoryLinks>
+              <rules>
+                <rule name="Advanced Shield Tech" id="3955-f478-7306-b4ee" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+                  <description>HyKem Squads with any Shield Tokens gain the Layered Plasma Shield ability</description>
+                </rule>
+                <rule name="Layered Plasma Shield" id="d23f-2e50-93a3-6f42" hidden="false">
+                  <description>Add 1 to this Unit&apos;s shield armour value</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="HyOrg" hidden="false" id="b54c-ab6e-012e-fb0e" sortIndex="2">
+              <costs>
+                <cost name="Req" typeId="Requisition" value="25"/>
+                <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+              </costs>
+              <rules>
+                <rule name="Biological Experimentation" id="8439-46b8-1c94-af7f" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+                  <description>HyOrg Harvester Shield Mechs, Harvester Combat Mechs and Revenant Combat Cyborgs gain the Agile ability. In addition Revenant Combat Cyborgs and Revenant Berserker Cyborgs can reroll failed dice when attempting the Reassemble ability</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink targetId="857e-b03a-a081-0acc" id="90ac-1496-74fb-2dad" primary="false" name="Configuration"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="HyFaz" hidden="false" id="96b8-e2e1-b94a-6654" sortIndex="4">
+              <rules>
+                <rule name="Quantum Tech" id="5398-22b9-de09-a8f7" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+                  <description>Revenant Combat Cyborgs &amp; Revenant Berserker Cyborgs Arc Blades ability works on an 11+. In addition when HyFaz Meta Command Units use their Shield Projection ability they can attempt a Discipline test. If passed do not remove their Shield Token. Lastly, HyFaz Squads with any Shield Tokens gain the Quantum Shunt ability.</description>
+                </rule>
+                <rule name="Quantum Shunt" id="6cda-6c39-7921-ba75" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
+                  <description>Once per turn during an Advance Command this Squad changes it Move value to 4D4 for the duration of the Command, ignoring other Units and terrain as it moves (but cannot end overlapping)</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Req" typeId="Requisition" value="25"/>
+                <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="554b-cc70-91df-6b4f" targetId="857e-b03a-a081-0acc" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fad7-da99-11ed-6a62"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fc8-9c7a-8c97-11e9"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="857e-b03a-a081-0acc" id="d640-3152-6748-cfb7" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8163-9c76-1a92-4d46" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f5a-522f-437f-5d11" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

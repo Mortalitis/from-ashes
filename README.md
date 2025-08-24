@@ -2,8 +2,7 @@ UNOFFICIAL resporitory built for the wargame From Ashes by Void Scar Miniatures 
 
 Current Game Version: 0.1.2
 
-Progress
-
+Faction Progress
 - Xeraak Triarchy: First pass completed
 - Verse Dominion: First pass completed
 - Sol Enclaves/Sol Enclaves (Paragons of Old Earth): First pass completed
@@ -14,3 +13,6 @@ Progress
 - Sol Enclaves (Freemen of the Republic): TO-DO
 - Sol Enclaves (Members of the Alliance): TO-DO
 - Sol Enclaves (Union of the Advancing Dawn): TO-DO
+
+Feature Progress
+- Better subfaction selection: In Progress

@@ -1,223 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7653-3930-b67f-7396" name="Verse Dominion" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7653-3930-b67f-7396" name="Verse Dominion" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
-    <forceEntry name="Verse Dominion" id="f17d-d5b3-a46c-4335" hidden="false">
+    <forceEntry name="Verse Dominion" id="6b02-7d99-27c7-39fd" hidden="false">
       <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="1c89-abdb-dd4f-7966" targetId="a9a7-132c-6641-0946">
+        <categoryLink name="Configuration" hidden="false" id="c7eb-765a-b3e9-7b53" targetId="857e-b03a-a081-0acc" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a4e1-90c0-ab79-f326" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7daf-7a94-78bb-162f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbc1-648e-d8fd-bbd7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d96a-431c-031d-0a95"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="456d-3eb8-40e8-e83a" targetId="0e7c-b40e-8e07-6f1c">
+        <categoryLink name="Detachment Commander" hidden="false" id="e240-7904-a66f-c838" targetId="a9a7-132c-6641-0946" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="e049-c8ed-92c1-e241" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="06c2-c180-fee0-bad9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cbc-f9a4-7b6d-16be"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2c2-33c8-32d7-bb2b"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="a814-24a5-f7de-ad96" targetId="19e5-b1b6-d85b-9709">
+        <categoryLink name="Core Squads" hidden="false" id="a8a4-c8e4-c0b6-53da" targetId="0e7c-b40e-8e07-6f1c" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9e0b-c4ea-c0ca-420e" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="1982-e88d-c51b-0f44" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="2153-287c-e4d6-29a6" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="390b-3231-37e9-a26a" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="c21c-2ead-8128-c267" targetId="19e5-b1b6-d85b-9709" type="categoryEntry">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="f45e-d378-c2f6-ac07" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="4c42-ef80-4303-d063" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="1" field="1982-e88d-c51b-0f44">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Verse Dominion - Lykash" id="d613-04c8-2d2a-ad30" hidden="false">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="6599-a7ba-6194-ca1e" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f7d8-e7cd-86d7-11b1" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b0cb-3bce-996f-c9d6" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="ca62-e90a-6397-117e" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="71bb-7f63-d603-9ea1" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="99e3-efa0-8797-0ef5" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="120f-1317-9127-0ab2" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="305d-15e6-800b-65ed" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="f80a-4dd0-1cc0-1eec" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="f80a-4dd0-1cc0-1eec">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-      <rules>
-        <rule name="Improved Storms and Alloy" id="7ec9-8d3a-9460-30a3" hidden="false">
-          <description>Reroll failed Skimmer Plate rolls</description>
-        </rule>
-      </rules>
-    </forceEntry>
-    <forceEntry name="Verse Dominion - Sothis" id="9157-68b5-c810-e816" hidden="false">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="62dd-a7e5-1f54-aa68" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8d08-8b6c-38d5-23f8" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1202-3afa-0bb3-271f" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="7b59-7441-8917-9fba" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="620a-2a2e-68e5-5b24" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="5ab4-8c08-237d-57ab" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="2cee-26b5-4c5e-b1aa" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="33d5-3426-34b5-1df6" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="4e7c-e348-3024-e92a" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="4e7c-e348-3024-e92a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-      <rules>
-        <rule name="Pious Devotees" id="e0d8-b50b-2806-a232" hidden="false">
-          <description>Sothis Ringleader Units and and Reaver Archons increase their Zealot range to 8&quot;. In addition all Squads unaffected by the Zealot ability can reroll failed Discipline rolls of a 1-2</description>
-        </rule>
-      </rules>
-    </forceEntry>
-    <forceEntry name="Verse Dominion - Cicero" id="47cc-7e91-2c13-0980" hidden="false">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="3889-d015-b11b-1f0b" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="09dc-07c6-0e65-21b7" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8482-c10a-fe60-aba7" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="24b1-aad9-d97b-5b9f" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="8cb8-883d-b695-7212" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="499a-261f-d832-a387" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="38cc-c79e-c720-9246" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3ccf-9c83-36c7-fa5f" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="6aee-ddb9-af48-4edc" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="6aee-ddb9-af48-4edc">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-      <rules>
-        <rule name="Mutagens" id="5e42-70e0-d7e9-ea28" hidden="false">
-          <description>Cicero Squads may reroll failed Vhokys Drugs rolls</description>
-        </rule>
-      </rules>
-    </forceEntry>
-    <forceEntry name="Verse Dominion - Spire" id="a536-d90d-bbf3-bd6c" hidden="false">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="6927-bb8a-a1d2-edc9" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4393-3d45-c7f4-8846" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="19b9-3156-de62-ae7d" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="1db5-a6cc-ac7b-e8f2" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="bc6f-478d-5308-f8a1" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="56d3-75fd-d02d-bf6a" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="702e-2b0b-841d-b2e6" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8cda-be36-f49c-ba0d" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="bace-d416-b490-83b6" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="bace-d416-b490-83b6">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-      <rules>
-        <rule name="Advanced Shock Tech" id="92fa-1fed-b8f9-c1f1" hidden="false">
-          <description>Spire Shock weapons can reroll the damage value generating dice. In addition all Incendiary Grenades lose the Burn ability but gain the Shock Bolt (1) ability</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Shock Bolt (1)" id="6367-3a40-be38-53d3" hidden="false" type="rule" targetId="bad0-9c8b-df01-4061"/>
-      </infoLinks>
-    </forceEntry>
-    <forceEntry name="Verse Dominion - Carnis" id="4043-e1d9-51eb-5d9e" hidden="false">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-      </costs>
-      <rules>
-        <rule name="Purified Formula" id="8564-adb7-8c43-f1a4" hidden="false">
-          <description>Replace the Vhokys Drugs ability with the Carnis Augmentation ability</description>
-        </rule>
-        <rule name="Carnis Augmentation" id="9b33-60ad-f2da-37e8" hidden="false">
-          <description>When this Unit loses an HP, roll a D12; on a 1-2 (1-3 for Goraths) it is ignored. In addition, reroll Storm Damage dice and Accuracy Dice of a 1-2</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="31e9-9bc5-999e-d4e0" targetId="a9a7-132c-6641-0946">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8c52-4a59-5393-c11f" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8feb-05b4-37d7-6c63" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="5475-abca-21cf-466e" targetId="0e7c-b40e-8e07-6f1c">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="23b0-a8e1-6726-c5ba" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="65ed-1fd5-e9a2-6bfe" includeChildSelections="false"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="474b-e451-f628-c697" targetId="19e5-b1b6-d85b-9709">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="e326-7f68-8e64-cb0e" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="d12e-6467-e15a-2cda" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="d12e-6467-e15a-2cda">
+            <modifier type="decrement" value="1" field="4c42-ef80-4303-d063">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="e585-e046-b328-fd12" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
@@ -621,4 +431,116 @@
       </costs>
     </entryLink>
   </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Subfaction" hidden="false" id="99f4-db20-cf2a-8278">
+      <categoryLinks>
+        <categoryLink targetId="857e-b03a-a081-0acc" id="04d5-d1c6-c6e8-0871" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Subfaction" hidden="false" id="12ac-14fc-b53d-109e" type="selectionEntryGroup" targetId="3ea1-a656-ba1a-38a3">
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="2393-ccd3-c083-ec96" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3170-c276-dfc4-8dc9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad3e-f3a0-3ef8-0ef7" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Subfaction" id="3ea1-a656-ba1a-38a3" hidden="false" defaultSelectionEntryId="67fa-0131-4b3e-8d94">
+      <categoryLinks>
+        <categoryLink targetId="857e-b03a-a081-0acc" id="aa38-7ab3-5b65-2abb" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="67fa-0131-4b3e-8d94" sortIndex="1">
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="accb-ede5-fd88-adfc" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lykash (Improved Alloy)" hidden="false" id="fd5d-6cc1-a36a-61ad" sortIndex="2">
+          <rules>
+            <rule name="Improved Storms and Alloy" id="75cd-8b64-4361-c5a3" hidden="false">
+              <description>Reroll failed Skimmer Plate rolls</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="0268-af53-bd01-bc6b" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sothis (Pious Devotees)" hidden="false" id="7a6d-ea2f-989d-1774" sortIndex="3">
+          <rules>
+            <rule name="Pious Devotees" id="e0d8-b50b-2806-a232" hidden="false">
+              <description>Sothis Ringleader Units and and Reaver Archons increase their Zealot range to 8&quot;. In addition all Squads unaffected by the Zealot ability can reroll failed Discipline rolls of a 1-2</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="b6cb-446a-d8ce-5f66" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cicero (Mutagens)" hidden="false" id="727c-5930-66ac-c4f5" sortIndex="4">
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Mutagens" id="5e42-70e0-d7e9-ea28" hidden="false">
+              <description>Cicero Squads may reroll failed Vhokys Drugs rolls</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="a699-e7ab-ae51-7370" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Spire (Advanced Shock)" hidden="false" id="32ac-62a9-f406-69ed" sortIndex="5">
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Shock Bolt (1)" id="6367-3a40-be38-53d3" hidden="false" type="rule" targetId="bad0-9c8b-df01-4061"/>
+          </infoLinks>
+          <rules>
+            <rule name="Advanced Shock Tech" id="92fa-1fed-b8f9-c1f1" hidden="false">
+              <description>Spire Shock weapons can reroll the damage value generating dice. In addition all Incendiary Grenades lose the Burn ability but gain the Shock Bolt (1) ability</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="349c-950f-29e1-5830" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Carnis (Purified Formula)" hidden="false" id="a2bf-de66-bdb8-4188" sortIndex="6">
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Carnis Augmentation" id="9b33-60ad-f2da-37e8" hidden="false">
+              <description>When this Unit loses an HP, roll a D12; on a 1-2 (1-3 for Goraths) it is ignored. In addition, reroll Storm Damage dice and Accuracy Dice of a 1-2</description>
+            </rule>
+            <rule name="Purified Formula" id="8564-adb7-8c43-f1a4" hidden="false">
+              <description>Replace the Vhokys Drugs ability with the Carnis Augmentation ability</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="857e-b03a-a081-0acc" id="bfa9-f6cc-5958-0656" primary="false" name="Configuration"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30cf-c5f4-8e44-6239" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2182-9f26-b9f0-2720" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
