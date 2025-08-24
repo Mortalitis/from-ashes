@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -890,18 +890,18 @@
             </selectionEntry>
           </selectionEntries>
           <profiles>
-            <profile name="Revenant Cyborgs" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="41b1-9a2f-38ac-6063" publicationId="38b2-0d05-f0c9-eb32" page="14">
+            <profile name="Revenant Heavies" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="00bc-7226-0c75-dd96">
               <characteristics>
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">8+</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
-                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">6</characteristic>
-                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">2</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
-                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
               </characteristics>
             </profile>
