@@ -10,28 +10,28 @@
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5269-ac45-3a83-db15" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="9d39-9487-b0e7-3bfd" targetId="857e-b03a-a081-0acc" type="categoryEntry">
+        <categoryLink name="Configuration" hidden="false" id="9d39-9487-b0e7-3bfd" targetId="857e-b03a-a081-0acc">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="520d-6855-5f90-9d5a"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="810f-fa1a-6f45-ee00"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Detachment Commander" hidden="false" id="af27-5455-9a69-3c94" targetId="a9a7-132c-6641-0946" type="categoryEntry">
+        <categoryLink name="Detachment Commander" hidden="false" id="af27-5455-9a69-3c94" targetId="a9a7-132c-6641-0946">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90d6-1ce3-55b4-2878"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e853-1b65-fe89-1b34"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="afb2-114f-56ab-e472" targetId="0e7c-b40e-8e07-6f1c" type="categoryEntry">
+        <categoryLink name="Core Squads" hidden="false" id="afb2-114f-56ab-e472" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f9d3-490a-1c04-41e9"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7159-7f0e-3cb3-4606"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="373e-b5af-78c2-d7cd" targetId="19e5-b1b6-d85b-9709" type="categoryEntry">
+        <categoryLink name="Support Squads" hidden="false" id="373e-b5af-78c2-d7cd" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5822-9642-93c2-7ba6"/>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="117f-da04-0ec8-170f"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="117f-da04-0ec8-170f"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -179,7 +179,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <costs>
@@ -196,7 +202,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <costs>
@@ -210,7 +216,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -244,7 +256,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -261,7 +279,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -278,7 +296,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -295,7 +319,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -310,15 +334,9 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -335,7 +353,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -352,7 +376,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -369,7 +393,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -382,7 +406,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b3d-f786-cb87-85b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Raven CV</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -426,7 +456,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -470,7 +500,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b3d-f786-cb87-85b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Raven CV</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -487,7 +523,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b3d-f786-cb87-85b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Raven CV</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -504,7 +546,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -521,7 +563,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b3d-f786-cb87-85b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Raven CV</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -555,7 +603,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -589,7 +637,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -606,7 +660,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -623,7 +683,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -640,7 +700,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -657,7 +723,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -674,7 +740,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -689,15 +761,15 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ee0d-2597-7bac-ab48" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -714,7 +786,13 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b3d-f786-cb87-85b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Raven CV</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -758,7 +836,7 @@
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -803,11 +881,546 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5e78-2b88-bee0-0ad5" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8ce2-f7b6-9aad-a17a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Ringleader Command Unit" hidden="false" id="9b76-449a-c328-5d46" type="selectionEntry" targetId="e5b4-9e79-0e22-840e">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="1ee0-5d92-1e51-7527" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5e78-2b88-bee0-0ad5" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8ce2-f7b6-9aad-a17a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Ringleader Command Unit" hidden="false" id="013a-4a28-ec54-20a8" type="selectionEntry" targetId="e5b4-9e79-0e22-840e">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="1caa-66ce-85b1-79b0" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
           <comment>Hide in Devin Pact Forces</comment>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Gorath Shock Mutants" hidden="false" id="0efc-7957-3a7a-1aa2" type="selectionEntry" targetId="b32e-82b4-01ba-5187">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="0e1d-8900-f9b1-f4a5" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Reaver Archon" hidden="false" id="5e78-2b88-bee0-0ad5" type="selectionEntry" targetId="727b-1679-dfae-adf7">
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="30be-d860-1a59-7c77" targetId="a9a7-132c-6641-0946" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="45"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="904d-9700-7c15-7e11" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Archon" hidden="false" id="cde8-8f08-4324-765f" type="selectionEntry" targetId="727b-1679-dfae-adf7">
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="ff9d-f8df-eba8-6f05" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="904d-9700-7c15-7e11" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="45"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Archon" hidden="false" id="8a5d-66d8-b5eb-347c" type="selectionEntry" targetId="727b-1679-dfae-adf7">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="5bd5-903b-df26-d8cf" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="45"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="1f70-334a-d7fc-4487" type="selectionEntry" targetId="88c3-9a4b-90e8-0ab0">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="904d-9700-7c15-7e11" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="7e04-2fa7-6b5e-fa92" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="67bb-b011-a5b0-45db" type="selectionEntry" targetId="88c3-9a4b-90e8-0ab0">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="853f-4ac5-ea97-641e" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Rocket Buggy" hidden="false" id="2a3b-5e2b-9d96-b035" type="selectionEntry" targetId="3fe6-695d-eb84-da2a">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="904d-9700-7c15-7e11" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="94b3-bdc2-1137-2ac3" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Rocket Buggy" hidden="false" id="c5b7-97b0-580d-a6ca" type="selectionEntry" targetId="3fe6-695d-eb84-da2a">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="9570-cf3a-6786-b9d3" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Rhino Assault Tank" hidden="false" id="cba5-db87-ff02-95a9" type="selectionEntry" targetId="f138-8dd4-ed7d-aefa">
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="8d11-a85d-5291-c8f4" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="85"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="904d-9700-7c15-7e11" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Rhino Assault Tank" hidden="false" id="6162-2512-59d9-5f00" type="selectionEntry" targetId="f138-8dd4-ed7d-aefa">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="ac80-f9ba-d427-8887" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="85"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Rhino Dominus" hidden="false" id="8ce2-f7b6-9aad-a17a" type="selectionEntry" targetId="bbc3-573d-de68-ef57">
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="966a-5a4a-d131-6fa0" targetId="a9a7-132c-6641-0946" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="120"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="904d-9700-7c15-7e11" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Rhino Dominus" hidden="false" id="7e84-6e35-b6eb-6144" type="selectionEntry" targetId="bbc3-573d-de68-ef57">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="904d-9700-7c15-7e11" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="dbcc-9998-7c16-19e6" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="120"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Rhino Dominus" hidden="false" id="f5db-50d5-fe70-d3b5" type="selectionEntry" targetId="bbc3-573d-de68-ef57">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="8449-bebc-2594-ed26" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="120"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Taurus APC" hidden="false" id="010f-02be-7958-c892" type="selectionEntry" targetId="3961-7778-e1f4-b512">
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="2235-f4e0-9255-0de3" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="904d-9700-7c15-7e11" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Taurus APC" hidden="false" id="cf68-bdda-2342-3918" type="selectionEntry" targetId="3961-7778-e1f4-b512">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="151c-5525-f31a-b31a" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Utegon Assault Mutants" hidden="false" id="aae4-ada0-eb54-c4b0" type="selectionEntry" targetId="2b36-413e-1cc2-9506">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="20" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="40" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="9502-283e-f793-aa22" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="40"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="d5cb-7664-4508-dcc8" type="selectionEntry" targetId="2e0e-55ff-1cf7-4064">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="9" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5e78-2b88-bee0-0ad5" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8ce2-f7b6-9aad-a17a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="0eef-e537-de9b-aac5" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="58"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="21ba-0f67-8ba9-ff59" type="selectionEntry" targetId="2e0e-55ff-1cf7-4064">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="9" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Devin Pact Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="52bf-cce4-0d22-6bb1" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="58"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+      <comment>Verse Dominion Force</comment>
     </entryLink>
   </entryLinks>
   <selectionEntries>
