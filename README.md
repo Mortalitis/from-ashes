@@ -7,7 +7,7 @@ Faction Progress
 - Verse Dominion: First pass completed
 - Sol Enclaves/Sol Enclaves (Paragons of Old Earth): First pass completed
 - Scaryn Federated Alliance (SFA): First pass completed
-- Devin Pact: In Progress
+- Devin Pact: First pass completed
 
 - Sol Enclaves (Dominion Vassal): TO-DO
 - Sol Enclaves (Freemen of the Republic): TO-DO
