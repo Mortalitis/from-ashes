@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -147,7 +147,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Drop Pods" hidden="false" id="396b-c3fb-ccef-7c32">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Drop Pod" hidden="false" id="f1fe-0252-7747-0acc">
+        <selectionEntry type="model" import="true" name="Drop Pod" hidden="false" id="f1fe-0252-7747-0acc">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ed9-9813-be30-67ed"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e835-6265-e9c9-0b92"/>
