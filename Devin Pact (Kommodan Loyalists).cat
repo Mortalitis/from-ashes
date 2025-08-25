@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d285-4382-b1c0-6824" name="Devin Pact (Kommodan Loyalists)" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="6" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d285-4382-b1c0-6824" name="Devin Pact: Kommodan Loyalists" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="6" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Devin Pact Lib" id="b012-3818-b667-53dc" targetId="4fa0-3a9c-909b-9712"/>
     <catalogueLink type="catalogue" name="Sol Enclaves Lib" id="5902-97ff-03e1-b797" targetId="30d3-125d-4f6c-158d"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Anvil Battle Tank (Dominion Allies)" hidden="false" id="b864-15a0-5894-f717" type="selectionEntry" targetId="d38c-08a0-f9b2-0e57">
+    <entryLink import="true" name="Anvil Battle Tank (Dominion Allies)" hidden="false" id="8221-407e-bcbc-3ca4" type="selectionEntry" targetId="d38c-08a0-f9b2-0e57">
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="760a-9c84-64c1-d47f" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="3eaf-e71f-5566-dab1" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
       <costs>
@@ -22,16 +28,16 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Anvil Battle Tank (Dominion Allies)" hidden="false" id="e0ac-cf1a-6d3e-6393" type="selectionEntry" targetId="d38c-08a0-f9b2-0e57">
+    <entryLink import="true" name="Anvil Battle Tank (Dominion Allies)" hidden="false" id="54b6-0c94-d48d-a2e9" type="selectionEntry" targetId="d38c-08a0-f9b2-0e57">
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="f4cd-7878-d70e-fa08" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="8a38-afe4-75a3-644c" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <costs>
@@ -39,176 +45,217 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="8aff-1986-5f19-054b" type="selectionEntry" targetId="a41c-387b-d311-b253">
+    <entryLink import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="e837-5a91-ed74-c298" type="selectionEntry" targetId="a41c-387b-d311-b253">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="e9fa-cf0a-4162-197b" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="607e-19c2-321e-39f6" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="125"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="920a-182c-08ae-4b03" type="selectionEntry" targetId="a41c-387b-d311-b253">
+    <entryLink import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="9b73-a5bd-28e3-fad3" type="selectionEntry" targetId="a41c-387b-d311-b253">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="37fe-2ed2-6e8a-890c" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="c163-e615-909c-b410" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="125"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="2ba5-8e05-6f73-063b" type="selectionEntry" targetId="36fc-8c76-ddb7-318f">
+    <entryLink import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="1d33-3563-e9ed-d1ef" type="selectionEntry" targetId="36fc-8c76-ddb7-318f">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="b967-5b28-5e59-ce03" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="4565-43c2-ce77-b6bf" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="50"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="b518-499f-6f96-c1a4" type="selectionEntry" targetId="36fc-8c76-ddb7-318f">
+    <entryLink import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="5e2b-33ec-ccce-8da6" type="selectionEntry" targetId="36fc-8c76-ddb7-318f">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="09e9-0edb-0af0-c8c7" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="fcae-5e3e-2839-6613" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="50"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Bullfrog APC (Dominion Allies)" hidden="false" id="e335-d83b-20f8-dfe1" type="selectionEntry" targetId="08a8-e46f-5edd-ec70">
+    <entryLink import="true" name="Bullfrog APC (Dominion Allies)" hidden="false" id="b8a8-1981-8694-64b0" type="selectionEntry" targetId="08a8-e46f-5edd-ec70">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="b912-cb37-a355-c6ea" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="9ac8-ae7e-d834-20c9" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Bullfrog APC (Dominion Allies)" hidden="false" id="4b3e-966c-089f-3d0d" type="selectionEntry" targetId="08a8-e46f-5edd-ec70">
+    <entryLink import="true" name="Bullfrog APC (Dominion Allies)" hidden="false" id="0132-39f4-6eb4-4412" type="selectionEntry" targetId="08a8-e46f-5edd-ec70">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="4830-abee-32fc-f46b" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="83b7-04b5-736b-2ecb" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Gorath Shock Mutants" hidden="false" id="5934-8a01-bc91-13ec" type="selectionEntry" targetId="0c8d-2167-21fa-547b">
+    <entryLink import="true" name="Devin Pact: Kommodan Loyalists" hidden="false" id="f64c-c887-9d21-2fa8" type="selectionEntry" targetId="45ae-1730-794c-5635">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="3ea0-8fd0-ea98-f05a" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Configuration" hidden="false" id="5c17-d9d7-c7a1-d0ad" targetId="857e-b03a-a081-0acc" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ea8-2cae-e0ba-2139" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fce5-26cd-2572-3d0d" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Gorath Shock Mutants" hidden="false" id="d281-1d91-5ce8-0064" type="selectionEntry" targetId="0c8d-2167-21fa-547b">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="4b4a-b00c-beea-5bad" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="70"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Hammerhead IFV (Dominion Allies)" hidden="false" id="3762-7775-3c87-132d" type="selectionEntry" targetId="8497-1ceb-6664-d0bc">
+    <entryLink import="true" name="Hammerhead IFV (Dominion Allies)" hidden="false" id="7f76-801d-cac4-7576" type="selectionEntry" targetId="8497-1ceb-6664-d0bc">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="f08c-e761-7b8a-22f8" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="e135-81c5-df94-e1bb" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Hammerhead IFV (Dominion Allies)" hidden="false" id="c080-c6a7-d458-cfa6" type="selectionEntry" targetId="8497-1ceb-6664-d0bc">
+    <entryLink import="true" name="Hammerhead IFV (Dominion Allies)" hidden="false" id="6d9b-799d-51c7-b512" type="selectionEntry" targetId="8497-1ceb-6664-d0bc">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="461c-ec14-e949-2d6c" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="7191-a9d1-bcce-ee18" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Pathfinder Anti-Tank Unit" hidden="false" id="0008-aaaa-cfdc-eaf4" type="selectionEntry" targetId="af68-9fa2-2f32-c805">
+    <entryLink import="true" name="Pathfinder Anti-Tank Unit" hidden="false" id="7694-5b5e-2d86-6079" type="selectionEntry" targetId="af68-9fa2-2f32-c805">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c0a6-de48-5606-3ba7" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Raven CV</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="a525-1c7f-0c70-195a" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="faf8-b0a7-0c50-8d88" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="26"/>
@@ -242,17 +289,17 @@
         </modifierGroup>
       </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Pathfinder Anti-Tank Unit" hidden="false" id="c7a2-8ece-d400-f48c" type="selectionEntry" targetId="af68-9fa2-2f32-c805">
+    <entryLink import="true" name="Pathfinder Anti-Tank Unit" hidden="false" id="24c7-52e0-be68-d62c" type="selectionEntry" targetId="af68-9fa2-2f32-c805">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="3c80-8691-45cf-91ca" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="edab-e746-49cb-0838" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -286,68 +333,86 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="db45-289d-8226-2404" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
+    <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="5073-ea21-10e3-5b23" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c0a6-de48-5606-3ba7" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Raven CV</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="84bf-e1eb-dd98-e156" targetId="a9a7-132c-6641-0946" primary="true"/>
+        <categoryLink name="Detachment Commander" hidden="false" id="25e4-e3ac-4be0-96d1" targetId="a9a7-132c-6641-0946" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="40"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="2e0b-a153-a890-8d6c" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
+    <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="27c9-7441-c463-b919" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c0a6-de48-5606-3ba7" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Raven CV</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="2565-a805-d939-dce1" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="fb07-57d8-a46e-c973" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="40"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="3e1f-4be9-a92f-3b16" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
+    <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="c3b2-890f-f1cc-5dce" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="8a55-770e-50d9-b38f" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="1378-e05e-674c-b3ee" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="40"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="8c99-3470-dc3a-a2dd" type="selectionEntry" targetId="3bc4-5754-1ec6-c7ff">
+    <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="9a0b-6635-e7eb-3986" type="selectionEntry" targetId="3bc4-5754-1ec6-c7ff">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c0a6-de48-5606-3ba7" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Raven CV</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="f2b5-cabc-bee5-d81a" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="eeb7-155f-d27f-4d99" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -371,17 +436,17 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="8664-e1bb-0eb0-c171" type="selectionEntry" targetId="3bc4-5754-1ec6-c7ff">
+    <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="13a2-7fd2-333e-d887" type="selectionEntry" targetId="3bc4-5754-1ec6-c7ff">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="4368-573a-a9c2-683b" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="58fd-0662-3695-8496" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -405,142 +470,216 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="3bad-4f61-52ae-45ea" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
+    <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="c0a6-de48-5606-3ba7" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Detachment Commander" hidden="false" id="7b43-678b-0b11-4243" targetId="a9a7-132c-6641-0946" primary="true"/>
+        <categoryLink name="Detachment Commander" hidden="false" id="8d68-bc1a-0ff6-7d6f" targetId="a9a7-132c-6641-0946" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="55"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="38e2-aef4-ab46-d63e" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
+    <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="1f2c-6db9-24e0-e98a" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="fd37-1609-5d3e-dc40" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="a7d9-bf34-7375-ce8f" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="55"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="e582-58f2-44c7-409b" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
+    <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="749b-343e-9e55-29ae" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="6347-5cc2-5562-a628" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="fc42-05ea-fcb3-1f2b" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="55"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="c9e8-84be-9330-16a4" type="selectionEntry" targetId="b111-59fa-40b8-9d6b">
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="6086-96ce-68a7-afd4" type="selectionEntry" targetId="b111-59fa-40b8-9d6b">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="ba54-7bb4-8366-b18e" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="9472-0236-14f3-0a59" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="8e1f-2991-4509-f1e3" type="selectionEntry" targetId="b111-59fa-40b8-9d6b">
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="fe79-f578-fc08-d288" type="selectionEntry" targetId="b111-59fa-40b8-9d6b">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="8217-f618-2dbe-7091" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="11eb-62df-f1cd-4089" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Rhino Assault Tank (Dominion Allies)" hidden="false" id="c832-d999-fd33-3296" type="selectionEntry" targetId="7da7-5f6f-e731-4f9c">
+    <entryLink import="true" name="Rhino Assault Tank (Dominion Allies)" hidden="false" id="b22f-884d-f984-2747" type="selectionEntry" targetId="7da7-5f6f-e731-4f9c">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="0808-a44f-a755-706f" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Core Squads" hidden="false" id="656a-7780-1bb9-e979" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="95"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Rhino Assault Tank (Dominion Allies)" hidden="false" id="0fec-3141-d21f-e73a" type="selectionEntry" targetId="7da7-5f6f-e731-4f9c">
+    <entryLink import="true" name="Rhino Assault Tank (Dominion Allies)" hidden="false" id="3cd2-5620-3eaa-592a" type="selectionEntry" targetId="7da7-5f6f-e731-4f9c">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5073-ea21-10e3-5b23" shared="true" includeChildSelections="true"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="cac4-1368-ddf1-99ef" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="0ee1-6f37-297a-1550" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="95"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="c73c-9ea0-9d64-a6dd" type="selectionEntry" targetId="e818-c831-8d6d-69f0">
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="b5e6-f121-7140-bc5e" type="selectionEntry" targetId="e818-c831-8d6d-69f0">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Core Squads" hidden="false" id="67b0-bfdc-932c-65b5" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+        <categoryLink name="Support Squads" hidden="false" id="8eb1-aeeb-4bc8-ed5a" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req + Morale Increases</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="10" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="e9d9-ac43-ac78-ffe0" type="selectionEntry" targetId="e818-c831-8d6d-69f0">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c0a6-de48-5606-3ba7" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Raven CV</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="77fe-5e89-8df8-7f74" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Sol Enclave Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="0dce-f998-59ff-9931" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
@@ -574,51 +713,875 @@
         </modifierGroup>
       </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="59ea-310b-ad4f-0085" type="selectionEntry" targetId="e818-c831-8d6d-69f0">
+    <entryLink import="true" name="Sol Enclaves: Dominion Vassal" hidden="false" id="617e-1a86-120f-2718" type="selectionEntry" targetId="e5f6-a4dc-2d05-c0f0">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="9787-f51b-4b29-82d4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
-          <comment>Hid in Verse Dominion Forces</comment>
+          <comment>Hide in Sol Enclave Forces</comment>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Support Squads" hidden="false" id="11ca-9dfc-4447-0d52" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+        <categoryLink targetId="857e-b03a-a081-0acc" id="8cd5-56cb-345b-a953" primary="true" name="Configuration"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24d3-568e-4e80-b8e8" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c03-24fc-5825-bf36" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Rifle Squad (Kommodan Loyalists)" hidden="false" id="268d-a897-5fd3-74e3" type="selectionEntry" targetId="47b9-ed41-8b23-c2b5">
       <modifierGroups>
         <modifierGroup type="and">
-          <comment>Req + Morale Increases</comment>
           <modifiers>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+            <modifier type="increment" value="11" field="Requisition">
               <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="33" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="44" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="6" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
             <modifier type="increment" value="11" field="Requisition">
               <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="28ad-11df-eeba-a8d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="28ad-11df-eeba-a8d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="fe0d-644b-a52e-9e41" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="fe0d-644b-a52e-9e41" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
             <modifier type="increment" value="1" field="32f3-2311-8978-b603">
               <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="10" field="Requisition">
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
               <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="6" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="28ad-11df-eeba-a8d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="28ad-11df-eeba-a8d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="fe0d-644b-a52e-9e41" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="fe0d-644b-a52e-9e41" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Req + Morale Mods</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="b541-2a99-3a50-5fbe" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="98dc-53e9-e7fd-3798" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="70e7-69ee-78e1-750b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b08e-9071-3816-97f0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7047-45b2-1574-ed3d" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7411-652b-2666-1689" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Hide if Detachment Command = Vehicle</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="22"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Rifle Squad (Kommodan Loyalists)" hidden="false" id="b6fc-105f-894c-f91b" type="selectionEntry" targetId="47b9-ed41-8b23-c2b5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="33" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="44" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="6" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="28ad-11df-eeba-a8d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="28ad-11df-eeba-a8d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="fe0d-644b-a52e-9e41" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="fe0d-644b-a52e-9e41" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="6" field="selections" scope="self" childId="78aa-c090-5fcf-b725" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="28ad-11df-eeba-a8d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="28ad-11df-eeba-a8d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="fe0d-644b-a52e-9e41" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="fe0d-644b-a52e-9e41" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Req + Morale Mods</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="2d90-c2a2-6ce3-b306" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="22"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Anti-Tank Squad (Kommodan Loyalists)" hidden="false" id="226f-c803-e031-52b0" type="selectionEntry" targetId="c8d8-4894-559c-ad8a">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="22"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="98dc-53e9-e7fd-3798" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="70e7-69ee-78e1-750b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b08e-9071-3816-97f0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7047-45b2-1574-ed3d" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7411-652b-2666-1689" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Hide if Detachment Command = Vehicle</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="db2b-25a4-23f4-ab8a" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req + Moral</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="fb4a-db85-5084-9493" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="fb4a-db85-5084-9493" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="fb4a-db85-5084-9493" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="fb4a-db85-5084-9493" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Anti-Tank Squad (Kommodan Loyalists)" hidden="false" id="3c44-08a1-a97a-7109" type="selectionEntry" targetId="c8d8-4894-559c-ad8a">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="22"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="b56f-3352-63e3-30ad" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req + Moral</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="fb4a-db85-5084-9493" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="fb4a-db85-5084-9493" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="fb4a-db85-5084-9493" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="fb4a-db85-5084-9493" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Machine Gun Squad (Kommodan Loyalists)" hidden="false" id="f16b-de44-b3ba-f656" type="selectionEntry" targetId="0e4f-6e67-1218-bc1d">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="98dc-53e9-e7fd-3798" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="70e7-69ee-78e1-750b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b08e-9071-3816-97f0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7047-45b2-1574-ed3d" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7411-652b-2666-1689" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Hide if Detachment Command = Vehicle</comment>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req + Morale</comment>
+          <modifiers>
+            <modifier type="increment" value="28" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="e336-dbc5-2fcf-219a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="e336-dbc5-2fcf-219a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="e336-dbc5-2fcf-219a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="14" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="e336-dbc5-2fcf-219a" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
       <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="7000-cc3e-6311-7a04" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Machine Gun Squad (Kommodan Loyalists)" hidden="false" id="0b68-68f4-185b-15c0" type="selectionEntry" targetId="0e4f-6e67-1218-bc1d">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req + Morale</comment>
+          <modifiers>
+            <modifier type="increment" value="28" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="e336-dbc5-2fcf-219a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="e336-dbc5-2fcf-219a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="e336-dbc5-2fcf-219a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="14" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="e336-dbc5-2fcf-219a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="7d89-165d-e390-af53" primary="true" name="Support Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Command Unit (Kommodan Loyalists)" hidden="false" id="f2f2-0409-6ad3-11b0" type="selectionEntry" targetId="7350-c445-265f-4354">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="98dc-53e9-e7fd-3798" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="70e7-69ee-78e1-750b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b08e-9071-3816-97f0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7047-45b2-1574-ed3d" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7411-652b-2666-1689" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Hide if Detachment Command = Vehicle</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="4135-8cfd-9c0b-eed2" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Command Unit (Kommodan Loyalists)" hidden="false" id="657a-f038-1ced-7f7a" type="selectionEntry" targetId="7350-c445-265f-4354">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="98dc-53e9-e7fd-3798" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="70e7-69ee-78e1-750b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b08e-9071-3816-97f0" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7047-45b2-1574-ed3d" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7411-652b-2666-1689" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Hide if Detachment Command = Vehicle</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="a637-4ca0-8e4a-2017" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Command Unit (Kommodan Loyalists)" hidden="false" id="7c09-5a52-524f-1b8a" type="selectionEntry" targetId="7350-c445-265f-4354">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c565-66ae-b2ae-0351" primary="true" name="Support Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Piranha FAV (Dominion Vassal)" hidden="false" id="d369-2e0a-f5a2-c80e" type="selectionEntry" targetId="fde6-f4af-3d82-c616">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="b340-cbc7-48c0-b2df" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Piranha FAV (Dominion Vassal)" hidden="false" id="7843-3ccf-afde-2903" type="selectionEntry" targetId="fde6-f4af-3d82-c616">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="2144-4d6c-774f-f3e3" primary="true" name="Support Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Piranha FAV (Tank Commander) (Dominion Vassal)" hidden="false" id="7047-45b2-1574-ed3d" type="selectionEntry" targetId="37fa-2ba2-aeb8-694c">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="3f04-24b3-8bd4-c9e0" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Bullfrog APC (Dominion Vassal)" hidden="false" id="a68d-f3fe-b286-3f06" type="selectionEntry" targetId="9816-390b-21e9-eaf2">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="b9ee-524b-dc23-724a" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Devin Pact: Kommodan Loyalists" hidden="false" id="7379-7ecd-ef99-88a1" type="selectionEntry" targetId="45ae-1730-794c-5635"/>
+    <entryLink import="true" name="Bullfrog APC (Dominion Vassal)" hidden="false" id="e123-9f2c-f490-84f2" type="selectionEntry" targetId="9816-390b-21e9-eaf2">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="a26c-824c-cb99-8082" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Bullfrog APC (Tank Commander) (Dominion Vassal)" hidden="false" id="70e7-69ee-78e1-750b" type="selectionEntry" targetId="f470-25bd-b728-d694">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="0689-39cb-a05e-fd37" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Raven Command Vehicle (Dominion Vassal)" hidden="false" id="7411-652b-2666-1689" type="selectionEntry" targetId="dafc-58b2-0527-da96">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="136e-3931-ac1c-be38" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Raven Command Vehicle (Dominion Vassal)" hidden="false" id="def4-e519-be87-f584" type="selectionEntry" targetId="dafc-58b2-0527-da96">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="7405-adf4-a622-a98a" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Raven Command Vehicle (Dominion Vassal)" hidden="false" id="76fe-f32e-9e64-e27c" type="selectionEntry" targetId="dafc-58b2-0527-da96">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8352-a1da-9d0a-f8f0" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Hammerhead IFV (Dominion Vassal)" hidden="false" id="f355-7a0b-265b-e781" type="selectionEntry" targetId="2c74-1438-380a-47ac">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="1e34-3de3-9e40-9cbe" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Hammerhead IFV (Dominion Vassal)" hidden="false" id="76f4-db47-e9b7-285d" type="selectionEntry" targetId="2c74-1438-380a-47ac">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="0834-e895-8532-5424" primary="true" name="Support Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hammerhead IFV (Tank Commander) (Dominion Vassal)" hidden="false" id="b08e-9071-3816-97f0" type="selectionEntry" targetId="7315-85dc-2a12-a480">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="28ce-e15c-66c5-7266" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Snapdragon SPAAG (Dominion Vassal)" hidden="false" id="42cc-5498-8b6f-a131" type="selectionEntry" targetId="4c64-65dc-c70d-52df">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="77e0-e90c-c24d-5297" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Snapdragon SPAAG (Dominion Vassal)" hidden="false" id="0c30-3f5d-6b35-a3aa" type="selectionEntry" targetId="4c64-65dc-c70d-52df">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="2141-57d0-cb84-612e" primary="true" name="Support Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank (Kommodan Loyalists)" hidden="false" id="c329-6bfd-374a-aee3" type="selectionEntry" targetId="fd31-b042-5a33-f53d">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="46f7-ab22-5d6b-2639" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank (Kommodan Loyalists)" hidden="false" id="8e57-4a02-7dae-72d4" type="selectionEntry" targetId="fd31-b042-5a33-f53d">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="0827-a87c-b02a-90d2" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank (Tank Commander) (Kommodan Loyalists)" hidden="false" id="98dc-53e9-e7fd-3798" type="selectionEntry" targetId="dd6f-772e-0d2c-5a57">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f2f2-0409-6ad3-11b0" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <comment>Hide if Detachment Command = Guardsmen Command</comment>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="self" childId="1d1e-5ab8-05e8-b561" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+          <comment>Hide in Kommodan Loyalists Forces</comment>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="ea45-2f1d-3fc0-658b" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <forceEntries>
     <forceEntry name="Devin Pact: Kommodan Loyalists" id="77fe-5e89-8df8-7f74" hidden="false">
@@ -647,8 +1610,43 @@
         <categoryLink name="Support Squads" hidden="false" id="e478-a851-3d25-a5c4" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="948d-051d-0327-5ce3"/>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1a36-bdb5-17ab-4912"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="1a36-bdb5-17ab-4912"/>
           </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Sol Enclaves" id="1d1e-5ab8-05e8-b561" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="a26f-709a-e983-6827" targetId="857e-b03a-a081-0acc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c61-c9ce-c7e3-b1b9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3b-cd44-ff3d-09ed"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Detachment Commander" hidden="false" id="881c-279e-3d27-9ba2" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="221c-a354-ed16-ee6e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e94b-1e18-a985-04db"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="4088-3ffc-e88e-2dca" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2f69-6f6c-4558-00b8"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e46-3065-7882-e368"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="6ddc-7d5c-a0d2-7ded" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0613-516f-6f92-584e"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b2f7-1926-dec3-8e30"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="b2f7-1926-dec3-8e30">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7411-652b-2666-1689" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
