@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="36c0-b435-6935-ad36" name="Scaryn Federated Alliance Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="36c0-b435-6935-ad36" name="Scaryn Federated Alliance Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pathfinder LMG Gunners" hidden="false" id="0010-f7fd-c067-b5d3">
       <selectionEntries>
@@ -380,6 +380,23 @@
                 <infoLink name="Adaptive Tactics" id="6b8b-c7e5-6e7d-e461" hidden="false" type="rule" targetId="a38e-dc52-10cb-dfd3"/>
                 <infoLink name="Sidearms" id="eaea-d2ed-d3c6-9bff" hidden="false" type="rule" targetId="6a33-85d0-d353-5615"/>
               </infoLinks>
+              <profiles>
+                <profile name="Pathfinder Riflemen (w/ MB17 LAW)" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="c4c4-196e-082e-6ce2">
+                  <characteristics>
+                    <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
+                    <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                    <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                    <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">5+</characteristic>
+                    <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                    <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
+                    <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">7</characteristic>
+                    <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
+                    <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
+                    <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
+                    <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Pathfinder Riflemen" hidden="false" id="31c5-de77-4459-a2f7" sortIndex="2">
               <selectionEntries>
@@ -454,6 +471,75 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9630-1e0f-c892-0bbe" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5da9-06b9-7c1b-ff26" includeChildSelections="false"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Pathfinder Upgrades" id="a975-14f6-7df4-c6c4" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pathfinder Officer Upgrade" hidden="false" id="6cfd-fae5-0904-ad7f">
+                  <costs>
+                    <cost name="Req" typeId="Requisition" value="15"/>
+                    <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+                  </costs>
+                  <rules>
+                    <rule name="Attachment" id="1620-cb7f-1b2f-f593" hidden="false">
+                      <description>Instead of being bought as its own Unit the Officer model from the Pathfinder Command Unit must be attached to to a Pathfinder Riflemen Squad. The Officer model needs to be glued onto the base of one of the host Squad&apos;s Units who have an HP of no more than 3. This Unit now benefits from the following:
+- Increase HP by 2
+- Change their Discipline value to 4+
+- Receives the Overseer ability</description>
+                    </rule>
+                  </rules>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c511-1b19-4975-8faa" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f617-9275-5730-5f64" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Overseer" id="2b5d-00cf-784d-3fd6" hidden="false" type="rule" targetId="0a22-0c5c-f16e-bad0"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pathfinder Radioman Upgrade" hidden="false" id="ecb8-e03d-00de-460c">
+                  <costs>
+                    <cost name="Req" typeId="Requisition" value="10"/>
+                    <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+                  </costs>
+                  <rules>
+                    <rule name="Attachment" id="db98-f02f-852c-dad4" hidden="false">
+                      <description>Instead of being bought as its own Unit the Radioman model from the Pathfinder Command Unit must be attached to to a Pathfinder Riflemen Squad. The Radioman model needs to be glued onto the base of one of the host Squad&apos;s Units who have an HP of no more than 3. This Unit now benefits from the following:
+- Increase HP by 1
+- Increase the Leader ability range in the same Squad by 4&quot;
+- Receives the Unique Command: Boost the Signal and Radio ability</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink name="Unique Command: Boost the Signal" id="b54e-05fb-b87b-7ce2" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
+                    <infoLink name="Radio" id="0a5d-4a8d-3361-5019" hidden="false" type="rule" targetId="c624-2e96-d693-89ce"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9c1c-5028-7e13-ba8c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdaa-2266-f184-dd95" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pathfinder Medic Upgrade" hidden="false" id="9280-745c-399b-8f4e">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6f9a-e5e0-3745-a8cb" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1cc-e371-61fd-a003" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Req" typeId="Requisition" value="10"/>
+                    <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Free Command: Medic" id="a305-1bbc-eeb8-c25f" hidden="false" type="rule" targetId="8a22-8cc3-2f31-9ce3"/>
+                  </infoLinks>
+                  <rules>
+                    <rule name="Attachment" id="946a-732d-fa8f-68c6" hidden="false">
+                      <description>Instead of being bought as its own Unit the Medic model from the Pathfinder Command Unit must be attached to to a Pathfinder Riflemen Squad. The Medic model needs to be glued onto the base of one of the host Squad&apos;s Units who have an HP of no more than 3. This Unit now benefits from the following:
+- Increase HP by 1
+- Receives the Free Command: Medic ability</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -2740,66 +2826,4 @@
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-  <sharedRules>
-    <rule name="Free Command: Medic" id="8a22-8cc3-2f31-9ce3" hidden="false">
-      <description>If this Squad is dismounted and carries out an Advance or Unique Command (not a Special Command), roll a Skill test afterwards. If passed, replenish a lost HP to a friendly dismounted Infantry Squad withing 4&quot; (including itself).</description>
-    </rule>
-    <rule name="Overseer" id="0a22-0c5c-f16e-bad0" hidden="false">
-      <description>When this Squad passes a Discipline test when taking an Order, roll a D12. On a 6+ the Order comes the Leader&apos;s own Order capacity instead of its Commands (if it has any Order capacity available).</description>
-    </rule>
-    <rule name="Adaptive Tactics" id="a38e-dc52-10cb-dfd3" hidden="false">
-      <description>This Squad benefits from the Lone Wolf ability if it consists of 1-2 Units</description>
-    </rule>
-    <rule name="Optics" id="af11-7245-7a78-44c8" hidden="false">
-      <description>If this Squad has not moved this turn, it may attempt a Skill test. If passed, receive [Accuracy ← 1]</description>
-    </rule>
-    <rule name="Advanced Stabilisers" id="4959-0133-75f3-a375" hidden="false">
-      <description>When a Squad uses Stabilised roll a Discipline tests. If passed they move their normal move instead of 5&quot;</description>
-    </rule>
-    <rule name="Improved Servo Motors" id="9cfb-a782-32da-e38b" hidden="false">
-      <description>When an Infantry Squad uses Assault Move rill a Discipline test. If passed they move 6&quot; instead of 4&quot;</description>
-    </rule>
-    <rule name="Integrated HUD" id="0550-f08b-88f3-f2e0" hidden="false">
-      <description>This weapon can reroll failed Block tests</description>
-    </rule>
-    <rule name="Hypervelocity" id="4aa5-f43a-09b4-6043" hidden="false">
-      <description>Target Unit&apos;s failed Armour saves of an 11+ generate another Armour save. This can keep going.</description>
-    </rule>
-    <rule name="Silencers" id="d8d0-d66f-7ed4-7097" hidden="false">
-      <description>Target Squads must pass an additional Discipline test to successfully React to this weapon&apos;s hits</description>
-    </rule>
-    <rule name="Special Forces" id="5096-e749-8137-d48c" hidden="false">
-      <description>Reroll failed Search attempts. In addition, this Squad scores an additional OP when in Capture Zones</description>
-    </rule>
-    <rule name="Target Identified" id="11b8-132f-8627-9bae" hidden="false">
-      <description>Whenever this Squad removes the HP from an enemy Leader Unit, score an additional OP</description>
-    </rule>
-    <rule name="Det Charges" id="4d41-49f9-9e6e-13a1" hidden="false">
-      <description>Once a turn when this Squad carries out a Storm Command, before it rolls any Strike dice, it may choose to use its Det Charges instead of attacking normally. If it does so, each Unit rolls two Strike tests, places a Blast Marker per hit and increases Melee to 10</description>
-    </rule>
-    <rule name="Squad Leader" id="35c6-5c3c-a3c7-640c" hidden="false">
-      <description>When this Squad passes a Discipline test when taking an Order, roll a D12. On a 6+ the Order comes from the Leader&apos;s Order capacity instead of its Commands (if it has any Order capacity available).</description>
-    </rule>
-    <rule name="Advanced Radio" id="67a9-a2ad-9787-f656" hidden="false">
-      <description>Any friendly Leader can extend their Leader range by 16&quot; when attempting to Order this Squad</description>
-    </rule>
-    <rule name="Electro-Pads" id="fbca-b732-83b1-0e49" hidden="false">
-      <description>Before rolling Armour saves to a hit from the front or side, roll a D12. On a 1-7 reduce that Hit&apos;s AP value by 2 to a minimum of 0. This ability has no effect against Melee attacks or Autohits.</description>
-    </rule>
-    <rule name="Free Command: Autofire" id="e35f-a703-f839-077c" hidden="false">
-      <description>If a Flyer Squad within 16&quot; (or other Unit Type within 8&quot;) and LOS ends moving its Units, this weapon can immediately Engage it but with [Accuracy → 2]. This can potentially interrupt the Command.</description>
-    </rule>
-    <rule name="AP Rounds" id="2c8f-76d1-13a3-d49f" hidden="false">
-      <description>Target Units with Enclosed 1+ must reroll Armour saves of 1-2</description>
-    </rule>
-    <rule name="Bursting Charge (4)" id="0d66-dd9f-a9ba-0ecc" hidden="false">
-      <description>Once per turn this weapon may change its attacks to 4, all damage dice to 1 and loses Kinetic Energy Round.</description>
-    </rule>
-    <rule name="Glide Pod" id="ece0-1301-74ba-86d3" hidden="false">
-      <description>This Squad may reroll the Scatter Distance when using the Scatter ability, but must stand by the 2nd result</description>
-    </rule>
-    <rule name="Ejector Braces" id="d605-baf8-21b1-76fc" hidden="false">
-      <description>When this Squad is first placed in the AO, the owning okayer may immediately declare the transported Squad is spending one or more of their Commands to Overwatch</description>
-    </rule>
-  </sharedRules>
 </catalogue>

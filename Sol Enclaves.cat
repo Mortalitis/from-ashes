@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6b19-6566-2eeb-c12c" name="Sol Enclaves" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6b19-6566-2eeb-c12c" name="Sol Enclaves" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Sol Enclaves" id="acaf-10f9-e50c-15ba" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="acd5-2f87-7c17-7f80" targetId="857e-b03a-a081-0acc" type="categoryEntry">
+        <categoryLink name="Configuration" hidden="false" id="acd5-2f87-7c17-7f80" targetId="857e-b03a-a081-0acc">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00f9-c767-c78a-5cdf"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a6-284e-13c6-9c82"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Detachment Commander" hidden="false" id="03f5-d46a-1122-344b" targetId="a9a7-132c-6641-0946" type="categoryEntry">
+        <categoryLink name="Detachment Commander" hidden="false" id="03f5-d46a-1122-344b" targetId="a9a7-132c-6641-0946">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d9a-39b0-a640-3c61"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb70-3def-cac5-7c10"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="6e7f-96f2-3d77-0d99" targetId="0e7c-b40e-8e07-6f1c" type="categoryEntry">
+        <categoryLink name="Core Squads" hidden="false" id="6e7f-96f2-3d77-0d99" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="94f1-3c97-820f-8366"/>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5feb-4c96-4ca2-d60c"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="d610-0b89-a8cd-4e38" targetId="19e5-b1b6-d85b-9709" type="categoryEntry">
+        <categoryLink name="Support Squads" hidden="false" id="d610-0b89-a8cd-4e38" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="976f-cd69-9d08-be0c"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2806-9bde-5639-b2d8"/>
@@ -678,7 +678,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -699,7 +699,7 @@
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -715,16 +715,22 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Paragon Anvil Battle Tank" hidden="false" id="b514-fb1c-16f2-5af5" type="selectionEntry" targetId="b1b3-d0b4-4f31-8c57">
+    <entryLink import="true" name="Anvil Battle Tank (Paragon)" hidden="false" id="b514-fb1c-16f2-5af5" type="selectionEntry" targetId="b1b3-d0b4-4f31-8c57">
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="7863-47dd-d13c-0a0c" primary="true" name="Core Squads"/>
       </categoryLinks>
       <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Anvil Battle Tank" field="name"/>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
@@ -735,41 +741,20 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="100"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </entryLink>
-    <entryLink import="true" name="Paragon Anvil Battle Tank" hidden="false" id="42bd-dcd5-13f7-45d2" type="selectionEntry" targetId="b1b3-d0b4-4f31-8c57">
+    <entryLink import="true" name="Anvil Battle Tank (Paragon)" hidden="false" id="42bd-dcd5-13f7-45d2" type="selectionEntry" targetId="b1b3-d0b4-4f31-8c57">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="123a-7201-8094-2998" primary="true" name="Support Squads"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
-    </entryLink>
-    <entryLink import="true" name="Paragon Anvil Battle Tank (Tank Commander)" hidden="false" id="e162-e348-37fe-af27" type="selectionEntry" targetId="2eb7-9d02-a15e-bf7d">
-      <categoryLinks>
-        <categoryLink targetId="a9a7-132c-6641-0946" id="e122-b844-f712-fdc5" primary="true" name="Detachment Commander"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
@@ -777,6 +762,29 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="Anvil Battle Tank" field="name"/>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank (Tank Commander)(Paragon)" hidden="false" id="e162-e348-37fe-af27" type="selectionEntry" targetId="2eb7-9d02-a15e-bf7d">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="e122-b844-f712-fdc5" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Anvil Battle Tank (Tank Commander)" field="name"/>
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="100"/>
