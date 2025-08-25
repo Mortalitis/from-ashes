@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -220,6 +220,286 @@
     </rule>
     <rule name="Auxiliary" id="79e3-d0fa-6443-e95c" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
       <description>This Unity is not counted when establishing the Detachment&apos;s Morale Value or counted towards Routed when destroyed</description>
+    </rule>
+    <rule name="Adaptive Tactics" id="a38e-dc52-10cb-dfd3" hidden="false">
+      <description>This Squad benefits from the Lone Wolf ability if it consists of 1-2 Units</description>
+    </rule>
+    <rule name="Advanced Radio" id="67a9-a2ad-9787-f656" hidden="false">
+      <description>Any friendly Leader can extend their Leader range by 16&quot; when attempting to Order this Squad</description>
+    </rule>
+    <rule name="Advanced Stabilisers" id="4959-0133-75f3-a375" hidden="false">
+      <description>When a Squad uses Stabilised roll a Discipline tests. If passed they move their normal move instead of 5&quot;</description>
+    </rule>
+    <rule name="AP Rounds" id="2c8f-76d1-13a3-d49f" hidden="false">
+      <description>Target Units with Enclosed 1+ must reroll Armour saves of 1-2</description>
+    </rule>
+    <rule name="Bursting Charge (4)" id="0d66-dd9f-a9ba-0ecc" hidden="false">
+      <description>Once per turn this weapon may change its attacks to 4, all damage dice to 1 and loses Kinetic Energy Round.</description>
+    </rule>
+    <rule name="Det Charges" id="4d41-49f9-9e6e-13a1" hidden="false">
+      <description>Once a turn when this Squad carries out a Storm Command, before it rolls any Strike dice, it may choose to use its Det Charges instead of attacking normally. If it does so, each Unit rolls two Strike tests, places a Blast Marker per hit and increases Melee to 10</description>
+    </rule>
+    <rule name="Ejector Braces" id="d605-baf8-21b1-76fc" hidden="false">
+      <description>When this Squad is first placed in the AO, the owning okayer may immediately declare the transported Squad is spending one or more of their Commands to Overwatch</description>
+    </rule>
+    <rule name="Electro-Pads" id="fbca-b732-83b1-0e49" hidden="false">
+      <description>Before rolling Armour saves to a hit from the front or side, roll a D12. On a 1-7 reduce that Hit&apos;s AP value by 2 to a minimum of 0. This ability has no effect against Melee attacks or Autohits.</description>
+    </rule>
+    <rule name="Free Command: Autofire" id="e35f-a703-f839-077c" hidden="false">
+      <description>If a Flyer Squad within 16&quot; (or other Unit Type within 8&quot;) and LOS ends moving its Units, this weapon can immediately Engage it but with [Accuracy → 2]. This can potentially interrupt the Command.</description>
+    </rule>
+    <rule name="Free Command: Medic" id="8a22-8cc3-2f31-9ce3" hidden="false">
+      <description>If this Squad is dismounted and carries out an Advance or Unique Command (not a Special Command), roll a Skill test afterwards. If passed, replenish a lost HP to a friendly dismounted Infantry Squad withing 4&quot; (including itself).</description>
+    </rule>
+    <rule name="Glide Pod" id="ece0-1301-74ba-86d3" hidden="false">
+      <description>This Squad may reroll the Scatter Distance when using the Scatter ability, but must stand by the 2nd result</description>
+    </rule>
+    <rule name="Hypervelocity" id="4aa5-f43a-09b4-6043" hidden="false">
+      <description>Target Unit&apos;s failed Armour saves of an 11+ generate another Armour save. This can keep going.</description>
+    </rule>
+    <rule name="Improved Servo Motors" id="9cfb-a782-32da-e38b" hidden="false">
+      <description>When an Infantry Squad uses Assault Move rill a Discipline test. If passed they move 6&quot; instead of 4&quot;</description>
+    </rule>
+    <rule name="Integrated HUD" id="0550-f08b-88f3-f2e0" hidden="false">
+      <description>This weapon can reroll failed Block tests</description>
+    </rule>
+    <rule name="Optics" id="af11-7245-7a78-44c8" hidden="false">
+      <description>If this Squad has not moved this turn, it may attempt a Skill test. If passed, receive [Accuracy ← 1]</description>
+    </rule>
+    <rule name="Overseer" id="0a22-0c5c-f16e-bad0" hidden="false">
+      <description>When this Squad passes a Discipline test when taking an Order, roll a D12. On a 6+ the Order comes the Leader&apos;s own Order capacity instead of its Commands (if it has any Order capacity available).</description>
+    </rule>
+    <rule name="Silencers" id="d8d0-d66f-7ed4-7097" hidden="false">
+      <description>Target Squads must pass an additional Discipline test to successfully React to this weapon&apos;s hits</description>
+    </rule>
+    <rule name="Special Forces" id="5096-e749-8137-d48c" hidden="false">
+      <description>Reroll failed Search attempts. In addition, this Squad scores an additional OP when in Capture Zones</description>
+    </rule>
+    <rule name="Squad Leader" id="35c6-5c3c-a3c7-640c" hidden="false">
+      <description>When this Squad passes a Discipline test when taking an Order, roll a D12. On a 6+ the Order comes from the Leader&apos;s Order capacity instead of its Commands (if it has any Order capacity available).</description>
+    </rule>
+    <rule name="Target Identified" id="11b8-132f-8627-9bae" hidden="false">
+      <description>Whenever this Squad removes the HP from an enemy Leader Unit, score an additional OP</description>
+    </rule>
+    <rule name="Burrowing Terror" id="2e77-867f-f692-574b" hidden="false">
+      <description>This Squad can attempt to Storm 10&quot; rather than 8&quot;. In addition, when this Unit Storms and the target Squad chooses Engage as a Reaction during Step 2, the Target suffers and [Accuracy → 1] penalty</description>
+    </rule>
+    <rule name="Charge Up! (D4+1)" id="1d24-c5ef-03d5-b59f" hidden="false">
+      <description>Before choosing a target roll D4+1 for this weapons AP value for this Command</description>
+    </rule>
+    <rule name="Charge Up! (D4+2)" id="3097-20dc-c4bd-a966" hidden="false">
+      <description>Before choosing a target roll D4+2 for this weapons AP value for this Command</description>
+    </rule>
+    <rule name="Erratic Warhead (D4+2)" id="8756-3dd8-a218-bd8c" hidden="false">
+      <description>After Accuracy rolls, roll a D4+2. This is the weapon&apos;s AP value for this Command</description>
+    </rule>
+    <rule name="Erratic Warhead (D4+3)" id="47cc-1f45-2061-cc26" hidden="false">
+      <description>After Accuracy rolls, roll a D4+3. This is the weapon&apos;s AP value for this Command</description>
+    </rule>
+    <rule name="Erratic Warhead (D4+4)" id="c18d-d499-9a29-e285" hidden="false">
+      <description>After Accuracy rolls, roll a D4+4. This is the weapon&apos;s AP value for this Command</description>
+    </rule>
+    <rule name="Exposed Gunner" id="a320-67e8-764c-f2c6" hidden="false">
+      <description>If this weapon causes any hits, reduce the host Unit&apos;s Enclosed value by 1 for this Command</description>
+    </rule>
+    <rule name="Galvanic Detonation (1)" id="85ab-e1b1-c98e-274f" hidden="false">
+      <description>After resolving damage roll a D12 for each Hit scored on the target Squad. If one or more score 10+, place and extra Blast Marker and the target loses an additional HP</description>
+    </rule>
+    <rule name="Galvanic Detonation (3)" id="f118-2660-8ef4-ee9e" hidden="false">
+      <description>If this weapon successfully hits, roll three D12s after resolving damage. If one or more score 10+, place and extra Blast Marker and the target loses an additional HP</description>
+    </rule>
+    <rule name="Guided Missile" id="cffa-962d-ad20-3f88" hidden="false">
+      <description>Reroll failed Accuracy rolls if this Squad has not yet moved this turn</description>
+    </rule>
+    <rule name="Heavy Skimmer Plate" id="0a17-2b65-672c-604e" hidden="false">
+      <description>Roll a D12 each time this Unit loses an HP. On an 1-3 the HP is not lost</description>
+    </rule>
+    <rule name="Incendiary Rounds" id="8251-2a55-e30e-c8e0" hidden="false">
+      <description>Enclosed 0 Units must reroll Armour Saves of a 1-2 against hits from this weapon</description>
+    </rule>
+    <rule name="Mobile Altar" id="1319-a6df-b6b3-fd29" hidden="false">
+      <description>When this Squad attempts to Order another Squad, it can move 5&quot; before attempting the Order. Note this does not count as an Advance Command for the purposes of Agile</description>
+    </rule>
+    <rule name="Protect Me You Fools!" id="2442-59c7-81d0-c393" hidden="false">
+      <description>This Unit counts as a Lone Wolf despite not being an Infantry Unit. In addition friendly Reaver Squads Block as if they were Infantry Squads. See the Unit Types section of the main From Ashes rules</description>
+    </rule>
+    <rule name="Pyromaniac" id="8b43-95e4-4972-ee77" hidden="false">
+      <description>This Squad can reroll failed Accuracy rolls with it Incendiary Grenades</description>
+    </rule>
+    <rule name="Scatter Shot" id="321f-4a1a-01c4-1ef8" hidden="false">
+      <description>Ignores terrain negative rerolls and terrain armour bonuses</description>
+    </rule>
+    <rule name="Shock Bolt (1)" id="bad0-9c8b-df01-4061" hidden="false">
+      <description>Squads targeted by this weapon must roll a Skill Test for each hit. If any fail an used Order must become Unique. If there are no unused Orders then a Command becomes Unique instead.</description>
+    </rule>
+    <rule name="Shock Bolt (3)" id="3e5b-2a0f-1053-c663" hidden="false">
+      <description>Squads targeted by this weapon must roll 3 Skill Tests. If any fail an used Order must become Unique. If there are no unused Orders then a Command becomes Unique instead.</description>
+    </rule>
+    <rule name="Shock Field" id="3f94-26ae-7625-b845" hidden="false">
+      <description>After finishing a move, an enemy Unit within 2&quot; must pass a Skill Test or count and Unused Order as Unique, or a Command if there are no Unused Orders</description>
+    </rule>
+    <rule name="Skimmer Plate" id="6400-8aef-a5ee-765c" hidden="false">
+      <description>Roll a D12 each time this Unit loses an HP. On an 1-2 the HP is not lost</description>
+    </rule>
+    <rule name="Smoke Blast (3)" id="b8ac-de73-8001-a1bc" hidden="false">
+      <description>For each hit place 3 Smoke Markers in base contact and as close to the target as possible</description>
+    </rule>
+    <rule name="Special Advance Command: Boosters (5&quot;)" id="20b6-b3c0-e174-c0cc" hidden="false">
+      <description>Roll a D4; on a 1 count its Move as 5&quot; for this Command, otherwise increase Move by the number rolled for this Command</description>
+      <modifiers>
+        <modifier type="set" value="Special Advance Command: Boosters " field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Squash Head" id="6523-1286-87cf-d103" hidden="false">
+      <description>Target Units within buildings, ruins and bunkers must reroll successful Armour Saves</description>
+    </rule>
+    <rule name="Track Pods" id="dfc1-4a82-3ed3-fe9a" hidden="false">
+      <description>Reroll failed Slow terrain tests. In addition this Unit counts as Move 4&quot; rather than 0&quot; if it suffers an M-Kill</description>
+    </rule>
+    <rule name="Tunneling Ascent" id="e3b8-0bce-9a2d-0fb1" hidden="false">
+      <description>When this Squad is at the FOB. it may be chosen to activate like any other Squad, despite not actually being in the AO. If they are activated in this way, they are immediately placed in the AO via the Scatter ability from the Unit Abilities section of the main From Ashes rules. Once in the AO roll a D12; on a 5+ they must spend a single Command as Advance, otherwise count both as Advance.</description>
+    </rule>
+    <rule name="Vhokys Drugs (1-2)" id="9444-a927-fe72-e1ab" hidden="false">
+      <description>When this Unit fails an Armour save, roll a D12; on a 1-2 it is ignored. In addition Storm Target&apos;s reroll Armour saved of 1-2</description>
+    </rule>
+    <rule name="Vhokys Drugs (1-3)" id="ed3b-71e5-a9be-6375" hidden="false">
+      <description>When this Unit fails an Armour save, roll a D12; on a 1-2 it is ignored. In addition Storm Target&apos;s reroll Armour saved of 1-2</description>
+    </rule>
+    <rule name="Zealot" id="88c5-b86f-11ba-0f01" hidden="false">
+      <description>When dismounted friendly dismounted Squads within 5&quot; (including itself) can reroll passed or failed Discipline tests</description>
+    </rule>
+    <rule name="Cumbersome" id="c3cb-c914-043d-4221" hidden="false">
+      <description>This Squad cannot use the Fire From Prone Global Infantry ability nor can it move as part of a Storm Command</description>
+    </rule>
+    <rule name="Explosive Reactive Armour" id="9018-ac12-3afa-056e" hidden="false">
+      <description>If this Unit takes damage from a Blast 1+ Hit on the front or side arcs, roll a D12; on a 1-7 place another Blast Marker and reroll any failed Armour Saves from that Hit. This Ability cannot be used against Autohits.</description>
+    </rule>
+    <rule name="Fast Embark" id="34d1-6538-e9ef-8925" hidden="false">
+      <description>Squads may mount this Unit as a Reaction as part of Step 2 of an enemy Storm Command</description>
+    </rule>
+    <rule name="Fight Another Day" id="4821-e5dc-82cd-4e4f" hidden="false">
+      <description>As long as the Guardsmen Anvil Tank Crew Unit is alive the following applies:
+- The host Anvil never counts as destroyed for the purpose of HVTs
+- The host Anvil never counts as Captured
+- The host Anvil counts as 2 OPs instead of the usual OPs for the purpose of enemy scoring OPs in missions where this is relevant, unless the Guardsmen Anvil Tank Crew are destroyed, in which case the full OPs are scored</description>
+    </rule>
+    <rule name="Heavy Weapon" id="b189-6327-964b-4a61" hidden="false">
+      <description>This weapon cannot be used if this Unit moved this turn</description>
+    </rule>
+    <rule name="Heirloom Scimitar" id="ca6d-a21a-e8ef-6fc8" hidden="false">
+      <description>For each successful Storm hit, roll another Storm Attack. These Attacks do not roll again however.</description>
+    </rule>
+    <rule name="Inspirational Hero" id="c5cc-2701-61d1-b83b" hidden="false">
+      <description>When this Squad is dismounted, friendly dismounted Squads within 5&quot; can change their Discipline value to 4+</description>
+    </rule>
+    <rule name="Rangefinder" id="d36f-f7f9-3a4f-967f" hidden="false">
+      <description>After choosing a target, roll a D12; on an 8+ (6+ if not moved this turn) receive [Accuracy ← 1] for this Engage Command</description>
+    </rule>
+    <rule name="Salvo Fire" id="de0e-e787-5d69-47d1" hidden="false">
+      <description>If this Unit has full HP and this weapon has not been used this turn, the owning player can choose to increase its Attacks to 2 but cannot be used for the rest of the turn</description>
+    </rule>
+    <rule name="Unique Command: Ad-Hoc Repairs" id="c31c-1fde-4c41-9e9d" hidden="false">
+      <description>When mounted the host vehicle may spend a Unique Command to roll a D12. On a 5+ replenish a lost HP to the mounted vehicle</description>
+    </rule>
+    <rule name="Vehicle Crew" id="dc3e-8510-7944-d3f8" hidden="false">
+      <description>Instead of being bought as it&apos;s own Unit, the Anvil Tank Crew Unit must be bought as an upgrade to a friendly Anvil from the same Detachment, despite not being a transport, the Anvil Tank Crew count as being transported within the Anvil, cannot choose to dismount and they cannot be chosen to activate independently of the Anvil. Once the Anvil is destroyed, and assuming the Anvil Tank Crew survive, they can operate as a separate Squad for the rest of the battle.</description>
+    </rule>
+    <rule name="A Madness Grips Them" id="4fef-152a-0271-4085" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
+      <description>When this Unit loses an HP, the closest enemy Squad (roll of in a tie) within 4&quot; takes an AP 2 Autohit</description>
+    </rule>
+    <rule name="Arc Blades" id="0123-ec80-d72e-d6ce" hidden="false">
+      <description>Strom Strike rolls of a 12+ (after any rerolls) become two Hits instead of one</description>
+    </rule>
+    <rule name="Arc Burst" id="ddab-d8a7-4b0b-e7c9" hidden="false">
+      <description>Place a Blast Marker by the target for each HP Lost (if destroyed, place the marker before the target is removed)</description>
+    </rule>
+    <rule name="Berserk" id="b4a2-e55e-16dd-7c10" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
+      <description>This Unit receives two Storm bonus Attacks instead of one. Additionally when this Squad starts a Command (including Overwatch) within 8&quot; if an enemy Unit, roll a Discipline test. If passed this Unit acts as normal otherwise they must attempt to Storm the closest enemy Unit</description>
+    </rule>
+    <rule name="Compound Optics" id="1d8a-ce56-2e1b-e77d" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="21">
+      <description>At the start of an Engage Command after targets have been selected roll two D12s for each Compound Optics Hardlink Upgrade it has. For each roll of an 8+ all of this Unit&apos;s weapons receive [Accuracy ← 1] if it can see the target. If this Unit has not moved this turn, change the roll to 6+ instead.</description>
+    </rule>
+    <rule name="Dodge" id="db4d-a462-5a4c-bed1" hidden="false">
+      <description>Roll a D12 for each hit dice allocated to this Unit. Any which roll a 1-3 the hit is ignored</description>
+    </rule>
+    <rule name="Drone" id="2d3e-fe0b-2990-2861" hidden="false">
+      <description>This Unit ignores Blast Markers for Accuracy rerolls. In addition Retreat and Fall Back from failed Discipline tests count as Stunned instead</description>
+    </rule>
+    <rule name="Drone Controller" id="07cf-aeb3-a712-e464" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12">
+      <description>Squads with the Drone ability pass Discipline tests on a 5+ when taking orders from a Meta Commander Unit</description>
+    </rule>
+    <rule name="Extra Weapon" id="cf63-b1b2-84c6-1b5d" hidden="false">
+      <description>This weapon can be used in addition to any others</description>
+    </rule>
+    <rule name="Free Command: Scuttle" id="f0be-b5e7-dc96-43c4" hidden="false">
+      <description>If this Unit successfully Reacts or Engages, it may pivot on its centre in order to face the attacker</description>
+    </rule>
+    <rule name="Free Command: Shield Projection" id="f3f4-23d3-94d5-b4d4" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12"/>
+    <rule name="Homing" id="a71e-8a43-8d72-d1ed" hidden="false">
+      <description>Reroll Accuracy rolls of a 1 or 2</description>
+    </rule>
+    <rule name="Individual Craft" id="1486-c434-3e19-a28a" hidden="false">
+      <description>Hits allocated to this Unit only ever generate 1 Damage Dice per Hit. In addition, whenever this Unit loses an HP, a Unit mounted within also loses an HP.</description>
+    </rule>
+    <rule name="Multi-Sensor System" id="1b08-e040-c99c-8db7" hidden="false">
+      <description>This Unit can reroll failed Discipline rolls for Reactions, Storm Attacks and Form Up</description>
+    </rule>
+    <rule name="Networked Scanning Sensors" id="0bb1-6f4f-5a72-3fb3" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="13">
+      <description>When a friendly Squad within 12&quot; fails a Discipline test for a Search attempt (including itself), this Squad may turn one of its unused Order dice to a 6 (for Unique) to enable the Searching Squad to reroll that Discipline test</description>
+    </rule>
+    <rule name="Plasma (11+)" id="ff23-556f-e1f8-33cc" hidden="false">
+      <description>Target Armour Save rolls of 11+ (after rerolls) remove and extra HP, regardless of it&apos;s Armour value.</description>
+    </rule>
+    <rule name="Plasma (12+)" id="fd5b-5088-f302-e860" hidden="false">
+      <description>Target Armour Save rolls of 12+ (after rerolls) remove and extra HP, regardless of it&apos;s Armour value.</description>
+    </rule>
+    <rule name="Plasma Deflector" id="4d68-8fc0-1751-69c8" hidden="false">
+      <description>This Unit can reroll failed Armour saves of a 12. In addition Block tests generated by this Squad are only passed on an 8+ rather than the attackers Skill</description>
+    </rule>
+    <rule name="Reassemble" id="60bc-f259-f153-6494" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="14">
+      <description>While Storming, roll a D12 for each HP removed from an enemy Unit. On a 10+ replenish a lost HP to an existing Unit. If all Units have full HP, instead place a brand new Unit as close as possible but with only 1HP</description>
+    </rule>
+    <rule name="Replenishment Pods" id="71d3-5392-e160-4000" hidden="false">
+      <description>After this Squad carries out an Advance or Unique Command, roll two D12s. For each 6+ rolled replenish a lost HP to a friendly Dismounted Revenant Combat Cyborg or Revenant Berserker Cyborg Squad within 8&quot;</description>
+    </rule>
+    <rule name="Shield (1) Recharge 4+" id="b122-a6c3-7142-26be" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="Shield (1) Recharge 6+" id="d9c4-f62f-2e64-b479" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="Shield (2) Recharge 5+" id="ec3b-067a-af01-d1c9" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="Shield (2) Recharge 6+" id="93cd-12d5-25e8-fc7b" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="Shield (3) Recharge 5+" id="310d-6768-6b33-4576" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="Smoke Grenade Pod" id="5340-6c73-0741-660b" hidden="false">
+      <description>This Unit may place its Smokescreen within it&apos;s front arc but can be up to 8&quot; instead of the usual 1&quot;</description>
+    </rule>
+    <rule name="Spear Tip" id="2b9e-6bb1-3b85-60a5" hidden="false">
+      <description>This Squad has the Form Up ability and my Form Up with any Unit Type</description>
+    </rule>
+    <rule name="Stabilised Shot" id="6b2b-9c43-d718-0b0d" hidden="false">
+      <description>This weapon may receive the Barrage special rule, but must change all AP values to 2 if it does so</description>
+    </rule>
+    <rule name="Test Lib Shared Rule" id="e9dc-6697-f846-b35c" hidden="false">
+      <description>this is a test!!!</description>
+    </rule>
+    <rule name="Voltaic Snap" id="1db2-667c-f738-2e5c" hidden="false">
+      <description>This weapons Damage dice is equal to the target Unit&apos;s starting HP</description>
+    </rule>
+    <rule name="Armour Shatter" id="3cf1-d34a-46fd-7885" hidden="false">
+      <description>Target Amour save rolls of a 12 removes an HP regardless of the targets Armour value</description>
+    </rule>
+    <rule name="Special Advance Command: Boosters (4&quot;)" id="2bcb-26a7-f451-6994" hidden="false">
+      <description>Roll a D4; on a 1 count its Move as 5&quot; for this Command, otherwise increase Move by the number rolled for this Command</description>
+      <modifiers>
+        <modifier type="set" value="Special Advance Command: Boosters " field="name"/>
+      </modifiers>
     </rule>
   </sharedRules>
 </gameSystem>

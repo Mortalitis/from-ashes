@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="30d3-125d-4f6c-158d" name="Sol Enclaves Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="30d3-125d-4f6c-158d" name="Sol Enclaves Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Guardsmen Command Unit" hidden="false" id="0d27-a4eb-b89b-83ef">
       <selectionEntries>
@@ -356,7 +356,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Heavy Weapon" id="aebe-3c3c-6659-08eb" hidden="false" type="rule" targetId="b189-6327-964b-4a61"/>
-                <infoLink name="Optics" id="d311-062c-a27b-2270" hidden="false" type="rule" targetId="190b-27d3-420f-919f"/>
+                <infoLink name="Optics" id="d311-062c-a27b-2270" hidden="false" type="rule" targetId="af11-7245-7a78-44c8"/>
                 <infoLink name="Rapid Fire (8&quot;/10+)" id="9269-a439-5e51-8ea5" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
             </selectionEntry>
@@ -517,7 +517,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Free Command: Medic" id="3338-122a-ff0c-67bd" hidden="false" type="rule" targetId="f3b3-28f4-87ec-9e4d"/>
+        <infoLink name="Free Command: Medic" id="3338-122a-ff0c-67bd" hidden="false" type="rule" targetId="8a22-8cc3-2f31-9ce3"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guardsmen Anti-Tank Squad" hidden="false" id="ddfc-267a-a411-5122">
@@ -629,7 +629,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Heavy Weapon" id="3489-913a-dcdd-7336" hidden="false" type="rule" targetId="b189-6327-964b-4a61"/>
-                <infoLink name="Optics" id="3904-c8b7-744f-1801" hidden="false" type="rule" targetId="190b-27d3-420f-919f"/>
+                <infoLink name="Optics" id="3904-c8b7-744f-1801" hidden="false" type="rule" targetId="af11-7245-7a78-44c8"/>
                 <infoLink name="Rapid Fire (8&quot;/10+)" id="fb55-c198-cb85-dcbd" hidden="false" type="rule" targetId="3ba9-85cd-b8fc-eab2"/>
               </infoLinks>
             </selectionEntry>
@@ -1256,7 +1256,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aeae-60ca-6e1a-c466-max" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Hammerhead Upgrades" hidden="false" id="d756-e405-a646-814c" type="selectionEntryGroup" targetId="3637-befc-cf0b-7e30" sortIndex="5">
+            <entryLink import="true" name="Hammerhead Upgrades" hidden="false" id="d756-e405-a646-814c" type="selectionEntryGroup" targetId="3637-befc-cf0b-7e30" sortIndex="6">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04e8-055d-47f5-5690" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d1f-5dc5-05ae-f493" includeChildSelections="false"/>
@@ -1394,7 +1394,7 @@
                 <infoLink name="Anti-Armour" id="43af-a541-2f2e-ad4f" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Additional Rocket Launcher" hidden="false" id="91f2-d907-9545-5a17">
+            <selectionEntry type="upgrade" import="true" name="Additional Rocket Launcher" hidden="false" id="91f2-d907-9545-5a17" sortIndex="5">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="495e-dea2-3c11-aa35" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="676c-6d59-8f78-26c4" includeChildSelections="false"/>
@@ -2018,7 +2018,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Paragon Anvil Battle Tank" hidden="false" id="b1b3-d0b4-4f31-8c57">
+    <selectionEntry type="unit" import="true" name="Anvil Battle Tank (Paragon)" hidden="false" id="b1b3-d0b4-4f31-8c57">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Anvil" hidden="false" id="8f9a-a125-17cb-62b9">
           <constraints>
@@ -2185,7 +2185,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Paragon Anvil Battle Tank (Tank Commander)" hidden="false" id="2eb7-9d02-a15e-bf7d">
+    <selectionEntry type="unit" import="true" name="Anvil Battle Tank (Tank Commander)(Paragon)" hidden="false" id="2eb7-9d02-a15e-bf7d">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Anvil" hidden="false" id="ec76-a560-5ecd-7009">
           <constraints>
@@ -2362,50 +2362,6 @@
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedRules>
-    <rule name="Heirloom Scimitar" id="ca6d-a21a-e8ef-6fc8" hidden="false">
-      <description>For each successful Storm hit, roll another Storm Attack. These Attacks do not roll again however.</description>
-    </rule>
-    <rule name="Inspirational Hero" id="c5cc-2701-61d1-b83b" hidden="false">
-      <description>When this Squad is dismounted, friendly dismounted Squads within 5&quot; can change their Discipline value to 4+</description>
-    </rule>
-    <rule name="Salvo Fire" id="de0e-e787-5d69-47d1" hidden="false">
-      <description>If this Unit has full HP and this weapon has not been used this turn, the owning player can choose to increase its Attacks to 2 but cannot be used for the rest of the turn</description>
-    </rule>
-    <rule name="Heavy Weapon" id="b189-6327-964b-4a61" hidden="false">
-      <description>This weapon cannot be used if this Unit moved this turn</description>
-    </rule>
-    <rule name="Optics" id="190b-27d3-420f-919f" hidden="false">
-      <description>If this Squad has not moved this turn, it may attempt a Skill Test. If passed, receive [Accuracy ← 1]</description>
-    </rule>
-    <rule name="Cumbersome" id="c3cb-c914-043d-4221" hidden="false">
-      <description>This Squad cannot use the Fire From Prone Global Infantry ability nor can it move as part of a Storm Command</description>
-    </rule>
-    <rule name="Unique Command: Ad-Hoc Repairs" id="c31c-1fde-4c41-9e9d" hidden="false">
-      <description>When mounted the host vehicle may spend a Unique Command to roll a D12. On a 5+ replenish a lost HP to the mounted vehicle</description>
-    </rule>
-    <rule name="Fight Another Day" id="4821-e5dc-82cd-4e4f" hidden="false">
-      <description>As long as the Guardsmen Anvil Tank Crew Unit is alive the following applies:
-- The host Anvil never counts as destroyed for the purpose of HVTs
-- The host Anvil never counts as Captured
-- The host Anvil counts as 2 OPs instead of the usual OPs for the purpose of enemy scoring OPs in missions where this is relevant, unless the Guardsmen Anvil Tank Crew are destroyed, in which case the full OPs are scored</description>
-    </rule>
-    <rule name="Vehicle Crew" id="dc3e-8510-7944-d3f8" hidden="false">
-      <description>Instead of being bought as it&apos;s own Unit, the Anvil Tank Crew Unit must be bought as an upgrade to a friendly Anvil from the same Detachment, despite not being a transport, the Anvil Tank Crew count as being transported within the Anvil, cannot choose to dismount and they cannot be chosen to activate independently of the Anvil. Once the Anvil is destroyed, and assuming the Anvil Tank Crew survive, they can operate as a separate Squad for the rest of the battle.</description>
-    </rule>
-    <rule name="Free Command: Medic" id="f3b3-28f4-87ec-9e4d" hidden="false">
-      <description>If this Squad is dismounted and carries out an Advance or Unique Command (not a Special Command), roll a Skill test afterwards. If passed replenish a lost HP to a friendly dismounted Infantry Squad within 4&quot; (including itself)</description>
-    </rule>
-    <rule name="Rangefinder" id="d36f-f7f9-3a4f-967f" hidden="false">
-      <description>After choosing a target, roll a D12; on an 8+ (6+ if not moved this turn) receive [Accuracy ← 1] for this Engage Command</description>
-    </rule>
-    <rule name="Explosive Reactive Armour" id="9018-ac12-3afa-056e" hidden="false">
-      <description>If this Unit takes damage from a Blast 1+ Hit on the front or side arcs, roll a D12; on a 1-7 place another Blast Marker and reroll any failed Armour Saves from that Hit. This Ability cannot be used against Autohits.</description>
-    </rule>
-    <rule name="Fast Embark" id="34d1-6538-e9ef-8925" hidden="false">
-      <description>Squads may mount this Unit as a Reaction as part of Step 2 of an enemy Storm Command</description>
-    </rule>
-  </sharedRules>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Infantry Upgrades" id="27fe-b2fc-24bf-1638" hidden="false">
       <selectionEntries>
@@ -2494,11 +2450,19 @@
           <modifiers>
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9637-d979-1379-1f48" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05af-cea8-be9e-6e37" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="6641-6622-7a21-0e8f" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
           <modifiers>
             <modifier type="set" value="15" field="Requisition"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d1b3-08b6-6bf4-73a4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fec3-ccaf-3a01-0b3d" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -2523,11 +2487,19 @@
           <modifiers>
             <modifier type="set" value="5" field="Requisition"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f1dd-83bb-cd6c-eaba" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adca-8456-5653-69ce" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="45b3-0262-f5a8-4e01" type="selectionEntry" targetId="2e1c-77ab-2ff5-e7e1">
           <modifiers>
             <modifier type="set" value="15" field="Requisition"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fd0b-9ca6-1818-2d2c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e094-9e19-475b-7196" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>

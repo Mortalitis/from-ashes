@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -1006,99 +1006,11 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule name="Test Lib Shared Rule" id="e9dc-6697-f846-b35c" hidden="false">
-      <description>this is a test!!!</description>
-    </rule>
-    <rule name="A Madness Grips Them" id="4fef-152a-0271-4085" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
-      <description>When this Unit loses an HP, the closest enemy Squad (roll of in a tie) within 4&quot; takes an AP 2 Autohit</description>
-    </rule>
-    <rule name="Arc Blades" id="0123-ec80-d72e-d6ce" hidden="false">
-      <description>Strom Strike rolls of a 12+ (after any rerolls) become two Hits instead of one</description>
-    </rule>
-    <rule name="Arc Burst" id="ddab-d8a7-4b0b-e7c9" hidden="false">
-      <description>Place a Blast Marker by the target for each HP Lost (if destroyed, place the marker before the target is removed)</description>
-    </rule>
-    <rule name="Berserk" id="b4a2-e55e-16dd-7c10" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
-      <description>This Unit receives two Storm bonus Attacks instead of one. Additionally when this Squad starts a Command (including Overwatch) within 8&quot; if an enemy Unit, roll a Discipline test. If passed this Unit acts as normal otherwise they must attempt to Storm the closest enemy Unit</description>
-    </rule>
-    <rule name="Drone" id="2d3e-fe0b-2990-2861" hidden="false">
-      <description>This Unit ignores Blast Markers for Accuracy rerolls. In addition Retreat and Fall Back from failed Discipline tests count as Stunned instead</description>
-    </rule>
-    <rule name="Drone Controller" id="07cf-aeb3-a712-e464" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12">
-      <description>Squads with the Drone ability pass Discipline tests on a 5+ when taking orders from a Meta Commander Unit</description>
-    </rule>
-    <rule name="Extra Weapon" id="cf63-b1b2-84c6-1b5d" hidden="false">
-      <description>This weapon can be used in addition to any others</description>
-    </rule>
-    <rule name="Free Command: Scuttle" id="f0be-b5e7-dc96-43c4" hidden="false">
-      <description>If this Unit successfully Reacts or Engages, it may pivot on its centre in order to face the attacker</description>
-    </rule>
-    <rule name="Free Command: Shield Projection" id="f3f4-23d3-94d5-b4d4" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12"/>
-    <rule name="Homing" id="a71e-8a43-8d72-d1ed" hidden="false">
-      <description>Reroll Accuracy rolls of a 1 or 2</description>
-    </rule>
-    <rule name="Multi-Sensor System" id="1b08-e040-c99c-8db7" hidden="false">
-      <description>This Unit can reroll failed Discipline rolls for Reactions, Storm Attacks and Form Up</description>
-    </rule>
-    <rule name="Networked Scanning Sensors" id="0bb1-6f4f-5a72-3fb3" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="13">
-      <description>When a friendly Squad within 12&quot; fails a Discipline test for a Search attempt (including itself), this Squad may turn one of its unused Order dice to a 6 (for Unique) to enable the Searching Squad to reroll that Discipline test</description>
-    </rule>
     <rule name="Overseer" id="426f-96e1-451a-d459" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
-      <description>When a Squad with one or more Meta Overseers passes a Discipline rest when taking an Order, roll an additional D12. On an 8+ the Order comes from the Leader&apos;s own Order capacity instead of it&apos;s Commands (if it has any Order capacity available)</description>
-    </rule>
-    <rule name="Plasma (11+)" id="ff23-556f-e1f8-33cc" hidden="false">
-      <description>Target Armour Save rolls of 11+ (after rerolls) remove and extra HP, regardless of it&apos;s Armour value.</description>
-    </rule>
-    <rule name="Plasma (12+)" id="fd5b-5088-f302-e860" hidden="false">
-      <description>Target Armour Save rolls of 12+ (after rerolls) remove and extra HP, regardless of it&apos;s Armour value.</description>
-    </rule>
-    <rule name="Plasma Deflector" id="4d68-8fc0-1751-69c8" hidden="false">
-      <description>This Unit can reroll failed Armour saves of a 12. In addition Block tests generated by this Squad are only passed on an 8+ rather than the attackers Skill</description>
-    </rule>
-    <rule name="Reassemble" id="60bc-f259-f153-6494" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="14">
-      <description>While Storming, roll a D12 for each HP removed from an enemy Unit. On a 10+ replenish a lost HP to an existing Unit. If all Units have full HP, instead place a brand new Unit as close as possible but with only 1HP</description>
-    </rule>
-    <rule name="Shield (1) Recharge 4+" id="b122-a6c3-7142-26be" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
-    </rule>
-    <rule name="Shield (1) Recharge 6+" id="d9c4-f62f-2e64-b479" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
-    </rule>
-    <rule name="Shield (2) Recharge 6+" id="93cd-12d5-25e8-fc7b" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
-    </rule>
-    <rule name="Shield (3) Recharge 5+" id="310d-6768-6b33-4576" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
-    </rule>
-    <rule name="Smoke Grenade Pod" id="5340-6c73-0741-660b" hidden="false">
-      <description>This Unit may place its Smokescreen within it&apos;s front arc but can be up to 8&quot; instead of the usual 1&quot;</description>
-    </rule>
-    <rule name="Spear Tip" id="2b9e-6bb1-3b85-60a5" hidden="false">
-      <description>This Squad has the Form Up ability and my Form Up with any Unit Type</description>
-    </rule>
-    <rule name="Stabilised Shot" id="6b2b-9c43-d718-0b0d" hidden="false">
-      <description>This weapon may receive the Barrage special rule, but must change all AP values to 2 if it does so</description>
-    </rule>
-    <rule name="Voltaic Snap" id="1db2-667c-f738-2e5c" hidden="false">
-      <description>This weapons Damage dice is equal to the target Unit&apos;s starting HP</description>
-    </rule>
-    <rule name="Dodge" id="db4d-a462-5a4c-bed1" hidden="false">
-      <description>Roll a D12 for each hit dice allocated to this Unit. Any which roll a 1-3 the hit is ignored</description>
-    </rule>
-    <rule name="Compound Optics" id="1d8a-ce56-2e1b-e77d" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="21">
-      <description>At the start of an Engage Command after targets have been selected roll two D12s for each Compound Optics Hardlink Upgrade it has. For each roll of an 8+ all of this Unit&apos;s weapons receive [Accuracy ← 1] if it can see the target. If this Unit has not moved this turn, change the roll to 6+ instead.</description>
-    </rule>
-    <rule name="Shield (2) Recharge 5+" id="ec3b-067a-af01-d1c9" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
-    </rule>
-    <rule name="Replenishment Pods" id="71d3-5392-e160-4000" hidden="false">
-      <description>After this Squad carries out an Advance or Unique Command, roll two D12s. For each 6+ rolled replenish a lost HP to a friendly Dismounted Revenant Combat Cyborg or Revenant Berserker Cyborg Squad within 8&quot;</description>
+      <description>When a Squad with one or more Meta Overseers passes a Discipline test when taking an Order, roll an additional D12. On an 8+ the Order comes from the Leader&apos;s own Order capacity instead of it&apos;s Commands (if it has any Order capacity available)</description>
     </rule>
     <rule name="Transport (1x Infantry, excl. Hunchback and Centaurs)" id="0921-0554-301a-9f6b" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="23">
       <description>See the Unit Abilities section of the main From Ashes rules</description>
-    </rule>
-    <rule name="Individual Craft" id="1486-c434-3e19-a28a" hidden="false">
-      <description>Hits allocated to this Unit only ever generate 1 Damage Dice per Hit. In addition, whenever this Unit loses an HP, a Unit mounted within also loses an HP.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
