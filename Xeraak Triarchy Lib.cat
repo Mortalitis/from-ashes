@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -598,40 +598,6 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Grenades" hidden="false" id="bad4-94b4-5cdb-103e" publicationId="38b2-0d05-f0c9-eb32" page="12">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2696-4a89-b08b-6113-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2696-4a89-b08b-6113-max"/>
-      </constraints>
-      <profiles>
-        <profile name="Plasma Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="bdcf-ff50-b839-ef80" publicationId="38b2-0d05-f0c9-eb32" page="12">
-          <characteristics>
-            <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-            <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
-            <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
-            <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
-            <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">N/A</characteristic>
-            <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">N/A</characteristic>
-            <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
-            <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
-            <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
-            <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
-            <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
-            <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-            <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Grenade Attack" id="a8b7-b1b2-d9f3-1317" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
-        <infoLink name="Ignores Cover" id="10f8-3dbe-7d4c-c556" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
-        <infoLink name="Plasma (11+)" id="de13-c348-982e-c30f" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Reaper Combat Walker" hidden="false" id="7c18-fc38-4912-170c">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Reaper Combat Walker" hidden="false" id="d439-50d7-40bb-78c4">
@@ -1003,6 +969,40 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma Grenades" hidden="false" id="bad4-94b4-5cdb-103e" publicationId="38b2-0d05-f0c9-eb32" page="12">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2696-4a89-b08b-6113-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2696-4a89-b08b-6113-max"/>
+      </constraints>
+      <profiles>
+        <profile name="Plasma Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="bdcf-ff50-b839-ef80" publicationId="38b2-0d05-f0c9-eb32" page="12">
+          <characteristics>
+            <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
+            <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
+            <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
+            <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
+            <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">N/A</characteristic>
+            <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">N/A</characteristic>
+            <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
+            <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
+            <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
+            <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
+            <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+            <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+            <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Grenade Attack" id="a8b7-b1b2-d9f3-1317" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+        <infoLink name="Ignores Cover" id="10f8-3dbe-7d4c-c556" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+        <infoLink name="Plasma (11+)" id="de13-c348-982e-c30f" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

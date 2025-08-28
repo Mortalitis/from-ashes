@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6b19-6566-2eeb-c12c" name="Sol Enclaves" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6b19-6566-2eeb-c12c" name="Sol Enclaves" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Sol Enclaves" id="acaf-10f9-e50c-15ba" hidden="false">
       <categoryLinks>
@@ -63,6 +63,7 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+          <comment>Hide if Detachment Commander = Vehicle</comment>
         </modifier>
       </modifiers>
     </entryLink>
@@ -462,7 +463,6 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
-                <condition type="notEqualTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -508,7 +508,6 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
-                <condition type="notEqualTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -570,7 +569,6 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
-                <condition type="notEqualTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -600,7 +598,6 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
-                <condition type="notEqualTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -646,7 +643,6 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
-                <condition type="notEqualTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -676,11 +672,7 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" value="true" field="hidden"/>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Anvil Battle Tank" hidden="false" id="d7ff-568c-46f4-9e43" type="selectionEntry" targetId="6529-bc61-a886-4588">
@@ -697,11 +689,6 @@
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Anvil Battle Tank" hidden="false" id="904c-f829-15c2-63b4" type="selectionEntry" targetId="6529-bc61-a886-4588">
@@ -713,63 +700,10 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" value="true" field="hidden"/>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Anvil Battle Tank (Paragon)" hidden="false" id="b514-fb1c-16f2-5af5" type="selectionEntry" targetId="b1b3-d0b4-4f31-8c57">
-      <categoryLinks>
-        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="7863-47dd-d13c-0a0c" primary="true" name="Core Squads"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="Anvil Battle Tank" field="name"/>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
-                <condition type="notEqualTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="0ce2-7754-a541-b407" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
-    </entryLink>
-    <entryLink import="true" name="Anvil Battle Tank (Paragon)" hidden="false" id="42bd-dcd5-13f7-45d2" type="selectionEntry" targetId="b1b3-d0b4-4f31-8c57">
-      <categoryLinks>
-        <categoryLink targetId="19e5-b1b6-d85b-9709" id="123a-7201-8094-2998" primary="true" name="Support Squads"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="Anvil Battle Tank" field="name"/>
-      </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
-    </entryLink>
-    <entryLink import="true" name="Anvil Battle Tank (Tank Commander)(Paragon)" hidden="false" id="e162-e348-37fe-af27" type="selectionEntry" targetId="2eb7-9d02-a15e-bf7d">
+    <entryLink import="true" name="Anvil Battle Tank (Tank Commander) (Paragon)" hidden="false" id="e162-e348-37fe-af27" type="selectionEntry" targetId="2eb7-9d02-a15e-bf7d">
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="e122-b844-f712-fdc5" primary="true" name="Detachment Commander"/>
       </categoryLinks>
@@ -799,29 +733,6 @@
           <categoryLinks>
             <categoryLink targetId="857e-b03a-a081-0acc" id="074d-1f61-5e4f-332a" primary="false" name="Configuration"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paragons of Old Earth" hidden="false" id="0ce2-7754-a541-b407" sortIndex="2">
-          <categoryLinks>
-            <categoryLink targetId="857e-b03a-a081-0acc" id="915b-77e4-f508-9313" primary="false" name="Configuration"/>
-          </categoryLinks>
-          <rules>
-            <rule name="Loyal to the Flag!" id="bc9f-6ca6-98cc-fa28" hidden="false">
-              <description>Friendly Squads from this Detachment reroll failed Routed Discipline tests</description>
-            </rule>
-            <rule name="Improved Supply Lines" id="f0b1-d1d0-2942-d40e" hidden="false">
-              <description>During deployment two Squads can be deployed at once</description>
-            </rule>
-            <rule name="Vehicle Stockpiles" id="91f2-02d6-613f-a944" hidden="false">
-              <description>Vehicle Squads count as Infantry for the purpose of Core Squads. In addition if an Anvil takes two vehicles upgrades it can take an Anvil Tank Crew for no Req cost</description>
-            </rule>
-            <rule name="Supreme Tactician" id="723e-c865-3e47-e630" hidden="false">
-              <description>If a friendly Squad rolls a 9+ for their Discipline test when taking an Order from Guardsmen Command Units or a Tank Commander from this detachment, the Commanders can use their Order capacity instead if available.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Req" typeId="Requisition" value="25"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <constraints>

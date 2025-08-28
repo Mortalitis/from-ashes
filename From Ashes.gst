@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
     <categoryEntry name="Support Squads" id="19e5-b1b6-d85b-9709" hidden="false"/>
     <categoryEntry name="Configuration" id="857e-b03a-a081-0acc" hidden="false"/>
+    <categoryEntry name="Sponsored Squad" id="8251-bf19-43c2-a012" hidden="false"/>
   </categoryEntries>
   <publications>
     <publication name="Github" id="f1c7-fccd-023f-8f92" hidden="false" publisherUrl="https://github.com/Mortalitis/from-ashes"/>
@@ -500,6 +501,21 @@
       <modifiers>
         <modifier type="set" value="Special Advance Command: Boosters " field="name"/>
       </modifiers>
+    </rule>
+    <rule name="Nova Core Rounds" id="522d-5fa6-a5b8-0a47" hidden="false">
+      <description>For every three hits scored by this weapon, score an additional hit and place an additional Blast Marker</description>
+    </rule>
+    <rule name="Drone Controller (UotAD)" id="3e87-111e-5715-066c" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12">
+      <description>Squads with the Drone ability pass Discipline tests on a 5+ when taking orders from a Guardsmen Command Unit</description>
+      <modifiers>
+        <modifier type="replace" field="name" arg=" (UotAD)"/>
+      </modifiers>
+    </rule>
+    <rule name="Energy Sword" id="c128-ebb3-96fb-9ce5" hidden="false">
+      <description>Target Save rolls of 10+ (after rerolls) removes an extra HP, regardless of its Armour Value, against this Unit&apos;s Storm Attacks</description>
+    </rule>
+    <rule name="Shield (2) Recharge 7+" id="b42d-0686-488d-631a" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
+      <description>See the Unit Abilities section from the main From Ashes rules</description>
     </rule>
   </sharedRules>
 </gameSystem>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="da90-df61-3d44-158a"/>
+  </selectionEntries>
+</catalogue>
