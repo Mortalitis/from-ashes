@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6b19-6566-2eeb-c12c" name="Sol Enclaves" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6b19-6566-2eeb-c12c" name="Sol Enclaves" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Sol Enclaves" id="acaf-10f9-e50c-15ba" hidden="false">
       <categoryLinks>
@@ -59,7 +59,6 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="473c-161b-cf54-d6c6" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6b03-0c11-179d-e6be" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="d6f3-f1c8-54a1-2e2a" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e162-e348-37fe-af27" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -85,7 +84,6 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="473c-161b-cf54-d6c6" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6b03-0c11-179d-e6be" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="d6f3-f1c8-54a1-2e2a" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e162-e348-37fe-af27" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -199,7 +197,6 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="473c-161b-cf54-d6c6" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6b03-0c11-179d-e6be" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="d6f3-f1c8-54a1-2e2a" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e162-e348-37fe-af27" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -335,7 +332,6 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="473c-161b-cf54-d6c6" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6b03-0c11-179d-e6be" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="d6f3-f1c8-54a1-2e2a" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e162-e348-37fe-af27" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -404,7 +400,6 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="473c-161b-cf54-d6c6" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6b03-0c11-179d-e6be" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="d6f3-f1c8-54a1-2e2a" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e162-e348-37fe-af27" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -694,28 +689,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="66c8-47aa-8faa-389d" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
-    </entryLink>
-    <entryLink import="true" name="Anvil Battle Tank (Tank Commander) (Paragon)" hidden="false" id="e162-e348-37fe-af27" type="selectionEntry" targetId="2eb7-9d02-a15e-bf7d">
-      <categoryLinks>
-        <categoryLink targetId="a9a7-132c-6641-0946" id="e122-b844-f712-fdc5" primary="true" name="Detachment Commander"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="857e-b03a-a081-0acc" childId="fd13-c873-f6a7-b0d2" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="Anvil Battle Tank (Tank Commander)" field="name"/>
-      </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="100"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>

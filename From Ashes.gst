@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -267,7 +267,7 @@
     <rule name="Optics" id="af11-7245-7a78-44c8" hidden="false">
       <description>If this Squad has not moved this turn, it may attempt a Skill test. If passed, receive [Accuracy ← 1]</description>
     </rule>
-    <rule name="Overseer" id="0a22-0c5c-f16e-bad0" hidden="false">
+    <rule name="Overseer (6+)" id="0a22-0c5c-f16e-bad0" hidden="false">
       <description>When this Squad passes a Discipline test when taking an Order, roll a D12. On a 6+ the Order comes the Leader&apos;s own Order capacity instead of its Commands (if it has any Order capacity available).</description>
     </rule>
     <rule name="Silencers" id="d8d0-d66f-7ed4-7097" hidden="false">
@@ -516,6 +516,33 @@
     </rule>
     <rule name="Shield (2) Recharge 7+" id="b42d-0686-488d-631a" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
       <description>See the Unit Abilities section from the main From Ashes rules</description>
+    </rule>
+    <rule name="Overseer (8+)" id="426f-96e1-451a-d459" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
+      <description>When a Squad with one or more Meta Overseers passes a Discipline test when taking an Order, roll an additional D12. On an 8+ the Order comes from the Leader&apos;s own Order capacity instead of it&apos;s Commands (if it has any Order capacity available)</description>
+    </rule>
+    <rule name="Sentry Protocols" id="32b4-b600-813e-f271" hidden="false">
+      <description>When this Squad Reacts (not Overwatch), it can choose to use it&apos;s Order capacity instead of its Commands, but it&apos;s Discipline changes to 9+ for this test (which itself cannot be modified further). If a Sentry Protocols Discipline test is failed, it will not cause a Fall Back, even if the Squad has lost any HPs but will count as Stunned instead (still taken from the Order capacity)</description>
+    </rule>
+    <rule name="Phalanx Protocols" id="9a31-5fbc-639d-2116" hidden="false">
+      <description>When a friendly Squad Reacts (not Overwatch) within 12&quot; of this Unit, another friendly Squad within 12&quot; of this Unit can also attempt to React as if it had been hit by the same enemy Attack. Each Reaction must be declared before any Discipline tests are taken. This may be used in conjunction with the Sentry Protocols ability.</description>
+    </rule>
+    <rule name="Laser" id="ad34-3100-604e-d91a" hidden="false">
+      <description>Accuracy rolls of a 10+ (after rerolls) the target must reroll successful Armour Saves</description>
+    </rule>
+    <rule name="Laser Blade" id="01af-eb61-8ba6-eff2" hidden="false">
+      <description>Target must reroll success Armour Saves from the Storm Attacks from this Unit</description>
+    </rule>
+    <rule name="Mirror Relay" id="86b2-248d-6857-17d1" hidden="false">
+      <description>Before a friendly weapon with the Laser special rule in LOS chooses a target as part of an Engaged, roll a D12. On a 6+ (rerolling passed if going through smoke), measure LOS and distance for Accuracy from the Mirror Relay Unit, but count AP as Extreme. Enemies Engaging as a reaction must target this Squad.</description>
+    </rule>
+    <rule name="AI Override" id="4f9b-98c1-fead-0484" hidden="false">
+      <description>If this Unit fails an Accuracy roll, Strike roll or Discipline Test, it may remove a Force Field Token in order to reroll it and pass the roll on a 2+</description>
+    </rule>
+    <rule name="Force Field Recharge 4+" id="90b3-f8a4-4359-5e54" hidden="false">
+      <description>See the main From Ashes rules</description>
+    </rule>
+    <rule name="Beam" id="3e04-1496-4e90-7384" hidden="false">
+      <description>After rolling Accuracy dice, roll a Skill Test (rerolling failures if this Unit has not moved this turn). If passed, increase Damage Dice by 1</description>
     </rule>
   </sharedRules>
 </gameSystem>

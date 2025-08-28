@@ -1,2 +1,1213 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e861-63ad-09d7-b486" name="Sol Enclaves: Dominion Vassal" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false"/>
+<catalogue library="false" id="e861-63ad-09d7-b486" name="Sol Enclaves: Dominion Vassal" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Sol Enclaves Lib" id="2bba-e15d-5fd3-03da" targetId="30d3-125d-4f6c-158d"/>
+    <catalogueLink type="catalogue" name="Verse Dominion Lib" id="5890-81e9-6e2d-c6f1" targetId="f78a-9b71-02cb-0454"/>
+    <catalogueLink type="catalogue" name="Devin Pact Lib" id="1242-7199-3d6e-de0d" targetId="4fa0-3a9c-909b-9712"/>
+  </catalogueLinks>
+  <forceEntries>
+    <forceEntry name="Sol Enclaves" id="a3ab-42fb-6cb4-dfc5" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="515c-2114-1520-48cf" targetId="857e-b03a-a081-0acc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="407f-d689-216e-3c58"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7d7-ad11-5b92-3e1d"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Detachment Commander" hidden="false" id="ef74-6012-71e8-51e1" targetId="a9a7-132c-6641-0946">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f5a-b2ab-f61c-adce"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="434b-968a-e272-d6d6"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="dd62-8aab-697a-e0dc" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bd46-653a-4359-e49f"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="38c2-44ed-556c-85b5"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="04eb-6f85-0b6a-4c76" targetId="19e5-b1b6-d85b-9709">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="05a0-a228-5a8b-291f"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a8a0-a24f-a98d-6813"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="a8a0-a24f-a98d-6813">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b17-fff9-2bee-7a3e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrement by 1 due to Detachment Commander</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="a8a0-a24f-a98d-6813">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5952-615f-9174-ef74" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1864-64b0-b23a-1557" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="471e-6c65-4b39-2a05" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="17e3-6c6c-c5b2-dcfd" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d7f4-8d1f-b8ef-4434" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7be5-a1ad-88fb-2f5e" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="72cd-74c9-fefd-0b32" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="72b4-b410-b582-0c78" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="bf91-57aa-7af4-ea54" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1dbe-9e7e-4e8d-1fdc" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a855-ea70-e88f-b113" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5d42-71b2-20df-b6af" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6ab4-f6b6-8177-5257" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a910-2028-e12f-936b" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="bb6c-337d-4337-5341" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3c6b-2962-5c26-9c29" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1f50-cffd-69bd-0e05" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e39a-38d1-ad0f-e7cc" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="c6b8-655e-12f0-b1bc" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="b03d-4e62-b7c4-08c9" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a1a3-ea0a-419f-79c5" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ccf0-1b18-e048-9cf6" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrement by 1 due to Sponsored Unit</comment>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Sponsored Squad" hidden="false" id="c719-984a-8a48-f93d" targetId="8251-bf19-43c2-a012">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7656-b2be-ca2a-188e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c00-f8f7-f1c7-e19a"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Subfaction" id="f638-fb46-f761-eaca" hidden="false" defaultSelectionEntryId="e0f9-4315-8950-3dcd">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dominion Vassal" hidden="false" id="e0f9-4315-8950-3dcd" sortIndex="2">
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="3683-249d-e767-334e" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Infantry Modifications" id="517b-878a-5ec7-b029" hidden="false">
+              <description>- All Infantry exchange their Frag Grenades for Incendiary Grenades
+- All Infantry receive Vhokys Drugs (1-2)
+- All Guardsmen Anti-Tank Unit&apos;s M606 Rocket Launchers change their AP to D4+2 and receive the Erratic Warhead (D4+2) ability</description>
+            </rule>
+            <rule name="Vehicle Modifications" id="791f-cebb-19dc-70e5" hidden="false">
+              <description>- All Sol Enclave vehicles exchange their Explosive Reactive Armour for the Shock Field, Heavy Skimmer Plate and Special Advance Command: Boosters (4&quot;) ability
+- All Hammerhead IFV Rocket Launchers change their AP to D4+2 and all Anvil Battle Tank&apos;s HEAT Rounds change their AP to D4+2. Both receive the Erratic Warhead (D4+2) abiity.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba16-2a79-6711-adc3" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7ad-bf96-e975-ff53" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Subfaction" hidden="false" id="04dc-b9f8-5ca2-986a">
+      <categoryLinks>
+        <categoryLink targetId="857e-b03a-a081-0acc" id="2939-c176-8ee9-4e8c" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Subfaction" hidden="false" id="d774-2491-cfc8-9b72" type="selectionEntryGroup" targetId="f638-fb46-f761-eaca"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81e9-11af-328c-7f71" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="486d-b1a3-0a57-e5c1" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Ringleader Command Unit" hidden="false" id="e39a-38d1-ad0f-e7cc" type="selectionEntry" targetId="e5b4-9e79-0e22-840e">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="7aef-1698-ad9c-cdd2" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Gorath Shock Mutants" hidden="false" id="d7f4-8d1f-b8ef-4434" type="selectionEntry" targetId="b32e-82b4-01ba-5187">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="9961-f39d-a61c-63da" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Archon" hidden="false" id="a855-ea70-e88f-b113" type="selectionEntry" targetId="727b-1679-dfae-adf7">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="00f3-a25e-368f-48de" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="45"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="5d42-71b2-20df-b6af" type="selectionEntry" targetId="88c3-9a4b-90e8-0ab0">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="c5d1-6031-9a60-f9e2" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="fe60-0d87-d2b5-aff9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Reaver Rocket Buggy (Verse Dominion)" field="name"/>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Rocket Buggy" hidden="false" id="a910-2028-e12f-936b" type="selectionEntry" targetId="3fe6-695d-eb84-da2a">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="30" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="2" field="selections" scope="self" childId="830f-c05f-f706-cf08" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="e4c9-764d-8bd1-de5e" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Rhino Assault Tank" hidden="false" id="bb6c-337d-4337-5341" type="selectionEntry" targetId="f138-8dd4-ed7d-aefa">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="d86b-20c1-8e1a-9763" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="85"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+      <modifiers>
+        <modifier type="set" value="Rhino Assault Tank (Verse Dominion)" field="name"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Rhino Dominus" hidden="false" id="1f50-cffd-69bd-0e05" type="selectionEntry" targetId="bbc3-573d-de68-ef57">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="1016-b7f2-fa38-f8f4" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="120"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Taurus APC" hidden="false" id="c6b8-655e-12f0-b1bc" type="selectionEntry" targetId="3961-7778-e1f4-b512">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="8145-ab85-7fa7-624e" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Utegon Assault Mutants" hidden="false" id="b03d-4e62-b7c4-08c9" type="selectionEntry" targetId="2b36-413e-1cc2-9506">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="20" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="40" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="e865-074c-5d40-5e73" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="40"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="a1a3-ea0a-419f-79c5" type="selectionEntry" targetId="2e0e-55ff-1cf7-4064">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="9" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="7777-9b5b-b7d4-f2ff" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="5" field="selections" scope="self" childId="c5c4-0ae0-479f-f04a" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Vanguard Infantry Cohort (Verse Dominion)" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="7335-e5d9-f3ca-518e" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="58"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank (Dominion Allies)" hidden="false" id="5952-615f-9174-ef74" type="selectionEntry" targetId="d38c-08a0-f9b2-0e57">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="962e-7416-b9b5-4921" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="replace" value="" field="name" arg=" (Dominion Allies)"/>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="110"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="1864-64b0-b23a-1557" type="selectionEntry" targetId="a41c-387b-d311-b253">
+      <modifiers>
+        <modifier type="replace" value="" field="name" arg=" (Dominion Allies)"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="467b-cd0f-3f8c-2a91" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="125"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="471e-6c65-4b39-2a05" type="selectionEntry" targetId="36fc-8c76-ddb7-318f">
+      <modifiers>
+        <modifier type="replace" value="" field="name" arg=" (Dominion Allies)"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="7c7f-6a3d-e3cc-a382" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Bullfrog APC (Dominion Allies)" hidden="false" id="17e3-6c6c-c5b2-dcfd" type="selectionEntry" targetId="08a8-e46f-5edd-ec70">
+      <modifiers>
+        <modifier type="replace" value="" field="name" arg=" (Dominion Allies)"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="bdc4-91a2-04d0-082c" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="35"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Hammerhead IFV (Dominion Allies)" hidden="false" id="7be5-a1ad-88fb-2f5e" type="selectionEntry" targetId="8497-1ceb-6664-d0bc">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="3a96-1312-4061-3150" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Pathfinder Anti-Tank Unit" hidden="false" id="72cd-74c9-fefd-0b32" type="selectionEntry" targetId="af68-9fa2-2f32-c805">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="b15d-e231-6ef1-d952" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req + Morale Increases</comment>
+          <modifiers>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="26" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="13" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="26"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="72b4-b410-b582-0c78" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="5f89-2908-a34c-ade2" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="40"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="bf91-57aa-7af4-ea54" type="selectionEntry" targetId="3bc4-5754-1ec6-c7ff">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="2034-65f8-0e2d-63e9" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req + Morale Increases</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="1a92-954d-f881-a6e4" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="15" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="1a92-954d-f881-a6e4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="1dbe-9e7e-4e8d-1fdc" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="033e-2c90-252d-b44d" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="55"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="6ab4-f6b6-8177-5257" type="selectionEntry" targetId="b111-59fa-40b8-9d6b">
+      <modifiers>
+        <modifier type="set" value="Reaver Rocket Buggy (Devin Pact)" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="b418-3ef8-7496-6d08" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="35"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Rhino Assault Tank (Dominion Allies)" hidden="false" id="3c6b-2962-5c26-9c29" type="selectionEntry" targetId="7da7-5f6f-e731-4f9c">
+      <modifiers>
+        <modifier type="set" value="Rhino Assault Tank (Devin Pact)" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="4aec-d29e-102f-32f3" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="95"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="ccf0-1b18-e048-9cf6" type="selectionEntry" targetId="e818-c831-8d6d-69f0">
+      <modifiers>
+        <modifier type="set" value="Vanguard Infantry Cohort (Devin Pact)" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8251-bf19-43c2-a012" id="6f13-c195-999e-d515" primary="true" name="Sponsored Squad"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req + Morale Increases</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="10" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+      <comment>Sponsored Squad</comment>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank (Dominion Vassal)" hidden="false" id="c029-78a6-c456-c726" type="selectionEntry" targetId="f231-b301-df04-4061">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="a7f7-e748-b3a1-8338" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank (Tank Commander) (Dominion Vassal)" hidden="false" id="fba0-2424-7b91-a11a" type="selectionEntry" targetId="524f-ff16-045c-21c6">
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="ec38-a2c1-968b-2f3a" targetId="a9a7-132c-6641-0946" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Bullfrog APC (Dominion Vassal)" hidden="false" id="5d26-d535-89fb-cdc7" type="selectionEntry" targetId="9816-390b-21e9-eaf2">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="ce30-ba47-c974-c593" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Anti-Tank Squad (Dominion Vassal)" hidden="false" id="f42c-0583-f109-ef02" type="selectionEntry" targetId="dc26-d016-0eda-81bb">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="2497-4f3a-2529-209a" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="22"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="11" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="22" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fba0-2424-7b91-a11a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b978-53ab-e777-caae" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5286-eb66-f3e6-0d25" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b1f-78ca-a01f-5fea" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b17-fff9-2bee-7a3e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3f1-c213-8b73-a9d5" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Command Unit (Dominion Vassal)" hidden="false" id="c676-0e8e-6326-012b" type="selectionEntry" targetId="0a41-a7af-4a3f-8631">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="e0f2-6944-d967-6b3a" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fba0-2424-7b91-a11a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b978-53ab-e777-caae" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5286-eb66-f3e6-0d25" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b1f-78ca-a01f-5fea" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b17-fff9-2bee-7a3e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3f1-c213-8b73-a9d5" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Hammerhead IFV (Dominion Vassal)" hidden="false" id="dbc6-c812-2173-f32c" type="selectionEntry" targetId="2c74-1438-380a-47ac">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="9ea5-4e71-9094-9f94" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Hammerhead IFV (Tank Commander) (Dominion Vassal)" hidden="false" id="5286-eb66-f3e6-0d25" type="selectionEntry" targetId="7315-85dc-2a12-a480">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="ab03-2c7f-a734-82a6" targetId="a9a7-132c-6641-0946" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Piranha FAV (Tank Commander) (Dominion Vassal)" hidden="false" id="0b1f-78ca-a01f-5fea" type="selectionEntry" targetId="37fa-2ba2-aeb8-694c">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="8f3d-f3f5-4bbd-4a71" targetId="a9a7-132c-6641-0946" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Piranha FAV (Dominion Vassal)" hidden="false" id="56f5-b8df-b20a-e2a5" type="selectionEntry" targetId="fde6-f4af-3d82-c616">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="faff-a21c-85d2-632e" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Raven Command Vehicle (Dominion Vassal)" hidden="false" id="1b17-fff9-2bee-7a3e" type="selectionEntry" targetId="dafc-58b2-0527-da96">
+      <categoryLinks>
+        <categoryLink name="Detachment Commander" hidden="false" id="e8e8-10d7-04e7-f18a" targetId="a9a7-132c-6641-0946" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Snapdragon SPAAG (Dominion Vassal)" hidden="false" id="9ae3-c231-45fc-f8f2" type="selectionEntry" targetId="4c64-65dc-c70d-52df">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="9628-805c-5dea-39e2" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank (Dominion Vassal)" hidden="false" id="a515-cca7-7d6d-9c51" type="selectionEntry" targetId="f231-b301-df04-4061">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="fe6c-0a75-4e47-5582" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank w/ Shock Cannon (Dominion Vassal)" hidden="false" id="92e5-38de-5ef0-87b1" type="selectionEntry" targetId="7049-4a7c-07c2-82fa">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="7bde-1cfd-b4fe-e032" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank w/ Shock Cannon (Dominion Vassal)" hidden="false" id="61a2-38be-6425-ecca" type="selectionEntry" targetId="7049-4a7c-07c2-82fa">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="eca5-0199-e640-d7ab" primary="true" name="Support Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Anvil Battle Tank w/ Shock Cannon (Tank Commander) (Dominion Vassal)" hidden="false" id="c3f1-c213-8b73-a9d5" type="selectionEntry" targetId="3fa9-5312-b871-a760">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="3da2-caf1-84a4-d9f4" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Bullfrog APC (Dominion Vassal)" hidden="false" id="411f-af14-1471-c93b" type="selectionEntry" targetId="9816-390b-21e9-eaf2">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="9779-848d-3cd9-79c5" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Anti-Tank Squad (Dominion Vassal)" hidden="false" id="1c09-de84-3aa6-f5aa" type="selectionEntry" targetId="dc26-d016-0eda-81bb">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="1aef-cd36-b414-66bd" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="22"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="11" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="22" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Bullfrog APC (Tank Commander) (Dominion Vassal)" hidden="false" id="b978-53ab-e777-caae" type="selectionEntry" targetId="f470-25bd-b728-d694">
+      <categoryLinks>
+        <categoryLink targetId="a9a7-132c-6641-0946" id="935c-e148-3c2e-1de5" primary="true" name="Detachment Commander"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Command Unit (Dominion Vassal)" hidden="false" id="1936-c20d-1edf-f00a" type="selectionEntry" targetId="0a41-a7af-4a3f-8631">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="2d97-b803-33f9-e25e" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fba0-2424-7b91-a11a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b978-53ab-e777-caae" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5286-eb66-f3e6-0d25" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b1f-78ca-a01f-5fea" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b17-fff9-2bee-7a3e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3f1-c213-8b73-a9d5" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Command Unit (Dominion Vassal)" hidden="false" id="b580-d14f-c448-8a23" type="selectionEntry" targetId="0a41-a7af-4a3f-8631">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="b25e-c729-586c-9599" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Rifle Squad (Dominion Vassal)" hidden="false" id="ffdc-dd22-36d1-3c48" type="selectionEntry" targetId="9028-783d-b2dd-2161">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="e75a-3bb5-a8d1-e41b" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="22"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="33" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="44" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="6" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="852d-4fb1-04e4-41d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="6" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Req &amp; Morale</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fba0-2424-7b91-a11a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b978-53ab-e777-caae" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5286-eb66-f3e6-0d25" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b1f-78ca-a01f-5fea" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b17-fff9-2bee-7a3e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3f1-c213-8b73-a9d5" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Rifle Squad (Dominion Vassal)" hidden="false" id="1699-27f5-2e95-399f" type="selectionEntry" targetId="9028-783d-b2dd-2161">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c84a-e8da-a5ad-8f38" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="22"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="33" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="44" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="6" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="22" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="852d-4fb1-04e4-41d8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="6" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="11" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Req &amp; Morale</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Hammerhead IFV (Dominion Vassal)" hidden="false" id="6514-4cb4-f6b3-7d81" type="selectionEntry" targetId="2c74-1438-380a-47ac">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="6edc-dfd7-fb00-2266" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Piranha FAV (Dominion Vassal)" hidden="false" id="975e-1d6d-be96-7876" type="selectionEntry" targetId="fde6-f4af-3d82-c616">
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="13f1-ba35-11a6-f5f8" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Raven Command Vehicle (Dominion Vassal)" hidden="false" id="3a8c-b330-3cdc-ab59" type="selectionEntry" targetId="dafc-58b2-0527-da96">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="3f74-a9ba-7d2f-f71a" primary="true" name="Core Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c676-0e8e-6326-012b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Raven Command Vehicle (Dominion Vassal)" hidden="false" id="ce70-f599-2936-1ac4" type="selectionEntry" targetId="dafc-58b2-0527-da96">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="01dd-1792-5613-bac3" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Machine Gun Squad (Dominion Vassal)" hidden="false" id="3011-7cf7-9df9-d541" type="selectionEntry" targetId="a1bf-8b4e-1764-387c">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="14" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="28" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fba0-2424-7b91-a11a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b978-53ab-e777-caae" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5286-eb66-f3e6-0d25" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b1f-78ca-a01f-5fea" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b17-fff9-2bee-7a3e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3f1-c213-8b73-a9d5" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Core Squads" hidden="false" id="dd6e-28f5-877a-6f60" targetId="0e7c-b40e-8e07-6f1c" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Guardsmen Machine Gun Squad (Dominion Vassal)" hidden="false" id="7ca4-ee79-9d8b-41b3" type="selectionEntry" targetId="a1bf-8b4e-1764-387c">
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="14" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="28" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="fba0-2424-7b91-a11a" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b978-53ab-e777-caae" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5286-eb66-f3e6-0d25" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b1f-78ca-a01f-5fea" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1b17-fff9-2bee-7a3e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3f1-c213-8b73-a9d5" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="31e0-ec96-d1ec-26fe" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Snapdragon SPAAG (Dominion Vassal)" hidden="false" id="3eb7-f7bd-9969-3e99" type="selectionEntry" targetId="4c64-65dc-c70d-52df">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Support Squads" hidden="false" id="8a30-f460-11ae-220f" targetId="19e5-b1b6-d85b-9709" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>

@@ -12,9 +12,8 @@ Faction Progress
 - Sol Enclaves: Paragons of Old Earth: First pass completed
 - Sol Enclaves: Members of the Alliance: First pass completed
 - Sol Enclaves: Union of the Advancing Dawn: First pass completed
-
-- Sol Enclaves: Dominion Vassal: TO-DO
-- Sol Enclaves: Freemen of the Republic: TO-DO
+- Sol Enclaves: Dominion Vassal: First pass completed
+- Sol Enclaves: Freemen of the Republic: First pass completed
 
 Feature Progress
 - Better subfaction selection: First Pass

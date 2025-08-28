@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -1006,9 +1006,6 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule name="Overseer" id="426f-96e1-451a-d459" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
-      <description>When a Squad with one or more Meta Overseers passes a Discipline test when taking an Order, roll an additional D12. On an 8+ the Order comes from the Leader&apos;s own Order capacity instead of it&apos;s Commands (if it has any Order capacity available)</description>
-    </rule>
     <rule name="Transport (1x Infantry, excl. Hunchback and Centaurs)" id="0921-0554-301a-9f6b" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="23">
       <description>See the Unit Abilities section of the main From Ashes rules</description>
     </rule>
