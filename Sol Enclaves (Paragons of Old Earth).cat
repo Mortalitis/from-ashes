@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a1b9-eb27-755b-b4bf" name="Sol Enclaves: Paragons of Old Earth" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="8" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a1b9-eb27-755b-b4bf" name="Sol Enclaves: Paragons of Old Earth" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="8" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Sol Enclaves Lib" id="c9c6-d204-25aa-ff15" targetId="30d3-125d-4f6c-158d"/>
   </catalogueLinks>
@@ -330,7 +330,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="460d-81e5-eb21-649b" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
+    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="460d-81e5-eb21-649b" type="selectionEntry" targetId="f6ac-20c7-fe05-35ac">
       <costs>
         <cost name="Req" typeId="Requisition" value="30"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
@@ -355,7 +355,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="82cf-d232-57fa-a501" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
+    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="82cf-d232-57fa-a501" type="selectionEntry" targetId="f6ac-20c7-fe05-35ac">
       <costs>
         <cost name="Req" typeId="Requisition" value="30"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
@@ -380,7 +380,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="5f72-7574-5d5a-715b" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
+    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="5f72-7574-5d5a-715b" type="selectionEntry" targetId="f6ac-20c7-fe05-35ac">
       <categoryLinks>
         <categoryLink name="Support Squads" hidden="false" id="0130-9d12-7d7d-b70f" targetId="19e5-b1b6-d85b-9709" primary="true"/>
       </categoryLinks>

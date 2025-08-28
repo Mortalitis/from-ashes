@@ -41,7 +41,7 @@
     <catalogueLink type="catalogue" name="Sol Enclaves Lib" id="224a-90ed-c8a4-677d" targetId="30d3-125d-4f6c-158d"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Guardsmen Command Unit (UotAD)" hidden="false" id="20d3-6a9f-da02-2d45" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
+    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="20d3-6a9f-da02-2d45" type="selectionEntry" targetId="f6ac-20c7-fe05-35ac">
       <costs>
         <cost name="Req" typeId="Requisition" value="30"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
@@ -67,7 +67,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Guardsmen Command Unit (UotAD)" hidden="false" id="e929-b295-1987-ec55" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
+    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="e929-b295-1987-ec55" type="selectionEntry" targetId="f6ac-20c7-fe05-35ac">
       <costs>
         <cost name="Req" typeId="Requisition" value="30"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
@@ -92,7 +92,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Guardsmen Command Unit (UotAD)" hidden="false" id="4468-e059-294d-f3b5" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
+    <entryLink import="true" name="Guardsmen Command Unit" hidden="false" id="4468-e059-294d-f3b5" type="selectionEntry" targetId="f6ac-20c7-fe05-35ac">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="82a8-c267-2bec-d570" primary="true" name="Support Squads"/>
       </categoryLinks>
@@ -682,6 +682,13 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="6863-6e60-e449-2cc1" primary="true" name="Core Squads"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="20d3-6a9f-da02-2d45" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Anvil Battle Tank" hidden="false" id="904c-f829-15c2-63b4" type="selectionEntry" targetId="6529-bc61-a886-4588">
       <categoryLinks>
