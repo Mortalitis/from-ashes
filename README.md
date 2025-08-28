@@ -19,4 +19,5 @@ Faction Progress
 Feature Progress
 - Better subfaction selection: First Pass
 - Refactored so vast majority of rules are in the core rules
-- Vanilla Sol are now its own list. This allows the non-vanilla Sol lists to have a normal allied Sol force added
+- Vanilla Sol are now its own list
+- Removed the generic lists from some options. You can added a generic allied Force via the add Force list and clicking the drop down. This will save a ton of admin down the road. The exception to this is the Devin Pact: Kommodan Loyalists as their Sol Enclaves: Dominion Vassal allies have the Smokescreen ability on top of what Sol Enclaves: Dominion Vassal normally gets.
