@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0ef0-15ad-99b3-850a" name="Sol Enclaves: Union of the Advancing Dawn" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0ef0-15ad-99b3-850a" name="Sol Enclaves: Union of the Advancing Dawn" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Subfaction" id="5586-c75b-e3e7-608c" hidden="false" defaultSelectionEntryId="8d57-5a05-02a9-554f">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="8d57-5a05-02a9-554f" sortIndex="1">
-          <categoryLinks>
-            <categoryLink name="Configuration" hidden="false" id="a472-55ed-cf75-3d39" targetId="857e-b03a-a081-0acc" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Union of the Advancing Dawn" hidden="false" id="2ebd-9191-f851-7d1f" sortIndex="2">
           <categoryLinks>
             <categoryLink name="Configuration" hidden="false" id="5fdc-366a-f261-1115" targetId="857e-b03a-a081-0acc" primary="false"/>
@@ -48,13 +43,12 @@
         <categoryLink targetId="857e-b03a-a081-0acc" id="aa6a-1d7c-3549-344f" primary="true" name="Configuration"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Subfaction" hidden="false" id="e5ce-860b-f86a-f1a7" type="selectionEntryGroup" targetId="5586-c75b-e3e7-608c">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="264b-69ca-96db-f163" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1c4-b543-3a8c-53cc" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Subfaction" hidden="false" id="e5ce-860b-f86a-f1a7" type="selectionEntryGroup" targetId="5586-c75b-e3e7-608c"/>
       </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="264b-69ca-96db-f163" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1c4-b543-3a8c-53cc" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <forceEntries>
@@ -137,14 +131,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Dominator Support Walker" hidden="false" id="60d4-030f-5631-6fa9" type="selectionEntry" targetId="41cc-a29b-03cd-e10c">
       <categoryLinks>
@@ -155,14 +141,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Drop Pods" hidden="false" id="22aa-cb20-3ff7-139c" type="selectionEntry" targetId="396b-c3fb-ccef-7c32">
       <costs>
@@ -194,12 +172,6 @@
             <condition type="equalTo" value="6" field="selections" scope="self" childId="f1fe-0252-7747-0acc" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="8251-bf19-43c2-a012" id="bc1a-a736-665d-313e" primary="true" name="Sponsored Squad"/>
@@ -215,14 +187,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Harvester Shield Mechs" hidden="false" id="fb34-f6cd-fc52-2b0d" type="selectionEntry" targetId="60a2-d87f-26be-0b00">
       <categoryLinks>
@@ -233,14 +197,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Hunchback Gun Cyborgs" hidden="false" id="e5f6-c429-cd5c-5f06" type="selectionEntry" targetId="373a-6b4c-ee15-ea56">
       <categoryLinks>
@@ -271,12 +227,6 @@
             <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
       </modifiers>
       <comment>Xeraak Triarchy Support Squad</comment>
     </entryLink>
@@ -289,14 +239,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Meta Overseer Synapse Unit" hidden="false" id="809f-9b6a-f63a-baca" type="selectionEntry" targetId="5130-3125-71c1-88d4">
       <categoryLinks>
@@ -307,14 +249,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Overlord Gun Walker" hidden="false" id="b4cf-e2d4-7f91-6506" type="selectionEntry" targetId="875d-8f9f-b347-10ed">
       <categoryLinks>
@@ -325,14 +259,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Reaper Combat Walker" hidden="false" id="c9a7-0530-d15f-017a" type="selectionEntry" targetId="7c18-fc38-4912-170c">
       <categoryLinks>
@@ -343,14 +269,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Revenant Berserker Cyborgs" hidden="false" id="bbf9-54f5-fcb4-dbd7" type="selectionEntry" targetId="cbc5-c772-a0e8-4092">
       <categoryLinks>
@@ -365,12 +283,6 @@
           <conditions>
             <condition type="equalTo" value="3" field="selections" scope="self" childId="fcf4-64e3-20b5-cb2e" shared="true"/>
           </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
         </modifier>
       </modifiers>
       <comment>Xeraak Triarchy Support Squad</comment>
@@ -404,12 +316,6 @@
             <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
       </modifiers>
       <comment>Xeraak Triarchy Support Squad</comment>
     </entryLink>
@@ -422,26 +328,12 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
       <comment>Xeraak Triarchy Support Squad</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Anvil Battle Tank (Tank Commander) (UotAD)" hidden="false" id="980d-565b-a477-991c" type="selectionEntry" targetId="9ec2-4f99-ef9a-ac9c">
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="229d-eb76-807d-93da" primary="true" name="Detachment Commander"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
@@ -458,12 +350,6 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
           </conditions>
           <comment>Hide if Detachment Commander = Infantry</comment>
@@ -478,14 +364,6 @@
       </costs>
     </entryLink>
     <entryLink import="true" name="Anvil Battle Tank (UotAD)" hidden="false" id="927f-a098-187c-1392" type="selectionEntry" targetId="5192-aff7-8e77-98cc">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="a1be-073e-3c5d-05e8" primary="true" name="Support Squads"/>
       </categoryLinks>
@@ -496,12 +374,6 @@
     </entryLink>
     <entryLink import="true" name="Anvil Battle Tank w/ Plasma Cannon (Tank Commander) (UotAD)" hidden="false" id="ddef-0116-0631-6151" type="selectionEntry" targetId="b47e-9443-fb44-1fb0">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
@@ -521,12 +393,6 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
           </conditions>
           <comment>Hide if Detachment Commander = Infantry</comment>
@@ -541,14 +407,6 @@
       </costs>
     </entryLink>
     <entryLink import="true" name="Anvil Battle Tank w/ Plasma Cannon (UotAD)" hidden="false" id="a355-b697-304b-2eb6" type="selectionEntry" targetId="2e91-ebcc-774a-0169">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="0031-3e23-cdde-55b7" primary="true" name="Support Squads"/>
       </categoryLinks>
@@ -559,12 +417,6 @@
     </entryLink>
     <entryLink import="true" name="Bullfrog APC (Tank Commander) (UotAD)" hidden="false" id="efec-80e4-9cf3-2238" type="selectionEntry" targetId="5b41-791e-b228-519b">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
@@ -584,12 +436,6 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
           </conditions>
           <comment>Hide if Detachment Commander = Infantry</comment>
@@ -604,14 +450,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Bullfrog APC (UotAD)" hidden="false" id="003f-5687-36fe-dde7" type="selectionEntry" targetId="ab0a-e72e-bda6-f115">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="30"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
@@ -622,12 +460,6 @@
     </entryLink>
     <entryLink import="true" name="Guardsmen Anti-Tank Squad (UotAD)" hidden="false" id="faf6-7a95-05fb-5357" type="selectionEntry" targetId="1b58-a9e7-8a04-7393">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -714,23 +546,9 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="e9c8-bd99-5ed9-9ed7" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Guardsmen Command Unit (UotAD)" hidden="false" id="f826-bb16-41d0-dad9" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -758,12 +576,6 @@
     <entryLink import="true" name="Guardsmen Command Unit (UotAD)" hidden="false" id="3ad5-6c0b-cdb1-d6e4" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -788,14 +600,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Guardsmen Command Unit (UotAD)" hidden="false" id="de51-10a9-890b-22b7" type="selectionEntry" targetId="0d27-a4eb-b89b-83ef">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="30"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
@@ -806,12 +610,6 @@
     </entryLink>
     <entryLink import="true" name="Guardsmen Machine Gun Squad (UotAD)" hidden="false" id="6b80-2b87-709a-9aed" type="selectionEntry" targetId="b261-9b04-111c-cc61">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -864,14 +662,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Guardsmen Machine Gun Squad (UotAD)" hidden="false" id="4390-f512-a7b5-a0ad" type="selectionEntry" targetId="b261-9b04-111c-cc61">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Req + Morale</comment>
@@ -997,12 +787,6 @@
       </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1114,14 +898,6 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="22"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
@@ -1132,12 +908,6 @@
     </entryLink>
     <entryLink import="true" name="Hammerhead IFV (Tank Commander) (UotAD)" hidden="false" id="8dcf-ac34-7853-435a" type="selectionEntry" targetId="1bdc-83fa-fc13-3abb">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
@@ -1161,12 +931,6 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
           </conditions>
           <comment>Hide if Detachment Commander = Infantry</comment>
@@ -1181,26 +945,12 @@
         <cost name="Req" typeId="Requisition" value="50"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="3aab-dcd8-ddb4-8292" primary="true" name="Support Squads"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Piranha FAV (Tank Commander) (UotAD)" hidden="false" id="2dc1-e9a6-6721-ece6" type="selectionEntry" targetId="c186-3aba-9eb0-c5db">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
@@ -1224,12 +974,6 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
           </conditions>
           <comment>Hide if Detachment Commander = Infantry</comment>
@@ -1244,26 +988,12 @@
         <cost name="Req" typeId="Requisition" value="25"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="ec87-6ced-4fdf-d604" primary="true" name="Support Squads"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Raven Command Vehicle (UotAD)" hidden="false" id="4543-fe4d-c066-6ed7" type="selectionEntry" targetId="6c27-9a0f-1b95-ec3b">
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
@@ -1283,12 +1013,6 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
           </conditions>
           <comment>Hide if Detachment Commander = Infantry</comment>
@@ -1303,14 +1027,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Raven Command Vehicle (UotAD)" hidden="false" id="5ea0-fb45-b5be-cc35" type="selectionEntry" targetId="6c27-9a0f-1b95-ec3b">
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="50"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
@@ -1327,12 +1043,6 @@
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f826-bb16-41d0-dad9" shared="true"/>
           </conditions>
           <comment>Hide if Detachment Commander = Infantry</comment>
@@ -1347,14 +1057,6 @@
         <cost name="Req" typeId="Requisition" value="50"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="force" childId="8d57-5a05-02a9-554f" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <comment>Hide in Vanilla forces</comment>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="413d-e74c-8d86-e7d1" primary="true" name="Support Squads"/>
       </categoryLinks>
