@@ -472,6 +472,9 @@
             <infoLink name="Drone Controller" id="6fe1-f115-3db0-887c" hidden="false" type="rule" targetId="07cf-aeb3-a712-e464"/>
           </infoLinks>
         </selectionEntry>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="12c1-7c14-55ec-b4ba" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44" sortIndex="2"/>
+      </entryLinks>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Meta Overseer Synapse Unit" hidden="false" id="5130-3125-71c1-88d4" publicationId="38b2-0d05-f0c9-eb32" page="9">
