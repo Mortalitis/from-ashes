@@ -1,8 +1,10 @@
-UNOFFICIAL resporitory built for the wargame From Ashes by Void Scar Miniatures to be used in New Recruit
+# UNOFFICIAL resporitory built for the wargame From Ashes by Void Scar Miniatures to be used in New Recruit
+
+[From Ashes](https://voidscarminiatures.com)
 
 Current Game Version: 0.1.2
 
-Faction Progress
+## Faction Progress
 - Xeraak Triarchy: First pass completed
 - Verse Dominion: First pass completed
 - Scaryn Federated Alliance (SFA): First pass completed
@@ -15,7 +17,7 @@ Faction Progress
 - Sol Enclaves: Dominion Vassal: First pass completed
 - Sol Enclaves: Freemen of the Republic: First pass completed
 
-Feature Progress
+## Feature Progress
 - Better subfaction selection: First Pass
 - Refactored so vast majority of rules are in the core rules
 - Vanilla Sol are now its own list
