@@ -513,6 +513,9 @@
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="6d3b-ea43-c6a2-b21a" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Overlord Gun Walker" hidden="false" id="875d-8f9f-b347-10ed">
       <selectionEntries>
