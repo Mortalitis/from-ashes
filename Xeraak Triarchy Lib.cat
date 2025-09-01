@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -444,6 +444,7 @@
           </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Plasma Grenades" hidden="false" id="dd90-4ebf-0484-199f" type="selectionEntry" targetId="bad4-94b4-5cdb-103e"/>
+            <entryLink import="true" name="Infantry Upgrades" hidden="false" id="c7db-1894-4a75-2e15" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2caf-0479-d32d-1c18-min"/>
@@ -472,9 +473,6 @@
             <infoLink name="Drone Controller" id="6fe1-f115-3db0-887c" hidden="false" type="rule" targetId="07cf-aeb3-a712-e464"/>
           </infoLinks>
         </selectionEntry>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="12c1-7c14-55ec-b4ba" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44" sortIndex="2"/>
-      </entryLinks>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Meta Overseer Synapse Unit" hidden="false" id="5130-3125-71c1-88d4" publicationId="38b2-0d05-f0c9-eb32" page="9">
@@ -503,7 +501,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Shield (2) Recharge 6+" id="6d6a-71e0-5797-e0ab" hidden="false" type="rule" targetId="93cd-12d5-25e8-fc7b"/>
-            <infoLink name="Overseer" id="5371-eba3-2f65-85fa" hidden="false" type="rule" targetId="426f-96e1-451a-d459"/>
+            <infoLink name="Overseer (8+)" id="5371-eba3-2f65-85fa" hidden="false" type="rule" targetId="426f-96e1-451a-d459"/>
           </infoLinks>
           <rules>
             <rule name="Non-Combat Unit" id="206a-f8e9-3d35-e312" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
@@ -1023,7 +1021,7 @@
           </costs>
           <infoLinks>
             <infoLink name="Shield (1) Recharge 6+" id="39c6-146e-e410-a5c6" hidden="false" type="rule" targetId="d9c4-f62f-2e64-b479"/>
-            <infoLink name="Overseer" id="cafc-5fb6-5059-c065" hidden="false" type="rule" targetId="426f-96e1-451a-d459"/>
+            <infoLink name="Overseer (8+)" id="cafc-5fb6-5059-c065" hidden="false" type="rule" targetId="426f-96e1-451a-d459"/>
           </infoLinks>
           <rules>
             <rule name="Attachment" id="3a3a-256d-c43d-464c" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
