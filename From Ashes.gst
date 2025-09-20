@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -25,7 +25,7 @@
     </costType>
   </costTypes>
   <profileTypes>
-    <profileType name="Unit" id="3fbb-5413-4bb9-5545" hidden="false">
+    <profileType name="Unit" id="3fbb-5413-4bb9-5545" hidden="false" sortIndex="1">
       <characteristicTypes>
         <characteristicType name="Type" id="9526-d4e8-4a1b-d32c"/>
         <characteristicType name="Commands" id="ccc6-4e9b-c5c5-622b"/>
@@ -40,18 +40,8 @@
         <characteristicType name="OP" id="9617-8752-47e1-8214"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon" id="dc09-e8f7-1bee-9d70" hidden="false">
+    <profileType name="Weapon Stats" id="dc09-e8f7-1bee-9d70" hidden="false" sortIndex="2">
       <characteristicTypes>
-        <characteristicType name="Close Accuracy" id="1d99-39fc-27fa-a848"/>
-        <characteristicType name="Close AP" id="0f54-71c9-e67a-09f6"/>
-        <characteristicType name="Short Accuracy" id="0cdf-9622-e3d5-6090"/>
-        <characteristicType name="Short AP" id="23b0-440f-eb3a-4dbb"/>
-        <characteristicType name="Medium Accuracy" id="2224-dd09-8c7f-5a09"/>
-        <characteristicType name="Medium AP" id="8c34-1a1c-92ee-c3d9"/>
-        <characteristicType name="Long Accuracy" id="63e9-5d31-1780-1eda"/>
-        <characteristicType name="Long AP" id="206c-8a48-c658-05dd"/>
-        <characteristicType name="Extreme Accuracy" id="4602-d8f4-2d02-dcb3"/>
-        <characteristicType name="Extreme AP" id="a0e4-fe30-467a-6dd7"/>
         <characteristicType name="Attacks" id="8cb0-64ed-d1f4-6cd0"/>
         <characteristicType name="Arc" id="1f74-4c02-05ba-2dae"/>
         <characteristicType name="Blast" id="0072-c918-4223-1011"/>
@@ -59,6 +49,15 @@
         <characteristicType name="Damage (Walkers)" id="e1ce-a868-d771-69b8"/>
         <characteristicType name="Damage (Vehicles)" id="aa27-9f00-d413-1c5b"/>
         <characteristicType name="Damage (Flyers)" id="8f25-1699-f943-aa2f"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Weapon Ranges/AP" id="9054-da59-7d68-5c1b" hidden="false" sortIndex="3">
+      <characteristicTypes>
+        <characteristicType name="Close 0-4&quot;" id="1569-3b79-5cb4-ddd5"/>
+        <characteristicType name="Short 5-8&quot;" id="1d92-e4f7-a30d-7ef9"/>
+        <characteristicType name="Medium 9-16&quot;" id="ed23-ad24-dbb8-4ca0"/>
+        <characteristicType name="Long 17-24&quot;" id="89ad-56d1-0b2d-ac7b"/>
+        <characteristicType name="Extreme 25+&quot;" id="b31b-047a-dbff-3f96"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>

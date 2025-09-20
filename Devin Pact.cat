@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="23dc-ba4a-e7df-81b3" name="Devin Pact: Dominion Allies" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="6" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="23dc-ba4a-e7df-81b3" name="Devin Pact: Dominion Allies" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="6" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Devin Pact Lib" id="a302-dea9-5ff7-d8d0" targetId="4fa0-3a9c-909b-9712"/>
     <catalogueLink type="catalogue" name="Verse Dominion Lib" id="b5a6-ddef-7310-99d5" targetId="f78a-9b71-02cb-0454"/>
@@ -158,10 +158,6 @@
           <comment>Hide if Detachment Command = Pathfinder Command</comment>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="110"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Anvil Battle Tank (Dominion Allies)" hidden="false" id="be1d-b4cd-5d10-e15f" type="selectionEntry" targetId="d38c-08a0-f9b2-0e57">
       <categoryLinks>
@@ -175,10 +171,6 @@
           <comment>Hide in Verse Dominion Forces</comment>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="110"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="ed35-ecb5-87f8-b5f0" type="selectionEntry" targetId="a41c-387b-d311-b253">
       <modifiers>
@@ -198,10 +190,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="0a4d-c6e7-0071-8868" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="125"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="9771-363d-bdaa-448f" type="selectionEntry" targetId="a41c-387b-d311-b253">
       <modifiers>
@@ -215,10 +203,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="0c67-1762-3124-a4f1" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="125"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="2156-9bf2-02ab-372c" type="selectionEntry" targetId="36fc-8c76-ddb7-318f">
       <modifiers>
@@ -238,10 +222,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="9b9b-40c6-62d4-73d2" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="9ab4-cd75-4e60-bcea" type="selectionEntry" targetId="36fc-8c76-ddb7-318f">
       <modifiers>
@@ -255,10 +235,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="9b1b-4c18-e976-c7ec" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Bullfrog APC (Dominion Allies)" hidden="false" id="7cac-397a-603a-e254" type="selectionEntry" targetId="08a8-e46f-5edd-ec70">
       <modifiers>
@@ -278,10 +254,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="52f5-ec82-ef00-ffba" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Bullfrog APC (Dominion Allies)" hidden="false" id="1903-4659-4e53-1537" type="selectionEntry" targetId="08a8-e46f-5edd-ec70">
       <modifiers>
@@ -295,10 +267,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="ebf4-1438-c1cd-4e9b" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Gorath Shock Mutants" hidden="false" id="cb1b-9657-7325-2971" type="selectionEntry" targetId="0c8d-2167-21fa-547b">
       <modifiers>
@@ -312,10 +280,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="debb-07d2-c946-b8c7" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="70"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Hammerhead IFV (Dominion Allies)" hidden="false" id="e3ed-eb14-2eb8-d50e" type="selectionEntry" targetId="8497-1ceb-6664-d0bc">
       <modifiers>
@@ -335,10 +299,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="d19b-0b18-69ad-2482" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Hammerhead IFV (Dominion Allies)" hidden="false" id="dee2-df8f-4c4c-5be0" type="selectionEntry" targetId="8497-1ceb-6664-d0bc">
       <modifiers>
@@ -352,10 +312,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="79d9-cca8-3008-fbf8" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Devin Pact: Dominion Allies" hidden="false" id="8254-e2eb-8d74-6f21" type="selectionEntry" targetId="bfe9-17d3-128c-50cf">
       <modifiers>
@@ -388,37 +344,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="00e4-9dd6-8466-8e88" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="26"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Req + Morale Increases</comment>
-          <modifiers>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="26" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="13" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Pathfinder Anti-Tank Unit" hidden="false" id="2775-e8f8-e60f-2972" type="selectionEntry" targetId="af68-9fa2-2f32-c805">
       <modifiers>
@@ -432,37 +357,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="eab1-22d0-b58d-39e1" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Req + Morale Increases</comment>
-          <modifiers>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="26" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="13" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="37d0-fb3d-5ff9-6ed1" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="26"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="ee0d-2597-7bac-ab48" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
       <modifiers>
@@ -482,10 +376,6 @@
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="0f32-6e0b-5290-50fc" primary="true" name="Detachment Commander"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="9456-75f3-ce9c-f8e4" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
       <modifiers>
@@ -505,10 +395,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="7663-83b2-9d88-0571" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="68f5-aee6-1f5b-15bd" type="selectionEntry" targetId="e96e-7969-cf86-69fb">
       <modifiers>
@@ -522,10 +408,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="e3b8-4705-6f01-b0d7" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="acc7-eaf9-eb9f-b82c" type="selectionEntry" targetId="3bc4-5754-1ec6-c7ff">
       <modifiers>
@@ -545,27 +427,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="13b8-01a3-8d68-cec0" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Req + Morale Increases</comment>
-          <modifiers>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="1a92-954d-f881-a6e4" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="15" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="1a92-954d-f881-a6e4" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="239c-11f0-25d9-a2cc" type="selectionEntry" targetId="3bc4-5754-1ec6-c7ff">
       <modifiers>
@@ -579,27 +440,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="5a30-6d36-23b6-d739" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Req + Morale Increases</comment>
-          <modifiers>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="1a92-954d-f881-a6e4" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="15" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="1a92-954d-f881-a6e4" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="4b3d-f786-cb87-85b0" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
       <modifiers>
@@ -619,10 +459,6 @@
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="26d1-5519-1908-a8fd" primary="true" name="Detachment Commander"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="5fc9-8909-54d6-1298" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
       <modifiers>
@@ -642,10 +478,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="314f-0634-c698-5063" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Raven CV (Dominion Allies)" hidden="false" id="cf5a-7517-d5f1-862d" type="selectionEntry" targetId="0d58-bed2-fabc-4815">
       <modifiers>
@@ -659,10 +491,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="6bb3-5016-9b2e-8ff9" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="44ec-7803-6314-5196" type="selectionEntry" targetId="b111-59fa-40b8-9d6b">
       <modifiers>
@@ -682,10 +510,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="602e-d912-e526-500b" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Reaver Attack Buggy" hidden="false" id="9440-1be1-ce1c-f950" type="selectionEntry" targetId="b111-59fa-40b8-9d6b">
       <modifiers>
@@ -699,10 +523,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="4229-565f-4a24-747d" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Rhino Assault Tank (Dominion Allies)" hidden="false" id="47f1-ecfe-a4a5-bd06" type="selectionEntry" targetId="7da7-5f6f-e731-4f9c">
       <modifiers>
@@ -722,10 +542,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="6217-86a8-2d5f-3c40" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="95"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Rhino Assault Tank (Dominion Allies)" hidden="false" id="7b95-e5fd-7f2d-68f2" type="selectionEntry" targetId="7da7-5f6f-e731-4f9c">
       <modifiers>
@@ -745,10 +561,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="5eb7-f351-ca7e-42db" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="95"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="6a13-da5a-0fb1-32f4" type="selectionEntry" targetId="e818-c831-8d6d-69f0">
       <modifiers>
@@ -768,37 +580,6 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="ddd6-8d2e-4bd3-cbfb" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
-      </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Req + Morale Increases</comment>
-          <modifiers>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="11" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="10" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Vanguard Infantry Cohort" hidden="false" id="3f78-78fd-1007-ffe6" type="selectionEntry" targetId="e818-c831-8d6d-69f0">
       <modifiers>
@@ -812,37 +593,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="c8e5-4f21-33c4-544c" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Req + Morale Increases</comment>
-          <modifiers>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="11" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="121a-ee67-1bd0-ec1f" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="10" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="f1a7-1acd-2435-e4a2" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
-      </costs>
     </entryLink>
   </entryLinks>
   <selectionEntries>

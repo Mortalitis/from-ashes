@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Xeraak Triarchy" id="d392-58f6-e0a3-942c" hidden="false">
       <categoryLinks>
@@ -42,10 +42,6 @@
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="6833-957a-d605-0c37" primary="true" name="Detachment Commander"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -65,19 +61,11 @@
           </conditions>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Meta Command Unit" hidden="false" id="9c7a-8618-b649-5e57" type="selectionEntry" targetId="5cbb-1548-2a40-9bae">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="f352-6f84-11d4-01e5" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Hunchback Gun Cyborgs" hidden="false" id="bf4d-5214-82d4-960a" type="selectionEntry" publicationId="38b2-0d05-f0c9-eb32" page="11" targetId="373a-6b4c-ee15-ea56">
       <categoryLinks>
@@ -89,62 +77,12 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="14" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="28" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="28"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Hunchback Gun Cyborgs" hidden="false" id="f6dc-f417-2fe1-dd06" type="selectionEntry" targetId="373a-6b4c-ee15-ea56">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="c2be-0a16-f33c-e381" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="28"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
-      <modifiers>
-        <modifier type="increment" value="14" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="28" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Revenant Combat Cyborgs" hidden="false" id="77f9-a5fc-5d71-ff0f" type="selectionEntry" targetId="16c9-bb8f-0933-793a">
       <categoryLinks>
@@ -156,62 +94,12 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="10" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="10" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Revenant Combat Cyborgs" hidden="false" id="80d0-4351-b22b-39bf" type="selectionEntry" targetId="16c9-bb8f-0933-793a">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="8875-5d04-e4de-386d" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
-      </costs>
-      <modifiers>
-        <modifier type="increment" value="10" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="10" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Meta Overseer Synapse Unit" hidden="false" id="44a5-eea8-8b82-b83e" type="selectionEntry" targetId="5130-3125-71c1-88d4">
       <categoryLinks>
@@ -224,19 +112,11 @@
           </conditions>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="10"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Meta Overseer Synapse Unit" hidden="false" id="447f-db12-4150-985b" type="selectionEntry" targetId="5130-3125-71c1-88d4">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="fc54-c347-024b-85c4" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="10"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Revenant Berserker Cyborgs" hidden="false" id="7b68-3443-5e65-d895" type="selectionEntry" targetId="cbc5-c772-a0e8-4092">
       <categoryLinks>
@@ -248,32 +128,12 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="0b10-c29b-e9e9-c9ea" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="10" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="fcf4-64e3-20b5-cb2e" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="20"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Revenant Berserker Cyborgs" hidden="false" id="704a-7414-2aae-0d3c" type="selectionEntry" targetId="cbc5-c772-a0e8-4092">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="88ab-6387-7554-7cd8" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="20"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
-      <modifiers>
-        <modifier type="increment" value="10" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="fcf4-64e3-20b5-cb2e" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Centaur Scout Cyborgs" hidden="false" id="a2c5-ec61-caf4-1fc9" type="selectionEntry" targetId="23c3-f858-d21e-38b7">
       <categoryLinks>
@@ -286,37 +146,21 @@
           </conditions>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="36"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Centaur Scout Cyborgs" hidden="false" id="a0f3-61e6-9858-322d" type="selectionEntry" targetId="23c3-f858-d21e-38b7">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="067d-3c68-7095-0761" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="36"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Harvester Shield Mechs" hidden="false" id="3c03-6127-0741-622c" type="selectionEntry" targetId="60a2-d87f-26be-0b00">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="8793-cdfa-5789-03c1" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="70"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Harvester Combat Mechs" hidden="false" id="977a-fba5-afcd-1add" type="selectionEntry" targetId="8493-892d-1a52-c173">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="9b1a-9b10-acf1-6dde" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="70"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Overlord Gun Walker" hidden="false" id="915e-e971-0b20-3a6b" type="selectionEntry" targetId="875d-8f9f-b347-10ed">
       <categoryLinks>
@@ -329,10 +173,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Reaper Combat Walker" hidden="false" id="0b10-c29b-e9e9-c9ea" type="selectionEntry" targetId="7c18-fc38-4912-170c">
       <categoryLinks>
@@ -341,10 +181,6 @@
       <infoLinks>
         <infoLink name="Leader [12&quot;]" id="93d4-f154-b98b-e8f1" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
       </infoLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -364,28 +200,16 @@
           </conditions>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Reaper Combat Walker" hidden="false" id="d9c1-395f-76bb-8c8b" type="selectionEntry" targetId="7c18-fc38-4912-170c">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="bc73-232a-8a19-9a3b" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Overlord Gun Walker" hidden="false" id="b3cb-eb1b-f268-81f7" type="selectionEntry" targetId="875d-8f9f-b347-10ed">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="7177-f9eb-38a3-6377" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Dominator Support Walker" hidden="false" id="b04a-80bb-fd44-f0d7" type="selectionEntry" targetId="41cc-a29b-03cd-e10c">
       <categoryLinks>
@@ -398,24 +222,13 @@
           </conditions>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="90"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Dominator Support Walker" hidden="false" id="1ce3-1de5-ce5c-6b24" type="selectionEntry" targetId="41cc-a29b-03cd-e10c">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="c5de-8032-136d-cb61" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="90"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Drop Pods" hidden="false" id="336a-de2f-4eaa-1b37" type="selectionEntry" targetId="396b-c3fb-ccef-7c32">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="5"/>
-      </costs>
       <modifiers>
         <modifier type="increment" value="5" field="Requisition">
           <conditions>
@@ -455,10 +268,6 @@
           </conditions>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="0fd5-d5d4-1089-b53d" primary="true" name="Core Squads"/>
       </categoryLinks>
@@ -467,10 +276,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="8b3f-8ea8-a55f-4dff" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
   </entryLinks>
   <catalogueLinks>

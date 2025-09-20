@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e861-63ad-09d7-b486" name="Sol Enclaves: Dominion Vassal" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
+<catalogue library="false" id="e861-63ad-09d7-b486" name="Sol Enclaves: Dominion Vassal" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Sol Enclaves Lib" id="2bba-e15d-5fd3-03da" targetId="30d3-125d-4f6c-158d"/>
     <catalogueLink type="catalogue" name="Verse Dominion Lib" id="5890-81e9-6e2d-c6f1" targetId="f78a-9b71-02cb-0454"/>
@@ -302,7 +302,7 @@
         <categoryLink targetId="8251-bf19-43c2-a012" id="962e-7416-b9b5-4921" primary="true" name="Sponsored Squad"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="replace" value="" field="name" arg=" (Dominion Allies)"/>
+        <modifier type="replace" field="name" arg=" (Dominion Allies)"/>
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="110"/>
@@ -312,7 +312,7 @@
     </entryLink>
     <entryLink import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="1864-64b0-b23a-1557" type="selectionEntry" targetId="a41c-387b-d311-b253">
       <modifiers>
-        <modifier type="replace" value="" field="name" arg=" (Dominion Allies)"/>
+        <modifier type="replace" field="name" arg=" (Dominion Allies)"/>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="8251-bf19-43c2-a012" id="467b-cd0f-3f8c-2a91" primary="true" name="Sponsored Squad"/>
@@ -325,7 +325,7 @@
     </entryLink>
     <entryLink import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="471e-6c65-4b39-2a05" type="selectionEntry" targetId="36fc-8c76-ddb7-318f">
       <modifiers>
-        <modifier type="replace" value="" field="name" arg=" (Dominion Allies)"/>
+        <modifier type="replace" field="name" arg=" (Dominion Allies)"/>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="8251-bf19-43c2-a012" id="7c7f-6a3d-e3cc-a382" primary="true" name="Sponsored Squad"/>
@@ -338,7 +338,7 @@
     </entryLink>
     <entryLink import="true" name="Bullfrog APC (Dominion Allies)" hidden="false" id="17e3-6c6c-c5b2-dcfd" type="selectionEntry" targetId="08a8-e46f-5edd-ec70">
       <modifiers>
-        <modifier type="replace" value="" field="name" arg=" (Dominion Allies)"/>
+        <modifier type="replace" field="name" arg=" (Dominion Allies)"/>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="8251-bf19-43c2-a012" id="bdc4-91a2-04d0-082c" primary="true" name="Sponsored Squad"/>
@@ -566,26 +566,6 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="11" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="22" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -790,28 +770,6 @@
         <cost name="Req" typeId="Requisition" value="22"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="11" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="22" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="45ce-fcaa-a95e-5f02" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Bullfrog APC (Tank Commander) (Dominion Vassal)" hidden="false" id="b978-53ab-e777-caae" type="selectionEntry" targetId="f470-25bd-b728-d694">
       <categoryLinks>
@@ -867,93 +825,6 @@
         <cost name="Req" typeId="Requisition" value="22"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="22" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="33" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="44" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="11" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="22" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="11" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="22" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="852d-4fb1-04e4-41d8" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="11" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Req &amp; Morale</comment>
-        </modifierGroup>
-      </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -981,88 +852,6 @@
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="22" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="33" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="44" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="11" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="22" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="11" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="22" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="852d-4fb1-04e4-41d8" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="8903-0a5b-bd8e-e08e" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="577c-c1e2-5e47-84a7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="11" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="4a18-66d5-f24c-ed31" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <comment>Req &amp; Morale</comment>
         </modifierGroup>
       </modifierGroups>
@@ -1112,26 +901,6 @@
     </entryLink>
     <entryLink import="true" name="Guardsmen Machine Gun Squad (Dominion Vassal)" hidden="false" id="3011-7cf7-9df9-d541" type="selectionEntry" targetId="a1bf-8b4e-1764-387c">
       <modifiers>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="14" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="28" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -1157,26 +926,6 @@
     </entryLink>
     <entryLink import="true" name="Guardsmen Machine Gun Squad (Dominion Vassal)" hidden="false" id="7ca4-ee79-9d8b-41b3" type="selectionEntry" targetId="a1bf-8b4e-1764-387c">
       <modifiers>
-        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="14" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="28" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="2b8f-d440-37ec-c69e" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">

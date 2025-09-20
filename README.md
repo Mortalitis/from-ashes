@@ -4,21 +4,31 @@
 
 Current Game Version: 0.1.2
 
-## Faction Progress
-- Xeraak Triarchy: First pass completed
-- Verse Dominion: First pass completed
-- Scaryn Federated Alliance (SFA): First pass completed
-- Devin Pact: Kommodan Loyalists: First pass completed
-- Devin Pact: Dominion Allies: First pass completed
-- Sol Enclaves: First pass completed
-- Sol Enclaves: Paragons of Old Earth: First pass completed
-- Sol Enclaves: Members of the Alliance: First pass completed
-- Sol Enclaves: Union of the Advancing Dawn: First pass completed
-- Sol Enclaves: Dominion Vassal: First pass completed
-- Sol Enclaves: Freemen of the Republic: First pass completed
+## Supported Factions
+- Xeraak Triarchy
+- Verse Dominion
+- Scaryn Federated Alliance (SFA)
+- Devin Pact: Kommodan Loyalists
+- Devin Pact: Dominion Allies
+- Sol Enclaves
+- Sol Enclaves: Paragons of Old Earth
+- Sol Enclaves: Members of the Alliance
+- Sol Enclaves: Union of the Advancing Dawn
+- Sol Enclaves: Dominion Vassal
+- Sol Enclaves: Freemen of the Republic
 
-## Feature Progress
-- Better subfaction selection: First Pass
-- Refactored so vast majority of rules are in the core rules
-- Vanilla Sol are now its own list
-- Removed the generic lists from some options. You can added a generic allied Force via the add Force list and clicking the drop down. This will save a ton of admin down the road. The exception to this is the Devin Pact: Kommodan Loyalists as their Sol Enclaves: Dominion Vassal allies have the Smokescreen ability on top of what Sol Enclaves: Dominion Vassal normally gets.
+## Unsupported Factions
+- The Zayken (unreleased)
+- Kymeron Republic (unreleased)
+
+## Usage Notes
+- Some factions allow an allied detachment depending on the subfaction. Please refer to the PDF what can be taken as an allied Detachment and select accordingly by clicking "add force" 
+- The exception to this is the Devin Pact: Kommodan Loyalists as their Sol Enclaves: Dominion Vassal allies have the Smokescreen ability on top of what Sol Enclaves: Dominion Vassal normally gets. When adding a Detachment keep the main faction as Devin Pact: Kommodan Loyalists and select Sol Enclaves as the subfaction
+
+## Updates
+- Split the weapons into two profiles (Weapon Stats and Weapon Accurcay/AP) so that it is presented better within the app and allows PDFs to be exported. Weapon Accuracy/AP profile will have the range bands and then the stats are split between accuract and AP. For example a 6+/2 value means at that range the weapon has 6+ accuracy and an AP of 2
+- Fixed some units having Assault Move (3") instead of Assault Move (4")
+- Moved points values from the .cat files to the .lib to reduce the workload when updating points
+
+## Current Planned Work
+- None

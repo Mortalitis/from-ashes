@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="26d0-ece6-9126-7ee3" name="Scaryn Federated Alliance" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="26d0-ece6-9126-7ee3" name="Scaryn Federated Alliance" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Scaryn Federated Alliance Lib" id="0b4b-306a-53e6-7c0e" targetId="36c0-b435-6935-ad36"/>
   </catalogueLinks>
   <forceEntries>
     <forceEntry name="Scaryn Federated Alliance" id="79d1-3b5d-0e95-4b15" hidden="false">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="54c7-6097-15f4-06da" targetId="857e-b03a-a081-0acc" type="categoryEntry">
+        <categoryLink name="Configuration" hidden="false" id="54c7-6097-15f4-06da" targetId="857e-b03a-a081-0acc">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3231-4c70-34eb-fd88"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4077-2d92-2b82-f74f"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Detachment Commander" hidden="false" id="4dad-0dd7-50b1-42ea" targetId="a9a7-132c-6641-0946" type="categoryEntry">
+        <categoryLink name="Detachment Commander" hidden="false" id="4dad-0dd7-50b1-42ea" targetId="a9a7-132c-6641-0946">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89ed-7c76-4379-ecb3"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c5b-f06d-9a3c-e4d1"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Core Squads" hidden="false" id="01c1-0e11-82b0-3ef0" targetId="0e7c-b40e-8e07-6f1c" type="categoryEntry">
+        <categoryLink name="Core Squads" hidden="false" id="01c1-0e11-82b0-3ef0" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3db2-371e-10b7-deed"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5fd7-a677-a29d-6914"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support Squads" hidden="false" id="8071-9606-be3c-1311" targetId="19e5-b1b6-d85b-9709" type="categoryEntry">
+        <categoryLink name="Support Squads" hidden="false" id="8071-9606-be3c-1311" targetId="19e5-b1b6-d85b-9709">
           <constraints>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="74bb-01fd-3ffe-22c9"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f16c-fdf5-3297-1b83"/>
@@ -50,10 +50,6 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -79,19 +75,11 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Bullfrog APC (Tank Commander)" hidden="false" id="16f4-6d12-a51b-b728" type="selectionEntry" targetId="704e-576f-c173-e857">
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="08bb-319d-f780-239f" primary="true" name="Detachment Commander"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Borego Mods</comment>
@@ -134,10 +122,6 @@
           <comment>Hide if Detachment Command is not Infantry</comment>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="83be-098f-9b65-e46c" type="selectionEntry" targetId="18a6-c217-6845-bd88">
       <categoryLinks>
@@ -160,19 +144,11 @@
           <comment>Hide if Detachment Command is not Infantry</comment>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder Command Unit" hidden="false" id="43d6-0905-17b8-ca7c" type="selectionEntry" targetId="18a6-c217-6845-bd88">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="674e-008e-53e1-617a" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Aurora MRS" hidden="false" id="bc9d-52f9-6da6-b10e" type="selectionEntry" targetId="7863-2d93-d2ad-fd42">
       <categoryLinks>
@@ -198,10 +174,6 @@
           <comment>Hide if Detachment Commander is Infantry</comment>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Aurora MRS" hidden="false" id="1719-baa5-9ab7-e239" type="selectionEntry" targetId="7863-2d93-d2ad-fd42">
       <categoryLinks>
@@ -219,19 +191,11 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Grendel APC" hidden="false" id="64aa-cca7-ffc8-e719" type="selectionEntry" targetId="9d0b-06b9-4f35-65a4">
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="2ce4-43ac-6757-66a0" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -257,10 +221,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="cf2c-9ce8-92b3-a33f" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Borego Mods</comment>
@@ -278,10 +238,6 @@
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="aee8-0ac8-05d3-cf98" primary="true" name="Detachment Commander"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -304,10 +260,6 @@
       </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Snapdragon SPAAG" hidden="false" id="45ed-012f-0774-312f" type="selectionEntry" targetId="afb8-8015-b269-d862">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -336,10 +288,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="3c82-9f9a-d196-9415" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Borego Mods</comment>
@@ -354,10 +302,6 @@
       </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Raven Command Vehicle" hidden="false" id="ab51-8817-43ef-cc4e" type="selectionEntry" targetId="0c69-7f1f-bdbf-7096">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -383,10 +327,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Raven Command Vehicle" hidden="false" id="00e7-9a8e-c327-c661" type="selectionEntry" targetId="0c69-7f1f-bdbf-7096">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -412,10 +352,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Raven Command Vehicle" hidden="false" id="44c3-5990-0c69-32d8" type="selectionEntry" targetId="0c69-7f1f-bdbf-7096">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Borego Mods</comment>
@@ -433,10 +369,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Hammerhead IFV" hidden="false" id="11a9-15e2-1652-111a" type="selectionEntry" targetId="2f08-0717-9d9b-6376">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -462,10 +394,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Hammerhead IFV" hidden="false" id="7bf0-17f2-b65f-da6b" type="selectionEntry" targetId="2f08-0717-9d9b-6376">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Borego Mods</comment>
@@ -503,10 +431,6 @@
           <comment>Hide if Detachment Commander is Infantry</comment>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="75"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="637a-eb8b-f707-2a23" primary="true" name="Core Squads"/>
       </categoryLinks>
@@ -524,19 +448,11 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="75"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="2178-21ed-d7b4-b800" primary="true" name="Support Squads"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Lancer CRV (Tank Commander)" hidden="false" id="fa86-c059-43ec-7be4" type="selectionEntry" targetId="16a4-6065-7e4c-e135">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="75"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Borego Mods</comment>
@@ -582,10 +498,6 @@
           <comment>Hide if Detachment Commander is Infantry</comment>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="f0dd-6ccc-8e2c-0819" primary="true" name="Core Squads"/>
       </categoryLinks>
@@ -603,10 +515,6 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="667f-96c3-7473-6e48" primary="true" name="Support Squads"/>
       </categoryLinks>
@@ -635,10 +543,6 @@
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="8403-9b7f-4c42-ab3a" primary="true" name="Detachment Commander"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Anvil HEMR Battle Tank" hidden="false" id="e191-9705-24f3-f2c5" type="selectionEntry" targetId="bfae-7ef5-1556-ac7b">
       <modifierGroups>
@@ -661,10 +565,6 @@
           <comment>Hide if Detachment Commander is Infantry</comment>
         </modifier>
       </modifiers>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="135"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="3e70-bcbb-d50e-7a6a" primary="true" name="Core Squads"/>
       </categoryLinks>
@@ -682,10 +582,6 @@
           </conditions>
         </modifierGroup>
       </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="135"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="77c7-5c6d-f499-00b6" primary="true" name="Support Squads"/>
       </categoryLinks>
@@ -694,10 +590,6 @@
       <categoryLinks>
         <categoryLink targetId="a9a7-132c-6641-0946" id="bda1-e4e9-6618-085c" primary="true" name="Detachment Commander"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="135"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Borego Mods</comment>
@@ -720,10 +612,6 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Pathfinder Anti-Tank Squad" hidden="false" id="712c-987b-28c4-4c5d" type="selectionEntry" targetId="441c-fa6f-0f14-0d49">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="26"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -744,69 +632,11 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="9fd5-40a8-f6a9-9c5d" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Points Adjustments</comment>
-          <modifiers>
-            <modifier type="increment" value="26" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="dffe-2711-a303-cb79" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="dffe-2711-a303-cb79" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="13" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="dffe-2711-a303-cb79" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="dffe-2711-a303-cb79" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Pathfinder Anti-Tank Squad" hidden="false" id="dfee-b597-0905-7a25" type="selectionEntry" targetId="441c-fa6f-0f14-0d49">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="26"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="b92e-2f4c-1c8d-7d82" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Points Adjustments</comment>
-          <modifiers>
-            <modifier type="increment" value="26" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="dffe-2711-a303-cb79" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="dffe-2711-a303-cb79" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="13" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="dffe-2711-a303-cb79" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="dffe-2711-a303-cb79" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Pathfinder LMG Gunners" hidden="false" id="909c-3e4c-d90c-e8a7" type="selectionEntry" targetId="0010-f7fd-c067-b5d3">
       <modifiers>
@@ -829,106 +659,13 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="4c88-918f-9749-b66a" primary="true" name="Core Squads"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="26" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="fa16-8938-1555-52f9" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="fa16-8938-1555-52f9" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="13" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="fa16-8938-1555-52f9" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="fa16-8938-1555-52f9" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-      </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="26"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder LMG Gunners" hidden="false" id="98a5-be37-61e2-be00" type="selectionEntry" targetId="0010-f7fd-c067-b5d3">
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="fa09-d018-16b5-12ad" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="26" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="fa16-8938-1555-52f9" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="fa16-8938-1555-52f9" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="13" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="fa16-8938-1555-52f9" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="fa16-8938-1555-52f9" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-      </modifierGroups>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="26"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Pathfinder Railgunners" hidden="false" id="6159-c145-6037-48c3" type="selectionEntry" targetId="a349-4672-bc33-5440">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="34"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="34" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="163e-1dfa-cd59-f2ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="163e-1dfa-cd59-f2ee" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="17" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="163e-1dfa-cd59-f2ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="163e-1dfa-cd59-f2ee" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-      </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -951,63 +688,11 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Pathfinder Railgunners" hidden="false" id="a3d7-4893-1fcf-1d88" type="selectionEntry" targetId="a349-4672-bc33-5440">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="34"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="34" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="163e-1dfa-cd59-f2ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="163e-1dfa-cd59-f2ee" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="17" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="163e-1dfa-cd59-f2ee" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="163e-1dfa-cd59-f2ee" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-      </modifierGroups>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="7c4d-9837-2273-a0f2" primary="true" name="Support Squads"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Pathfinder Dragoons" hidden="false" id="75a0-8eac-8638-81ac" type="selectionEntry" targetId="352d-ad56-297c-64e5">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="15" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="2042-e293-14e4-f7e1" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="2042-e293-14e4-f7e1" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-      </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -1030,164 +715,11 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Pathfinder Dragoons" hidden="false" id="684e-abd0-cfb1-51e9" type="selectionEntry" targetId="352d-ad56-297c-64e5">
-      <costs>
-        <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
-      </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="15" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="2042-e293-14e4-f7e1" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="2042-e293-14e4-f7e1" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-      </modifierGroups>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="9ae4-3717-4822-198e" primary="true" name="Support Squads"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="e612-86a7-4988-a1f9" type="selectionEntry" targetId="53fb-b2c4-563b-cd0a">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="15" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="30" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="45" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="60" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="75" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="90" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="5" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="6" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="15" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="30" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="45" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="60" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="75" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="90" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="5" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="6" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-      </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -1210,138 +742,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Pathfinder Riflemen" hidden="false" id="bafa-3991-6b90-7f66" type="selectionEntry" targetId="53fb-b2c4-563b-cd0a">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="15" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="30" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="45" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="60" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="75" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="90" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="5" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="6" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="31c5-de77-4459-a2f7" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="15" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="30" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="45" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="60" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="75" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="90" field="Requisition">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="3" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="3" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="4" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="5" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="5" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="6" field="32f3-2311-8978-b603">
-              <conditions>
-                <condition type="equalTo" value="6" field="selections" scope="self" childId="7cfb-4c26-6e1e-54f2" shared="true" includeChildSelections="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Points Adjustments</comment>
-        </modifierGroup>
-      </modifierGroups>
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="984c-40c5-5de3-5f50" primary="true" name="Support Squads"/>
       </categoryLinks>
@@ -1350,21 +750,6 @@
       <categoryLinks>
         <categoryLink targetId="19e5-b1b6-d85b-9709" id="b95b-730b-878c-5b34" primary="true" name="Support Squads"/>
       </categoryLinks>
-      <costs>
-        <cost name="Req" typeId="Requisition" value="14"/>
-      </costs>
-      <modifiers>
-        <modifier type="increment" value="7" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="3" field="selections" scope="self" childId="403c-f417-6d9c-2250" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="14" field="Requisition">
-          <conditions>
-            <condition type="equalTo" value="4" field="selections" scope="self" childId="403c-f417-6d9c-2250" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>

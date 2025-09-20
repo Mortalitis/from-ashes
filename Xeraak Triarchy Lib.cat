@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -11,18 +11,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6ff-9ac1-d3f7-6b2d-max"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Acceletator" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="fd14-bed4-de46-dc7f" publicationId="38b2-0d05-f0c9-eb32" page="13">
+                <profile name="Plasma Acceletator" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="a9f7-6dec-6555-a894">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">3</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">3</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">10+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">2</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">1</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
@@ -30,6 +20,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Acceletator" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="105c-8a58-86cd-db5a">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/3</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/3</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/2</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/2</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -44,25 +43,24 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6b2-d56a-a266-db7e-max"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Carbine" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="da8d-ebc8-1a62-fb7c" publicationId="38b2-0d05-f0c9-eb32" page="13">
+                <profile name="Plasma Carbine" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="da8d-ebc8-1a62-fb7c" publicationId="38b2-0d05-f0c9-eb32" page="13">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">1</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">1</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">1</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">0</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small arms</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
                     <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Carbine" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="a755-5de1-cee0-7b23">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/0</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -105,6 +103,10 @@
       <entryLinks>
         <entryLink import="true" name="Infantry Upgrades" hidden="false" id="12c1-7c14-55ec-b4ba" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44" sortIndex="2"/>
       </entryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="36"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dominator Support Walker" hidden="false" id="41cc-a29b-03cd-e10c">
       <selectionEntries>
@@ -144,6 +146,10 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="90"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Drop Pods" hidden="false" id="396b-c3fb-ccef-7c32">
       <selectionEntries>
@@ -178,6 +184,10 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="5"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Harvester Combat Mechs" hidden="false" id="8493-892d-1a52-c173" publicationId="38b2-0d05-f0c9-eb32" page="16">
       <selectionEntries>
@@ -220,18 +230,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac3e-9276-9af5-dcd2-max"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Destroyers" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="099d-4ea1-16fa-b345">
+                <profile name="Plasma Destroyers" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="099d-4ea1-16fa-b345">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">4+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">0</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">5+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">0</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">7+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">0</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">8+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">0</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">0</characteristic>
@@ -239,6 +239,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">*</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">*</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">*</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Destroyers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="dbd1-5f92-9757-32f8">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">4+/0</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">7+/0</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">8+/0</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/0</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -252,6 +261,10 @@
           </selectionEntries>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Harvester Shield Mechs" hidden="false" id="60a2-d87f-26be-0b00" publicationId="38b2-0d05-f0c9-eb32" page="15">
       <selectionEntries>
@@ -271,18 +284,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f6d-979d-0309-d223-max"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Repeater" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="8042-6601-09ab-6b22">
+                <profile name="Plasma Repeater" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="8042-6601-09ab-6b22">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">7+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">8+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">2</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">2</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
@@ -290,6 +293,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Repeater" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="01c2-30ce-ec7e-0803">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">7+/2</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">8+/2</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -326,11 +338,15 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hunchback Gun Cyborgs" hidden="false" id="373a-6b4c-ee15-ea56" publicationId="38b2-0d05-f0c9-eb32" page="11">
       <costs>
-        <cost name="Req" typeId="Requisition" value="0"/>
-        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
+        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hunchback Gun Cyborg" hidden="false" id="ed2d-09fa-f209-cf67" publicationId="38b2-0d05-f0c9-eb32" page="11" sortIndex="1">
@@ -341,18 +357,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b13b-0ebf-e32e-6cda-max"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Caster" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="77d7-77b2-6f91-c698" publicationId="38b2-0d05-f0c9-eb32" page="11">
+                <profile name="Plasma Caster" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="77d7-77b2-6f91-c698" publicationId="38b2-0d05-f0c9-eb32" page="11">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">5</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">5</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">5</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">10</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">5</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">5</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
@@ -360,6 +366,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Caster" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="2285-5cde-9fe9-4928">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/5</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/5</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/5</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/5</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -399,11 +414,38 @@
       <entryLinks>
         <entryLink import="true" name="Infantry Upgrades" hidden="false" id="ed66-46a9-8881-ab9d" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44" sortIndex="2"/>
       </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req &amp; Morale</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="14" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="28" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Meta Command Unit" hidden="false" id="5cbb-1548-2a40-9bae" publicationId="38b2-0d05-f0c9-eb32" page="12">
       <costs>
-        <cost name="Req" typeId="Requisition" value="0"/>
-        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
+        <cost name="Req" typeId="Requisition" value="25"/>
+        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Meta Command Unit" hidden="false" id="4a74-6133-0905-9b0b" publicationId="38b2-0d05-f0c9-eb32" page="12">
@@ -414,18 +456,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c700-d12f-4b13-445d-max"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Pistols" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="4227-5d88-718f-a5d9">
+                <profile name="Plasma Pistols" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="4227-5d88-718f-a5d9">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">4+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">1</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">5+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">1</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">1</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">0</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
@@ -433,6 +465,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Pistols" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="0719-de4d-3c3b-503e">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">4+/1</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/1</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">-/0</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">-/0</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -516,6 +557,10 @@
       <entryLinks>
         <entryLink import="true" name="Infantry Upgrades" hidden="false" id="6d3b-ea43-c6a2-b21a" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44"/>
       </entryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="10"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Overlord Gun Walker" hidden="false" id="875d-8f9f-b347-10ed">
       <selectionEntries>
@@ -527,18 +572,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9435-051d-83c5-8023-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Cannon" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="4f65-7ed4-9066-a2c6">
+                <profile name="Plasma Cannon" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="cff6-c962-c104-2a37">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">7</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">7</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">7+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">7</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">8+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">6</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">10</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">6</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
@@ -546,6 +581,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="63ba-ed17-097d-9513">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/7</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/7</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">7+/7</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">8+/6</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -601,6 +645,10 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Reaper Combat Walker" hidden="false" id="7c18-fc38-4912-170c">
       <selectionEntries>
@@ -624,18 +672,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0b8-d3ba-b795-5903-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Flamers" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="fa11-bc8d-6424-87a9">
+                <profile name="Plasma Flamers" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="fa11-bc8d-6424-87a9">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">3+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">1</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">5+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">1</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">10+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">1</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">0</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">6</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
@@ -645,10 +683,19 @@
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
                   </characteristics>
                 </profile>
+                <profile name="Plasma Flamers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="7a59-6cc6-4573-73a5">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">3+/1</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/1</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">10+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">-/0</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">-/0</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (2)" id="fceb-bb83-a238-a11c" hidden="false" type="rule" targetId="f70b-1cf0-f319-259a"/>
-                <infoLink name="Assault Move (3&quot;)" id="0c09-658a-df14-32c5" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+                <infoLink name="Assault Move (4&quot;)" id="0c09-658a-df14-32c5" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
                 <infoLink name="Plasma (12+)" id="d882-633c-1a26-0602" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
                 <infoLink name="Flame Weapon" id="697b-75f7-0b53-ed72" hidden="false" type="rule" targetId="7841-74bf-efd5-5422"/>
                 <infoLink name="Burn" id="ca18-6464-cb77-0922" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
@@ -670,6 +717,10 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="115"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Revenant Berserker Cyborgs" hidden="false" id="cbc5-c772-a0e8-4092" publicationId="38b2-0d05-f0c9-eb32" page="10">
       <selectionEntries>
@@ -688,18 +739,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a09-c0a1-41ec-c943-max"/>
               </constraints>
               <profiles>
-                <profile name="Berserker Plasma Weapons" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="4e74-b261-df5e-622f" publicationId="38b2-0d05-f0c9-eb32" page="14">
+                <profile name="Berserker Plasma Weapons" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="4e74-b261-df5e-622f" publicationId="38b2-0d05-f0c9-eb32" page="14">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">1</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">1</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
@@ -707,6 +748,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Berserker Plasma Weapons" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="b36b-2215-570b-37f6">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/1</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -750,6 +800,17 @@
       <entryLinks>
         <entryLink import="true" name="Infantry Upgrades" hidden="false" id="e5af-36fa-9bef-357a" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44" sortIndex="2"/>
       </entryLinks>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="10" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="fcf4-64e3-20b5-cb2e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Revenant Combat Cyborgs" hidden="false" id="16c9-bb8f-0933-793a" publicationId="38b2-0d05-f0c9-eb32" page="14">
       <selectionEntries>
@@ -765,18 +826,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fd5-9c1b-7c43-9143-max"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Carbines" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="56b9-0cb3-e754-acf0" publicationId="38b2-0d05-f0c9-eb32" page="14">
+                <profile name="Plasma Carbines" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="56b9-0cb3-e754-acf0" publicationId="38b2-0d05-f0c9-eb32" page="14">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">1</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">1</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">1</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">0</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
@@ -784,6 +835,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Carbines" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="fef5-2aa6-b04e-6b2c">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/0</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -831,18 +891,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ac9-a570-c53a-6a0c-max"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Accelerators" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="67f0-0acd-0a56-be54" publicationId="38b2-0d05-f0c9-eb32" page="14">
+                <profile name="Plasma Accelerators" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="67f0-0acd-0a56-be54" publicationId="38b2-0d05-f0c9-eb32" page="14">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">6+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">3</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">3</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">10+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">2</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">1</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
@@ -850,6 +900,15 @@
                     <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Accelerators" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="06c5-1d40-bc90-9ed7">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/3</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/3</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/3</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/2</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -888,9 +947,36 @@
         <entryLink import="true" name="Infantry Upgrades" hidden="false" id="cb29-7454-d51d-ae06" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44" sortIndex="3"/>
       </entryLinks>
       <costs>
-        <cost name="Req" typeId="Requisition" value="0"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+        <cost name="Req" typeId="Requisition" value="50"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req &amp; Morale</comment>
+          <modifiers>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="10" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="5" field="selections" scope="self" childId="faa7-dac1-1331-7810" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="10" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="self" childId="fb18-80d9-4033-034d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vector Assault Walker" hidden="false" id="c0c6-2699-f5bf-dfaa">
       <selectionEntries>
@@ -902,18 +988,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be84-b819-2e51-2856" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Plasma Bombard" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="2387-fc10-4e03-9e9e">
+                <profile name="Plasma Bombard" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="2387-fc10-4e03-9e9e">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">10+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">2</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">2</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">4</characteristic>
@@ -923,9 +999,18 @@
                     <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">4</characteristic>
                   </characteristics>
                 </profile>
+                <profile name="Plasma Bombard" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="00cc-25b0-015c-05b4">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/2</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/2</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/2</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Assault Move (3&quot;)" id="8734-616e-2fb7-a9a5" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+                <infoLink name="Assault Move (4&quot;)" id="8734-616e-2fb7-a9a5" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
                 <infoLink name="Barrage" id="b7de-9012-be7b-79b4" hidden="false" type="rule" targetId="977a-72f5-8575-939a"/>
                 <infoLink name="Plasma (11+)" id="506f-6ce7-dbfa-1a3b" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
               </infoLinks>
@@ -973,6 +1058,10 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="100"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Grenades" hidden="false" id="bad4-94b4-5cdb-103e" publicationId="38b2-0d05-f0c9-eb32" page="12">
       <constraints>
@@ -980,18 +1069,8 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2696-4a89-b08b-6113-max"/>
       </constraints>
       <profiles>
-        <profile name="Plasma Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="bdcf-ff50-b839-ef80" publicationId="38b2-0d05-f0c9-eb32" page="12">
+        <profile name="Plasma Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="bdcf-ff50-b839-ef80" publicationId="38b2-0d05-f0c9-eb32" page="12">
           <characteristics>
-            <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-            <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
-            <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
-            <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
-            <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">N/A</characteristic>
-            <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">N/A</characteristic>
-            <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
-            <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
-            <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
-            <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
@@ -999,6 +1078,15 @@
             <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
             <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
             <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Plasma Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="14c1-95b6-fae7-651d">
+          <characteristics>
+            <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
+            <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/2</characteristic>
+            <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">N/A</characteristic>
+            <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+            <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1064,18 +1152,8 @@
             <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
           <profiles>
-            <profile name="Plasma Repeater Turret" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="53d2-0e75-e9c0-981c">
+            <profile name="Plasma Repeater Turret" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="a09f-d7a7-2316-4392">
               <characteristics>
-                <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
-                <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
-                <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">7+</characteristic>
-                <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">2</characteristic>
-                <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">8+</characteristic>
-                <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">2</characteristic>
-                <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
-                <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">2</characteristic>
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
@@ -1085,9 +1163,18 @@
                 <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
               </characteristics>
             </profile>
+            <profile name="Plasma Repeater Turret" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="c809-fe5d-b2c6-a8db">
+              <characteristics>
+                <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
+                <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
+                <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">7+/2</characteristic>
+                <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">8+/2</characteristic>
+                <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/2</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Assault Move (3&quot;)" id="ae83-f8c7-a8ab-2855" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+            <infoLink name="Assault Move (4&quot;)" id="ae83-f8c7-a8ab-2855" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
             <infoLink name="Plasma (12+)" id="6513-1236-bab8-168e" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
             <infoLink name="Free Command: Defence Fire" id="4107-6f85-799c-9bab" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
           </infoLinks>
@@ -1102,18 +1189,8 @@
             <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
           <profiles>
-            <profile name="Plasma Missile Pods" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="1a68-a897-38bf-75b9">
+            <profile name="Plasma Missile Pods" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="1a68-a897-38bf-75b9">
               <characteristics>
-                <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">5</characteristic>
-                <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">7+</characteristic>
-                <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">5</characteristic>
-                <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">9+</characteristic>
-                <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">5</characteristic>
-                <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">11+</characteristic>
-                <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">5</characteristic>
-                <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
-                <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">5</characteristic>
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
@@ -1126,7 +1203,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Free Command: Run &amp; Gun (1)" id="9e6d-e7a8-89dc-c5b3" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
-            <infoLink name="Assault Move (3&quot;)" id="723c-478b-b455-9762" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+            <infoLink name="Assault Move (4&quot;)" id="723c-478b-b455-9762" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
             <infoLink name="Plasma (11+)" id="ed55-6ad3-24ec-4427" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
           </infoLinks>
         </selectionEntry>
@@ -1136,18 +1213,8 @@
             <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
           <profiles>
-            <profile name="Plasma Blasters" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="0e50-0f98-dbbc-7611">
+            <profile name="Plasma Blasters" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="0e50-0f98-dbbc-7611">
               <characteristics>
-                <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">5+</characteristic>
-                <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">1</characteristic>
-                <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">1</characteristic>
-                <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">7+</characteristic>
-                <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">1</characteristic>
-                <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">8+</characteristic>
-                <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">1</characteristic>
-                <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">11+</characteristic>
-                <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">1</characteristic>
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">4</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
@@ -1160,7 +1227,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Free Command: Run &amp; Gun (2)" id="47f6-3b86-f557-c8b0" hidden="false" type="rule" targetId="f70b-1cf0-f319-259a"/>
-            <infoLink name="Assault Move (3&quot;)" id="22ab-b845-fa7b-2a57" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+            <infoLink name="Assault Move (4&quot;)" id="22ab-b845-fa7b-2a57" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
             <infoLink name="Plasma (12+)" id="03dc-f204-a9a1-5bf0" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
             <infoLink name="Rapid Fire (24&quot;/11+)" id="0aab-08b3-ee15-440c" hidden="false" type="rule" targetId="bb24-2bc0-e3c8-d176"/>
           </infoLinks>
