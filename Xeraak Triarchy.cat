@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Xeraak Triarchy" id="d392-58f6-e0a3-942c" hidden="false">
       <categoryLinks>
@@ -23,7 +23,7 @@
         </categoryLink>
         <categoryLink name="Support Squads" hidden="false" id="469e-25ad-b3d7-0fbb" targetId="19e5-b1b6-d85b-9709">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5523-c239-3c59-392b"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5523-c239-3c59-392b"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="840b-35fa-064b-41a4-max"/>
           </constraints>
           <modifiers>
