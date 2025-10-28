@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -45,10 +45,11 @@
         <characteristicType name="Attacks" id="8cb0-64ed-d1f4-6cd0"/>
         <characteristicType name="Arc" id="1f74-4c02-05ba-2dae"/>
         <characteristicType name="Blast" id="0072-c918-4223-1011"/>
-        <characteristicType name="Damage (Infantry)" id="bd4e-991b-463f-b91f"/>
-        <characteristicType name="Damage (Walkers)" id="e1ce-a868-d771-69b8"/>
-        <characteristicType name="Damage (Vehicles)" id="aa27-9f00-d413-1c5b"/>
-        <characteristicType name="Damage (Flyers)" id="8f25-1699-f943-aa2f"/>
+        <characteristicType name="Infantry" id="bd4e-991b-463f-b91f"/>
+        <characteristicType name="Walkers" id="e1ce-a868-d771-69b8"/>
+        <characteristicType name="Vehicles" id="aa27-9f00-d413-1c5b"/>
+        <characteristicType name="Flyers" id="8f25-1699-f943-aa2f"/>
+        <characteristicType name="Rules" id="1666-854d-8d33-3d5d"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Weapon Ranges/AP" id="9054-da59-7d68-5c1b" hidden="false" sortIndex="3">
@@ -69,10 +70,14 @@
       <description>See the Unit Abilities section of the main From Ashes rules</description>
     </rule>
     <rule name="Assault Move (5&quot;, Stabilised)" id="057f-77b8-2c9e-e67b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+      <description>Certain weapons have the Assault Move special rule which gives the Unit access to the following: Special Storm Command: Assault Move (X)
+
+This Squad can make a move up to that in brackets before firing any Assault Move weapons it has with an [Accuracy → 1] modifier. Each Unit may choose different targets, but all the weapons on a Unit must choose the same target. Additionally if they move 5&quot; or more the Command becomes an Advance instead of Storm</description>
     </rule>
     <rule name="Assault Move (3&quot;)" id="aaff-02cd-c899-c6d0" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+      <description>Certain weapons have the Assault Move special rule which gives the Unit access to the following: Special Storm Command: Assault Move (X)
+
+This Squad can make a move up to that in brackets before firing any Assault Move weapons it has with an [Accuracy → 1] modifier. Each Unit may choose different targets, but all the weapons on a Unit must choose the same target.</description>
     </rule>
     <rule name="Smokescreen" id="67d7-fb01-15af-53b1" hidden="false" page="19">
       <description>See the Unit Abilities section of the main From Ashes rules</description>
@@ -99,7 +104,13 @@
       <description>This Squad may attempts a free Engage Reaction with each Defence Fire weapon</description>
     </rule>
     <rule name="Barrage" id="977a-72f5-8575-939a" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+      <description>Barrage weapons follow the normal Engage process but with the following modifications.
+
+
+* A Barrage weapon can be used against any Squad in the game, regardless of line of sight, and even those held as reserves in the enemy&apos;s FOB. If a Unit with a Barrage weapon chooses a target it cannot see, the weapon&apos;s Accuracy Bracket starts as Extreme, regardless of the distance.
+* Barrage weapons ignore Block tests due to intervening terrain and Units other than those in base contact the target Squad, which count as usual, nor does this override the Lone Wolf ability
+* If a Barrage weapon&apos;s Accuracy roll would score a successful hit if a target was one range bracket closer, it counts as scoring a hit but do not roll any Damage dice (i.e. Blast markers can still be generated)
+* Barrage weapons benefit from the Static Target and Top Attack (11+) special rules</description>
     </rule>
     <rule name="Burn" id="501b-9357-716d-184b" hidden="false">
       <description>Squads taking hits from this weapon must roll a Skill Test. If failed must reroll successful Armour Saves</description>
@@ -120,7 +131,9 @@
       <description>Units with an Enclosed value of 1 or more must reroll successful Armour saves against hits from this weapon</description>
     </rule>
     <rule name="Assault Move (4&quot;)" id="0c3f-c936-3653-194b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+      <description>Certain weapons have the Assault Move special rule which gives the Unit access to the following: Special Storm Command: Assault Move (X)
+
+This Squad can make a move up to that in brackets before firing any Assault Move weapons it has with an [Accuracy → 1] modifier. Each Unit may choose different targets, but all the weapons on a Unit must choose the same target.</description>
     </rule>
     <rule name="Full Auto" id="fc3f-a880-8a26-e2f4" hidden="false">
       <description>Before rolling Attacks you may choose to reroll Accuracy dice but the target may reroll failed Armour saves</description>
@@ -538,10 +551,24 @@
       <description>If this Unit fails an Accuracy roll, Strike roll or Discipline Test, it may remove a Force Field Token in order to reroll it and pass the roll on a 2+</description>
     </rule>
     <rule name="Force Field Recharge 4+" id="90b3-f8a4-4359-5e54" hidden="false">
-      <description>See the main From Ashes rules</description>
+      <description>If a Unit has the Force Field ability, place a Force Field token nearby. Whenever a Hit is allocated to a Unit with a Force Field token, the owning player rolls a D12 before any Damage Dice are rolled. On a 1-4 the hit is discarded with no further effect, but keep any rolls of a 12 off to the side which are now known as Overloads. Once all the Force Field rolls have been carried out for this Command, then if there are any Overloads, remove the Force Field token.
+Each unit can attempt to recharge their Force Field after the Dissipate step of the SitRep phase by rolling a D12 with respect to the Recharge value. If successful replace the Force Field token</description>
     </rule>
     <rule name="Beam" id="3e04-1496-4e90-7384" hidden="false">
       <description>After rolling Accuracy dice, roll a Skill Test (rerolling failures if this Unit has not moved this turn). If passed, increase Damage Dice by 1</description>
     </rule>
+    <rule name="Static Target" id="3dfa-d3a9-55f6-7a2d" hidden="false">
+      <description>If this weapon is targeting the same Squad a second time and neither the Attacker or Target have moved since, nor is a Fast Target, roll a skill test beforehand. If passed the weapon receives [Accuracy ← 1]. If it is a third time it instead benefits from a [Accuracy ← 2] instead, and if it is the fourth time it benefits from [Accuracy ← 3].</description>
+    </rule>
+    <rule name="Form Up" id="21cd-c0da-bc79-52d5" hidden="false" publicationId="5652-0742-890a-1e22" page="18">
+      <description>When one or more Squads with the Form Up ability are within 1&quot; of a Squad of the same unit type which itself is about to carry out a Command (not Reaction, Overwatch or Order), then any of those Squads with the Form Up ability may declare they wish to join the activating Squad. Once all have been nominated, each attempts a Discipline test. If failed, nothing happens, but if passed that Form Up Squad counts as part of the activating Squad until the Command is finished (ending before any Reactions). Once the Commands are completed place the relevant Command dice by each component Squad.
+
+
+If an enemy Squad Reacts and Engages the Formed Up Squads, and have been hit by any of them, they may split their fire between them, remembering Lone Wolf where relevant</description>
+    </rule>
+    <rule name="Ambush" id="6b1b-2c5a-30af-1ac3" hidden="false"/>
+    <rule name="Attack Run" id="83d1-d1d6-2d4d-9158" hidden="false"/>
+    <rule name="Superior Guard" id="c85d-a3b6-3b3d-bee8" hidden="false"/>
+    <rule name="Lone Wolf" id="bd5e-a9e3-1a49-cb2c" hidden="false"/>
   </sharedRules>
 </gameSystem>

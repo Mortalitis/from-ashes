@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -16,10 +16,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Acceletator" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="105c-8a58-86cd-db5a">
@@ -48,10 +49,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Carbine" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="a755-5de1-cee0-7b23">
@@ -235,10 +237,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">0</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">*</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">*</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">*</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">*</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">*</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">*</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">*</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">*</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Destroyers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="dbd1-5f92-9757-32f8">
@@ -289,10 +292,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Repeater" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="01c2-30ce-ec7e-0803">
@@ -362,10 +366,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Caster" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="2285-5cde-9fe9-4928">
@@ -461,10 +466,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Pistols" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="0719-de4d-3c3b-503e">
@@ -577,10 +583,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">3</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">3</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">3</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="63ba-ed17-097d-9513">
@@ -677,10 +684,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">6</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Flamers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="7a59-6cc6-4573-73a5">
@@ -744,10 +752,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Berserker Plasma Weapons" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="b36b-2215-570b-37f6">
@@ -831,10 +840,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Carbines" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="fef5-2aa6-b04e-6b2c">
@@ -896,10 +906,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Accelerators" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="06c5-1d40-bc90-9ed7">
@@ -993,10 +1004,11 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">4</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">4</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">4</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">4</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">4</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">4</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">4</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
+                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Bombard" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="00cc-25b0-015c-05b4">
@@ -1074,10 +1086,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Plasma Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="14c1-95b6-fae7-651d">
@@ -1157,10 +1170,11 @@
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
               </characteristics>
             </profile>
             <profile name="Plasma Repeater Turret" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="c809-fe5d-b2c6-a8db">
@@ -1194,10 +1208,11 @@
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1218,10 +1233,11 @@
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">4</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
               </characteristics>
             </profile>
           </profiles>
