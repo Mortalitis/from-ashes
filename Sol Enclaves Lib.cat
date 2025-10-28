@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="30d3-125d-4f6c-158d" name="Sol Enclaves Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="30d3-125d-4f6c-158d" name="Sol Enclaves Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Guardsmen Command Unit (UotAD)" hidden="false" id="0d27-a4eb-b89b-83ef">
       <selectionEntries>
@@ -91,10 +91,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Frag Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="24be-7437-2c8b-0b5c">
@@ -647,10 +648,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="HMG Turret" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="04fe-f910-249c-09b5">
@@ -676,10 +678,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">4</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Flamethrower Turret" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="1661-0982-6e93-5bac">
@@ -705,10 +708,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Mortar Turret" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="483c-180b-c208-dd80">
@@ -1030,10 +1034,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Hull HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="d10c-647a-598e-a16c">
@@ -1392,8 +1397,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55ac-60cf-b1f5-efd8" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="130mm Main Cannon (HEAT Round)" hidden="false" id="368e-9ccb-442a-2efa" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
-            <entryLink import="true" name="130mm Main Cannon (KE Round)" hidden="false" id="6288-805c-b357-c29b" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="368e-9ccb-442a-2efa" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="6288-805c-b357-c29b" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="5b45-3b5b-1832-ad65" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
@@ -1458,8 +1463,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4561-f567-b04e-3641" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="8e4f-d638-db7c-e4c9" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="c448-39e5-2847-8343" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="8e4f-d638-db7c-e4c9" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="c448-39e5-2847-8343" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="5bc9-2c13-fab4-e353" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="4"/>
           </entryLinks>
         </selectionEntry>
@@ -1525,8 +1530,8 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="3b7b-833d-0294-1fa4" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="6370-37d3-7c9a-306a" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="3b7b-833d-0294-1fa4" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="6370-37d3-7c9a-306a" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="65f9-0d33-caff-4d86" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
@@ -1601,8 +1606,8 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="460d-39a1-1848-801f" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="1088-a1d5-56ff-6c1c" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="460d-39a1-1848-801f" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="1088-a1d5-56ff-6c1c" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="ce3f-bce1-49d0-f98e" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="4"/>
           </entryLinks>
         </selectionEntry>
@@ -2284,7 +2289,7 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="6519-7558-3a4f-1ba3" type="selectionEntry" targetId="daaa-2741-870b-7669" sortIndex="1"/>
-            <entryLink import="true" name="130mm Main Cannon (KE Round)" hidden="false" id="f530-4f24-7cab-f166" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="f530-4f24-7cab-f166" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="7c68-af86-e79c-413c" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
@@ -2534,7 +2539,7 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="ef18-e69b-0337-42b1" type="selectionEntry" targetId="daaa-2741-870b-7669" sortIndex="2"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="a861-29f4-c118-3ab5" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="a861-29f4-c118-3ab5" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="70c7-04a3-9da8-e6e4" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="4"/>
           </entryLinks>
         </selectionEntry>
@@ -3114,10 +3119,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="8f51-b17a-9edf-d0f5">
@@ -3795,8 +3801,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d39-9b6e-0221-abc6" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="7ab6-d790-8416-f619" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="2297-53d9-cff6-a964" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="7ab6-d790-8416-f619" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="2297-53d9-cff6-a964" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="01d0-e938-8b4c-3d8e" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
@@ -3868,8 +3874,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6397-b429-a6e8-9d8d" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="e823-c621-6a78-c308" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="46f4-73d2-7b6b-868a" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="e823-c621-6a78-c308" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="46f4-73d2-7b6b-868a" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="ba14-6913-bee1-83dc" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="4"/>
           </entryLinks>
         </selectionEntry>
@@ -3944,10 +3950,11 @@
                         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -3983,8 +3990,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71fb-13c4-cf24-f6f3" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="d7f3-bc35-27f4-a9d9" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="be4f-7d39-f919-d0a1" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="d7f3-bc35-27f4-a9d9" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="be4f-7d39-f919-d0a1" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="7a5b-d84c-5def-8462" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
@@ -4071,10 +4078,11 @@
                         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -4105,8 +4113,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="966a-02ff-421d-1cac" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="0b38-811f-2584-8bf8" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="9fbf-2fec-f4b7-0796" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="0b38-811f-2584-8bf8" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="9fbf-2fec-f4b7-0796" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="9cc3-15d9-ec54-9dff" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="4"/>
           </entryLinks>
         </selectionEntry>
@@ -5290,10 +5298,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Plasma Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="9653-52ee-761b-bad7">
@@ -5386,10 +5395,11 @@
                         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -5411,7 +5421,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70bf-25d5-0a4d-2aa0" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!Heavy Railgun" hidden="false" id="c0a2-fa57-ea4a-e1ab" type="selectionEntry" targetId="8fce-cf8d-cde5-b3fa" sortIndex="1"/>
+            <entryLink import="true" name="!Anvil Heavy Railgun" hidden="false" id="c0a2-fa57-ea4a-e1ab" type="selectionEntry" targetId="8fce-cf8d-cde5-b3fa" sortIndex="1"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="b09e-e020-41b2-489c" type="selectionEntry" targetId="d2bc-32b4-29be-c571"/>
           </entryLinks>
         </selectionEntry>
@@ -5498,10 +5508,11 @@
                         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -5532,7 +5543,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b787-b9da-699b-7259" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!Heavy Railgun" hidden="false" id="c630-9b33-17a3-21a0" type="selectionEntry" targetId="8fce-cf8d-cde5-b3fa" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil Heavy Railgun" hidden="false" id="c630-9b33-17a3-21a0" type="selectionEntry" targetId="8fce-cf8d-cde5-b3fa" sortIndex="2"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="1402-8fb8-6f0b-3ffd" type="selectionEntry" targetId="d2bc-32b4-29be-c571"/>
           </entryLinks>
         </selectionEntry>
@@ -5592,8 +5603,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d145-b614-a2e2-e56b" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="ca9a-60e2-5b37-5e39" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="cf8e-ac7a-c1ed-0c74" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="ca9a-60e2-5b37-5e39" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="cf8e-ac7a-c1ed-0c74" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="dcf4-0225-325c-f708" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
@@ -6885,8 +6896,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68e8-1474-a9bb-0364" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="2dd3-5d30-ce7b-861f" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="cc6d-c9d0-220e-daed" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="2dd3-5d30-ce7b-861f" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="cc6d-c9d0-220e-daed" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="ead0-6783-81dc-e1bc" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="4"/>
           </entryLinks>
         </selectionEntry>
@@ -6966,10 +6977,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="HMG Turret" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="2979-32bb-c05b-ed06">
@@ -6998,10 +7010,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Hull HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="0f9f-3936-9a4f-94ad">
@@ -7225,10 +7238,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Pintle HMG Upgrade" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="e456-0a4d-536c-d16a">
@@ -7255,10 +7269,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Heavy Smoke Rocket" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="f94b-f5fd-55fe-7e8c">
@@ -7366,8 +7381,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0af3-200d-4f5e-84f8" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="130mm Main Cannon (HEAT Round)" hidden="false" id="2132-1790-5076-f7df" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
-            <entryLink import="true" name="130mm Main Cannon (KE Round)" hidden="false" id="1d24-fd69-73d7-c23d" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="2132-1790-5076-f7df" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="1"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="1d24-fd69-73d7-c23d" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="2"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="3730-10cd-b0f8-5be5" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
@@ -7389,10 +7404,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Pulse Laser Turret Upgrade" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="fdc1-0ae8-efc7-9d0e">
@@ -7496,8 +7512,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37cd-7833-e079-c8c6" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="!130mm Main Cannon (HEAT Round)" hidden="false" id="c907-f96d-dc1c-c4da" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
-            <entryLink import="true" name="!130mm Main Cannon (KE Round)" hidden="false" id="be50-5fcc-87b7-d7b8" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (HEAT Round)" hidden="false" id="c907-f96d-dc1c-c4da" type="selectionEntry" targetId="cd55-d577-044e-5311" sortIndex="2"/>
+            <entryLink import="true" name="!Anvil 130mm Main Cannon (KE Round)" hidden="false" id="be50-5fcc-87b7-d7b8" type="selectionEntry" targetId="8faf-6724-6e71-1b0e" sortIndex="3"/>
             <entryLink import="true" name="!Anvil Coaxial MMG" hidden="false" id="5f30-0090-e3d1-fe6a" type="selectionEntry" targetId="d2bc-32b4-29be-c571" sortIndex="4"/>
           </entryLinks>
         </selectionEntry>
@@ -8980,10 +8996,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Plasma Repeater" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="ac02-d66e-e1d9-685b">
@@ -9017,10 +9034,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="130mm Main Cannon (HEAT Round)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="e2c6-e5ab-738b-785f">
@@ -9053,10 +9071,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="130mm Main Cannon (KE Round)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="995f-4735-fbc9-30fd">
@@ -9088,10 +9107,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Coaxial MMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="17f5-bf97-bce9-7631">
@@ -9128,10 +9148,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">3</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Heavy Railgun" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="49bb-933b-7ac0-a7fa">
@@ -9169,10 +9190,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Laser Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="1110-7536-62a8-2708">
@@ -9210,10 +9232,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">3</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">3</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">3</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Plasma Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="4b51-fc0d-f58b-944a">
@@ -9249,10 +9272,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">3</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">4</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">4</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Shock Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="b8c3-505c-cae6-2999">
@@ -9287,10 +9311,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Rocket Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="1146-fc10-df48-9156">
@@ -9330,10 +9355,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="42mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="e202-fd4c-eb99-ac38">
@@ -9365,10 +9391,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">4</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Coaxial MMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="8900-0e14-fe44-e96b">
@@ -9405,10 +9432,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="130mm Main Cannon (HEAT Round)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="251e-6e9d-6b2f-4b7d">
@@ -9442,10 +9470,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="Rocket Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="04b7-03ef-47e0-ebb4">
@@ -9486,10 +9515,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="!Snapdragon SAM Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="8c3e-fa80-5a7d-f71e">
@@ -9522,10 +9552,11 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">4</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+            <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
           </characteristics>
         </profile>
         <profile name="!Snapdragon Dual Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="1a6f-8f04-cc6a-72a9">
@@ -9853,10 +9884,11 @@
         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP-1</characteristic>
         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
         <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
       </characteristics>
     </profile>
     <profile name="M606 Rockets" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="9328-6525-3b57-f82a">
@@ -9893,10 +9925,11 @@
         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
       </characteristics>
       <comment>Anvil Tank Crew, Command Unit, Machine Gun</comment>
     </profile>
@@ -9915,10 +9948,11 @@
         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
       </characteristics>
       <comment>Guardsmen Command Unit</comment>
     </profile>
@@ -9927,10 +9961,11 @@
         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
       </characteristics>
     </profile>
     <profile name="HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="338f-a492-af36-06ba">
@@ -9957,10 +9992,11 @@
         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
       </characteristics>
       <comment>Rifle Squad</comment>
     </profile>
@@ -9979,10 +10015,11 @@
         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
         <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-        <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-        <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-        <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-        <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+        <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+        <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+        <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+        <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+        <characteristic typeId="b5d5-bc37-9f4d-83b1" name="Rules"/>
       </characteristics>
       <comment>Rifle Squad</comment>
     </profile>

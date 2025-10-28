@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -45,13 +45,14 @@
         <characteristicType name="Attacks" id="8cb0-64ed-d1f4-6cd0"/>
         <characteristicType name="Arc" id="1f74-4c02-05ba-2dae"/>
         <characteristicType name="Blast" id="0072-c918-4223-1011"/>
-        <characteristicType name="Damage (Infantry)" id="bd4e-991b-463f-b91f"/>
-        <characteristicType name="Damage (Walkers)" id="e1ce-a868-d771-69b8"/>
-        <characteristicType name="Damage (Vehicles)" id="aa27-9f00-d413-1c5b"/>
-        <characteristicType name="Damage (Flyers)" id="8f25-1699-f943-aa2f"/>
+        <characteristicType name="Infantry" id="bd4e-991b-463f-b91f"/>
+        <characteristicType name="Walkers" id="e1ce-a868-d771-69b8"/>
+        <characteristicType name="Vehicles" id="aa27-9f00-d413-1c5b"/>
+        <characteristicType name="Flyers" id="8f25-1699-f943-aa2f"/>
+        <characteristicType name="Rules" id="b5d5-bc37-9f4d-83b1"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon Ranges/AP" id="9054-da59-7d68-5c1b" hidden="false" sortIndex="3">
+    <profileType name="Weapon Accuracy/AP" id="9054-da59-7d68-5c1b" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Close 0-4&quot;" id="1569-3b79-5cb4-ddd5"/>
         <characteristicType name="Short 5-8&quot;" id="1d92-e4f7-a30d-7ef9"/>
