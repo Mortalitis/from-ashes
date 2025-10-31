@@ -17,18 +17,8 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57b5-2d9a-cf86-5a6c" includeChildSelections="false"/>
                   </constraints>
                   <profiles>
-                    <profile name="Shotgun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="f1f0-6e95-a998-4220">
+                    <profile name="Shotgun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="f1f0-6e95-a998-4220">
                       <characteristics>
-                        <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">2+</characteristic>
-                        <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
-                        <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">5+</characteristic>
-                        <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
-                        <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">10</characteristic>
-                        <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">0</characteristic>
-                        <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">N/A</characteristic>
-                        <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">N/A</characteristic>
-                        <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">N/A</characteristic>
-                        <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">N/A</characteristic>
                         <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                         <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                         <characteristic name="Blast" typeId="0072-c918-4223-1011">Small arms</characteristic>
@@ -36,7 +26,7 @@
                         <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                         <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                         <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                        <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                        <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Scattershot</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -145,6 +135,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -164,10 +155,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Full Auto, Optics, Rapid Fire (16&quot;/12+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="M74 Assault Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="7c92-a153-2a56-adcf">
+                <profile name="M74 Assault Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="7c92-a153-2a56-adcf">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">4+/2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
@@ -199,10 +190,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Erratic Warhead (D4+2), Optics, Slow Reload</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="MB17 LAWS" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="6c53-eb89-99e4-a070">
+                <profile name="MB17 LAWS" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="6c53-eb89-99e4-a070">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+2</characteristic>
@@ -270,10 +261,10 @@
             <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
             <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
             <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-            <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+            <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Burn, Grenade Attack, Ignores Cover, Incendiary</characteristic>
           </characteristics>
         </profile>
-        <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="e577-481c-9ba1-1a2c">
+        <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="e577-481c-9ba1-1a2c">
           <characteristics>
             <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
             <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
@@ -308,10 +299,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Erratic Warhead (D4+2), Optics</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="MB17 LAWS" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="0a24-88ee-65a4-38e5">
+                <profile name="MB17 LAWS" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="0a24-88ee-65a4-38e5">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+2</characteristic>
@@ -350,6 +341,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -412,6 +404,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">3</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Free Command: Medic, Leader(12&quot;), Radio, Smokescreen, Unique Command: Boost the Signal, Vhokys Drugs (1-2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -422,18 +415,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cc1-3f39-fbc9-c64b-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="M74 Assault Rifles" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon" hidden="false" id="938d-4f99-726f-35d0">
+                <profile name="M74 Assault Rifles" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="938d-4f99-726f-35d0">
                   <characteristics>
-                    <characteristic name="Close Accuracy" typeId="1d99-39fc-27fa-a848">4+</characteristic>
-                    <characteristic name="Close AP" typeId="0f54-71c9-e67a-09f6">2</characteristic>
-                    <characteristic name="Short Accuracy" typeId="0cdf-9622-e3d5-6090">6+</characteristic>
-                    <characteristic name="Short AP" typeId="23b0-440f-eb3a-4dbb">2</characteristic>
-                    <characteristic name="Medium Accuracy" typeId="2224-dd09-8c7f-5a09">8+</characteristic>
-                    <characteristic name="Medium AP" typeId="8c34-1a1c-92ee-c3d9">1</characteristic>
-                    <characteristic name="Long Accuracy" typeId="63e9-5d31-1780-1eda">10+</characteristic>
-                    <characteristic name="Long AP" typeId="206c-8a48-c658-05dd">0</characteristic>
-                    <characteristic name="Extreme Accuracy" typeId="4602-d8f4-2d02-dcb3">12+</characteristic>
-                    <characteristic name="Extreme AP" typeId="a0e4-fe30-467a-6dd7">0</characteristic>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
@@ -441,7 +424,17 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Full Auto, Optics, Rapid Fire (16&quot;/12+)
+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="M74 Assault Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="4389-461e-3243-9faf">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">4+/2</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/0</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -503,10 +496,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Charge Up! (D4+1), Galvanic Detonation (1), Shock Bolt (1)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Heavy Shock Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="0533-8891-8181-4124">
+                <profile name="Heavy Shock Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="0533-8891-8181-4124">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+1</characteristic>
@@ -532,6 +525,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Vhokys Drugs (1-3)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -569,6 +563,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -588,10 +583,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (3&quot;), Full Auto, Rapid Fire (16&quot;/12+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Firearms" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="3fef-4089-93b5-7ef3">
+                <profile name="Firearms" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="3fef-4089-93b5-7ef3">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">8+/1</characteristic>
@@ -635,6 +630,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -665,10 +661,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Erratic Warhead (D4+2)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="RPGs" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="63a3-6416-8a12-4c4b">
+                <profile name="RPGs" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="63a3-6416-8a12-4c4b">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">8+/D4+2</characteristic>
@@ -725,25 +721,12 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Reaver Attack" hidden="false" id="a47b-8c7c-f75a-9bf5">
           <entryLinks>
-            <entryLink import="true" name="Attack Buggy Weapons" hidden="false" id="4316-1462-f599-f095" type="selectionEntryGroup" targetId="4d73-84c9-cee7-8d4b"/>
+            <entryLink import="true" name="Attack Buggy Weapons" hidden="false" id="4316-1462-f599-f095" type="selectionEntryGroup" targetId="4d73-84c9-cee7-8d4b">
+              <infoLinks>
+                <infoLink name="Reaver Attack" id="2411-ab84-5c88-3200" hidden="false" type="profile" targetId="2971-367e-5f19-9008"/>
+              </infoLinks>
+            </entryLink>
           </entryLinks>
-          <profiles>
-            <profile name="Reaver Attack" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="3e46-cb20-a250-73fe">
-              <characteristics>
-                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
-                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
-                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
-                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">1</characteristic>
-                <characteristic name="Move" typeId="863f-c803-2ef3-b555">10&quot;</characteristic>
-                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">11/10/9</characteristic>
-                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
-                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
-                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
-                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb08-0226-9888-d34e" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac6b-d3d1-0d47-bf4a" includeChildSelections="false"/>
@@ -754,29 +737,17 @@
             <infoLink name="Recon" id="9e45-f586-b139-eab2" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
             <infoLink name="Skimmer Plate" id="e916-6710-def2-c01c" hidden="false" type="rule" targetId="6400-8aef-a5ee-765c"/>
             <infoLink name="Special Advance Command: Boosters (5&quot;)" id="b55a-94e6-b8e9-7fa9" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Reaver Attack" id="d996-7e12-4aa1-1336" hidden="false" type="profile" targetId="2971-367e-5f19-9008"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Reaver Attack" hidden="false" id="f8f1-25d1-7852-541b">
           <entryLinks>
-            <entryLink import="true" name="Attack Buggy Weapons" hidden="false" id="17b0-5670-8c69-5447" type="selectionEntryGroup" targetId="4d73-84c9-cee7-8d4b"/>
+            <entryLink import="true" name="Attack Buggy Weapons" hidden="false" id="17b0-5670-8c69-5447" type="selectionEntryGroup" targetId="4d73-84c9-cee7-8d4b">
+              <infoLinks>
+                <infoLink name="Reaver Attack" id="6301-0013-70a5-07e4" hidden="false" type="profile" targetId="2971-367e-5f19-9008"/>
+              </infoLinks>
+            </entryLink>
           </entryLinks>
-          <profiles>
-            <profile name="Reaver Attack" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="cb54-bfa5-8d9d-cfd0">
-              <characteristics>
-                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
-                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
-                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
-                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">1</characteristic>
-                <characteristic name="Move" typeId="863f-c803-2ef3-b555">10&quot;</characteristic>
-                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">11/10/9</characteristic>
-                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
-                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
-                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
-                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e4b-befe-4b3f-2cf2" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ac6-51d9-e056-e134" includeChildSelections="false"/>
@@ -787,6 +758,7 @@
             <infoLink name="Recon" id="8a84-08bc-3f6f-dfc4" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
             <infoLink name="Skimmer Plate" id="334f-181e-d3e7-2932" hidden="false" type="rule" targetId="6400-8aef-a5ee-765c"/>
             <infoLink name="Special Advance Command: Boosters (5&quot;)" id="dd3e-7343-1197-575e" hidden="false" type="rule" targetId="20b6-b3c0-e174-c0cc"/>
+            <infoLink name="Reaver Attack" id="914a-9dd1-a4a4-82e1" hidden="false" type="profile" targetId="2971-367e-5f19-9008"/>
           </infoLinks>
           <costs>
             <cost name="Req" typeId="Requisition" value="35"/>
@@ -816,7 +788,20 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Heavy Skimmer Plate, Shock Field, Smokescreen, Special Advance Command: Boosters (4&quot;)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="append" value=" Transport [6x Infantry]" field="9d97-4f6a-64e7-245f" join=",">
+                  <conditions>
+                    <condition type="notEqualTo" value="2" field="selections" scope="parent" childId="363c-083b-5c88-03d8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value=" Transport [4x Infantry]" field="9d97-4f6a-64e7-245f" join=",">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="selections" scope="parent" childId="363c-083b-5c88-03d8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -865,10 +850,10 @@
             <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
             <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
             <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-            <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+            <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Rapid Fire (16&quot;/12+)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Hull HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="ce7d-b7ab-d665-6cda">
+        <profile name="Hull HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="ce7d-b7ab-d665-6cda">
           <characteristics>
             <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/3</characteristic>
             <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/3</characteristic>
@@ -907,7 +892,20 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Heavy Skimmer Plate, Shock Field, Special Advance Command: Boosters (4&quot;)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="append" value=" Transport [6x Infantry]" field="9d97-4f6a-64e7-245f" join=",">
+                  <conditions>
+                    <condition type="notEqualTo" value="2" field="selections" scope="parent" childId="7b1a-7907-9516-ad22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value=" Transport [4x Infantry]" field="9d97-4f6a-64e7-245f" join=",">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="selections" scope="parent" childId="7b1a-7907-9516-ad22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -936,12 +934,45 @@
           <entryLinks>
             <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="7b1a-7907-9516-ad22" type="selectionEntryGroup" targetId="db37-ad98-a039-0855" sortIndex="3"/>
             <entryLink import="true" name="Hull HMG" hidden="false" id="b04b-fa02-775f-9357" type="selectionEntry" targetId="f63e-d5fd-dddb-0e68" sortIndex="1"/>
-            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="6005-17b0-d952-6095" type="selectionEntry" targetId="b202-c562-04e8-7927" sortIndex="2">
-              <infoLinks>
-                <infoLink name="Assault Move (5&quot;, Stabilised)" id="1a18-6aa9-2519-d353" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-              </infoLinks>
-            </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="899c-ea15-69e3-3a22" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aab8-57df-83fb-2a43" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7696-cc6a-7a6d-f860" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Incendiary Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="bd0d-4c08-cc46-be44">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Burn, Grenade Attack, Ignores Cover, Incendiary</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="0eb6-a475-f4b3-ca6d">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">N/A</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Grenade Attack" id="6e05-979f-b532-749f" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+                <infoLink name="Ignores Cover" id="2a31-434b-b849-2bdb" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+                <infoLink name="Burn" id="6aad-407c-d058-c710" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
+                <infoLink name="Incendiary" id="42f6-09e5-063b-b6ec" hidden="false" type="rule" targetId="da2f-0fa9-9b66-8882"/>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="86f1-4d0b-82e3-06ac" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -973,6 +1004,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Heavy Skimmer Plate, Shock Field, Smokescreen, Special Advance Command: Boosters (4&quot;)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1002,10 +1034,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Barrage, Ripple Fire, Thermobaric</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Rocket Pods" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="53ef-6c8c-c8f4-5c93">
+                <profile name="Rocket Pods" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="53ef-6c8c-c8f4-5c93">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/0</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
@@ -1050,6 +1082,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Heavy Skimmer Plate, Shock Field, Special Advance Command: Boosters (4&quot;)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1061,11 +1094,6 @@
           <entryLinks>
             <entryLink import="true" name="Hull HMG" hidden="false" id="cffc-0471-bdfd-030e" type="selectionEntry" targetId="f63e-d5fd-dddb-0e68" sortIndex="2"/>
             <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="8c4d-b3b0-1e04-ebf7" type="selectionEntryGroup" targetId="db37-ad98-a039-0855" sortIndex="4"/>
-            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="3f57-7ab4-7920-06b5" type="selectionEntry" targetId="b202-c562-04e8-7927" sortIndex="3">
-              <infoLinks>
-                <infoLink name="Assault Move (5&quot;, Stabilised)" id="0886-3591-3253-9566" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-              </infoLinks>
-            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Rocket Pods" hidden="false" id="3ae2-c17c-f24c-584f" sortIndex="1">
@@ -1083,10 +1111,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Barrage, Ripple Fire, Thermobaric</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Rocket Pods" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="d44a-cbd1-700e-d21c">
+                <profile name="Rocket Pods" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="d44a-cbd1-700e-d21c">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/0</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
@@ -1100,6 +1128,42 @@
                 <infoLink name="Barrage" id="37bc-b523-c3fb-d60e" hidden="false" type="rule" targetId="977a-72f5-8575-939a"/>
                 <infoLink name="Ripple Fire" id="e6cd-c48e-957d-3f8b" hidden="false" type="rule" targetId="f106-284c-05d9-c8ee"/>
                 <infoLink name="Thermobaric" id="b696-c9a3-65d4-4b47" hidden="false" type="rule" targetId="7115-a696-463f-0f0b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="972a-b9c2-19dd-4928" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfe3-1bd4-7fef-67c6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b9f-da67-cab8-423a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Incendiary Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="2ad3-cac3-f307-3fb0">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Burn, Grenade Attack, Ignores Cover, Incendiary</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="e04b-91ec-346e-7c44">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">N/A</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Grenade Attack" id="f3e0-2f7d-39cb-80a7" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+                <infoLink name="Ignores Cover" id="3bce-db18-2701-3d1e" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+                <infoLink name="Burn" id="fc6d-dd88-1cda-0329" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
+                <infoLink name="Incendiary" id="89b3-cd92-d0d3-6646" hidden="false" type="rule" targetId="da2f-0fa9-9b66-8882"/>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="e7ee-9502-b108-a677" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1134,6 +1198,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">4</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Command Post, Heavy Skimmer Plate, Leader (18&quot;), Shock Field, Smokescreen, Special Advance Command: Boosters (4&quot;), Transport [1x Infantry], Unique Command: Comms Jammer</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1179,6 +1244,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">4</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Command Post, Heavy Skimmer Plate, Leader (18&quot;), Shock Field, Special Advance Command: Boosters (4&quot;), Transport [1x Infantry], Unique Command: Comms Jammer</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1194,12 +1260,45 @@
           <entryLinks>
             <entryLink import="true" name="Hull HMG" hidden="false" id="177c-95c3-5397-52d4" type="selectionEntry" targetId="f63e-d5fd-dddb-0e68" sortIndex="1"/>
             <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="d431-85fb-3208-508a" type="selectionEntryGroup" targetId="db37-ad98-a039-0855" sortIndex="3"/>
-            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="3e8a-0076-7eb3-b7ec" type="selectionEntry" targetId="b202-c562-04e8-7927" sortIndex="2">
-              <infoLinks>
-                <infoLink name="Assault Move (5&quot;, Stabilised)" id="86cf-b4bc-f0a4-9b9e" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-              </infoLinks>
-            </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="f64e-9b3c-aec6-c5b2" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25c8-60cb-a2cc-0c10" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94a9-98e2-2b6d-c486" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Incendiary Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="ad23-f3f2-5f60-5ee0">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Burn, Grenade Attack, Ignores Cover, Incendiary</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="8c0f-2f10-1a0d-ab7e">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">N/A</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Grenade Attack" id="1eef-0f0f-9a5c-0c5b" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+                <infoLink name="Ignores Cover" id="dc7a-31aa-13a3-b7c0" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+                <infoLink name="Burn" id="6b58-fe85-cde0-f027" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
+                <infoLink name="Incendiary" id="6ef9-6b6b-d71e-c5a9" hidden="false" type="rule" targetId="da2f-0fa9-9b66-8882"/>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="1814-0c3e-818d-632c" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1229,10 +1328,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="42mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="a51b-8549-cea8-e729">
+                <profile name="42mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="a51b-8549-cea8-e729">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/4</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/4</characteristic>
@@ -1262,10 +1361,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Coaxial, Rapid Fire (16&quot;/11+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Coaxial MMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="b421-f4f8-c5ad-c8d5">
+                <profile name="Coaxial MMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="b421-f4f8-c5ad-c8d5">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">4+/2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/2</characteristic>
@@ -1300,10 +1399,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Erratic Warhead (D4+2), Guided Missile, Slow Reload</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Guided Missile Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="8468-c2e9-89c2-aa87">
+                <profile name="Guided Missile Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="8468-c2e9-89c2-aa87">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/D4+2</characteristic>
@@ -1365,6 +1464,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Heavy Skimmer Plate, Shock Field, Smokescreen, Special Advance Command: Boosters (4&quot;), Transport [4x Infantry]</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1401,10 +1501,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="42mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="c3c9-d9ed-a4ea-e512">
+                <profile name="42mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="c3c9-d9ed-a4ea-e512">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/4</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/4</characteristic>
@@ -1434,10 +1534,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Coaxial, Rapid Fire (16&quot;/11+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Coaxial MMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="6adf-0a37-1ba6-afc5">
+                <profile name="Coaxial MMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="6adf-0a37-1ba6-afc5">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">4+/2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/2</characteristic>
@@ -1472,10 +1572,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Erratic Warhead (D4+2), Guided Missile, Slow Reload</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Guided Missile Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="3640-5490-e62a-0f5d">
+                <profile name="Guided Missile Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="3640-5490-e62a-0f5d">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/D4+2</characteristic>
@@ -1500,7 +1600,7 @@
                 <infoLink name="Erratic Warhead (D4+2)" id="21d9-4bcf-8a5a-551e" hidden="false" type="rule" targetId="8756-3dd8-a218-bd8c"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Additional Missile Launcher" hidden="false" id="c0a0-0477-3b66-ba69" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Additional Missile Launcher" hidden="false" id="c0a0-0477-3b66-ba69" sortIndex="6">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7d7c-817d-e0a5-bcbd" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f38c-9bf9-e4a8-76cb" includeChildSelections="false"/>
@@ -1515,14 +1615,45 @@
                 </rule>
               </rules>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="a9ec-b78a-f99a-c975" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33b8-2e74-6dd1-1ac8" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf66-af2a-522d-d4bc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Incendiary Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="20bc-2cd6-42df-6ebb">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Burn, Grenade Attack, Ignores Cover, Incendiary</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="d320-8892-2756-d22d">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">N/A</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Grenade Attack" id="e4be-8975-7a4e-8c93" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+                <infoLink name="Ignores Cover" id="6565-a338-8b56-411b" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+                <infoLink name="Burn" id="8ecd-837e-2dce-ba15" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
+                <infoLink name="Incendiary" id="c417-ce75-29cc-efb3" hidden="false" type="rule" targetId="da2f-0fa9-9b66-8882"/>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="2ab6-0b8a-2540-5d41" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Hull HMG" hidden="false" id="4508-520f-5418-c548" type="selectionEntry" targetId="f63e-d5fd-dddb-0e68" sortIndex="4"/>
-            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="d67c-e41c-6b95-91c2" type="selectionEntry" targetId="b202-c562-04e8-7927">
-              <infoLinks>
-                <infoLink name="Assault Move (5&quot;, Stabilised)" id="88fb-4de2-4c61-784c" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-              </infoLinks>
-            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3d3-e189-5722-c5dc" includeChildSelections="false"/>
@@ -1542,6 +1673,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Heavy Skimmer Plate, Shock Field, Special Advance Command: Boosters (4&quot;), Transport [4x Infantry]</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1582,6 +1714,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">4</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Ammo Selection, Heavy Skimmer Plate, Shock Field, Smokescreen, Special Advance Command: Boosters (4&quot;), Track Pods</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1613,10 +1746,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), High Explosive, Squash Head</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="c5c9-bda4-7e69-e01d">
+                <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="c5c9-bda4-7e69-e01d">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/6</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/6</characteristic>
@@ -1647,10 +1780,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Armour Shatter, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="135mm Main Cannon (Canister)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="46fe-0619-e6fc-fd00">
+                <profile name="135mm Main Cannon (Canister)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="46fe-0619-e6fc-fd00">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
@@ -1680,10 +1813,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Free Command: Defence Fire, Rapid Fire (16&quot;/12+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Pintle HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="d6ba-f9ef-95a9-0104">
+                <profile name="Pintle HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="d6ba-f9ef-95a9-0104">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/3</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/3</characteristic>
@@ -1722,10 +1855,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (5&quot;, Stabilised), Erratic Warhead (D4+4), Slow Reload, Smoke Blast (3)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Heavy Smoke Rocket" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="7b91-c88f-e266-561f">
+                <profile name="Heavy Smoke Rocket" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="7b91-c88f-e266-561f">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+4</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/D4+4</characteristic>
@@ -1765,6 +1898,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">4</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Ammo Selection, Heavy Skimmer Plate, Shock Field, Special Advance Command: Boosters (4&quot;), Track Pods</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1786,7 +1920,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b98-db56-635b-a128-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="5726-e9ca-83df-a5d2">
+                <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="5726-e9ca-83df-a5d2">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/6</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/6</characteristic>
@@ -1804,7 +1938,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), High Explosive, Squash Head</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1829,10 +1963,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Armour Shatter, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="135mm Main Cannon (Canister)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="a120-15f2-6b5e-36cb">
+                <profile name="135mm Main Cannon (Canister)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="a120-15f2-6b5e-36cb">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
@@ -1853,7 +1987,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5816-f52d-f9d3-8ac0-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Pintle HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="d21f-e120-7efe-20de">
+                <profile name="Pintle HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="d21f-e120-7efe-20de">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/3</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/3</characteristic>
@@ -1871,7 +2005,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Free Command: Defence Fire, Rapid Fire (16&quot;/12+)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1904,10 +2038,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (5&quot;, Stabilised), Erratic Warhead (D4+4), Slow Reload, Smoke Blast (3)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Heavy Smoke Rocket" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="3554-2a75-f6c2-3e1d">
+                <profile name="Heavy Smoke Rocket" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="3554-2a75-f6c2-3e1d">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+4</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/D4+4</characteristic>
@@ -1918,14 +2052,43 @@
                 </profile>
               </profiles>
             </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="e691-3d72-f2f4-629e" type="selectionEntry" targetId="b202-c562-04e8-7927" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="fb14-5fa6-bf9a-b5c0" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71cb-657f-a7ce-0b8e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ca7-7fae-2a8f-01e1" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Incendiary Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="06c6-f9e3-a4b0-4b0d">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Burn, Grenade Attack, Ignores Cover, Incendiary</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="e4a0-8192-2b08-c16f">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">N/A</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
-                <infoLink name="Assault Move (5&quot;, Stabilised)" id="2c06-8694-e8ec-e08b" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+                <infoLink name="Grenade Attack" id="8a91-90b1-33c6-45e9" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+                <infoLink name="Ignores Cover" id="a707-b167-30d3-f180" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+                <infoLink name="Burn" id="7237-27bd-2717-d2aa" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
+                <infoLink name="Incendiary" id="91db-1500-013c-b77d" hidden="false" type="rule" targetId="da2f-0fa9-9b66-8882"/>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="69d9-0d24-3b2e-7bd8" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
               </infoLinks>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1957,6 +2120,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">5</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Ammo Selection, Heavy Skimmer Plate, Shock Field, Smokescreen, Special Advance Command: Boosters (4&quot;)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1987,10 +2151,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), High Explosive, Squash Head</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="cdd6-1fc8-b9a2-61c4">
+                <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="cdd6-1fc8-b9a2-61c4">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/6</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/6</characteristic>
@@ -2016,10 +2180,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Armour Shatter, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="135mm Main Cannon (Canister)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="b3c2-8e6d-e794-2ee0">
+                <profile name="135mm Main Cannon (Canister)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="b3c2-8e6d-e794-2ee0">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
@@ -2049,10 +2213,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">AP Rounds, Assault Move (5&quot;, Stabilised), Coaxial</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Coax 20mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="598d-2883-3474-3b5d">
+                <profile name="Coax 20mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="598d-2883-3474-3b5d">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/4</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/4</characteristic>
@@ -2109,6 +2273,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">5</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Ammo Selection, Heavy Skimmer Plate, Shock Field, Special Advance Command: Boosters (4&quot;)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2138,10 +2303,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), High Explosive, Squash Head</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="c466-8c0c-cb82-c5b8">
+                <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="c466-8c0c-cb82-c5b8">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/6</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/6</characteristic>
@@ -2167,10 +2332,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Armour Shatter, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="135mm Main Cannon (Canister)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="92db-a4e4-eb61-3fce">
+                <profile name="135mm Main Cannon (Canister)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="92db-a4e4-eb61-3fce">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
@@ -2200,10 +2365,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">AP Rounds, Assault Move (5&quot;, Stabilised), Coaxial</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Coax 20mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="efe2-204a-4477-7359">
+                <profile name="Coax 20mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="efe2-204a-4477-7359">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/4</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/4</characteristic>
@@ -2223,6 +2388,42 @@
                 </rule>
               </rules>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="e774-ccee-1047-1a02" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="723f-0576-e244-874d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfb8-2d2c-271e-ba40" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Incendiary Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="d737-9e6d-1bdb-9cff">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Burn, Grenade Attack, Ignores Cover, Incendiary</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="42b3-61f9-baac-1a4b">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">N/A</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Grenade Attack" id="270e-d2fe-411f-9f3d" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+                <infoLink name="Ignores Cover" id="3510-15b0-fcf4-2510" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+                <infoLink name="Burn" id="b433-9639-a79f-434f" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
+                <infoLink name="Incendiary" id="3a0c-a566-1cf4-01a8" hidden="false" type="rule" targetId="da2f-0fa9-9b66-8882"/>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="46b2-7abb-1975-d34a" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
           <rules>
             <rule name="Ammo Selection" id="f6ea-d34a-a855-d23b" hidden="false">
@@ -2231,11 +2432,6 @@
           </rules>
           <entryLinks>
             <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="0aa4-fb64-cac9-982a" type="selectionEntryGroup" targetId="db37-ad98-a039-0855" sortIndex="5"/>
-            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="5c0b-1784-5dd2-43b0" type="selectionEntry" targetId="b202-c562-04e8-7927" sortIndex="4">
-              <infoLinks>
-                <infoLink name="Assault Move (5&quot;, Stabilised)" id="3843-6d3d-fe71-34ce" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-              </infoLinks>
-            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2268,6 +2464,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">5</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Heavy Skimmer Plate, Shock Field, Smokescreen, Special Advance Command: Boosters (4&quot;)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2293,10 +2490,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">AP Rounds, Assault Move (5&quot;, Stabilised), Coaxial</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Coax 20mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="b108-9e29-5ab9-bb4b">
+                <profile name="Coax 20mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="b108-9e29-5ab9-bb4b">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/4</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/4</characteristic>
@@ -2331,10 +2528,10 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Charge Up! (D4+2), Galvanic Detonation (3), Shock Bolt (3)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Shock Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="4fde-29c5-747d-aa80">
+                <profile name="Shock Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="4fde-29c5-747d-aa80">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+2</characteristic>
@@ -2383,6 +2580,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">5</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Heavy Skimmer Plate, Shock Field, Special Advance Command: Boosters (4&quot;)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2398,7 +2596,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c04-e4a6-f0b0-88d0-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Coax 20mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="1606-235b-f970-72a8">
+                <profile name="Coax 20mm Autocannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="1606-235b-f970-72a8">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/4</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/4</characteristic>
@@ -2416,7 +2614,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">AP Rounds, Assault Move (5&quot;, Stabilised), Coaxial</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2436,7 +2634,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3292-7e86-69ef-f63f-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Shock Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="0d99-4488-35e0-f6b2">
+                <profile name="Shock Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="0d99-4488-35e0-f6b2">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+2</characteristic>
@@ -2454,7 +2652,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
-                    <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Charge Up! (D4+2), Galvanic Detonation (3), Shock Bolt (3)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2465,14 +2663,45 @@
                 <infoLink name="Shock Bolt (3)" id="ba16-b9e9-2eb7-731f" hidden="false" type="rule" targetId="3e5b-2a0f-1053-c663"/>
               </infoLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="9528-bf2f-2999-2dbe" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3f3-6bf6-fa17-7603" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97cb-9a68-1ec1-8a96" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Incendiary Grenades" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="2d8f-1a67-0137-8083">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Burn, Grenade Attack, Ignores Cover, Incendiary</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Incendiary Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="d05b-58c1-be9e-6f01">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">N/A</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Grenade Attack" id="c51b-538a-5775-e57a" hidden="false" type="rule" targetId="1636-1142-dc4b-f47f"/>
+                <infoLink name="Ignores Cover" id="86d4-8d1f-3d6b-79f4" hidden="false" type="rule" targetId="5588-f1c9-e9d5-9ff9"/>
+                <infoLink name="Burn" id="1572-c278-007f-f29f" hidden="false" type="rule" targetId="501b-9357-716d-184b"/>
+                <infoLink name="Incendiary" id="f115-01fb-4ad4-5d24" hidden="false" type="rule" targetId="da2f-0fa9-9b66-8882"/>
+                <infoLink name="Assault Move (5&quot;, Stabilised)" id="034f-2f2e-ec3c-94c0" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="a21c-b0fa-a5e8-368a" type="selectionEntryGroup" targetId="db37-ad98-a039-0855" sortIndex="4"/>
-            <entryLink import="true" name="Incendiary Grenades" hidden="false" id="dbef-7a60-fb69-73aa" type="selectionEntry" targetId="b202-c562-04e8-7927" sortIndex="3">
-              <infoLinks>
-                <infoLink name="Assault Move (5&quot;, Stabilised)" id="944c-f397-4756-df88" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-              </infoLinks>
-            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2621,10 +2850,10 @@
                 <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                 <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                 <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">AP Rounds, Assault Move (4&quot;), Free Command: Defence Fire, Rapid Fire (24&quot;/11+)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Chaingun" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="a37b-8c2b-e223-9b77">
+            <profile name="Chaingun" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="a37b-8c2b-e223-9b77">
               <characteristics>
                 <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/2</characteristic>
                 <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
@@ -2652,10 +2881,10 @@
                 <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                 <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                 <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (4&quot;), Erratic Warhead (D4+3), Guided Missile</characteristic>
               </characteristics>
             </profile>
-            <profile name="Rocket Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="7429-f093-5ecf-1509">
+            <profile name="Rocket Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="7429-f093-5ecf-1509">
               <characteristics>
                 <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+3</characteristic>
                 <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/D4+3</characteristic>
@@ -2699,10 +2928,10 @@
                 <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                 <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                 <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Free Command: Defence Fire, Rapid Fire (16&quot;/12+)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Pintle HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="e67d-71cc-6506-e06e">
+            <profile name="Pintle HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="e67d-71cc-6506-e06e">
               <characteristics>
                 <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/3</characteristic>
                 <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/3</characteristic>
@@ -2738,10 +2967,10 @@
                 <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
                 <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                 <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                <characteristic typeId="1666-854d-8d33-3d5d" name="Rules"/>
+                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (5&quot;, Stabilised), Erratic Warhead (D4+4), Slow Reload, Smoke Blast (3)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Heavy Smoke" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="2d7d-cb80-bfd2-05e0">
+            <profile name="Heavy Smoke" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="2d7d-cb80-bfd2-05e0">
               <characteristics>
                 <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+4</characteristic>
                 <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/D4+4</characteristic>
@@ -2780,6 +3009,7 @@
         <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
         <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
         <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+        <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Agile, All-Terrain Vehicle, Recon, Skimmer Plate, Special Advance Command: Boosters (5&quot;)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
