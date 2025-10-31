@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -38,6 +38,7 @@
         <characteristicType name="Size" id="a69d-0fc5-7767-22db"/>
         <characteristicType name="Melee" id="b872-9bb3-8308-708d"/>
         <characteristicType name="OP" id="9617-8752-47e1-8214"/>
+        <characteristicType name="Rules" id="9d97-4f6a-64e7-245f"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Weapon Stats" id="dc09-e8f7-1bee-9d70" hidden="false" sortIndex="2">
@@ -45,13 +46,14 @@
         <characteristicType name="Attacks" id="8cb0-64ed-d1f4-6cd0"/>
         <characteristicType name="Arc" id="1f74-4c02-05ba-2dae"/>
         <characteristicType name="Blast" id="0072-c918-4223-1011"/>
-        <characteristicType name="Damage (Infantry)" id="bd4e-991b-463f-b91f"/>
-        <characteristicType name="Damage (Walkers)" id="e1ce-a868-d771-69b8"/>
-        <characteristicType name="Damage (Vehicles)" id="aa27-9f00-d413-1c5b"/>
-        <characteristicType name="Damage (Flyers)" id="8f25-1699-f943-aa2f"/>
+        <characteristicType name="Infantry" id="bd4e-991b-463f-b91f"/>
+        <characteristicType name="Walkers" id="e1ce-a868-d771-69b8"/>
+        <characteristicType name="Vehicles" id="aa27-9f00-d413-1c5b"/>
+        <characteristicType name="Flyers" id="8f25-1699-f943-aa2f"/>
+        <characteristicType name="Rules" id="1666-854d-8d33-3d5d"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon Ranges/AP" id="9054-da59-7d68-5c1b" hidden="false" sortIndex="3">
+    <profileType name="Weapon Accuracy/AP" id="9054-da59-7d68-5c1b" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Close 0-4&quot;" id="1569-3b79-5cb4-ddd5"/>
         <characteristicType name="Short 5-8&quot;" id="1d92-e4f7-a30d-7ef9"/>
@@ -63,22 +65,51 @@
   </profileTypes>
   <sharedRules>
     <rule name="Recon" id="97a1-8277-5ebe-dea0" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
-      <description>See the Unit Abilities section of the main From Ashes rules</description>
+      <description>This ability confers the following.
+
+
+Scouts: When a Squad with one or more Recon Units deploys at the start of the battle, another Squad that does not have any Recon units can be deployed at the same time, but must be placed within 1&quot;. Both can then immediately carry out an Advance Command, starting with the Recon Squad (not a Special Command), which can take them beyond their deployment area, but the attached Squad&apos;s Units must end this move as close as possible to the Recon Squad&apos;s Units. This does not come from their Commands for the first turn, so no dice are placed. The attached Squad may also include a Leader Unit (which also moves) as per the Improved Logistics rule.
+
+
+Reconnoitre: If a Force has one of more Recon units in the AO, add 1 to their Priority roll. In addition, friendly Squads using Scatter may reroll the Scatter Distance if initially placed within 16&quot; of one or more friendly Recon Units.</description>
     </rule>
     <rule name="Guard" id="1d70-9615-1292-a2bc" hidden="false" publicationId="5652-0742-890a-1e22" page="18">
-      <description>See the Unit Abilities section of the main From Ashes rules</description>
+      <description>If a Unit has the Guard ability then each time that Unit takes a hot from an enemy Infantry Storm attack, they can ignore it by rolling under the Attacker&apos;s Discipline value on a D12. If this Unit is a Walker that can also use this ability against Walker Storm attacks too.</description>
     </rule>
     <rule name="Assault Move (5&quot;, Stabilised)" id="057f-77b8-2c9e-e67b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+      <description>Certain weapons have the Assault Move special rule which gives the Unit access to the following: Special Storm Command: Assault Move (X)
+
+This Squad can make a move up to that in brackets before firing any Assault Move weapons it has with an [Accuracy → 1] modifier. Each Unit may choose different targets, but all the weapons on a Unit must choose the same target. Additionally if they move 5&quot; or more the Command becomes an Advance instead of Storm</description>
     </rule>
     <rule name="Assault Move (3&quot;)" id="aaff-02cd-c899-c6d0" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+      <description>Certain weapons have the Assault Move special rule which gives the Unit access to the following: Special Storm Command: Assault Move (X)
+
+This Squad can make a move up to that in brackets before firing any Assault Move weapons it has with an [Accuracy → 1] modifier. Each Unit may choose different targets, but all the weapons on a Unit must choose the same target.</description>
     </rule>
     <rule name="Smokescreen" id="67d7-fb01-15af-53b1" hidden="false" page="19">
-      <description>See the Unit Abilities section of the main From Ashes rules</description>
+      <description>Squads with the Smokescreen ability may, once per turn, generate a temporary yet potent smokescreens as they move as detailed below. This Squad may make further attempts to use this ability if they failed the Skill test prior in the turn.
+
+
+* At the end of an Advance, Retreat or Fall Back
+* At the start of a Storm Command before carrying out Step 1, but cannot be used if grenades have been used in the same Storm Command
+
+
+They may even be used in conjunction with Special Commands which fall into one of the above categories. If they choose to do this, one Unit in the Squad must rill a Skill test. If passed, place 4 Smoke Markers in base contact with one another and all within 1&quot; of the Squad&apos;s Units. These are placed before other effects such as Overwatch, Assault Move, Stabilised, Run &amp; Gun and Defence Fire.
+
+
+If a Unit wished to Engage an enemy through one or more Smoke Markers (done by tracing a line centre to centre, much like a Block Check), that Unit&apos;s weapons receives [Accuracy → 1].</description>
     </rule>
-    <rule name="Leader [12&quot;]" id="e397-d083-8cc5-ca66" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    <rule name="Leader (12&quot;)" id="e397-d083-8cc5-ca66" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
+      <description>Global Leader Abilities
+
+
+Lead from the Front: Leader Squads automatically pass Discipline tests when attempting to Form Up.
+
+
+Improved Logistics: When a Leader Infantry Unit is deployed at the start of the game, another Infantry Unit can be deployed at the same time as long as they are placed within 1&quot; of each other, either dismounted or both mounted within the same Transport. Additionally, when a Leader Squad is held back as reserves at the FOB, it can be &apos;attached&apos; to another Squad of the same Type. Make a single Reserves test for both Squads but use the lowest Move value if they have different stats. Both Squads are placed together in Coherency, but then act independently from then on. The Leader and/or attached Squad can be Mounted, but use the Transport&apos;s Move value for the test instead. If any of the Squads involved have an Ability which allows them to deploy in an unusual way, they must all have it to do so.
+
+
+Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</description>
     </rule>
     <rule name="Grenade Attack" id="1636-1142-dc4b-f47f" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12">
       <description>This weapon is always used at the start of an Engage or Storm Command before Step 1. Can also be used in addition to other weapons. Ignores negative Accuracy rerolls from Blast Markers</description>
@@ -99,13 +130,27 @@
       <description>This Squad may attempts a free Engage Reaction with each Defence Fire weapon</description>
     </rule>
     <rule name="Barrage" id="977a-72f5-8575-939a" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+      <description>Barrage weapons follow the normal Engage process but with the following modifications.
+
+* A Barrage weapon can be used against any Squad in the game, regardless of line of sight, and even those held as reserves in the enemy&apos;s FOB. If a Unit with a Barrage weapon chooses a target it cannot see, the weapon&apos;s Accuracy Bracket starts as Extreme, regardless of the distance.
+* Barrage weapons ignore Block tests due to intervening terrain and Units other than those in base contact the target Squad, which count as usual, nor does this override the Lone Wolf ability
+* If a Barrage weapon&apos;s Accuracy roll would score a successful hit if a target was one range bracket closer, it counts as scoring a hit but do not roll any Damage dice (i.e. Blast markers can still be generated)
+* Barrage weapons benefit from the Static Target and Top Attack (11+) special rules</description>
     </rule>
     <rule name="Burn" id="501b-9357-716d-184b" hidden="false">
       <description>Squads taking hits from this weapon must roll a Skill Test. If failed must reroll successful Armour Saves</description>
     </rule>
-    <rule name="Leader [8&quot;]" id="78bb-a184-55f3-2be9" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    <rule name="Leader (8&quot;)" id="78bb-a184-55f3-2be9" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
+      <description>Global Leader Abilities
+
+
+Lead from the Front: Leader Squads automatically pass Discipline tests when attempting to Form Up.
+
+
+Improved Logistics: When a Leader Infantry Unit is deployed at the start of the game, another Infantry Unit can be deployed at the same time as long as they are placed within 1&quot; of each other, either dismounted or both mounted within the same Transport. Additionally, when a Leader Squad is held back as reserves at the FOB, it can be &apos;attached&apos; to another Squad of the same Type. Make a single Reserves test for both Squads but use the lowest Move value if they have different stats. Both Squads are placed together in Coherency, but then act independently from then on. The Leader and/or attached Squad can be Mounted, but use the Transport&apos;s Move value for the test instead. If any of the Squads involved have an Ability which allows them to deploy in an unusual way, they must all have it to do so.
+
+
+Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</description>
     </rule>
     <rule name="All-Terrain Vehicle" id="8682-665f-1c16-9774" hidden="false">
       <description>This Unit ignores the Slow effect when moving though Accessible Terrain</description>
@@ -120,7 +165,9 @@
       <description>Units with an Enclosed value of 1 or more must reroll successful Armour saves against hits from this weapon</description>
     </rule>
     <rule name="Assault Move (4&quot;)" id="0c3f-c936-3653-194b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>See the Weapons Special Rules section of the main From Ashes rules</description>
+      <description>Certain weapons have the Assault Move special rule which gives the Unit access to the following: Special Storm Command: Assault Move (X)
+
+This Squad can make a move up to that in brackets before firing any Assault Move weapons it has with an [Accuracy → 1] modifier. Each Unit may choose different targets, but all the weapons on a Unit must choose the same target.</description>
     </rule>
     <rule name="Full Auto" id="fc3f-a880-8a26-e2f4" hidden="false">
       <description>Before rolling Attacks you may choose to reroll Accuracy dice but the target may reroll failed Armour saves</description>
@@ -134,8 +181,8 @@
     <rule name="Thermobaric" id="7115-a696-463f-0f0b" hidden="false">
       <description>Ignores terrain Armour bonuses and Units in terrain must reroll successful Armour saves</description>
     </rule>
-    <rule name="Transport [6x Infantry]" id="2871-d593-3956-ca1e" hidden="false">
-      <description>See the Unit Abilities section of the main From Ashes rules</description>
+    <rule name="Transport [6x Infantry]" id="2871-d593-3956-ca1e" hidden="false" publicationId="5652-0742-890a-1e22" page="20">
+      <description>See the Unit Abilities section of the main From Ashes rules (Page 20)</description>
     </rule>
     <rule name="Advisor Weapon" id="3935-1ff5-1b61-e3e0" hidden="false">
       <description>This weapon may be used in addition to any others the Unit carries</description>
@@ -158,17 +205,30 @@
     <rule name="Spearhead" id="2a3b-0701-bfd9-85de" hidden="false">
       <description>When this Squad activates (not Ordered or as a Reaction) the owning player may also nominate up to 3 other friendly Vehicle Squads to Form Up wit it. In addition, these may be within the Unit&apos;s Leader ranger instead of the usual 1&quot; (see the main From Ashes rules).</description>
     </rule>
-    <rule name="Leader [18&quot;]" id="cf4b-e9a0-d530-1456" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+    <rule name="Leader (18&quot;)" id="cf4b-e9a0-d530-1456" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
+      <description>Global Leader Abilities
+
+
+Lead from the Front: Leader Squads automatically pass Discipline tests when attempting to Form Up.
+
+
+Improved Logistics: When a Leader Infantry Unit is deployed at the start of the game, another Infantry Unit can be deployed at the same time as long as they are placed within 1&quot; of each other, either dismounted or both mounted within the same Transport. Additionally, when a Leader Squad is held back as reserves at the FOB, it can be &apos;attached&apos; to another Squad of the same Type. Make a single Reserves test for both Squads but use the lowest Move value if they have different stats. Both Squads are placed together in Coherency, but then act independently from then on. The Leader and/or attached Squad can be Mounted, but use the Transport&apos;s Move value for the test instead. If any of the Squads involved have an Ability which allows them to deploy in an unusual way, they must all have it to do so.
+
+
+Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook
+
+
+
+</description>
     </rule>
-    <rule name="Transport [1x Infantry]" id="d69f-afa2-e259-8641" hidden="false">
-      <description>See the Unit Abilities section of the main From Ashes rules</description>
+    <rule name="Transport [1x Infantry]" id="d69f-afa2-e259-8641" hidden="false" publicationId="5652-0742-890a-1e22" page="20">
+      <description>See the Unit Abilities section of the main From Ashes rules (Page 20)</description>
     </rule>
-    <rule name="Transport [2x Infantry]" id="820d-e281-04dd-91bb" hidden="false">
-      <description>See the Unit Abilities section of the main From Ashes rules</description>
+    <rule name="Transport [2x Infantry]" id="820d-e281-04dd-91bb" hidden="false" publicationId="5652-0742-890a-1e22" page="20">
+      <description>See the Unit Abilities section of the main From Ashes rules (Page 20)</description>
     </rule>
-    <rule name="Transport [4x Infantry]" id="295d-d0eb-5534-d631" hidden="false">
-      <description>See the Unit Abilities section of the main From Ashes rules</description>
+    <rule name="Transport [4x Infantry]" id="295d-d0eb-5534-d631" hidden="false" publicationId="5652-0742-890a-1e22" page="20">
+      <description>See the Unit Abilities section of the main From Ashes rules (Page 20)</description>
     </rule>
     <rule name="High Explosive" id="b359-6a8f-90e3-aa49" hidden="false">
       <description>Any surplus Damage dice may be used against the next enemy Unit in the target Squad</description>
@@ -186,7 +246,7 @@
       <description>Any Friendly Leader can extend their Leader range by 4&quot; when attempting to Order this Squad</description>
     </rule>
     <rule name="Sidearms" id="6a33-85d0-d353-5615" hidden="false">
-      <description>See Unit Abilities from the main From Ashes rules</description>
+      <description>After a Squad with this ability carries out an Engage Reaction (not Overwatch) against an enemy within 8&quot;, they may declare they wish to carry out another immediate Reaction, interrupting the game, with their Sidearms (again requiring a successful Discipline test to do so). If passed the owning player rolls a number of Skill tests equal to the Sidearms Unit&apos;s remaining HP. For each passed test the same enemy takes an AP 0, Damage 1 Autohit (and may trigger Block tests and generate blast markers as usual). This counts as an Engage Command for all purposes so a &apos;3&apos; Command dice will need to be placed and comes from their Command allowance as usual.</description>
     </rule>
     <rule name="Kinetic Energy Round" id="5d71-8226-7401-ef0e" hidden="false">
       <description>Ignores Fast Target and add the targets Enclosed value to the AP value of this weapon</description>
@@ -356,7 +416,7 @@
     <rule name="Track Pods" id="dfc1-4a82-3ed3-fe9a" hidden="false">
       <description>Reroll failed Slow terrain tests. In addition this Unit counts as Move 4&quot; rather than 0&quot; if it suffers an M-Kill</description>
     </rule>
-    <rule name="Tunneling Ascent" id="e3b8-0bce-9a2d-0fb1" hidden="false">
+    <rule name="Tunnelling Ascent" id="e3b8-0bce-9a2d-0fb1" hidden="false">
       <description>When this Squad is at the FOB. it may be chosen to activate like any other Squad, despite not actually being in the AO. If they are activated in this way, they are immediately placed in the AO via the Scatter ability from the Unit Abilities section of the main From Ashes rules. Once in the AO roll a D12; on a 5+ they must spend a single Command as Advance, otherwise count both as Advance.</description>
     </rule>
     <rule name="Vhokys Drugs (1-2)" id="9444-a927-fe72-e1ab" hidden="false">
@@ -463,19 +523,64 @@
       <description>After this Squad carries out an Advance or Unique Command, roll two D12s. For each 6+ rolled replenish a lost HP to a friendly Dismounted Revenant Combat Cyborg or Revenant Berserker Cyborg Squad within 8&quot;</description>
     </rule>
     <rule name="Shield (1) Recharge 4+" id="b122-a6c3-7142-26be" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+      <description>If a Unit has the Shield ability, it will be accompanied by a number in brackets. This is the number of Shield tokens which need to be removed before the host Unit can take damage. Each Shield token has an Armour value of 7 and HP of 1, but for the purposes of Type for Damage Dice they count as the same as their host Unit. Shields also have the following effects.
+
+
+* AP against Shields always count as 0
+* Failed saves cannot be rerolled against Shields
+* Hits against Shields cannot receive any extra Damage Dice beyond their starting amount
+* Shields are bypassed by Storm attacks
+
+
+Each Unit can attempt to recharge their Shields after the Dissipate step of the SitRep phase by successfully equalling or beating their Recharge vales (as stated in brackets) on a D12 for each downs Shield token. For each passed, replenish a Shield token to the Unit.</description>
     </rule>
     <rule name="Shield (1) Recharge 6+" id="d9c4-f62f-2e64-b479" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+      <description>If a Unit has the Shield ability, it will be accompanied by a number in brackets. This is the number of Shield tokens which need to be removed before the host Unit can take damage. Each Shield token has an Armour value of 7 and HP of 1, but for the purposes of Type for Damage Dice they count as the same as their host Unit. Shields also have the following effects.
+
+
+* AP against Shields always count as 0
+* Failed saves cannot be rerolled against Shields
+* Hits against Shields cannot receive any extra Damage Dice beyond their starting amount
+* Shields are bypassed by Storm attacks
+
+
+Each Unit can attempt to recharge their Shields after the Dissipate step of the SitRep phase by successfully equalling or beating their Recharge vales (as stated in brackets) on a D12 for each downs Shield token. For each passed, replenish a Shield token to the Unit.</description>
     </rule>
     <rule name="Shield (2) Recharge 5+" id="ec3b-067a-af01-d1c9" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+      <description>If a Unit has the Shield ability, it will be accompanied by a number in brackets. This is the number of Shield tokens which need to be removed before the host Unit can take damage. Each Shield token has an Armour value of 7 and HP of 1, but for the purposes of Type for Damage Dice they count as the same as their host Unit. Shields also have the following effects.
+
+
+* AP against Shields always count as 0
+* Failed saves cannot be rerolled against Shields
+* Hits against Shields cannot receive any extra Damage Dice beyond their starting amount
+* Shields are bypassed by Storm attacks
+
+
+Each Unit can attempt to recharge their Shields after the Dissipate step of the SitRep phase by successfully equalling or beating their Recharge vales (as stated in brackets) on a D12 for each downs Shield token. For each passed, replenish a Shield token to the Unit.</description>
     </rule>
     <rule name="Shield (2) Recharge 6+" id="93cd-12d5-25e8-fc7b" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+      <description>If a Unit has the Shield ability, it will be accompanied by a number in brackets. This is the number of Shield tokens which need to be removed before the host Unit can take damage. Each Shield token has an Armour value of 7 and HP of 1, but for the purposes of Type for Damage Dice they count as the same as their host Unit. Shields also have the following effects.
+
+
+* AP against Shields always count as 0
+* Failed saves cannot be rerolled against Shields
+* Hits against Shields cannot receive any extra Damage Dice beyond their starting amount
+* Shields are bypassed by Storm attacks
+
+
+Each Unit can attempt to recharge their Shields after the Dissipate step of the SitRep phase by successfully equalling or beating their Recharge vales (as stated in brackets) on a D12 for each downs Shield token. For each passed, replenish a Shield token to the Unit.</description>
     </rule>
     <rule name="Shield (3) Recharge 5+" id="310d-6768-6b33-4576" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+      <description>If a Unit has the Shield ability, it will be accompanied by a number in brackets. This is the number of Shield tokens which need to be removed before the host Unit can take damage. Each Shield token has an Armour value of 7 and HP of 1, but for the purposes of Type for Damage Dice they count as the same as their host Unit. Shields also have the following effects.
+
+
+* AP against Shields always count as 0
+* Failed saves cannot be rerolled against Shields
+* Hits against Shields cannot receive any extra Damage Dice beyond their starting amount
+* Shields are bypassed by Storm attacks
+
+
+Each Unit can attempt to recharge their Shields after the Dissipate step of the SitRep phase by successfully equalling or beating their Recharge vales (as stated in brackets) on a D12 for each downs Shield token. For each passed, replenish a Shield token to the Unit.</description>
     </rule>
     <rule name="Smoke Grenade Pod" id="5340-6c73-0741-660b" hidden="false">
       <description>This Unit may place its Smokescreen within it&apos;s front arc but can be up to 8&quot; instead of the usual 1&quot;</description>
@@ -486,9 +591,6 @@
     <rule name="Stabilised Shot" id="6b2b-9c43-d718-0b0d" hidden="false">
       <description>This weapon may receive the Barrage special rule, but must change all AP values to 2 if it does so</description>
     </rule>
-    <rule name="Test Lib Shared Rule" id="e9dc-6697-f846-b35c" hidden="false">
-      <description>this is a test!!!</description>
-    </rule>
     <rule name="Voltaic Snap" id="1db2-667c-f738-2e5c" hidden="false">
       <description>This weapons Damage dice is equal to the target Unit&apos;s starting HP</description>
     </rule>
@@ -496,7 +598,7 @@
       <description>Target Amour save rolls of a 12 removes an HP regardless of the targets Armour value</description>
     </rule>
     <rule name="Special Advance Command: Boosters (4&quot;)" id="2bcb-26a7-f451-6994" hidden="false">
-      <description>Roll a D4; on a 1 count its Move as 5&quot; for this Command, otherwise increase Move by the number rolled for this Command</description>
+      <description>Roll a D4; on a 1 count its Move as 4&quot; for this Command, otherwise increase Move by the number rolled for this Command</description>
       <modifiers>
         <modifier type="set" value="Special Advance Command: Boosters " field="name"/>
       </modifiers>
@@ -514,7 +616,16 @@
       <description>Target Save rolls of 10+ (after rerolls) removes an extra HP, regardless of its Armour Value, against this Unit&apos;s Storm Attacks</description>
     </rule>
     <rule name="Shield (2) Recharge 7+" id="b42d-0686-488d-631a" hidden="false" publicationId="5652-0742-890a-1e22" page="21">
-      <description>See the Unit Abilities section from the main From Ashes rules</description>
+      <description>If a Unit has the Shield ability, it will be accompanied by a number in brackets. This is the number of Shield tokens which need to be removed before the host Unit can take damage. Each Shield token has an Armour value of 7 and HP of 1, but for the purposes of Type for Damage Dice they count as the same as their host Unit. Shields also have the following effects.
+
+
+* AP against Shields always count as 0
+* Failed saves cannot be rerolled against Shields
+* Hits against Shields cannot receive any extra Damage Dice beyond their starting amount
+* Shields are bypassed by Storm attacks
+
+
+Each Unit can attempt to recharge their Shields after the Dissipate step of the SitRep phase by successfully equalling or beating their Recharge vales (as stated in brackets) on a D12 for each downs Shield token. For each passed, replenish a Shield token to the Unit.</description>
     </rule>
     <rule name="Overseer (8+)" id="426f-96e1-451a-d459" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
       <description>When a Squad with one or more Meta Overseers passes a Discipline test when taking an Order, roll an additional D12. On an 8+ the Order comes from the Leader&apos;s own Order capacity instead of it&apos;s Commands (if it has any Order capacity available)</description>
@@ -538,10 +649,35 @@
       <description>If this Unit fails an Accuracy roll, Strike roll or Discipline Test, it may remove a Force Field Token in order to reroll it and pass the roll on a 2+</description>
     </rule>
     <rule name="Force Field Recharge 4+" id="90b3-f8a4-4359-5e54" hidden="false">
-      <description>See the main From Ashes rules</description>
+      <description>If a Unit has the Force Field ability, place a Force Field token nearby. Whenever a Hit is allocated to a Unit with a Force Field token, the owning player rolls a D12 before any Damage Dice are rolled. On a 1-4 the hit is discarded with no further effect, but keep any rolls of a 12 off to the side which are now known as Overloads. Once all the Force Field rolls have been carried out for this Command, then if there are any Overloads, remove the Force Field token.
+Each unit can attempt to recharge their Force Field after the Dissipate step of the SitRep phase by rolling a D12 with respect to the Recharge value. If successful replace the Force Field token</description>
     </rule>
     <rule name="Beam" id="3e04-1496-4e90-7384" hidden="false">
       <description>After rolling Accuracy dice, roll a Skill Test (rerolling failures if this Unit has not moved this turn). If passed, increase Damage Dice by 1</description>
+    </rule>
+    <rule name="Static Target" id="3dfa-d3a9-55f6-7a2d" hidden="false">
+      <description>If this weapon is targeting the same Squad a second time and neither the Attacker or Target have moved since, nor is a Fast Target, roll a skill test beforehand. If passed the weapon receives [Accuracy ← 1]. If it is a third time it instead benefits from a [Accuracy ← 2] instead, and if it is the fourth time it benefits from [Accuracy ← 3].</description>
+    </rule>
+    <rule name="Form Up" id="21cd-c0da-bc79-52d5" hidden="false" publicationId="5652-0742-890a-1e22" page="18">
+      <description>When one or more Squads with the Form Up ability are within 1&quot; of a Squad of the same unit type which itself is about to carry out a Command (not Reaction, Overwatch or Order), then any of those Squads with the Form Up ability may declare they wish to join the activating Squad. Once all have been nominated, each attempts a Discipline test. If failed, nothing happens, but if passed that Form Up Squad counts as part of the activating Squad until the Command is finished (ending before any Reactions). Once the Commands are completed place the relevant Command dice by each component Squad.
+
+
+If an enemy Squad Reacts and Engages the Formed Up Squads, and have been hit by any of them, they may split their fire between them, remembering Lone Wolf where relevant</description>
+    </rule>
+    <rule name="Ambush" id="6b1b-2c5a-30af-1ac3" hidden="false">
+      <description>See Page 18 of the main From Ashes rulebook</description>
+    </rule>
+    <rule name="Attack Run" id="83d1-d1d6-2d4d-9158" hidden="false">
+      <description>See Page 18 of the main From Ashes rulebook</description>
+    </rule>
+    <rule name="Superior Guard" id="c85d-a3b6-3b3d-bee8" hidden="false">
+      <description>If a Unit has the Guard ability then each time that Unit takes a hot from an enemy Infantry Storm attack, they can ignore it by rolling under the Attacker&apos;s Discipline value on a D12, rerolling fails. If this Unit is a Walker that can also use this ability against Walker Storm attacks too.</description>
+    </rule>
+    <rule name="Lone Wolf" id="bd5e-a9e3-1a49-cb2c" hidden="false">
+      <description>If a Squad with the Lone Wolf ability consists of a single Unit, whether as a result of casualties or not, it is called a Lone Wolf Squad and is extremely difficult to pick out when other potential targets are nearby. When a Lone Wolf Squads is chosen as a target by an Attacker Squad during an Engage Command, and there is a friendly non-Lone Wolf Squad of the same Type within 5&quot; of the Lone Wolf and LoS to both and is closer to the Attacker, the Attacker treats the non-Lone Wolf Squad as Blocking the Lone Wolf Squad. This overrides the Small Targets rule and applies regardless of whether or not any Blocking is actually taking place. If there are multiple Blocking squads, each requires a Block test to be bypassed.
+
+
+Any block tests incurred in this way count the Attacker&apos;s Discipline as 10+ regardless of bonus rules or other factors. Lastly, all Lone Wolf Squads, when a single Unit, have the Form Up ability (page 18).</description>
     </rule>
   </sharedRules>
 </gameSystem>

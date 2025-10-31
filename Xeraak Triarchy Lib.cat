@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -16,13 +16,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Free Command: Run &amp; Gun (1), Plasma (11+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Acceletator" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="105c-8a58-86cd-db5a">
+                <profile name="Plasma Acceletator" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="105c-8a58-86cd-db5a">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/3</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/3</characteristic>
@@ -48,13 +49,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Extra Weapon, Free Command: Run &amp; Gun (1), Plasma (12+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Carbine" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="a755-5de1-cee0-7b23">
+                <profile name="Plasma Carbine" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="a755-5de1-cee0-7b23">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
@@ -89,6 +91,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Agile, Drone, Networked Scanning Sensors, Recon</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -125,6 +128,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">4</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">All-Terrain Vehicle, Brute, Dodge, Drone, Hunter, Multi-Sensor System</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -172,6 +176,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">0</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Auxiliary, Crew Operated, Individual Craft, Orbital Drop, Transport (1x Infantry, excl. Hunchback and Centaurs)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -214,6 +219,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone, Multi-Sensor System, Shield (1) Recharge 6+, Spear Tip</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -235,13 +241,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">0</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">*</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">*</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">*</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">*</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">*</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">*</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">*</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">*</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Arc Burst, Free Command: Run &amp; Gun (1), Plasma (12+), Voltaic Snap</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Destroyers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="dbd1-5f92-9757-32f8">
+                <profile name="Plasma Destroyers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="dbd1-5f92-9757-32f8">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">4+/0</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/0</characteristic>
@@ -289,13 +296,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Free Command: Run &amp; Gun (1), Plasma (12+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Repeater" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="01c2-30ce-ec7e-0803">
+                <profile name="Plasma Repeater" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="01c2-30ce-ec7e-0803">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
@@ -325,6 +333,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone, Guard, Multi-Sensor System, Plasma Deflector, Shield (1) Recharge 4+, Spear Tip</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -362,13 +371,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Homing, Plasma (11+), Stabilised Shot</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Caster" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="2285-5cde-9fe9-4928">
+                <profile name="Plasma Caster" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="2285-5cde-9fe9-4928">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/5</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/5</characteristic>
@@ -403,6 +413,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -461,13 +472,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Free Command: Run &amp; Gun (1), Plasma (12+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Pistols" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="0719-de4d-3c3b-503e">
+                <profile name="Plasma Pistols" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="0719-de4d-3c3b-503e">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">4+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/1</characteristic>
@@ -505,6 +517,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone Controller, Leader (12&quot;), Shield (2) Recharge 6+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -537,6 +550,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Non-Combat Unit, Overseer (8+), Shield (2) Recharge 6+, Synapse</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -577,13 +591,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">3</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">3</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">3</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">3</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">3</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">3</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Overcharge Plasma Core, Plasma (11+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="63ba-ed17-097d-9513">
+                <profile name="Plasma Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="63ba-ed17-097d-9513">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/7</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/7</characteristic>
@@ -634,6 +649,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">5</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">All-Terrain Vehicle, Drone, Free Command: Scuttle, Shield (1) Recharge 4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -677,13 +693,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">6</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Burn, Flame Weapon, Free Command: Run &amp; Gun (2), Plasma (12+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Flamers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="7a59-6cc6-4573-73a5">
+                <profile name="Plasma Flamers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="7a59-6cc6-4573-73a5">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">3+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/1</characteristic>
@@ -715,6 +732,24 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dec-870e-7efa-44e1-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dec-870e-7efa-44e1-max" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Reaper Combat Walker" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="abae-cc5e-820e-bb86">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">4</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">13/11/12</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">7</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">5</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">All-Terrain Vehicle, Drone, Free Command: Scuttle, Multi-Sensor System, Shield (3) Recharge 5+, Smoke Grenade Pod, Smokescreen</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -744,13 +779,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Free Command: Run &amp; Gun (1), Plasma (11+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Berserker Plasma Weapons" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="b36b-2215-570b-37f6">
+                <profile name="Berserker Plasma Weapons" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="b36b-2215-570b-37f6">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
@@ -780,6 +816,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">A Madness Grips Them, Agile, Arc Blades, Auxiliary, Berserk, Drone, Reassemble</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -831,13 +868,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Free Command: Run &amp; Gun (1), Plasma (12+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Carbines" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="fef5-2aa6-b04e-6b2c">
+                <profile name="Plasma Carbines" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="fef5-2aa6-b04e-6b2c">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
@@ -867,6 +905,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Arc Blades, Drone, Reassemble</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -896,13 +935,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Free Command: Run &amp; Gun (1), Plasma (11+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Accelerators" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="06c5-1d40-bc90-9ed7">
+                <profile name="Plasma Accelerators" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="06c5-1d40-bc90-9ed7">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/3</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/3</characteristic>
@@ -932,6 +972,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -993,13 +1034,14 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">4</characteristic>
-                    <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">4</characteristic>
-                    <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">4</characteristic>
-                    <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">4</characteristic>
-                    <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">4</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">4</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">4</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Barrage, Plasma (11+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Plasma Bombard" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="00cc-25b0-015c-05b4">
+                <profile name="Plasma Bombard" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="00cc-25b0-015c-05b4">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
@@ -1046,6 +1088,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">2</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">5</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">All-Terrain Vehicle, Drone, Free Command: Scuttle, Replenishment Pods, Shield (2) Recharge 5+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1074,13 +1117,14 @@
             <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1/Squad</characteristic>
             <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
             <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-            <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">2</characteristic>
-            <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">2</characteristic>
-            <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-            <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+            <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+            <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+            <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+            <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Grenade Attack, Ignores Cover, Plasma (11+)</characteristic>
           </characteristics>
         </profile>
-        <profile name="Plasma Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="14c1-95b6-fae7-651d">
+        <profile name="Plasma Grenades" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="14c1-95b6-fae7-651d">
           <characteristics>
             <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
             <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/2</characteristic>
@@ -1157,13 +1201,14 @@
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">3</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Free Command: Defence Fire, Plasma (12+)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Plasma Repeater Turret" typeId="9054-da59-7d68-5c1b" typeName="Weapon Ranges/AP" hidden="false" id="c809-fe5d-b2c6-a8db">
+            <profile name="Plasma Repeater Turret" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="c809-fe5d-b2c6-a8db">
               <characteristics>
                 <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
                 <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
@@ -1194,10 +1239,20 @@
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Free Command: Run &amp; Gun (1), Plasma (11+)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Plasma Missile Pods" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="0c7d-2f9c-5f13-aa8b">
+              <characteristics>
+                <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/5</characteristic>
+                <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/5</characteristic>
+                <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/5</characteristic>
+                <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/5</characteristic>
+                <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/5</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1218,10 +1273,20 @@
                 <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">4</characteristic>
                 <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">Front</characteristic>
                 <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                <characteristic name="Damage (Infantry)" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                <characteristic name="Damage (Walkers)" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                <characteristic name="Damage (Vehicles)" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                <characteristic name="Damage (Flyers)" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;),Free Command: Run &amp; Gun (2), Plasma (12+), Rapid Fire (24&quot;/11+)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Plasma Blasters" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="5f58-5923-ccf5-5335">
+              <characteristics>
+                <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
+                <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
+                <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">7+/1</characteristic>
+                <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">8+/1</characteristic>
+                <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/1</characteristic>
               </characteristics>
             </profile>
           </profiles>
