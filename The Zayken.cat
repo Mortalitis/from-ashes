@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="fccf-2707-c2a2-7350" name="The Zayken" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="11" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="The Zayken Lib" id="a407-a72d-d1a2-eb14" targetId="0139-1fdc-0631-d2e4"/>
+  </catalogueLinks>
+  <forceEntries>
+    <forceEntry name="The Zayken" id="e826-189a-4b2a-d7a9" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="351c-47f6-30ad-89df" targetId="857e-b03a-a081-0acc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2eea-0d7b-b9b8-1b05"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="407c-fda6-b03c-c99a"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Core Squads" hidden="false" id="0c7d-cdd9-6de8-8f0e" targetId="0e7c-b40e-8e07-6f1c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="158c-a56a-43a1-08e2"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="ccad-38f8-bac7-68ca"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink import="true" name="Spore Slavers" hidden="false" id="784f-a2b6-ce94-b362" type="selectionEntry" targetId="4d1b-dfde-bdb1-bfe7">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="d3f2-ebe3-cfa3-ecf9" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Zombie Horde" hidden="false" id="6480-6a2e-e5fe-6ace" type="selectionEntry" targetId="6006-bbcf-8c58-e667">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="1910-e54f-372d-235c" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Neophyte Mob" hidden="false" id="7801-2654-590b-7478" type="selectionEntry" targetId="e856-dda4-7be8-775a">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="53c1-2e41-ceec-f22f" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Corrupted Anvil" hidden="false" id="89ef-f9be-aa8d-5814" type="selectionEntry" targetId="fa6a-f10a-6a1a-7b79">
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="d74a-63b2-9d44-2c08" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Subfaction" hidden="false" id="481c-38b3-c6da-afb2">
+      <entryLinks>
+        <entryLink import="true" name="Subfaction" hidden="false" id="77e4-2a11-d2ba-510d" type="selectionEntryGroup" targetId="60c8-b910-ca8b-16e0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4978-bc0b-f128-cb03" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c301-aa26-9587-d60e" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="857e-b03a-a081-0acc" id="f53e-765f-b703-0c0d" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Subfaction" id="60c8-b910-ca8b-16e0" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Infection Site: Agriculture" hidden="false" id="2a70-8060-cfa7-724f" sortIndex="3">
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Lashing Tentacles" id="7835-53ed-d648-bf36" hidden="false">
+              <description>All Zayken Infantry Units increase their Melee value by +1</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="e8c6-51f3-86ee-eb3f" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infection Site: Colony" hidden="false" id="a9d3-0ce9-b24d-20ad" sortIndex="2">
+          <rules>
+            <rule name="Consumed Population" id="f79f-60d7-faaa-6f8c" hidden="false">
+              <description>At the end of the Tactical Phase after resolving outstanding Overwatches, the Zayken player can destroy any Zombie Horde Squads and remove them from the board. Next, the Zayken player can place any destroyed Zombie Horde Squads back at the FOB with all destroyed units replaced and lost HP restored</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="ba95-40ae-94fe-e208" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infection Site: Military Base" hidden="false" id="6485-f14b-4d41-d9cd" sortIndex="5">
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Quality Equipment" id="2842-3af5-b846-a33b" hidden="false">
+              <description>Neophyte Mob Units&apos; Armour Value is now 7, and Rusted Rifle AP values are increased by 1 at Close, Short and Medium ranges</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="7997-bd05-bd44-bd2a" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infection Site: Research Station" hidden="false" id="63ad-27fa-4294-a4b7" sortIndex="4">
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Research Station" id="d484-2713-642a-eefb" hidden="false">
+              <description>After both sides have deployed and before HVTs are chosen, the Zayken player may immediately move each Squad 3D4 inches forwards (roll each Squad separately). In addition, this detachment generates another Hive Mind token each turn</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="d501-179c-e430-aba2" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="a363-b521-eebb-19c4" sortIndex="1">
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="45cd-1486-a6c8-1284" targetId="857e-b03a-a081-0acc" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -215,11 +215,7 @@ Lead from the Front: Leader Squads automatically pass Discipline tests when att
 Improved Logistics: When a Leader Infantry Unit is deployed at the start of the game, another Infantry Unit can be deployed at the same time as long as they are placed within 1&quot; of each other, either dismounted or both mounted within the same Transport. Additionally, when a Leader Squad is held back as reserves at the FOB, it can be &apos;attached&apos; to another Squad of the same Type. Make a single Reserves test for both Squads but use the lowest Move value if they have different stats. Both Squads are placed together in Coherency, but then act independently from then on. The Leader and/or attached Squad can be Mounted, but use the Transport&apos;s Move value for the test instead. If any of the Squads involved have an Ability which allows them to deploy in an unusual way, they must all have it to do so.
 
 
-Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook
-
-
-
-</description>
+Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</description>
     </rule>
     <rule name="Transport [1x Infantry]" id="d69f-afa2-e259-8641" hidden="false" publicationId="5652-0742-890a-1e22" page="20">
       <description>See the Unit Abilities section of the main From Ashes rules (Page 20)</description>
@@ -678,6 +674,54 @@ If an enemy Squad Reacts and Engages the Formed Up Squads, and have been hit by 
 
 
 Any block tests incurred in this way count the Attacker&apos;s Discipline as 10+ regardless of bonus rules or other factors. Lastly, all Lone Wolf Squads, when a single Unit, have the Form Up ability (page 18).</description>
+    </rule>
+    <rule name="Creep (5&quot;)" id="c0cd-c842-4c3b-cc50" hidden="false">
+      <description>After this Squad has been deployed it may immediately move 5&quot; so long as it ends this move entirely within accessible terrain</description>
+    </rule>
+    <rule name="Assimilated Biomass (7)" id="d193-f1f8-483f-fe00" hidden="false">
+      <description>This Unit&apos;s Armour cannot be reduced below 7 due to attacks from weapons with Blast: Small Arms</description>
+    </rule>
+    <rule name="Ravenous" id="513c-31fc-4e30-50cb" hidden="false">
+      <description>This Unit does not roll any bonus Storm Strike dice but instead rerolls Strike rolls of a 1-2, even if not in base contact</description>
+    </rule>
+    <rule name="Infect (8+)" id="0907-2651-42e2-3d37" hidden="false">
+      <description>When Storming, roll a D12 for each HP removed from an enemy Infantry unit with Enclosed 0. On an 8+ replenish a lost HP to a unit in this Squad. If all Units are at full HP, instead add a brand new Zombie Horde Unit to this Squad but with only 1 HP</description>
+    </rule>
+    <rule name="Spore Cloud" id="7c37-05ee-4a53-b1af" hidden="false">
+      <description>Units targeting this Squad must reroll successful Accuracy and Storm Strike rolls of 11+. This happens before Low Visibility.</description>
+    </rule>
+    <rule name="Corrupting Aura" id="79b0-34b2-5c80-217e" hidden="false">
+      <description>Enemy Enclosed 0 Infantry Units which starts a Command or a move in base contact with this Unit, or touching the same terrain piece, must immediately take a Collateral Damage (11+) test. This applies once per Command.</description>
+    </rule>
+    <rule name="Smoke Burst" id="42c3-8f39-bccd-3ee8" hidden="false">
+      <description>Instead of placing a Blast Marker for each Hit, place a Smoke Marker instead</description>
+    </rule>
+    <rule name="Acid" id="bb2c-9bc8-bd91-4a99" hidden="false">
+      <description>Targets must reroll Armour Saves of 1-2. Additionally, targets always fail Armour Saves of a 12.</description>
+    </rule>
+    <rule name="Mind Control" id="ff64-7468-687f-9dbe" hidden="false">
+      <description>Squads with Enclosed 0 hit by this weapon must roll a Discipline test. If failed, it must spend an Order to move D4” towards the Spore Slaver Squad. If no Orders are available, comes from Commands instead. Lastly, if they do not have either available, they must reroll successful saves.</description>
+    </rule>
+    <rule name="Counter Cover" id="61fe-ff3e-2ed5-9474" hidden="false">
+      <description>Targets hit by this weapon do not benefit from Terrain Armour Bonuses</description>
+    </rule>
+    <rule name="Assimilated Biomass (5)" id="a11c-4d8e-d41e-31a3" hidden="false">
+      <description>This Unit&apos;s Armour cannot be reduced below 5 due to attacks from weapons with Blast: Small Arms</description>
+    </rule>
+    <rule name="Drag Down" id="52ac-6851-bd1b-9127" hidden="false">
+      <description>After this Unit has been targeted by an enemy Storm attack and survives, then for each successful Armour Save, this Unit makes a Strike roll against the Storming Squad. Damage caused to enemies in this way are still subjected to Infect (8+).</description>
+    </rule>
+    <rule name="Braindead" id="f911-e118-d8a8-90f8" hidden="false">
+      <description>If the majority of a Squad&apos;s Units have the Braindead ability it never benefits from Fast Target. Lastly, Squads which start the battle with only Braindead Units cannot be Captured nor award HVT OPS to the enemy</description>
+    </rule>
+    <rule name="Blight Rounds (8+)" id="7057-9560-80c5-26ad" hidden="false">
+      <description>If an enemy Enclosed 0 Infantry Unit loses an HP from this weapon, roll a D12 for each. On an 8+, replenish a lost HP to an existing friendly Zombie Horde Unit within 4” of the target. If there are none, instead place a brand new Zombie Horde Squad consisting of 1 Unit with 1 HP within 1” of the target Squad (placed before the last enemy Unit is removed if all Units are destroyed).</description>
+    </rule>
+    <rule name="Assimilated Biomass (6)" id="6c8f-3c4a-97c5-892e" hidden="false">
+      <description>This Unit&apos;s Armour cannot be reduced below 6 due to attacks from weapons with Blast: Small Arms</description>
+    </rule>
+    <rule name="Ingest (10+)" id="8f56-2a68-5bc0-d6a3" hidden="false">
+      <description>When Storming, roll a D12 for each HP removed from an enemy Unit with Enclosed 0. On a 10+, replenish a lost HP.</description>
     </rule>
   </sharedRules>
 </gameSystem>

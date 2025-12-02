@@ -16,9 +16,9 @@ Current Game Version: 0.1.2
 - Sol Enclaves: Union of the Advancing Dawn
 - Sol Enclaves: Dominion Vassal
 - Sol Enclaves: Freemen of the Republic
+- The Zayken (WIP)
 
 ## Unsupported Factions
-- The Zayken (unreleased)
 - Kymeron Republic (unreleased)
 
 ## Usage Notes
