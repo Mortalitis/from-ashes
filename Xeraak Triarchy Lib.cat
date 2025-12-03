@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -522,7 +522,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Leader [12&quot;]" id="df21-c31a-eb95-b150" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
+            <infoLink name="Leader (12&quot;)" id="df21-c31a-eb95-b150" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
             <infoLink name="Shield (2) Recharge 6+" id="4308-c25e-fdc9-0474" hidden="false" type="rule" targetId="93cd-12d5-25e8-fc7b"/>
             <infoLink name="Drone Controller" id="6fe1-f115-3db0-887c" hidden="false" type="rule" targetId="07cf-aeb3-a712-e464"/>
           </infoLinks>

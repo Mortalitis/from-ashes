@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="fccf-2707-c2a2-7350" name="The Zayken" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="11" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="fccf-2707-c2a2-7350" name="The Zayken" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="11" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="The Zayken Lib" id="a407-a72d-d1a2-eb14" targetId="0139-1fdc-0631-d2e4"/>
   </catalogueLinks>
@@ -8,21 +8,192 @@
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="351c-47f6-30ad-89df" targetId="857e-b03a-a081-0acc">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2eea-0d7b-b9b8-1b05"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="407c-fda6-b03c-c99a"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2eea-0d7b-b9b8-1b05"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="407c-fda6-b03c-c99a"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Core Squads" hidden="false" id="0c7d-cdd9-6de8-8f0e" targetId="0e7c-b40e-8e07-6f1c">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="158c-a56a-43a1-08e2"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="158c-a56a-43a1-08e2"/>
             <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="ccad-38f8-bac7-68ca"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="ccad-38f8-bac7-68ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="19e5-b1b6-d85b-9709" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Core Squads if a Support Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="ccad-38f8-bac7-68ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="19e5-b1b6-d85b-9709" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Core Squads if a Support Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="ccad-38f8-bac7-68ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="19e5-b1b6-d85b-9709" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Core Squads if a Support Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="ccad-38f8-bac7-68ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="19e5-b1b6-d85b-9709" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Core Squads if a Support Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="ccad-38f8-bac7-68ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="5" field="selections" scope="parent" childId="19e5-b1b6-d85b-9709" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Core Squads if a Support Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="ccad-38f8-bac7-68ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="6" field="selections" scope="parent" childId="19e5-b1b6-d85b-9709" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Core Squads if a Support Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="ccad-38f8-bac7-68ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="7" field="selections" scope="parent" childId="19e5-b1b6-d85b-9709" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Core Squads if a Support Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="ccad-38f8-bac7-68ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="8" field="selections" scope="parent" childId="19e5-b1b6-d85b-9709" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Core Squads if a Support Squad is added</comment>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Support Squads" hidden="false" id="db82-3fd3-4ed7-aa44" targetId="19e5-b1b6-d85b-9709">
+          <modifiers>
+            <modifier type="set" value="Mind Slaves" field="name"/>
+            <modifier type="decrement" value="1" field="06c7-b332-f088-5c00">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0e7c-b40e-8e07-6f1c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Support Squads if a Core Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="06c7-b332-f088-5c00">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="0e7c-b40e-8e07-6f1c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Support Squads if a Core Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="06c7-b332-f088-5c00">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="0e7c-b40e-8e07-6f1c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Support Squads if a Core Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="06c7-b332-f088-5c00">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="0e7c-b40e-8e07-6f1c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Support Squads if a Core Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="06c7-b332-f088-5c00">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="5" field="selections" scope="parent" childId="0e7c-b40e-8e07-6f1c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Support Squads if a Core Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="06c7-b332-f088-5c00">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="6" field="selections" scope="parent" childId="0e7c-b40e-8e07-6f1c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Support Squads if a Core Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="06c7-b332-f088-5c00">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="7" field="selections" scope="parent" childId="0e7c-b40e-8e07-6f1c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Support Squads if a Core Squad is added</comment>
+            </modifier>
+            <modifier type="decrement" value="1" field="06c7-b332-f088-5c00">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="8" field="selections" scope="parent" childId="0e7c-b40e-8e07-6f1c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Decrease max Support Squads if a Core Squad is added</comment>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="26a6-9d94-facb-8080"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="06c7-b332-f088-5c00"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink import="true" name="Spore Slavers" hidden="false" id="784f-a2b6-ce94-b362" type="selectionEntry" targetId="4d1b-dfde-bdb1-bfe7">
+    <entryLink import="true" name="Spore Slavers" hidden="false" id="784f-a2b6-ce94-b362" type="selectionEntry" targetId="5260-b397-d520-6e69">
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="d3f2-ebe3-cfa3-ecf9" primary="true" name="Core Squads"/>
       </categoryLinks>
@@ -36,11 +207,886 @@
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="53c1-2e41-ceec-f22f" primary="true" name="Core Squads"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6485-f14b-4d41-d9cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Corrupted Anvil" hidden="false" id="89ef-f9be-aa8d-5814" type="selectionEntry" targetId="fa6a-f10a-6a1a-7b79">
       <categoryLinks>
         <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="d74a-63b2-9d44-2c08" primary="true" name="Core Squads"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="[Xeraak] Centaur Scout Cyborgs" hidden="false" id="0442-8c48-9b45-e698" type="selectionEntry" targetId="8572-d69d-71b3-e889">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="54db-3c50-d51c-cff4" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="99c1-262c-b707-3f0d" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0c4-31ab-5392-7d16" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="d0c4-31ab-5392-7d16">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c595-867b-09b3-a6dd" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6154-3b2b-364f-4031" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75bf-518a-09a6-8187" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1631-97e4-d2f0-f6f6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="843a-da4c-acad-27e4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="d0c4-31ab-5392-7d16">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[Xeraak] Hunchback Gun Cyborgs" hidden="false" id="c595-867b-09b3-a6dd" type="selectionEntry" targetId="6075-3b8c-8852-12e6">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="5fef-4e32-8bd1-d427" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4a31-83dc-a568-8091" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6967-215b-873a-dcf6" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="6967-215b-873a-dcf6">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0442-8c48-9b45-e698" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6154-3b2b-364f-4031" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75bf-518a-09a6-8187" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1631-97e4-d2f0-f6f6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="843a-da4c-acad-27e4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="6967-215b-873a-dcf6">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[Xeraak] Meta Command Unit" hidden="false" id="6154-3b2b-364f-4031" type="selectionEntry" targetId="cbec-bbda-098d-0400">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="4475-6185-ebb9-fe4c" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5c3a-6be4-89c1-180c" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="113b-c55e-49e3-4667" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="113b-c55e-49e3-4667">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c595-867b-09b3-a6dd" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0442-8c48-9b45-e698" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75bf-518a-09a6-8187" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1631-97e4-d2f0-f6f6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="843a-da4c-acad-27e4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="113b-c55e-49e3-4667">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[Xeraak] Meta Overseer Synapse Unit" hidden="false" id="75bf-518a-09a6-8187" type="selectionEntry" targetId="d6ab-e425-b0ec-44d1">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="32c7-79f5-966d-343a" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0603-e1f5-00c4-5d6b" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="665c-500a-e0f1-cdfe" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="665c-500a-e0f1-cdfe">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c595-867b-09b3-a6dd" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6154-3b2b-364f-4031" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0442-8c48-9b45-e698" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1631-97e4-d2f0-f6f6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="843a-da4c-acad-27e4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="665c-500a-e0f1-cdfe">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[Xeraak] Revenant Berserker Cyborgs" hidden="false" id="1631-97e4-d2f0-f6f6" type="selectionEntry" targetId="afbc-d2e7-3089-9fa3">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="6d4f-ad5b-d12d-b085" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6876-d2f3-6976-6202" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d331-b1a5-bcac-3da2" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="d331-b1a5-bcac-3da2">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c595-867b-09b3-a6dd" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6154-3b2b-364f-4031" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75bf-518a-09a6-8187" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0442-8c48-9b45-e698" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="843a-da4c-acad-27e4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="d331-b1a5-bcac-3da2">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[Xeraak] Revenant Combat Cyborgs" hidden="false" id="843a-da4c-acad-27e4" type="selectionEntry" targetId="c33f-9357-9db9-5d9f">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="7e25-46a5-59f2-e5b6" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e535-0e7c-4185-0800" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a435-0c75-5aa9-06d9" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="a435-0c75-5aa9-06d9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c595-867b-09b3-a6dd" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6154-3b2b-364f-4031" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75bf-518a-09a6-8187" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1631-97e4-d2f0-f6f6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0442-8c48-9b45-e698" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="a435-0c75-5aa9-06d9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1620-316b-b152-c566" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[Verse] Ringleader Command Unit" hidden="false" id="9445-eb83-e897-658e" type="selectionEntry" targetId="30a9-f5d3-9e7b-15c4">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="fdef-ff81-3171-f1a6" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="8" field="3e1f-df31-2906-8760">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9268-43a3-f48b-15d2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="3e1f-df31-2906-8760">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="9268-43a3-f48b-15d2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="242d-5f9b-1a4d-a5de" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e1f-df31-2906-8760" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="899f-4c1e-1098-a069" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[Verse] Vanguard Infantry Cohort" hidden="false" id="242d-5f9b-1a4d-a5de" type="selectionEntry" targetId="6a85-0966-361e-f4ba">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="d0d1-ea15-a79d-0881" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="1aff-69ec-f691-66f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="9268-43a3-f48b-15d2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9445-eb83-e897-658e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="1aff-69ec-f691-66f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9268-43a3-f48b-15d2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8caf-a30a-1878-2ca4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1aff-69ec-f691-66f9" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[Sol] Guardsmen Anti-Tank Squad" hidden="false" id="1d48-d6a9-d4fe-5f87" type="selectionEntry" targetId="cccc-acfc-589d-c2f8">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="0e02-196d-a59d-5865" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="8" field="7650-71dd-b874-b8a2">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="68d2-1f24-1635-ac7a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="7650-71dd-b874-b8a2">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="68d2-1f24-1635-ac7a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1ddb-4559-c3a1-3728" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9dcf-a25d-b0b2-fe02" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f61e-78a5-175b-8efb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7650-71dd-b874-b8a2" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7dcf-4fff-a3a4-f87d" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[Sol] Guardsmen Command Unit" hidden="false" id="1ddb-4559-c3a1-3728" type="selectionEntry" targetId="4c21-07e1-b58d-346d">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8bd8-2bcd-4088-2c91" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="0aeb-b295-a9f3-63af">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="68d2-1f24-1635-ac7a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1d48-d6a9-d4fe-5f87" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9dcf-a25d-b0b2-fe02" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f61e-78a5-175b-8efb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="0aeb-b295-a9f3-63af">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="68d2-1f24-1635-ac7a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aeb-b295-a9f3-63af" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3df4-24cc-6918-b93e" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[Sol] Guardsmen Machine Gun Squad" hidden="false" id="9dcf-a25d-b0b2-fe02" type="selectionEntry" targetId="7eee-01dd-bd9b-d8ea">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="f48c-1bf4-1e59-a9b0" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="c545-698b-89fb-9c8e">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="68d2-1f24-1635-ac7a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1ddb-4559-c3a1-3728" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1d48-d6a9-d4fe-5f87" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f61e-78a5-175b-8efb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="c545-698b-89fb-9c8e">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="68d2-1f24-1635-ac7a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c545-698b-89fb-9c8e" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3fa4-4348-8eb8-f833" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[Sol] Guardsmen Rifle Squad" hidden="false" id="f61e-78a5-175b-8efb" type="selectionEntry" targetId="c21a-70f2-89bd-c97f">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="ccb8-7747-ffe6-b770" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="410c-e658-99dc-a5f8">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="68d2-1f24-1635-ac7a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1ddb-4559-c3a1-3728" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9dcf-a25d-b0b2-fe02" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1d48-d6a9-d4fe-5f87" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="410c-e658-99dc-a5f8">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="68d2-1f24-1635-ac7a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="410c-e658-99dc-a5f8" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da31-1947-1317-b657" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[SFA] Pathfinder Anti-Tank Squad" hidden="false" id="938e-1002-3a18-2c84" type="selectionEntry" targetId="9e45-a956-a05a-3827">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="4513-71cf-2e16-9dcc" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cf59-1d72-6e73-562b" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1e8-f322-409f-6762" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="f1e8-f322-409f-6762">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="48fd-94a3-38e3-ac28" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c795-fc66-bb8b-b0ce" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="dce0-fff6-85e6-6c20" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4257-4990-d807-162a" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0dc8-b80c-f0ef-9c11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="f1e8-f322-409f-6762">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[SFA] Pathfinder Command Unit" hidden="false" id="48fd-94a3-38e3-ac28" type="selectionEntry" targetId="50a6-1229-8386-a42e">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="5526-8ff2-da5c-fa35" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ef96-9b10-053f-d354" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2051-ed05-706e-e08e" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="2051-ed05-706e-e08e">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="938e-1002-3a18-2c84" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c795-fc66-bb8b-b0ce" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="dce0-fff6-85e6-6c20" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4257-4990-d807-162a" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0dc8-b80c-f0ef-9c11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="2051-ed05-706e-e08e">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[SFA] Pathfinder Dragoons" hidden="false" id="c795-fc66-bb8b-b0ce" type="selectionEntry" targetId="0e5f-9760-db84-86de">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="909b-f2aa-a4cc-49a0" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9148-3875-1715-5ec9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="381d-ff77-c992-0c92" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="381d-ff77-c992-0c92">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="48fd-94a3-38e3-ac28" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="938e-1002-3a18-2c84" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="dce0-fff6-85e6-6c20" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4257-4990-d807-162a" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0dc8-b80c-f0ef-9c11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="381d-ff77-c992-0c92">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[SFA] Pathfinder LMG Gunners" hidden="false" id="dce0-fff6-85e6-6c20" type="selectionEntry" targetId="306b-1bf6-41f5-adc6">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="a571-1d3f-423b-ab01" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04ca-fb53-dd66-7e86" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4f6-b595-14ad-d88f" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="e4f6-b595-14ad-d88f">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="48fd-94a3-38e3-ac28" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c795-fc66-bb8b-b0ce" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="938e-1002-3a18-2c84" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4257-4990-d807-162a" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0dc8-b80c-f0ef-9c11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="e4f6-b595-14ad-d88f">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[SFA] Pathfinder Railgunners" hidden="false" id="4257-4990-d807-162a" type="selectionEntry" targetId="8742-4ca3-cccd-a4b5">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="c542-efec-ee6d-5ebe" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0430-78eb-91c6-6d65" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7836-58f9-1d31-000c" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7836-58f9-1d31-000c">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="48fd-94a3-38e3-ac28" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c795-fc66-bb8b-b0ce" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="dce0-fff6-85e6-6c20" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="938e-1002-3a18-2c84" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0dc8-b80c-f0ef-9c11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="7836-58f9-1d31-000c">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="[SFA] Pathfinder Riflemen" hidden="false" id="0dc8-b80c-f0ef-9c11" type="selectionEntry" targetId="a871-28a4-094a-76ef">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="f434-9250-577b-35c0" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1917-3040-ba90-2ac6" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f560-bdea-d548-0ee6" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="f560-bdea-d548-0ee6">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="48fd-94a3-38e3-ac28" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c795-fc66-bb8b-b0ce" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="dce0-fff6-85e6-6c20" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4257-4990-d807-162a" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="938e-1002-3a18-2c84" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="f560-bdea-d548-0ee6">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d46c-951c-e15d-e4cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Neophyte Mob" hidden="false" id="2cea-ba4a-efac-0dcd" type="selectionEntry" targetId="aade-5fdc-d647-094f">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6485-f14b-4d41-d9cd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="0e7c-b40e-8e07-6f1c" id="dec1-74d3-1fcb-1df3" primary="true" name="Core Squads"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="[Devin] Pathfinder Anti-Tank Unit" hidden="false" id="9df1-a522-a58c-5e6c" type="selectionEntry" targetId="b3f0-c552-f1ec-b80f">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="2454-40b5-41e2-cc08" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="bf47-1e1c-d469-482e">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="671e-8c65-4495-e4c5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6e94-f59f-d9f9-fadf" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a8ac-b013-a0a9-af86" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e08-c485-05d0-3d01" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="bf47-1e1c-d469-482e">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="671e-8c65-4495-e4c5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="23e1-d631-b7c3-e0ee" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf47-1e1c-d469-482e" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[Devin] Pathfinder Command Unit" hidden="false" id="6e94-f59f-d9f9-fadf" type="selectionEntry" targetId="6c85-f6eb-75d7-d623">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="2a23-acb8-db83-b67a" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="3856-58c7-10ec-666b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="671e-8c65-4495-e4c5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9df1-a522-a58c-5e6c" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a8ac-b013-a0a9-af86" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e08-c485-05d0-3d01" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="3856-58c7-10ec-666b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="671e-8c65-4495-e4c5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ab6e-2bea-0fe5-aa01" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3856-58c7-10ec-666b" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[Devin] Pathfinder Riflemen" hidden="false" id="a8ac-b013-a0a9-af86" type="selectionEntry" targetId="fb2d-2134-91f0-6dab">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="0350-1df4-958d-4dd0" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="7a37-366e-b971-3d2b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="671e-8c65-4495-e4c5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6e94-f59f-d9f9-fadf" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9df1-a522-a58c-5e6c" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e08-c485-05d0-3d01" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="7a37-366e-b971-3d2b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="671e-8c65-4495-e4c5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f1c2-16bd-2177-3c38" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a37-366e-b971-3d2b" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="[Devin] Vanguard Infantry Cohort" hidden="false" id="3e08-c485-05d0-3d01" type="selectionEntry" targetId="3acb-dbd2-7a93-c11a">
+      <categoryLinks>
+        <categoryLink targetId="19e5-b1b6-d85b-9709" id="8484-fb22-237b-3bca" primary="true" name="Support Squads"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="c500-da93-c7a0-fed7">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="671e-8c65-4495-e4c5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6e94-f59f-d9f9-fadf" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a8ac-b013-a0a9-af86" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9df1-a522-a58c-5e6c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="8" field="c500-da93-c7a0-fed7">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="671e-8c65-4495-e4c5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c075-080a-4040-445e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c500-da93-c7a0-fed7" includeChildSelections="false"/>
+      </constraints>
     </entryLink>
   </entryLinks>
   <selectionEntries>
@@ -55,6 +1101,14 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="857e-b03a-a081-0acc" id="f53e-765f-b703-0c0d" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Opponent" hidden="false" id="3d3d-bab3-d4e7-d1f5">
+      <entryLinks>
+        <entryLink import="true" name="Opponent" hidden="false" id="b195-5718-901d-2048" type="selectionEntryGroup" targetId="29b6-bf0d-5e19-db78"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="857e-b03a-a081-0acc" id="8480-b13e-f92b-0a3e" primary="true" name="Configuration"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>
@@ -123,6 +1177,24 @@
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9969-560b-0c24-df7d" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2e1-d34b-3785-93e2" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Opponent" id="29b6-bf0d-5e19-db78" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="4c5c-f741-8e48-e5e6" sortIndex="1"/>
+        <selectionEntry type="upgrade" import="true" name="Devin Pact" hidden="false" id="671e-8c65-4495-e4c5" sortIndex="2"/>
+        <selectionEntry type="upgrade" import="true" name="SFA" hidden="false" id="d46c-951c-e15d-e4cd" sortIndex="3"/>
+        <selectionEntry type="upgrade" import="true" name="Sol Enclaves" hidden="false" id="68d2-1f24-1635-ac7a" sortIndex="4"/>
+        <selectionEntry type="upgrade" import="true" name="Verse Dominion" hidden="false" id="9268-43a3-f48b-15d2" sortIndex="5"/>
+        <selectionEntry type="upgrade" import="true" name="Xeraak Triarchy" hidden="false" id="1620-316b-b152-c566" sortIndex="6"/>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51be-4a88-33f1-dad5" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d443-1dec-da9e-37b8" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
