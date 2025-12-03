@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -722,6 +722,12 @@ Any block tests incurred in this way count the Attacker&apos;s Discipline as 10+
     </rule>
     <rule name="Ingest (10+)" id="8f56-2a68-5bc0-d6a3" hidden="false">
       <description>When Storming, roll a D12 for each HP removed from an enemy Unit with Enclosed 0. On a 10+, replenish a lost HP.</description>
+    </rule>
+    <rule name="Distorted Nervous System" id="6249-777b-cfa3-6c6c" hidden="false">
+      <description>Any ranged weapon this Unit has suffers from [Accuracy→1]</description>
+    </rule>
+    <rule name="Consumed Memories" id="45f6-5f49-69f9-794a" hidden="false">
+      <description>If a Mind Slave Unit has the Leader Ability, it loses it and instead while it is alive, generates an extra Hive Mind token for the Zayken side.</description>
     </rule>
   </sharedRules>
 </gameSystem>
