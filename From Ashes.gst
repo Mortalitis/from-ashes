@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -729,5 +729,7 @@ Any block tests incurred in this way count the Attacker&apos;s Discipline as 10+
     <rule name="Consumed Memories" id="45f6-5f49-69f9-794a" hidden="false">
       <description>If a Mind Slave Unit has the Leader Ability, it loses it and instead while it is alive, generates an extra Hive Mind token for the Zayken side.</description>
     </rule>
+    <rule name="New Rule" id="90c8-8375-3a50-c4a4" hidden="false"/>
+    <rule name="New Rule" id="f5bc-f800-25e1-ed38" hidden="false"/>
   </sharedRules>
 </gameSystem>
