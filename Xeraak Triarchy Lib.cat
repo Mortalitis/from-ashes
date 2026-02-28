@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -148,6 +148,14 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5601-702e-66b4-0517"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4834-9952-b68f-3033"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Hardlink Upgrades" hidden="false" id="8b24-59ee-d283-24f7" type="selectionEntryGroup" targetId="c676-3b87-b5cf-453c">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="00cd-1392-9e16-06c2"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4083-fb17-d4c2-c15c"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1261,6 +1269,13 @@
             <infoLink name="Assault Move (4&quot;)" id="723c-478b-b455-9762" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
             <infoLink name="Plasma (11+)" id="ed55-6ad3-24ec-4427" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="Requisition">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="41cc-a29b-03cd-e10c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Plasma Blasters" hidden="false" id="ca17-2adb-f295-32e7">
           <costs>
@@ -1296,6 +1311,13 @@
             <infoLink name="Plasma (12+)" id="03dc-f204-a9a1-5bf0" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
             <infoLink name="Rapid Fire (24&quot;/11+)" id="0aab-08b3-ee15-440c" hidden="false" type="rule" targetId="bb24-2bc0-e3c8-d176"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="Requisition">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="41cc-a29b-03cd-e10c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Compound Optics" hidden="false" id="3ed7-b912-0ac8-41e5">
           <costs>
@@ -1305,6 +1327,13 @@
           <infoLinks>
             <infoLink name="Compound Optics" id="31ec-1cb9-1a75-dbe5" hidden="false" type="rule" targetId="1d8a-ce56-2e1b-e77d"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="Requisition">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="41cc-a29b-03cd-e10c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
