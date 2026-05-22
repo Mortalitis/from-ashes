@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Centaur Scout Cyborg" hidden="false" id="cbcb-eb86-0a31-7e64" publicationId="38b2-0d05-f0c9-eb32" page="13" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Plasma Acceletator" hidden="false" id="5938-1684-7630-d490">
+            <selectionEntry type="upgrade" import="true" name="Plasma Acceletator" hidden="false" id="5938-1684-7630-d490" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6ff-9ac1-d3f7-6b2d-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6ff-9ac1-d3f7-6b2d-max"/>
@@ -25,20 +25,21 @@
                 </profile>
                 <profile name="Plasma Acceletator" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="105c-8a58-86cd-db5a">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/3</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/3</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/3</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/2</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/2</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/2</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (1)" id="d48f-d9fb-a2f9-949c" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
                 <infoLink name="Plasma (11+)" id="f53c-f39a-f2ee-442e" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
+                <infoLink name="Extra Weapon" id="e512-2e62-520d-444a" hidden="false" type="rule" targetId="cf63-b1b2-84c6-1b5d"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Plasma Carbine" hidden="false" id="b674-9a4e-cf2d-4fbe">
+            <selectionEntry type="upgrade" import="true" name="Plasma Carbine" hidden="false" id="b674-9a4e-cf2d-4fbe" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6b2-d56a-a266-db7e-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6b2-d56a-a266-db7e-max"/>
@@ -59,7 +60,7 @@
                 <profile name="Plasma Carbine" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="a755-5de1-cee0-7b23">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/1</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
                     <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/0</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
@@ -69,7 +70,6 @@
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (1)" id="e7cf-b421-b068-9430" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
                 <infoLink name="Plasma (12+)" id="db80-9536-7ef4-6e25" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
-                <infoLink name="Extra Weapon" id="e512-2e62-520d-444a" hidden="false" type="rule" targetId="cf63-b1b2-84c6-1b5d"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -83,7 +83,7 @@
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">7&quot;</characteristic>
                 <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
@@ -96,10 +96,12 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="0e4a-692c-7d5b-6ea1" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="0e4a-692c-7d5b-6ea1" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Recon" id="0218-876a-c643-d530" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
-            <infoLink name="Agile" id="7d02-f7ac-5825-69be" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+            <infoLink name="Dodge" id="7d02-f7ac-5825-69be" hidden="false" type="rule" targetId="db4d-a462-5a4c-bed1"/>
             <infoLink name="Networked Scanning Sensors" id="356c-9433-c813-75d9" hidden="false" type="rule" targetId="0bb1-6f4f-5a72-3fb3"/>
+            <infoLink name="Heavy Charge" id="9a41-aca4-e66a-d99f" hidden="false" type="rule" targetId="593d-6e04-b46b-328c"/>
+            <infoLink name="Snap React (5+; Advance)" id="df98-f3f3-3a3f-f23b" hidden="false" type="rule" targetId="5950-f695-7f53-773f"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -119,7 +121,7 @@
               <characteristics>
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
-                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
                 <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">3</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">8&quot;</characteristic>
@@ -133,11 +135,11 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="7d72-0c0b-12d6-c835" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (3)" id="7d72-0c0b-12d6-c835" hidden="false" type="rule" targetId="11fa-7150-9a83-613f"/>
             <infoLink name="Multi-Sensor System" id="df9e-7aa2-8168-cdc3" hidden="false" type="rule" targetId="1b08-e040-c99c-8db7"/>
             <infoLink name="All-Terrain Vehicle" id="89aa-c725-c97b-bced" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
             <infoLink name="Dodge" id="b612-1fc1-72ea-a48b" hidden="false" type="rule" targetId="db4d-a462-5a4c-bed1"/>
-            <infoLink name="Brute" id="6cec-0c01-707e-8c94" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+            <infoLink name="Heavy Charge" id="6cec-0c01-707e-8c94" hidden="false" type="rule" targetId="593d-6e04-b46b-328c"/>
           </infoLinks>
           <rules>
             <rule name="Hunter" id="b1df-bd42-2326-2615" hidden="false">
@@ -159,7 +161,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Req" typeId="Requisition" value="90"/>
+        <cost name="Req" typeId="Requisition" value="100"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </selectionEntry>
@@ -194,6 +196,7 @@
             <infoLink name="Crew Operated" id="2cec-792d-161b-f525" hidden="false" type="rule" targetId="b917-605b-a7b8-acf7"/>
             <infoLink name="Auxiliary" id="7255-d778-2453-52f1" hidden="false" type="rule" targetId="79e3-d0fa-6443-e95c"/>
             <infoLink name="Individual Craft" id="9523-c748-a734-19cf" hidden="false" type="rule" targetId="1486-c434-3e19-a28a"/>
+            <infoLink name="Drone (3)" id="39cf-d819-76c9-6b03" hidden="false" type="rule" targetId="11fa-7150-9a83-613f"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -227,15 +230,14 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">3</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone, Multi-Sensor System, Shield (1) Recharge 6+, Spear Tip</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone, Multi-Sensor System, Shield (1) Recharge 6+</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Shield (1) Recharge 6+" id="29fb-c781-b547-d5d0" hidden="false" type="rule" targetId="d9c4-f62f-2e64-b479"/>
-            <infoLink name="Drone" id="832d-650a-b9e2-394e" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="832d-650a-b9e2-394e" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Multi-Sensor System" id="d666-a476-d91e-b333" hidden="false" type="rule" targetId="1b08-e040-c99c-8db7"/>
-            <infoLink name="Spear Tip" id="e426-b4b6-6302-ff09" hidden="false" type="rule" targetId="2b9e-6bb1-3b85-60a5"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Plasma Destroyers" hidden="false" id="4077-2ca8-f06f-6a28">
@@ -249,10 +251,10 @@
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">0</characteristic>
-                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">*</characteristic>
-                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">*</characteristic>
-                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">*</characteristic>
-                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">*</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">3</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
                     <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Arc Burst, Free Command: Run &amp; Gun (1), Plasma (12+), Voltaic Snap</characteristic>
                   </characteristics>
                 </profile>
@@ -267,10 +269,9 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Free Command: Run &amp; Gun (1)" id="889a-f130-db65-7b3c" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
+                <infoLink name="Assault Move (4&quot;)" id="889a-f130-db65-7b3c" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
                 <infoLink name="Voltaic Snap" id="e628-992e-9ba0-af59" hidden="false" type="rule" targetId="1db2-667c-f738-2e5c"/>
-                <infoLink name="Arc Burst" id="c11a-fbbe-272d-2c6d" hidden="false" type="rule" targetId="ddab-d8a7-4b0b-e7c9"/>
-                <infoLink name="Plasma (12+)" id="ed39-b555-f20a-3354" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
+                <infoLink name="Plasma (11+)" id="ed39-b555-f20a-3354" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -324,6 +325,7 @@
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (1)" id="32a1-356e-e0a1-f79e" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
                 <infoLink name="Plasma (12+)" id="176f-04ec-ee5c-4b5c" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
+                <infoLink name="Snap React (6+; Engage)" id="d64f-fc39-15b3-f579" hidden="false" type="rule" targetId="d427-320a-ac72-f342"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -346,7 +348,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="bb48-d8f6-400d-8fb6" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="bb48-d8f6-400d-8fb6" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Guard" id="a1b3-2559-64e2-1795" hidden="false" type="rule" targetId="1d70-9615-1292-a2bc"/>
             <infoLink name="Shield (1) Recharge 4+" id="1e48-cb7c-ac47-1fcd" hidden="false" type="rule" targetId="b122-a6c3-7142-26be"/>
             <infoLink name="Plasma Deflector" id="a443-85bf-67c1-763b" hidden="false" type="rule" targetId="4d68-8fc0-1751-69c8"/>
@@ -362,7 +364,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hunchback Gun Cyborgs" hidden="false" id="373a-6b4c-ee15-ea56" publicationId="38b2-0d05-f0c9-eb32" page="11">
       <costs>
-        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Req" typeId="Requisition" value="26"/>
         <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <selectionEntries>
@@ -426,7 +428,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="9187-7969-8cc0-fac4" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="9187-7969-8cc0-fac4" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -531,8 +533,9 @@
           </profiles>
           <infoLinks>
             <infoLink name="Leader (12&quot;)" id="df21-c31a-eb95-b150" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
-            <infoLink name="Shield (2) Recharge 6+" id="4308-c25e-fdc9-0474" hidden="false" type="rule" targetId="93cd-12d5-25e8-fc7b"/>
+            <infoLink name="Shield (2) Recharge 5+" id="4308-c25e-fdc9-0474" hidden="false" type="rule" targetId="ec3b-067a-af01-d1c9"/>
             <infoLink name="Drone Controller" id="6fe1-f115-3db0-887c" hidden="false" type="rule" targetId="07cf-aeb3-a712-e464"/>
+            <infoLink name="Free Command: Shield Projection" id="9c6b-0305-6b9a-342a" hidden="false" type="rule" targetId="f3f4-23d3-94d5-b4d4"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -622,7 +625,7 @@
               </infoLinks>
               <rules>
                 <rule name="Overcharge Plasma Core" id="39d7-3938-4640-53e5" hidden="false">
-                  <description>Before rolling Accuracy dice this Unit may remove a Shield Token. If it does so Units hit by this weapon must reroll successful Armour Saves for the rest of the turn</description>
+                  <description>Before rolling Accuracy dice this Unit may remove a Shield Token. Increase this weapon&apos;s Attacks value to 2 for this Command.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -648,7 +651,7 @@
               <characteristics>
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
-                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
                 <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">8+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">4</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
@@ -663,7 +666,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Shield (1) Recharge 4+" id="1abd-9330-9ab8-ca95" hidden="false" type="rule" targetId="b122-a6c3-7142-26be"/>
-            <infoLink name="Drone" id="a1b9-3c89-65f5-d39f" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (3)" id="a1b9-3c89-65f5-d39f" hidden="false" type="rule" targetId="11fa-7150-9a83-613f"/>
             <infoLink name="Free Command: Scuttle" id="3500-f52e-8061-fea9" hidden="false" type="rule" targetId="f0be-b5e7-dc96-43c4"/>
             <infoLink name="All-Terrain Vehicle" id="665e-0ce0-7265-56e2" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
           </infoLinks>
@@ -729,7 +732,7 @@
           </selectionEntries>
           <infoLinks>
             <infoLink name="Shield (3) Recharge 5+" id="dc2c-8827-81b4-9ec5" hidden="false" type="rule" targetId="310d-6768-6b33-4576"/>
-            <infoLink name="Drone" id="5d83-5e88-de0d-7dee" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (3)" id="5d83-5e88-de0d-7dee" hidden="false" type="rule" targetId="11fa-7150-9a83-613f"/>
             <infoLink name="Multi-Sensor System" id="bb80-a232-a215-6908" hidden="false" type="rule" targetId="1b08-e040-c99c-8db7"/>
             <infoLink name="All-Terrain Vehicle" id="7b76-2bcf-b233-a562" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
             <infoLink name="Free Command: Scuttle" id="e5a6-696e-16ad-429d" hidden="false" type="rule" targetId="f0be-b5e7-dc96-43c4"/>
@@ -745,7 +748,7 @@
               <characteristics>
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
-                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
                 <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">4</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
@@ -797,7 +800,7 @@
                 <profile name="Berserker Plasma Weapons" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="b36b-2215-570b-37f6">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/2</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
                     <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/1</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
@@ -806,7 +809,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (1)" id="9e15-d225-4ad2-f57d" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
-                <infoLink name="Plasma (11+)" id="26a5-dbf7-4072-b0ad" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
+                <infoLink name="Plasma (12+)" id="26a5-dbf7-4072-b0ad" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -818,8 +821,8 @@
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
                 <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
-                <characteristic name="Move" typeId="863f-c803-2ef3-b555">4+D4&quot;</characteristic>
-                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">6</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">7</characteristic>
                 <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
@@ -829,13 +832,12 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="0642-dab4-cbc2-8adf" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="0642-dab4-cbc2-8adf" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Arc Blades" id="ff1d-59ba-3cc4-ef3a" hidden="false" type="rule" targetId="0123-ec80-d72e-d6ce"/>
             <infoLink name="Reassemble" id="7cdb-d0b5-2212-cff6" hidden="false" type="rule" targetId="60bc-f259-f153-6494"/>
-            <infoLink name="Agile" id="1f63-8c06-1791-5fcf" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
             <infoLink name="Berserk" id="2880-0f75-300c-3faa" hidden="false" type="rule" targetId="b4a2-e55e-16dd-7c10"/>
-            <infoLink name="Auxiliary" id="d913-26ee-8847-686f" hidden="false" type="rule" targetId="79e3-d0fa-6443-e95c"/>
             <infoLink name="A Madness Grips Them" id="94ca-4ed9-8305-7b90" hidden="false" type="rule" targetId="4fef-152a-0271-4085"/>
+            <infoLink name="Heavy Charge" id="114a-1f3b-f837-54f3" hidden="false" type="rule" targetId="593d-6e04-b46b-328c"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Plasma Grenades" hidden="false" id="8aa4-cdaf-31a0-0f23" type="selectionEntry" targetId="bad4-94b4-5cdb-103e"/>
@@ -886,7 +888,7 @@
                 <profile name="Plasma Carbines" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="fef5-2aa6-b04e-6b2c">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/1</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
                     <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/0</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
@@ -918,7 +920,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="c68c-b032-fd24-55ab" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="c68c-b032-fd24-55ab" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Arc Blades" id="8a89-2ed0-9290-c6c9" hidden="false" type="rule" targetId="0123-ec80-d72e-d6ce"/>
             <infoLink name="Reassemble" id="d7a0-e3c9-af3c-a202" hidden="false" type="rule" targetId="60bc-f259-f153-6494"/>
           </infoLinks>
@@ -952,11 +954,11 @@
                 </profile>
                 <profile name="Plasma Accelerators" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="06c5-1d40-bc90-9ed7">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/3</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/3</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/3</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/3</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/2</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/2</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -985,7 +987,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="9612-5489-a797-2a8b" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="9612-5489-a797-2a8b" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Plasma Grenades" hidden="false" id="d73e-ce04-a7b6-1d52" type="selectionEntry" targetId="bad4-94b4-5cdb-103e"/>
@@ -1087,7 +1089,7 @@
               <characteristics>
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
-                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
                 <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">8+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">4</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
@@ -1102,7 +1104,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Shield (2) Recharge 5+" id="f2b9-bd17-e206-a9a3" hidden="false" type="rule" targetId="ec3b-067a-af01-d1c9"/>
-            <infoLink name="Drone" id="8c4c-a2b3-d791-a699" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (3)" id="8c4c-a2b3-d791-a699" hidden="false" type="rule" targetId="11fa-7150-9a83-613f"/>
             <infoLink name="Replenishment Pods" id="d2fe-e1f9-d230-bdf1" hidden="false" type="rule" targetId="71d3-5392-e160-4000"/>
             <infoLink name="Free Command: Scuttle" id="7888-5ed8-a2ae-bbc6" hidden="false" type="rule" targetId="f0be-b5e7-dc96-43c4"/>
             <infoLink name="All-Terrain Vehicle" id="4093-8a79-beef-ded3" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
@@ -1229,7 +1231,7 @@
           <infoLinks>
             <infoLink name="Assault Move (4&quot;)" id="ae83-f8c7-a8ab-2855" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
             <infoLink name="Plasma (12+)" id="6513-1236-bab8-168e" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
-            <infoLink name="Free Command: Defence Fire" id="4107-6f85-799c-9bab" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+            <infoLink name="Snap React (7+; Advance)" id="4107-6f85-799c-9bab" hidden="false" type="rule" targetId="c54a-b04b-5a50-75dc"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1265,7 +1267,6 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Free Command: Run &amp; Gun (1)" id="9e6d-e7a8-89dc-c5b3" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
             <infoLink name="Assault Move (4&quot;)" id="723c-478b-b455-9762" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
             <infoLink name="Plasma (11+)" id="ed55-6ad3-24ec-4427" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
           </infoLinks>
@@ -1299,17 +1300,16 @@
               <characteristics>
                 <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
                 <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
-                <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">7+/1</characteristic>
-                <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">8+/1</characteristic>
+                <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/1</characteristic>
+                <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/1</characteristic>
                 <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/1</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Free Command: Run &amp; Gun (2)" id="47f6-3b86-f557-c8b0" hidden="false" type="rule" targetId="f70b-1cf0-f319-259a"/>
             <infoLink name="Assault Move (4&quot;)" id="22ab-b845-fa7b-2a57" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
             <infoLink name="Plasma (12+)" id="03dc-f204-a9a1-5bf0" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
-            <infoLink name="Rapid Fire (24&quot;/11+)" id="0aab-08b3-ee15-440c" hidden="false" type="rule" targetId="bb24-2bc0-e3c8-d176"/>
+            <infoLink name="Rapid Fire (16&quot;/12+)" id="0aab-08b3-ee15-440c" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="0" field="Requisition">

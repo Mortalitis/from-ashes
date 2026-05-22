@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -65,16 +65,18 @@
   </profileTypes>
   <sharedRules>
     <rule name="Recon" id="97a1-8277-5ebe-dea0" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
-      <description>This ability confers the following.
+      <description>In From Ashes, Recon units are equipped to scout ahead of the main force. Here, they identify critical strategic locations to be exploited by nearby forces, or use their advanced comms gear to best help advise their senior commanders to seize the initiative. Certain Units will have the ‘Recon’ Ability, which provides the following Abilities:
 
 
-Scouts: When a Squad with one or more Recon Units deploys at the start of the battle, another Squad that does not have any Recon units can be deployed at the same time, but must be placed within 1&quot;. Both can then immediately carry out an Advance Command, starting with the Recon Squad (not a Special Command), which can take them beyond their deployment area, but the attached Squad&apos;s Units must end this move as close as possible to the Recon Squad&apos;s Units. This does not come from their Commands for the first turn, so no dice are placed. The attached Squad may also include a Leader Unit (which also moves) as per the Improved Logistics rule.
+Scouts:
+When a Dismounted Squad with one or more Recon Units deploys at the start of the battle, another Squad that does not have any Recon Units can be deployed at the same time, but must be placed within 1”. Both can then immediately carry out an Advance Command, starting with the Recon Squad (not a Special Command), which can take them beyond their deployment area, but the attached Squad’s Units must end this move as close as possible to the Recon Squad’s Units. This does not come from their Commands for the first turn, so no dice are placed. The attached Squad may also include a Leader Unit (which also moves) as per the ‘Improved Logistics’ rule.
 
 
-Reconnoitre: If a Force has one of more Recon units in the AO, add 1 to their Priority roll. In addition, friendly Squads using Scatter may reroll the Scatter Distance if initially placed within 16&quot; of one or more friendly Recon Units.</description>
+Reconnoitre:
+If a Force has one or more Recon Units in the AO, add 1 to their Priority roll. In addition, friendly Squads using Scatter may reroll the Scatter Distance if initially placed within 16” of one or more friendly Recon Units.</description>
     </rule>
     <rule name="Guard" id="1d70-9615-1292-a2bc" hidden="false" publicationId="5652-0742-890a-1e22" page="18">
-      <description>If a Unit has the Guard ability then each time that Unit takes a hot from an enemy Infantry Storm attack, they can ignore it by rolling under the Attacker&apos;s Discipline value on a D12. If this Unit is a Walker that can also use this ability against Walker Storm attacks too.</description>
+      <description>Infantry and Walkers suffer a -2 modifier on their Strike rolls when attempting to target this Unit during a Storm Command</description>
     </rule>
     <rule name="Assault Move (5&quot;, Stabilised)" id="057f-77b8-2c9e-e67b" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
       <description>Certain weapons have the Assault Move special rule which gives the Unit access to the following: Special Storm Command: Assault Move (X)
@@ -87,17 +89,20 @@ This Squad can make a move up to that in brackets before firing any Assault Move
 This Squad can make a move up to that in brackets before firing any Assault Move weapons it has with an [Accuracy → 1] modifier. Each Unit may choose different targets, but all the weapons on a Unit must choose the same target.</description>
     </rule>
     <rule name="Smokescreen" id="67d7-fb01-15af-53b1" hidden="false" page="19">
-      <description>Squads with the Smokescreen ability may, once per turn, generate a temporary yet potent smokescreens as they move as detailed below. This Squad may make further attempts to use this ability if they failed the Skill test prior in the turn.
+      <description>Smoke is a tool used throughout humanity’s history to provide immediate line-of-sight blocking support, where they conceal friendly troop movements or even distract the enemy’s attention elsewhere. From hand held smoke grenades to dedicated dischargers on vehicles, their purpose has changed little over the centuries and are used by a variety of units.
 
 
-* At the end of an Advance, Retreat or Fall Back
-* At the start of a Storm Command before carrying out Step 1, but cannot be used if grenades have been used in the same Storm Command
+Squads with the Smokescreen Ability may, once per turn, generate temporary yet potent smokescreens as they move. How exactly these are employed is based on the following:
 
 
-They may even be used in conjunction with Special Commands which fall into one of the above categories. If they choose to do this, one Unit in the Squad must rill a Skill test. If passed, place 4 Smoke Markers in base contact with one another and all within 1&quot; of the Squad&apos;s Units. These are placed before other effects such as Overwatch, Assault Move, Stabilised, Run &amp; Gun and Defence Fire.
+* At the end of an Advance, Retreat or Withdraw.
+* At the Start of a Storm Command before carrying out Step 1 (but cannot be used if grenades have been used in the same Storm Command).
 
 
-If a Unit wished to Engage an enemy through one or more Smoke Markers (done by tracing a line centre to centre, much like a Block Check), that Unit&apos;s weapons receives [Accuracy → 1].</description>
+They may even be used in conjunction with Special Commands which fall into one of the above categories.
+If they choose to do this, place four Smoke Markers in base contact with one another and all within 1” of the Squad’s Units.
+These are placed before other effects such as Overwatch, Assault Move, Stabilised, Run and Gun and Defence Fire.
+If a Unit wishes to Engage an enemy through one or more Smoke Markers (done by tracing a line centre to centre, much like a Block check), that Unit’s weapons receives [Accuracy →1].</description>
     </rule>
     <rule name="Leader (12&quot;)" id="e397-d083-8cc5-ca66" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
       <description>Global Leader Abilities
@@ -130,12 +135,19 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
       <description>This Squad may attempts a free Engage Reaction with each Defence Fire weapon</description>
     </rule>
     <rule name="Barrage" id="977a-72f5-8575-939a" hidden="false" publicationId="5652-0742-890a-1e22" page="22">
-      <description>Barrage weapons follow the normal Engage process but with the following modifications.
+      <description>In From Ashes, certain Units possess weapons with a Special Rule on their profile noted as Barrage. Such weapons largely follow the normal Engage process but with the following modifications:
 
-* A Barrage weapon can be used against any Squad in the game, regardless of line of sight, and even those held as reserves in the enemy&apos;s FOB. If a Unit with a Barrage weapon chooses a target it cannot see, the weapon&apos;s Accuracy Bracket starts as Extreme, regardless of the distance.
-* Barrage weapons ignore Block tests due to intervening terrain and Units other than those in base contact the target Squad, which count as usual, nor does this override the Lone Wolf ability
-* If a Barrage weapon&apos;s Accuracy roll would score a successful hit if a target was one range bracket closer, it counts as scoring a hit but do not roll any Damage dice (i.e. Blast markers can still be generated)
-* Barrage weapons benefit from the Static Target and Top Attack (11+) special rules</description>
+
+* A Barrage weapon can be used against any Squad in the game, regardless of line of sight, and even those held as reserves at the enemy’s FOB. If a Unit with a Barrage weapon chooses a target it cannot see, the weapon’s Accuracy Bracket starts as Extreme, regardless of actual distance.
+* Barrages weapons ignore Blocking due to intervening terrain and Units other than those in base contact with the Target Squad, which count as usual, nor does this override the VIP Ability (see the Unit Abilities section).
+* If a Barrage weapon’s Accuracy roll would score a successful hit if the target was one range bracket closer, it counts as scoring a hit but do not roll any Damage dice.
+* Lastly, Barrage weapons benefit from the Range In and Roof Strike Special Rules:
+
+Range In
+If this weapon is targeting the same Squad in LoS a second time and neither the Attacker or Target have moved since, roll a Skill test beforehand. If passed, the weapon receives [Accuracy ←1]. If it is a third time and successfully passed the previous Skill test, instead benefits from [Accuracy ←2]. If it is a fourth time or more, alternatively benefits from [Accuracy ←3]. Lastly, this bonus persists for the remainder of the turn until either party has moved.
+
+Roof Strike
+If this weapon hits a Vehicle Unit, the attacking player may choose which arc is hit, regardless of the arc they are currently in.</description>
     </rule>
     <rule name="Burn" id="501b-9357-716d-184b" hidden="false">
       <description>Squads taking hits from this weapon must roll a Skill Test. If failed must reroll successful Armour Saves</description>
@@ -191,10 +203,10 @@ This Squad can make a move up to that in brackets before firing any Assault Move
       <description>Enclosed 0 Units must reroll successful Armour Saves against hits from this weapon</description>
     </rule>
     <rule name="Free Command: Run &amp; Gun (2)" id="f70b-1cf0-f319-259a" hidden="false">
-      <description>After completing an Advance Command, Retreat or Unique Command (while dismounted), this unit may immediately carry out a free Engage using this weapon, but counts as having only 2 attacks</description>
+      <description>After completing an Advance Command, Retreat, Withdraw or Unique Command, this unit may immediately carry out a free Engage using this weapon, but counts as having only 2 attacks</description>
     </rule>
     <rule name="Free Command: Run &amp; Gun (1)" id="b2a5-aecd-db49-13b8" hidden="false">
-      <description>After completing an Advance Command, Retreat or Unique Command (while dismounted), this unit may immediately carry out a free Engage using this weapon, but counts as having only 1 attack</description>
+      <description>After completing an Advance Command, Retreat, Withdraw or Unique Command, this unit may immediately carry out a free Engage using this weapon, but counts as having only 1 attack</description>
     </rule>
     <rule name="Flame Weapon" id="7841-74bf-efd5-5422" hidden="false">
       <description>Ignores terrain negative rerolls and terrain armour bonuses</description>
@@ -229,12 +241,6 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
     <rule name="High Explosive" id="b359-6a8f-90e3-aa49" hidden="false">
       <description>Any surplus Damage dice may be used against the next enemy Unit in the target Squad</description>
     </rule>
-    <rule name="Top Attack (10+)" id="b485-729f-0972-dde8" hidden="false">
-      <description>If this weapon&apos;s Accuracy roll scores an 10+ and successfully hits, the attacking player may choose which arc is hit, regardless of whichever arc they are currently in</description>
-    </rule>
-    <rule name="Top Attack (11+)" id="fa30-8339-09cc-55d5" hidden="false">
-      <description>If this weapon&apos;s Accuracy roll scores an 11+ and successfully hits, the attacking player may choose which arc is hit, regardless of whichever arc they are currently in</description>
-    </rule>
     <rule name="Unique Command: Boost the Signal" id="f216-6748-8ce2-4ed9" hidden="false">
       <description>Increase this Squad&apos;s Leader range by 12&quot; for the rest of the turn</description>
     </rule>
@@ -242,7 +248,13 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
       <description>Any Friendly Leader can extend their Leader range by 4&quot; when attempting to Order this Squad</description>
     </rule>
     <rule name="Sidearms" id="6a33-85d0-d353-5615" hidden="false">
-      <description>After a Squad with this ability carries out an Engage Reaction (not Overwatch) against an enemy within 8&quot;, they may declare they wish to carry out another immediate Reaction, interrupting the game, with their Sidearms (again requiring a successful Discipline test to do so). If passed the owning player rolls a number of Skill tests equal to the Sidearms Unit&apos;s remaining HP. For each passed test the same enemy takes an AP 0, Damage 1 Autohit (and may trigger Block tests and generate blast markers as usual). This counts as an Engage Command for all purposes so a &apos;3&apos; Command dice will need to be placed and comes from their Command allowance as usual.</description>
+      <description>Pistols and other sidearms are considered far less capable tools than their more potent machine gun and rifle cousins, yet they still have their place on the contemporary battlefield. Rather than being the primary small arm an infantrymen would carry, they instead serve as a backup weapon to provide the user an easily accessible small burst of firepower when the main weapon is empty. This regularly happens during short range firefights, enabling the wielder to fend off their foe in the direst of circumstances.
+
+
+After a Squad with the Sidearms Ability carries out an Engage Reaction (not Overwatch) against an enemy within 8”, they may declare they wish to carry out another immediate Reaction, interrupting the game, with their Sidearms (again requiring a successful Discipline test to do so). If they are successful, the owning player rolls a number of Skill tests equal to the Sidearms Units&apos; remaining HP. For each passed, the same enemy takes an AP 0, Dam Dice 1 Autohit (and may be Blocked or generate blast markers as usual). This counts as an Engage Command for all purposes, so a ‘3’ Command dice will need to be placed and comes from their Command allowance as usual.
+
+
+However, failed Sidearm Reactions do not place a White Command Dice if failed.</description>
     </rule>
     <rule name="Kinetic Energy Round" id="5d71-8226-7401-ef0e" hidden="false">
       <description>Ignores Fast Target and add the targets Enclosed value to the AP value of this weapon</description>
@@ -271,14 +283,14 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
     <rule name="Crew Operated" id="b917-605b-a7b8-acf7" hidden="false">
       <description>Use the transported Unit&apos;s best Discipline value for the Drop Pod&apos;s Discipline</description>
     </rule>
-    <rule name="Orbital Drop" id="7930-2bd6-c120-a01a" hidden="false">
-      <description>This Squad must always be deployed at the FOB. The first time it activates it uses the Scatter ability from the Unit Abilities section of the main From Ashes rules instead of a normal Command. Once it has landed it counts as a Vehicle instead of a Flyer and cannot be chosen to activate for the rest of the battle.</description>
+    <rule name="Special Advanced Command: Orbital Drop" id="7930-2bd6-c120-a01a" hidden="false">
+      <description>This Squad must always be deployed at the FOB. The first time it activates, it uses the Scatter Ability from the Unit Abilities Section in the main From Ashes rules instead of a normal Command. Once it has landed, it counts as a Vehicle instead of a Flyer and cannot be chosen to activate for the rest of the battle.</description>
     </rule>
     <rule name="Auxiliary" id="79e3-d0fa-6443-e95c" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
       <description>This Unity is not counted when establishing the Detachment&apos;s Morale Value or counted towards Routed when destroyed</description>
     </rule>
     <rule name="Adaptive Tactics" id="a38e-dc52-10cb-dfd3" hidden="false">
-      <description>This Squad benefits from the Lone Wolf ability if it consists of 1-2 Units</description>
+      <description>This Squad may Form Up if it consists of 1-2 Units, not the usual 1</description>
     </rule>
     <rule name="Advanced Radio" id="67a9-a2ad-9787-f656" hidden="false">
       <description>Any friendly Leader can extend their Leader range by 16&quot; when attempting to Order this Squad</description>
@@ -461,7 +473,7 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
       <description>Instead of being bought as it&apos;s own Unit, the Anvil Tank Crew Unit must be bought as an upgrade to a friendly Anvil from the same Detachment, despite not being a transport, the Anvil Tank Crew count as being transported within the Anvil, cannot choose to dismount and they cannot be chosen to activate independently of the Anvil. Once the Anvil is destroyed, and assuming the Anvil Tank Crew survive, they can operate as a separate Squad for the rest of the battle.</description>
     </rule>
     <rule name="A Madness Grips Them" id="4fef-152a-0271-4085" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
-      <description>When this Unit loses an HP, the closest enemy Squad (roll of in a tie) within 4&quot; takes an AP 2 Autohit</description>
+      <description>When this Unit loses an HP, the closest enemy Squad (roll of in a tie) within 2&quot; takes an AP 2 Autohit</description>
     </rule>
     <rule name="Arc Blades" id="0123-ec80-d72e-d6ce" hidden="false">
       <description>Strom Strike rolls of a 12+ (after any rerolls) become two Hits instead of one</description>
@@ -470,16 +482,16 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
       <description>Place a Blast Marker by the target for each HP Lost (if destroyed, place the marker before the target is removed)</description>
     </rule>
     <rule name="Berserk" id="b4a2-e55e-16dd-7c10" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="10">
-      <description>This Unit receives two Storm bonus Attacks instead of one. Additionally when this Squad starts a Command (including Overwatch) within 8&quot; if an enemy Unit, roll a Discipline test. If passed this Unit acts as normal otherwise they must attempt to Storm the closest enemy Unit</description>
+      <description>When this Squad starts a Command (including Overwatch) within 8” of an enemy, roll a Discipline test. If passed, act as normal. If failed, must attempt to Storm the closest enemy. In addition, if it Advances a second time in a turn, add D4” to its move for the turn.</description>
     </rule>
     <rule name="Compound Optics" id="1d8a-ce56-2e1b-e77d" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="21">
       <description>At the start of an Engage Command after targets have been selected roll two D12s for each Compound Optics Hardlink Upgrade it has. For each roll of an 8+ all of this Unit&apos;s weapons receive [Accuracy ← 1] if it can see the target. If this Unit has not moved this turn, change the roll to 6+ instead.</description>
     </rule>
     <rule name="Dodge" id="db4d-a462-5a4c-bed1" hidden="false">
-      <description>Roll a D12 for each hit dice allocated to this Unit. Any which roll a 1-3 the hit is ignored</description>
+      <description>Roll a D12 for each Hit dice allocated to this Unit during an Engaged Command. Any which roll a 1-3 the hit is ignored</description>
     </rule>
-    <rule name="Drone" id="2d3e-fe0b-2990-2861" hidden="false">
-      <description>This Unit ignores Blast Markers for Accuracy rerolls. In addition Retreat and Fall Back from failed Discipline tests count as Stunned instead</description>
+    <rule name="Drone (1)" id="2d3e-fe0b-2990-2861" hidden="false">
+      <description>This Squad ignores 1 Blast Marker for Accuracy and rerolls, and Retreat/Withdraw from failed Discipline tests count as Stunned instead</description>
     </rule>
     <rule name="Drone Controller" id="07cf-aeb3-a712-e464" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12">
       <description>Squads with the Drone ability pass Discipline tests on a 5+ when taking orders from a Meta Commander Unit</description>
@@ -490,7 +502,11 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
     <rule name="Free Command: Scuttle" id="f0be-b5e7-dc96-43c4" hidden="false">
       <description>If this Unit successfully Reacts or Engages, it may pivot on its centre in order to face the attacker</description>
     </rule>
-    <rule name="Free Command: Shield Projection" id="f3f4-23d3-94d5-b4d4" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12"/>
+    <rule name="Shield Projector" id="f3f4-23d3-94d5-b4d4" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="12">
+      <description>If this Squad successfully Orders a Squad, it may remove one of its Shield tokens and either of the following to one of the Ordered Squad’s Units:
+* Replenish a downed Shield token.
+* Place a Shield token on a Unit which does not have the Shield Ability. It cannot be recharged but remains on the Unit until it is downed.</description>
+    </rule>
     <rule name="Homing" id="a71e-8a43-8d72-d1ed" hidden="false">
       <description>Reroll Accuracy rolls of a 1 or 2</description>
     </rule>
@@ -498,10 +514,10 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
       <description>Hits allocated to this Unit only ever generate 1 Damage Dice per Hit. In addition, whenever this Unit loses an HP, a Unit mounted within also loses an HP.</description>
     </rule>
     <rule name="Multi-Sensor System" id="1b08-e040-c99c-8db7" hidden="false">
-      <description>This Unit can reroll failed Discipline rolls for Reactions, Storm Attacks and Form Up</description>
+      <description>This Unit can reroll failed Discipline rolls for Reactions and Strike Rolls</description>
     </rule>
     <rule name="Networked Scanning Sensors" id="0bb1-6f4f-5a72-3fb3" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="13">
-      <description>When a friendly Squad within 12&quot; fails a Discipline test for a Search attempt (including itself), this Squad may turn one of its unused Order dice to a 6 (for Unique) to enable the Searching Squad to reroll that Discipline test</description>
+      <description>Friendly Squads within 12&quot; (including itself) can reroll failed Search attempts and Block tests</description>
     </rule>
     <rule name="Plasma (11+)" id="ff23-556f-e1f8-33cc" hidden="false">
       <description>Target Armour Save rolls of 11+ (after rerolls) remove and extra HP, regardless of it&apos;s Armour value.</description>
@@ -510,7 +526,7 @@ Leader Unique Command - Order: See Page 19 of the main From Ashes rulebook</desc
       <description>Target Armour Save rolls of 12+ (after rerolls) remove and extra HP, regardless of it&apos;s Armour value.</description>
     </rule>
     <rule name="Plasma Deflector" id="4d68-8fc0-1751-69c8" hidden="false">
-      <description>This Unit can reroll failed Armour saves of a 12. In addition Block tests generated by this Squad are only passed on an 8+ rather than the attackers Skill</description>
+      <description>This Unit can reroll failed Armour saves of a 12. In addition, any Shield tokens it has can reroll results of a 12.</description>
     </rule>
     <rule name="Reassemble" id="60bc-f259-f153-6494" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="14">
       <description>While Storming, roll a D12 for each HP removed from an enemy Unit. On a 10+ replenish a lost HP to an existing Unit. If all Units have full HP, instead place a brand new Unit as close as possible but with only 1HP</description>
@@ -587,8 +603,8 @@ Each Unit can attempt to recharge their Shields after the Dissipate step of the 
     <rule name="Stabilised Shot" id="6b2b-9c43-d718-0b0d" hidden="false">
       <description>This weapon may receive the Barrage special rule, but must change all AP values to 2 if it does so</description>
     </rule>
-    <rule name="Voltaic Snap" id="1db2-667c-f738-2e5c" hidden="false">
-      <description>This weapons Damage dice is equal to the target Unit&apos;s starting HP</description>
+    <rule name="Voltaic Burst" id="1db2-667c-f738-2e5c" hidden="false">
+      <description>If this weapon removes any HP from the target, place a single Blast Marker (if destroyed, before it is removed)</description>
     </rule>
     <rule name="Armour Shatter" id="3cf1-d34a-46fd-7885" hidden="false">
       <description>Target Amour save rolls of a 12 removes an HP regardless of the targets Armour value</description>
@@ -623,8 +639,8 @@ Each Unit can attempt to recharge their Shields after the Dissipate step of the 
 
 Each Unit can attempt to recharge their Shields after the Dissipate step of the SitRep phase by successfully equalling or beating their Recharge vales (as stated in brackets) on a D12 for each downs Shield token. For each passed, replenish a Shield token to the Unit.</description>
     </rule>
-    <rule name="Overseer (8+)" id="426f-96e1-451a-d459" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
-      <description>When a Squad with one or more Meta Overseers passes a Discipline test when taking an Order, roll an additional D12. On an 8+ the Order comes from the Leader&apos;s own Order capacity instead of it&apos;s Commands (if it has any Order capacity available)</description>
+    <rule name="Overseer (10+)" id="426f-96e1-451a-d459" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
+      <description>When this Squad takes an Order and rolls a 10+ for its Discipline test, the Leader issuing the Order places a red Order dice instead of a white Command dice (if the Leader has any Order capacity available).</description>
     </rule>
     <rule name="Sentry Protocols" id="32b4-b600-813e-f271" hidden="false">
       <description>When this Squad Reacts (not Overwatch), it can choose to use it&apos;s Order capacity instead of its Commands, but it&apos;s Discipline changes to 9+ for this test (which itself cannot be modified further). If a Sentry Protocols Discipline test is failed, it will not cause a Fall Back, even if the Squad has lost any HPs but will count as Stunned instead (still taken from the Order capacity)</description>
@@ -668,12 +684,6 @@ If an enemy Squad Reacts and Engages the Formed Up Squads, and have been hit by 
     </rule>
     <rule name="Superior Guard" id="c85d-a3b6-3b3d-bee8" hidden="false">
       <description>If a Unit has the Guard ability then each time that Unit takes a hot from an enemy Infantry Storm attack, they can ignore it by rolling under the Attacker&apos;s Discipline value on a D12, rerolling fails. If this Unit is a Walker that can also use this ability against Walker Storm attacks too.</description>
-    </rule>
-    <rule name="Lone Wolf" id="bd5e-a9e3-1a49-cb2c" hidden="false">
-      <description>If a Squad with the Lone Wolf ability consists of a single Unit, whether as a result of casualties or not, it is called a Lone Wolf Squad and is extremely difficult to pick out when other potential targets are nearby. When a Lone Wolf Squads is chosen as a target by an Attacker Squad during an Engage Command, and there is a friendly non-Lone Wolf Squad of the same Type within 5&quot; of the Lone Wolf and LoS to both and is closer to the Attacker, the Attacker treats the non-Lone Wolf Squad as Blocking the Lone Wolf Squad. This overrides the Small Targets rule and applies regardless of whether or not any Blocking is actually taking place. If there are multiple Blocking squads, each requires a Block test to be bypassed.
-
-
-Any block tests incurred in this way count the Attacker&apos;s Discipline as 10+ regardless of bonus rules or other factors. Lastly, all Lone Wolf Squads, when a single Unit, have the Form Up ability (page 18).</description>
     </rule>
     <rule name="Creep (5&quot;)" id="c0cd-c842-4c3b-cc50" hidden="false">
       <description>After this Squad has been deployed it may immediately move 5&quot; so long as it ends this move entirely within accessible terrain</description>
@@ -729,7 +739,44 @@ Any block tests incurred in this way count the Attacker&apos;s Discipline as 10+
     <rule name="Consumed Memories" id="45f6-5f49-69f9-794a" hidden="false">
       <description>If a Mind Slave Unit has the Leader Ability, it loses it and instead while it is alive, generates an extra Hive Mind token for the Zayken side.</description>
     </rule>
-    <rule name="New Rule" id="90c8-8375-3a50-c4a4" hidden="false"/>
-    <rule name="New Rule" id="f5bc-f800-25e1-ed38" hidden="false"/>
+    <rule name="Open Topped" id="90c8-8375-3a50-c4a4" hidden="false">
+      <description>Some Transports will include Open Topped in brackets. Where this is the case, the Mounted Units can Engage (measuring LoS from the Transport, and affected by Blast Markers) and if the Transport has moved this turn suffer [Accuracy →1] . In turn, they can be targeted by enemies but the Transport counts as Blocking. Lastly, when the Mounted Squad Dismounts, roll a Skill test; if passed, the Dismount comes from the Squad’s Orders instead of its Commands.</description>
+    </rule>
+    <rule name="V.I.P." id="f5bc-f800-25e1-ed38" hidden="false">
+      <description>V.I.P, or Very Important Person is simply a descriptor for those critical individuals whose protection is of utmost importance. Often in regards to field commanders and other key personnel, they are regularly mistaken for other friendly forces nearby, making it difficult for enemies to identify targets at range. In other instances, followers may instead act as bodyguards to such senior personnel, throwing themselves in the way of incoming fire. Whatever the circumstances, their survivability is significantly increased when in the presence of others.
+
+
+If a Squad with the V.I.P. Ability takes any hits during an enemy Engage Command, it may attempt a Skill test for each. If passed, allocate that hit to a friendly Squad of the same Type within 5” which is itself in LoS and closer to that enemy. If the VIP is within 1” of the friendly Squad, add 2 to the roll.</description>
+    </rule>
+    <rule name="Shields" id="f2be-61fe-a3c9-661b" hidden="false">
+      <description>Protective fields, often referred to as Shields, provide their user with a powerful defensive ability. There are many different types of Shields, whether they be made from interlocking plasma matrixes or clouds of swarming nanobots, they generally work as ablative layers which need to be overcome by the attacker before the target is harmed. Due to their projected nature, they can easily be recharged to be used again later in the battle, if the operator has the skill to do so…
+
+
+If a Unit has the Shield Ability, it will be accompanied by a number in brackets. This is the number of Shield tokens which need to be removed before the host Unit can take damage.
+
+
+If a Unit has any Shield tokens then each time it takes a Hit during an Engage Command, roll a number of D12s equal to that Hit’s Damage Dice. If all score 1-7, ignore the hit. If any roll an 8+, ignore the Hit and remove a Shield token.
+
+
+Units can attempt to recharge their Shields During the Recover step of the SitRep phase by successfully equalling or beating their Recharge value (as stated in brackets in their Abilities) on a D12 for each downed Shield token. However, if there are any Blast or Smoke Markers within 1”, reduce the dice score by 2. For each passed, replenish a Shield token to the Unit.</description>
+    </rule>
+    <rule name="Drone (2)" id="4056-74b1-2640-1654" hidden="false">
+      <description>This Squad ignores 2 Blast Markers for Accuracy and rerolls, and Retreat/Withdraw from failed Discipline tests count as Stunned instead</description>
+    </rule>
+    <rule name="Drone (3)" id="11fa-7150-9a83-613f" hidden="false">
+      <description>This Squad ignores 3 Blast Markers for Accuracy and rerolls, and Retreat/Withdraw from failed Discipline tests count as Stunned instead</description>
+    </rule>
+    <rule name="Snap React (6+; Engage)" id="d427-320a-ac72-f342" hidden="false">
+      <description>Snap React allows a Squad to choose to use its Order capacity to React with (not for Overwatches), but the Discipline test is changed to whatever is written in brackets (and cannot be modified further), as are the available Reaction Commands. As these are Orders, a red Order dice must be placed. If the Discipline test is failed, place an Order dice as a 6 for Unique, but if any damage has been taken, do not need to Withdraw. Snap React cannot be used at the same time as a Free Command or a regular Reaction.</description>
+    </rule>
+    <rule name="Heavy Charge" id="593d-6e04-b46b-328c" hidden="false">
+      <description>This Unit receives two Charge bonus Attacks instead of the usual one.</description>
+    </rule>
+    <rule name="Snap React (5+; Advance)" id="5950-f695-7f53-773f" hidden="false">
+      <description>Snap React allows a Squad to choose to use its Order capacity to React with (not for Overwatches), but the Discipline test is changed to whatever is written in brackets (and cannot be modified further), as are the available Reaction Commands. As these are Orders, a red Order dice must be placed. If the Discipline test is failed, place an Order dice as a 6 for Unique, but if any damage has been taken, do not need to Withdraw. Snap React cannot be used at the same time as a Free Command or a regular Reaction.</description>
+    </rule>
+    <rule name="Snap React (7+; Engage)" id="c54a-b04b-5a50-75dc" hidden="false">
+      <description>Snap React allows a Squad to choose to use its Order capacity to React with (not for Overwatches), but the Discipline test is changed to whatever is written in brackets (and cannot be modified further), as are the available Reaction Commands. As these are Orders, a red Order dice must be placed. If the Discipline test is failed, place an Order dice as a 6 for Unique, but if any damage has been taken, do not need to Withdraw. Snap React cannot be used at the same time as a Free Command or a regular Reaction.</description>
+    </rule>
   </sharedRules>
 </gameSystem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1ad1-05a2-f49b-5b4b" name="Xeraak Triarchy" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Xeraak Triarchy" id="d392-58f6-e0a3-942c" hidden="false">
       <categoryLinks>
@@ -179,7 +179,7 @@
         <categoryLink targetId="a9a7-132c-6641-0946" id="3073-09d2-c127-4db1" primary="true" name="Detachment Commander"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Leader [12&quot;]" id="93d4-f154-b98b-e8f1" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
+        <infoLink name="Leader (12&quot;)" id="93d4-f154-b98b-e8f1" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -323,7 +323,7 @@
               <description>HyKem Squads with any Shield Tokens gain the Layered Plasma Shield ability</description>
             </rule>
             <rule name="Layered Plasma Shield" id="f515-1619-3c3c-e670" hidden="false">
-              <description>Add 1 to this Unit&apos;s shield armour value</description>
+              <description>Instead of ignoring hits on a 1-7, Units with Layered Plasma Shields ignore them on a 1-8.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -334,7 +334,7 @@
           </costs>
           <rules>
             <rule name="Biological Experimentation" id="ab81-7048-6838-b935" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="8">
-              <description>HyOrg Harvester Shield Mechs, Harvester Combat Mechs and Revenant Combat Cyborgs gain the Agile ability. In addition Revenant Combat Cyborgs and Revenant Berserker Cyborgs can reroll failed dice when attempting the Reassemble ability</description>
+              <description>HyOrg Harvester Shield Mechs, Harvester Combat Mechs and Revenant Combat Cyborgs gain the Dodge Ability below. In addition, Revenant Combat Cyborgs and Revenant Berserker Cyborgs can reroll failed dice when attempting the Reassemble Ability.</description>
             </rule>
           </rules>
           <categoryLinks>
