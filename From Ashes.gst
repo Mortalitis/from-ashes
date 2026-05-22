@@ -14,7 +14,7 @@
   </publications>
   <costTypes>
     <costType name="Req" id="Requisition" defaultCostLimit="500"/>
-    <costType name="Morale" id="32f3-2311-8978-b603" defaultCostLimit="-1" hidden="true">
+    <costType name="Starting OP" id="32f3-2311-8978-b603" defaultCostLimit="-1" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
@@ -188,7 +188,7 @@ This Squad can make a move up to that in brackets before firing any Assault Move
       <description>When Engaging targets within 8&quot; Accuracy rolls of 10+ (after rerolls) become 2 hits instead of 1</description>
     </rule>
     <rule name="Ripple Fire" id="f106-284c-05d9-c8ee" hidden="false">
-      <description>Reroll Accuracy rolls of a 1-2</description>
+      <description>Accuracy rolls of 12+ (after rerolls) increase Damage by 1</description>
     </rule>
     <rule name="Thermobaric" id="7115-a696-463f-0f0b" hidden="false">
       <description>Ignores terrain Armour bonuses and Units in terrain must reroll successful Armour saves</description>
@@ -215,7 +215,7 @@ This Squad can make a move up to that in brackets before firing any Assault Move
       <description>Saves of a 12 against this weapon will always cause damage, regardless of the Armour value</description>
     </rule>
     <rule name="Spearhead" id="2a3b-0701-bfd9-85de" hidden="false">
-      <description>When this Squad activates (not Ordered or as a Reaction) the owning player may also nominate up to 3 other friendly Vehicle Squads to Form Up wit it. In addition, these may be within the Unit&apos;s Leader ranger instead of the usual 1&quot; (see the main From Ashes rules).</description>
+      <description>When this Squad wishes to Form Up, it may instead nominate up to 3 Vehicles within 2” to Form Up with, but each after the first must pass a Discipline test in order to do so (See the main From Ashes rules).</description>
     </rule>
     <rule name="Leader (18&quot;)" id="cf4b-e9a0-d530-1456" hidden="false" publicationId="5652-0742-890a-1e22" page="19">
       <description>Global Leader Abilities
@@ -371,7 +371,7 @@ However, failed Sidearm Reactions do not place a White Command Dice if failed.</
       <description>If this weapon causes any hits, reduce the host Unit&apos;s Enclosed value by 1 for this Command</description>
     </rule>
     <rule name="Galvanic Detonation (1)" id="85ab-e1b1-c98e-274f" hidden="false">
-      <description>After resolving damage roll a D12 for each Hit scored on the target Squad. If one or more score 10+, place and extra Blast Marker and the target loses an additional HP</description>
+      <description>After resolving Damage roll a D12 for each Hit scored on the target Squad. If one or more score 8+, place and extra Blast Marker and the target loses an additional HP</description>
     </rule>
     <rule name="Galvanic Detonation (3)" id="f118-2660-8ef4-ee9e" hidden="false">
       <description>If this weapon successfully hits, roll three D12s after resolving damage. If one or more score 10+, place and extra Blast Marker and the target loses an additional HP</description>
@@ -385,11 +385,12 @@ However, failed Sidearm Reactions do not place a White Command Dice if failed.</
     <rule name="Incendiary Rounds" id="8251-2a55-e30e-c8e0" hidden="false">
       <description>Enclosed 0 Units must reroll Armour Saves of a 1-2 against hits from this weapon</description>
     </rule>
-    <rule name="Mobile Altar" id="1319-a6df-b6b3-fd29" hidden="false">
-      <description>When this Squad attempts to Order another Squad, it can move 5&quot; before attempting the Order. Note this does not count as an Advance Command for the purposes of Agile</description>
+    <rule name="Protect Me You Fools!" id="1319-a6df-b6b3-fd29" hidden="false">
+      <description>This Unit counts as a V.I.P. to all friendly Squad, regardless of Type.</description>
     </rule>
-    <rule name="Protect Me You Fools!" id="2442-59c7-81d0-c393" hidden="false">
-      <description>This Unit counts as a Lone Wolf despite not being an Infantry Unit. In addition friendly Reaver Squads Block as if they were Infantry Squads. See the Unit Types section of the main From Ashes rules</description>
+    <rule name="Keep Up The Attack" id="2442-59c7-81d0-c393" hidden="false">
+      <description>When this Squad attempts to Order another Squad, it can move 4” before attempting the Order.
+Note this does not count as an Advance Command for the purpose of the Agile Fast Target bonus above</description>
     </rule>
     <rule name="Pyromaniac" id="8b43-95e4-4972-ee77" hidden="false">
       <description>This Squad can reroll failed Accuracy rolls with it Incendiary Grenades</description>
@@ -424,8 +425,8 @@ However, failed Sidearm Reactions do not place a White Command Dice if failed.</
     <rule name="Track Pods" id="dfc1-4a82-3ed3-fe9a" hidden="false">
       <description>Reroll failed Slow terrain tests. In addition this Unit counts as Move 4&quot; rather than 0&quot; if it suffers an M-Kill</description>
     </rule>
-    <rule name="Tunnelling Ascent" id="e3b8-0bce-9a2d-0fb1" hidden="false">
-      <description>When this Squad is at the FOB. it may be chosen to activate like any other Squad, despite not actually being in the AO. If they are activated in this way, they are immediately placed in the AO via the Scatter ability from the Unit Abilities section of the main From Ashes rules. Once in the AO roll a D12; on a 5+ they must spend a single Command as Advance, otherwise count both as Advance.</description>
+    <rule name="Unique Command: Tunnelling Ascent" id="e3b8-0bce-9a2d-0fb1" hidden="false">
+      <description>If this Squad starts a Command touching the friendly board edge, then it may be removed from the AO and immediately placed elsewhere in the AO via the Scatter Ability from the Unit Abilities Section of the main From Ashes rules.</description>
     </rule>
     <rule name="Vhokys Drugs (1-2)" id="9444-a927-fe72-e1ab" hidden="false">
       <description>When this Unit fails an Armour save, roll a D12; on a 1-2 it is ignored. In addition Storm Target&apos;s reroll Armour saved of 1-2</description>
@@ -434,7 +435,7 @@ However, failed Sidearm Reactions do not place a White Command Dice if failed.</
       <description>When this Unit fails an Armour save, roll a D12; on a 1-2 it is ignored. In addition Storm Target&apos;s reroll Armour saved of 1-2</description>
     </rule>
     <rule name="Zealot" id="88c5-b86f-11ba-0f01" hidden="false">
-      <description>When dismounted friendly dismounted Squads within 5&quot; (including itself) can reroll passed or failed Discipline tests</description>
+      <description>When Dismounted, Friendly Dismounted Squads within 5” (including itself) add two to their Discipline rolls.</description>
     </rule>
     <rule name="Cumbersome" id="c3cb-c914-043d-4221" hidden="false">
       <description>This Squad cannot use the Fire From Prone Global Infantry ability nor can it move as part of a Storm Command</description>
@@ -776,6 +777,27 @@ Units can attempt to recharge their Shields During the Recover step of the SitRe
       <description>Snap React allows a Squad to choose to use its Order capacity to React with (not for Overwatches), but the Discipline test is changed to whatever is written in brackets (and cannot be modified further), as are the available Reaction Commands. As these are Orders, a red Order dice must be placed. If the Discipline test is failed, place an Order dice as a 6 for Unique, but if any damage has been taken, do not need to Withdraw. Snap React cannot be used at the same time as a Free Command or a regular Reaction.</description>
     </rule>
     <rule name="Snap React (7+; Engage)" id="c54a-b04b-5a50-75dc" hidden="false">
+      <description>Snap React allows a Squad to choose to use its Order capacity to React with (not for Overwatches), but the Discipline test is changed to whatever is written in brackets (and cannot be modified further), as are the available Reaction Commands. As these are Orders, a red Order dice must be placed. If the Discipline test is failed, place an Order dice as a 6 for Unique, but if any damage has been taken, do not need to Withdraw. Snap React cannot be used at the same time as a Free Command or a regular Reaction.</description>
+    </rule>
+    <rule name="Underground Dweller" id="deb1-fc79-5b6c-785c" hidden="false">
+      <description>When this Squad’s Units are all touching the friendly board edge, it cannot Storm and cannot be targeted by enemy Engage or Storm Commands. In addition, it cannot be Ordered by a friendly Leader.</description>
+    </rule>
+    <rule name="Smoke Blast (4)" id="f971-90cc-33ec-098f" hidden="false">
+      <description>For each hit place 4 Smoke Markers in base contact and as close to the target as possible</description>
+    </rule>
+    <rule name="Gorath Might" id="6884-31d5-0977-d00d" hidden="false">
+      <description>This Unit always counts Storm attacks as 3, regardless of HP. In addition, this Unit does not gain bonus Storm attacks.</description>
+    </rule>
+    <rule name="Charge Up! (2D4)" id="6853-9d39-77dc-d83d" hidden="false">
+      <description>Before choosing a target roll 2D4 for this Squad&apos;s weapon AP value for this Command</description>
+    </rule>
+    <rule name="Shock Bolt (2)" id="1caa-30b9-a34e-e939" hidden="false">
+      <description>Squads targeted by this weapon must roll 2 Skill Tests. If any fail an used Order must become Unique. If there are no unused Orders then a Command becomes Unique instead.</description>
+    </rule>
+    <rule name="Charge Up! (D4+4)" id="81d0-92ff-acf6-3177" hidden="false">
+      <description>Before choosing a target roll D4+4 for this weapons AP value for this Command</description>
+    </rule>
+    <rule name="Snap React (5+; Engage)" id="2988-abad-8044-78cd" hidden="false">
       <description>Snap React allows a Squad to choose to use its Order capacity to React with (not for Overwatches), but the Discipline test is changed to whatever is written in brackets (and cannot be modified further), as are the available Reaction Commands. As these are Orders, a red Order dice must be placed. If the Discipline test is failed, place an Order dice as a 6 for Unique, but if any damage has been taken, do not need to Withdraw. Snap React cannot be used at the same time as a Free Command or a regular Reaction.</description>
     </rule>
   </sharedRules>

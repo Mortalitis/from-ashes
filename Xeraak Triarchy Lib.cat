@@ -162,7 +162,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Drop Pods" hidden="false" id="396b-c3fb-ccef-7c32">
@@ -279,7 +279,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="70"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Harvester Shield Mechs" hidden="false" id="60a2-d87f-26be-0b00" publicationId="38b2-0d05-f0c9-eb32" page="15">
@@ -359,7 +359,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="70"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hunchback Gun Cyborgs" hidden="false" id="373a-6b4c-ee15-ea56" publicationId="38b2-0d05-f0c9-eb32" page="11">
@@ -444,12 +444,12 @@
                 <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="14" field="Requisition">
+            <modifier type="increment" value="13" field="Requisition">
               <conditions>
                 <condition type="equalTo" value="3" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="28" field="Requisition">
+            <modifier type="increment" value="26" field="Requisition">
               <conditions>
                 <condition type="equalTo" value="4" field="selections" scope="self" childId="ed2d-09fa-f209-cf67" shared="true"/>
               </conditions>
@@ -466,7 +466,7 @@
     <selectionEntry type="unit" import="true" name="Meta Command Unit" hidden="false" id="5cbb-1548-2a40-9bae" publicationId="38b2-0d05-f0c9-eb32" page="12">
       <costs>
         <cost name="Req" typeId="Requisition" value="25"/>
-        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Meta Command Unit" hidden="false" id="4a74-6133-0905-9b0b" publicationId="38b2-0d05-f0c9-eb32" page="12">
@@ -674,7 +674,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Reaper Combat Walker" hidden="false" id="7c18-fc38-4912-170c">
@@ -765,7 +765,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Revenant Berserker Cyborgs" hidden="false" id="cbc5-c772-a0e8-4092" publicationId="38b2-0d05-f0c9-eb32" page="10">
@@ -855,6 +855,11 @@
         <modifier type="increment" value="10" field="Requisition">
           <conditions>
             <condition type="equalTo" value="3" field="selections" scope="self" childId="fcf4-64e3-20b5-cb2e" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="3" field="selections" scope="self" childId="fcf4-64e3-20b5-cb2e" shared="true" childName="Revenant Berserker Cyborgs"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1113,7 +1118,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Grenades" hidden="false" id="bad4-94b4-5cdb-103e" publicationId="38b2-0d05-f0c9-eb32" page="12">

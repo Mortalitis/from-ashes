@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7653-3930-b67f-7396" name="Verse Dominion" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7653-3930-b67f-7396" name="Verse Dominion" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="Verse Dominion" id="6b02-7d99-27c7-39fd" hidden="false">
       <categoryLinks>
@@ -295,7 +295,7 @@
         <selectionEntry type="upgrade" import="true" name="Sothis (Pious Devotees)" hidden="false" id="7a6d-ea2f-989d-1774" sortIndex="3">
           <rules>
             <rule name="Pious Devotees" id="e0d8-b50b-2806-a232" hidden="false">
-              <description>Sothis Ringleader Units and and Reaver Archons increase their Zealot range to 8&quot;. In addition all Squads unaffected by the Zealot ability can reroll failed Discipline rolls of a 1-2</description>
+              <description>Sothis Ringleader Units and Reaver Archons increase their Zealot range to 8”. In addition, all Squads unaffected by the Zealot Ability increase their Discipline rolls by 1.</description>
             </rule>
           </rules>
           <costs>
