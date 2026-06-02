@@ -80,7 +80,7 @@
             <infoLink name="Ravenous" id="9126-93f0-63b9-94bb" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
             <infoLink name="Drag Down" id="43d1-33c9-67b2-79e6" hidden="false" type="rule" targetId="52ac-6851-bd1b-9127"/>
             <infoLink name="Braindead" id="99a3-9663-3c21-e14c" hidden="false" type="rule" targetId="f911-e118-d8a8-90f8"/>
-            <infoLink name="Infect (8+)" id="0fab-2cd4-78b2-88e8" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
+            <infoLink name="Infect (9+)" id="0fab-2cd4-78b2-88e8" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -116,7 +116,7 @@
           <infoLinks>
             <infoLink name="Assimilated Biomass (6)" id="c92e-31c2-540a-f1c2" hidden="false" type="rule" targetId="6c8f-3c4a-97c5-892e"/>
             <infoLink name="Ravenous" id="42ae-065e-c4bf-cfad" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
-            <infoLink name="Infect (8+)" id="a89d-383c-e42d-2886" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
+            <infoLink name="Infect (9+)" id="a89d-383c-e42d-2886" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
             <infoLink name="Drag Down" id="5bab-2a49-f55b-ecf9" hidden="false" type="rule" targetId="52ac-6851-bd1b-9127"/>
           </infoLinks>
           <entryLinks>
@@ -127,7 +127,7 @@
               <infoLinks>
                 <infoLink name="Assault Move (3&quot;)" id="5e0f-b27f-0a58-dc89" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
                 <infoLink name="Rapid Fire (16&quot;/12+)" id="3f9c-25ef-2166-10b0" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
-                <infoLink name="Blight Rounds (8+)" id="9b87-7477-e56f-badb" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
+                <infoLink name="Blight Rounds (10+)" id="9b87-7477-e56f-badb" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9521-5bde-e78a-e03e" includeChildSelections="false"/>
@@ -167,7 +167,7 @@
           <infoLinks>
             <infoLink name="Assimilated Biomass (6)" id="52e9-b0ea-b7da-83f3" hidden="false" type="rule" targetId="6c8f-3c4a-97c5-892e"/>
             <infoLink name="Drag Down" id="2fa3-bc18-3387-b59f" hidden="false" type="rule" targetId="52ac-6851-bd1b-9127"/>
-            <infoLink name="Infect (8+)" id="b426-d14b-18b6-f093" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
+            <infoLink name="Infect (9+)" id="b426-d14b-18b6-f093" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
             <infoLink name="Ravenous" id="2de3-8ca5-aa41-9a36" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
             <infoLink name="Recon" id="ffda-d4f8-0811-6473" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
           </infoLinks>
@@ -205,7 +205,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Anti-Armour" id="95d2-b1bb-8e62-0734" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
-                <infoLink name="Blight Rounds (8+)" id="2a81-f2cc-8dae-972b" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
+                <infoLink name="Blight Rounds (10+)" id="2a81-f2cc-8dae-972b" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -300,7 +300,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Acid" id="f3e6-6cbf-a658-6b8d" hidden="false" type="rule" targetId="bb2c-9bc8-bd91-4a99"/>
-                <infoLink name="Blight Rounds (8+)" id="0221-35f4-3a6f-7c45" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
+                <infoLink name="Blight Rounds (10+)" id="0221-35f4-3a6f-7c45" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
               <profiles>
                 <profile name="Spore Hive" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="b6c1-bca9-4575-db70">
@@ -334,7 +334,7 @@
               <infoLinks>
                 <infoLink name="Acid" id="94f7-e9aa-4e74-52e3" hidden="false" type="rule" targetId="bb2c-9bc8-bd91-4a99"/>
                 <infoLink name="High Explosive" id="7f13-37d7-f8b9-d854" hidden="false" type="rule" targetId="b359-6a8f-90e3-aa49"/>
-                <infoLink name="Blight Rounds (8+)" id="e769-bbf1-3411-5f56" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
+                <infoLink name="Blight Rounds (10+)" id="e769-bbf1-3411-5f56" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
               <profiles>
                 <profile name="Catalyst Cannon" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="d6ff-dafe-a433-e24a">
@@ -1046,7 +1046,7 @@
             <infoLink name="Recon" id="86fa-5477-12d2-da1b" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
             <infoLink name="Assimilated Biomass (7)" id="8f05-7e2f-b898-8412" hidden="false" type="rule" targetId="d193-f1f8-483f-fe00"/>
             <infoLink name="Ravenous" id="6bf8-305a-06c8-b59c" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
-            <infoLink name="Infect (8+)" id="e893-4c95-c5b9-6afd" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
+            <infoLink name="Infect (9+)" id="e893-4c95-c5b9-6afd" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
             <infoLink name="Spore Cloud" id="c451-4499-0f4a-859b" hidden="false" type="rule" targetId="7c37-05ee-4a53-b1af"/>
             <infoLink name="Corrupting Aura" id="216c-c492-91b2-8157" hidden="false" type="rule" targetId="79b0-34b2-5c80-217e"/>
           </infoLinks>
@@ -1124,7 +1124,7 @@
         <infoLink name="Recon" id="2fa3-4a12-66b2-32f7" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
         <infoLink name="Assimilated Biomass (7)" id="e6d3-17b0-93bf-0273" hidden="false" type="rule" targetId="d193-f1f8-483f-fe00"/>
         <infoLink name="Ravenous" id="8eb3-e05b-d6bb-a9af" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
-        <infoLink name="Infect (8+)" id="de69-bb15-03d7-4fe7" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
+        <infoLink name="Infect (9+)" id="de69-bb15-03d7-4fe7" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
         <infoLink name="Spore Cloud" id="3edb-4b26-5fa6-ce08" hidden="false" type="rule" targetId="7c37-05ee-4a53-b1af"/>
         <infoLink name="Corrupting Aura" id="e697-b6e1-a074-dadc" hidden="false" type="rule" targetId="79b0-34b2-5c80-217e"/>
       </infoLinks>
@@ -2811,7 +2811,7 @@
           <infoLinks>
             <infoLink name="Assimilated Biomass (6)" id="0587-85d0-534e-7a9d" hidden="false" type="rule" targetId="6c8f-3c4a-97c5-892e"/>
             <infoLink name="Ravenous" id="0a78-c133-f32b-0257" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
-            <infoLink name="Infect (8+)" id="719e-5ace-382b-a5cb" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
+            <infoLink name="Infect (9+)" id="719e-5ace-382b-a5cb" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
             <infoLink name="Drag Down" id="5abe-6dca-de39-c6f3" hidden="false" type="rule" targetId="52ac-6851-bd1b-9127"/>
             <infoLink name="Recon" id="185f-84ff-a5b8-5801" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
           </infoLinks>
@@ -2823,7 +2823,7 @@
               <infoLinks>
                 <infoLink name="Assault Move (3&quot;)" id="45f2-3741-9ea0-74d0" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
                 <infoLink name="Rapid Fire (16&quot;/12+)" id="32d0-3cc7-ad5d-439a" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
-                <infoLink name="Blight Rounds (8+)" id="a17b-ab3a-0c7d-bb14" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
+                <infoLink name="Blight Rounds (10+)" id="a17b-ab3a-0c7d-bb14" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dcb-453f-b4d4-9ac5" includeChildSelections="false"/>
@@ -2863,7 +2863,7 @@
           <infoLinks>
             <infoLink name="Assimilated Biomass (6)" id="9cf8-5cb7-179a-92d1" hidden="false" type="rule" targetId="6c8f-3c4a-97c5-892e"/>
             <infoLink name="Drag Down" id="0c25-51e4-16dc-bc52" hidden="false" type="rule" targetId="52ac-6851-bd1b-9127"/>
-            <infoLink name="Infect (8+)" id="8d0f-980e-ee3b-e963" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
+            <infoLink name="Infect (9+)" id="8d0f-980e-ee3b-e963" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
             <infoLink name="Ravenous" id="1077-beb2-1f18-9cdb" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
           </infoLinks>
           <entryLinks>
@@ -2900,7 +2900,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Anti-Armour" id="4e98-03bb-c216-ed7c" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
-                <infoLink name="Blight Rounds (8+)" id="5982-88e0-1401-7dca" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
+                <infoLink name="Blight Rounds (10+)" id="5982-88e0-1401-7dca" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>

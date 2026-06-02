@@ -338,7 +338,7 @@ However, failed Sidearm Reactions do not place a White Command Dice if failed.</
       <description>When this Squad takes an Order and rolls an 8+ for its Discipline test, the Leader issuing the Order places a red Order dice instead of a white Command dice (if the Leader has any Order capacity available).</description>
     </rule>
     <rule name="Silencers" id="d8d0-d66f-7ed4-7097" hidden="false">
-      <description>Target Squads must pass an additional Discipline test to successfully React to this weapon&apos;s hits</description>
+      <description>Target Squads suffer a -2 to their Discipline rolls when reacting to this weapon&apos;s hits</description>
     </rule>
     <rule name="Special Forces" id="5096-e749-8137-d48c" hidden="false">
       <description>Reroll failed Search attempts. In addition, this Squad scores an additional OP when in Capture Zones</description>
@@ -440,17 +440,17 @@ Note this does not count as an Advance Command for the purpose of the Agile Fast
     <rule name="Cumbersome" id="c3cb-c914-043d-4221" hidden="false">
       <description>This Squad cannot use the Fire From Prone Global Infantry ability nor can it move as part of a Storm Command</description>
     </rule>
-    <rule name="Explosive Reactive Armour" id="9018-ac12-3afa-056e" hidden="false">
-      <description>If this Unit takes damage from a Blast 1+ Hit on the front or side arcs, roll a D12; on a 1-7 place another Blast Marker and reroll any failed Armour Saves from that Hit. This Ability cannot be used against Autohits.</description>
+    <rule name="ERA" id="9018-ac12-3afa-056e" hidden="false">
+      <description>This Unit can reroll failed saves of a 10+ against Blast 1 or higher hits. Once any rerolls are resolved, place another Blast Marker</description>
     </rule>
     <rule name="Fast Embark" id="34d1-6538-e9ef-8925" hidden="false">
       <description>Squads may mount this Unit as a Reaction as part of Step 2 of an enemy Storm Command</description>
     </rule>
     <rule name="Fight Another Day" id="4821-e5dc-82cd-4e4f" hidden="false">
-      <description>As long as the Guardsmen Anvil Tank Crew Unit is alive the following applies:
-- The host Anvil never counts as destroyed for the purpose of HVTs
-- The host Anvil never counts as Captured
-- The host Anvil counts as 2 OPs instead of the usual OPs for the purpose of enemy scoring OPs in missions where this is relevant, unless the Guardsmen Anvil Tank Crew are destroyed, in which case the full OPs are scored</description>
+      <description>As long as the Guardsmen Tank Crew is alive, the following apply:
+* The host vehicle never counts as destroyed for the purpose of HVTs.
+* The host vehicle never counts as Captured.
+* The host vehicle counts as 2 OPs instead of the usual OPs for the purpose of enemy scoring Objective Points in missions where this is relevant, unless the Guardsmen Tank Crew are also destroyed, in which case the full OP points are scored.</description>
     </rule>
     <rule name="Heavy Weapon" id="b189-6327-964b-4a61" hidden="false">
       <description>This weapon cannot be used if this Unit moved this turn</description>
@@ -468,7 +468,7 @@ Note this does not count as an Advance Command for the purpose of the Agile Fast
       <description>If this Unit has full HP and this weapon has not been used this turn, the owning player can choose to increase its Attacks to 2 but cannot be used for the rest of the turn</description>
     </rule>
     <rule name="Unique Command: Ad-Hoc Repairs" id="c31c-1fde-4c41-9e9d" hidden="false">
-      <description>When mounted the host vehicle may spend a Unique Command to roll a D12. On a 5+ replenish a lost HP to the mounted vehicle</description>
+      <description>When mounted, on a roll of 4+, the host vehicle may spend a Unique Command to replenish an HP lost earlier in the battle</description>
     </rule>
     <rule name="Vehicle Crew" id="dc3e-8510-7944-d3f8" hidden="false">
       <description>Instead of being bought as it&apos;s own Unit, the Anvil Tank Crew Unit must be bought as an upgrade to a friendly Anvil from the same Detachment, despite not being a transport, the Anvil Tank Crew count as being transported within the Anvil, cannot choose to dismount and they cannot be chosen to activate independently of the Anvil. Once the Anvil is destroyed, and assuming the Anvil Tank Crew survive, they can operate as a separate Squad for the rest of the battle.</description>
@@ -643,14 +643,14 @@ Each Unit can attempt to recharge their Shields after the Dissipate step of the 
     <rule name="Overseer (10+)" id="426f-96e1-451a-d459" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
       <description>When this Squad takes an Order and rolls a 10+ for its Discipline test, the Leader issuing the Order places a red Order dice instead of a white Command dice (if the Leader has any Order capacity available).</description>
     </rule>
-    <rule name="Sentry Protocols" id="32b4-b600-813e-f271" hidden="false">
-      <description>When this Squad Reacts (not Overwatch), it can choose to use it&apos;s Order capacity instead of its Commands, but it&apos;s Discipline changes to 9+ for this test (which itself cannot be modified further). If a Sentry Protocols Discipline test is failed, it will not cause a Fall Back, even if the Squad has lost any HPs but will count as Stunned instead (still taken from the Order capacity)</description>
+    <rule name="Snap React (6+; Advance/Retreat, Withdraw, Engage)" id="32b4-b600-813e-f271" hidden="false">
+      <description>Snap React allows a Squad to choose to use its Order capacity to React with (not for Overwatches), but the Discipline test is changed to whatever is written in brackets (and cannot be modified further), as are the available Reaction Commands. As these are Orders, a red Order dice must be placed. If the Discipline test is failed, place an Order dice as a 6 for Unique, but if any damage has been taken, do not need to Withdraw. Snap React cannot be used at the same time as a Free Command or a regular Reaction.</description>
     </rule>
     <rule name="Phalanx Protocols" id="9a31-5fbc-639d-2116" hidden="false">
       <description>When a friendly Squad Reacts (not Overwatch) within 12&quot; of this Unit, another friendly Squad within 12&quot; of this Unit can also attempt to React as if it had been hit by the same enemy Attack. Each Reaction must be declared before any Discipline tests are taken. This may be used in conjunction with the Sentry Protocols ability.</description>
     </rule>
     <rule name="Laser" id="ad34-3100-604e-d91a" hidden="false">
-      <description>Accuracy rolls of a 10+ (after rerolls) the target must reroll successful Armour Saves</description>
+      <description>Successful hit rolls of 10+ against targets within 24&quot; must reroll passed Armour Saves</description>
     </rule>
     <rule name="Laser Blade" id="01af-eb61-8ba6-eff2" hidden="false">
       <description>Target must reroll success Armour Saves from the Storm Attacks from this Unit</description>
@@ -658,12 +658,17 @@ Each Unit can attempt to recharge their Shields after the Dissipate step of the 
     <rule name="Mirror Relay" id="86b2-248d-6857-17d1" hidden="false">
       <description>Before a friendly weapon with the Laser special rule in LOS chooses a target as part of an Engaged, roll a D12. On a 6+ (rerolling passed if going through smoke), measure LOS and distance for Accuracy from the Mirror Relay Unit, but count AP as Extreme. Enemies Engaging as a reaction must target this Squad.</description>
     </rule>
-    <rule name="AI Override" id="4f9b-98c1-fead-0484" hidden="false">
-      <description>If this Unit fails an Accuracy roll, Strike roll or Discipline Test, it may remove a Force Field Token in order to reroll it and pass the roll on a 2+</description>
+    <rule name="AI Override (4+)" id="4f9b-98c1-fead-0484" hidden="false">
+      <description>If this Unit fails an Accuracy roll, Strike roll or Discipline Test, it may remove a Force Field Token in order to reroll it and pass the roll on a 4+</description>
     </rule>
     <rule name="Force Field Recharge 4+" id="90b3-f8a4-4359-5e54" hidden="false">
-      <description>If a Unit has the Force Field ability, place a Force Field token nearby. Whenever a Hit is allocated to a Unit with a Force Field token, the owning player rolls a D12 before any Damage Dice are rolled. On a 1-4 the hit is discarded with no further effect, but keep any rolls of a 12 off to the side which are now known as Overloads. Once all the Force Field rolls have been carried out for this Command, then if there are any Overloads, remove the Force Field token.
-Each unit can attempt to recharge their Force Field after the Dissipate step of the SitRep phase by rolling a D12 with respect to the Recharge value. If successful replace the Force Field token</description>
+      <description>Force Fields generates a passive energy aura to intercept incoming rounds. Whilst not providing as much comprehensive coverage as other shields, their more focussed approach is enough to stop even the most powerful of shots.
+
+
+If a Unit has the Force Field Ability, place a Force Field token by its Squad. Whenever a Hit is allocated to a Squad with one or more Force Field tokens, the owning player rolls a D12 for any incoming Engage Hits on the Squad. If any roll a 1-4 discard that Hit with no further effect, but for each which rolls a 12, remove a Force Field token from the Squad. Once resolved, continue on with Armour Saves as usual.
+
+
+Each Unit can attempt to recharge a Force Field token during the Recover step of the Sitrep phase by successfully equalling or beating their Recharge value (as stated in brackets in their Abilities) on a D12. If successful, replace the Force Field token.</description>
     </rule>
     <rule name="Beam" id="3e04-1496-4e90-7384" hidden="false">
       <description>After rolling Accuracy dice, roll a Skill Test (rerolling failures if this Unit has not moved this turn). If passed, increase Damage Dice by 1</description>
@@ -808,6 +813,15 @@ Units can attempt to recharge their Shields During the Recover step of the SitRe
     </rule>
     <rule name="Rampage" id="cba7-178c-d18c-5eac" hidden="false">
       <description>Strike Rolls of a 12 (before modifiers) can roll another Strike roll (which can keep going)</description>
+    </rule>
+    <rule name="Survey" id="aad6-46a7-782b-31a2" hidden="false">
+      <description>If the host vehicle is unaffected by the Recon Ability, then it may carry out an Advance Command immediately after it is deployed.</description>
+    </rule>
+    <rule name="Binoculars" id="e7b4-3c9e-9b91-b7c5" hidden="false">
+      <description>Roll a Skill test when a Squad within 1” (including the host vehicle) carries out an Engage Command. If passed, that Squad receives [Accuracy ←1] if both have LoS to the same target.</description>
+    </rule>
+    <rule name="Auto Turret" id="bec8-0b53-06f0-b2d5" hidden="false">
+      <description>When this Squad Snap Reacts, it may do so on a 4+ instead of 6+ but only use Auto Turrets.</description>
     </rule>
   </sharedRules>
 </gameSystem>
