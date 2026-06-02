@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f78a-9b71-02cb-0454" name="Verse Dominion Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f78a-9b71-02cb-0454" name="Verse Dominion Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Ringleader Command Unit" hidden="false" id="e5b4-9e79-0e22-840e">
       <selectionEntries>
@@ -64,7 +64,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Leader [8&quot;]" id="8f87-7e52-350a-d56a" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
+            <infoLink name="Leader (8&quot;)" id="8f87-7e52-350a-d56a" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
             <infoLink name="Zealot" id="4254-5089-bbc1-74b3" hidden="false" type="rule" targetId="88c5-b86f-11ba-0f01"/>
             <infoLink name="Pyromaniac" id="6708-5d27-0494-bfdc" hidden="false" type="rule" targetId="8b43-95e4-4972-ee77"/>
             <infoLink name="Vhokys Drugs (1-2)" id="22fe-6d80-03e9-9480" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
@@ -74,7 +74,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="20"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Incendiary Grenades" hidden="false" id="0c93-6bbf-851a-a3c4">
@@ -176,16 +176,16 @@
             <infoLink name="Skimmer Plate" id="8a40-f020-a86e-d152" hidden="false" type="rule" targetId="6400-8aef-a5ee-765c"/>
             <infoLink name="All-Terrain Vehicle" id="f861-c797-b358-10db" hidden="false" type="rule" targetId="8682-665f-1c16-9774"/>
             <infoLink name="Agile" id="cbef-5ef9-3574-0479" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
-            <infoLink name="Leader [8&quot;]" id="d77a-282c-bd72-b03d" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
+            <infoLink name="Leader (8&quot;)" id="d77a-282c-bd72-b03d" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
             <infoLink name="Zealot" id="8148-2b27-a6e0-8183" hidden="false" type="rule" targetId="88c5-b86f-11ba-0f01"/>
-            <infoLink name="Mobile Altar" id="220b-236a-08cf-b532" hidden="false" type="rule" targetId="1319-a6df-b6b3-fd29"/>
-            <infoLink name="Protect Me You Fools!" id="1d8b-bd62-ba7f-b492" hidden="false" type="rule" targetId="2442-59c7-81d0-c393"/>
+            <infoLink name="Protect Me You Fools!" id="220b-236a-08cf-b532" hidden="false" type="rule" targetId="1319-a6df-b6b3-fd29"/>
+            <infoLink name="Keep Up The Attack" id="1d8b-bd62-ba7f-b492" hidden="false" type="rule" targetId="2442-59c7-81d0-c393"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="45"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhino Dominus" hidden="false" id="bbc3-573d-de68-ef57">
@@ -227,7 +227,7 @@
               <infoLinks>
                 <infoLink name="Exposed Gunner" id="c7f8-d326-fcd6-39f5" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
                 <infoLink name="Assault Move (4&quot;)" id="c6c1-6713-a9d5-ae29" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
-                <infoLink name="Free Command: Defence Fire" id="397d-b831-52d8-1eba" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                <infoLink name="Snap React (5+; Engage)" id="397d-b831-52d8-1eba" hidden="false" type="rule" targetId="2988-abad-8044-78cd"/>
                 <infoLink name="Rapid Fire (16&quot;/12+)" id="acac-0d63-46be-0df0" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
               </infoLinks>
             </selectionEntry>
@@ -251,17 +251,17 @@
                 </profile>
                 <profile name="Shock Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="c33b-63b9-be86-509b">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+2</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+2</characteristic>
-                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+2</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/D4+2</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/D4+2</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+4</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+4</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+4</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/D4+4</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/D4+4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="6fef-3245-aa2c-761c" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Charge Up! (D4+2)" id="8e30-6c4c-e556-29b8" hidden="false" type="rule" targetId="3097-20dc-c4bd-a966"/>
+                <infoLink name="Charge Up! (D4+4)" id="8e30-6c4c-e556-29b8" hidden="false" type="rule" targetId="81d0-92ff-acf6-3177"/>
                 <infoLink name="Galvanic Detonation (3)" id="c3c7-20ae-2a41-8f2e" hidden="false" type="rule" targetId="f118-2660-8ef4-ee9e"/>
                 <infoLink name="Shock Bolt (3)" id="e56b-2f7f-65e4-83ed" hidden="false" type="rule" targetId="3e5b-2a0f-1053-c663"/>
               </infoLinks>
@@ -280,7 +280,7 @@
             <infoLink name="Heavy Skimmer Plate" id="601c-5f82-d083-2c53" hidden="false" type="rule" targetId="0a17-2b65-672c-604e"/>
             <infoLink name="Shock Field" id="cc24-ff71-a6ef-3381" hidden="false" type="rule" targetId="3f94-26ae-7625-b845"/>
             <infoLink name="Track Pods" id="4190-b956-5521-d072" hidden="false" type="rule" targetId="dfc1-4a82-3ed3-fe9a"/>
-            <infoLink name="Leader [8&quot;]" id="2cc7-2061-eb30-bd0e" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
+            <infoLink name="Leader (8&quot;)" id="2cc7-2061-eb30-bd0e" hidden="false" type="rule" targetId="78bb-a184-55f3-2be9"/>
             <infoLink name="Pyromaniac" id="774c-bdc0-4105-674c" hidden="false" type="rule" targetId="8b43-95e4-4972-ee77"/>
             <infoLink name="Spearhead" id="a5af-4e57-0d9b-01d5" hidden="false" type="rule" targetId="2a3b-0701-bfd9-85de"/>
           </infoLinks>
@@ -306,7 +306,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="120"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Smoke Rocket" hidden="false" id="0684-3811-9ca1-0ab9">
@@ -329,17 +329,17 @@
         </profile>
         <profile name="Heavy Smoke Rocket" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="13b9-1e92-e9ff-c44a">
           <characteristics>
-            <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+4</characteristic>
-            <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/D4+4</characteristic>
-            <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/D4+4</characteristic>
-            <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/D4+4</characteristic>
+            <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+4</characteristic>
+            <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+4</characteristic>
+            <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+4</characteristic>
+            <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/D4+4</characteristic>
             <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/D4+4</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Slow Reload" id="10ee-43ce-ac3b-26a0" hidden="false" type="rule" targetId="c534-2c5e-d2ab-c844"/>
-        <infoLink name="Smoke Blast (3)" id="d672-0d35-30cd-a329" hidden="false" type="rule" targetId="b8ac-de73-8001-a1bc"/>
+        <infoLink name="Smoke Blast (4)" id="d672-0d35-30cd-a329" hidden="false" type="rule" targetId="f971-90cc-33ec-098f"/>
         <infoLink name="Assault Move (5&quot;, Stabilised)" id="6ed4-afb8-b250-4d78" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
         <infoLink name="Erratic Warhead (D4+4)" id="51a4-6d5e-203b-3e8a" hidden="false" type="rule" targetId="c18d-d499-9a29-e285"/>
         <infoLink name="Anti-Armour" id="0765-6925-bdf0-2833" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
@@ -519,7 +519,7 @@
         <selectionEntry type="model" import="true" name="Utegon" hidden="false" id="7496-2af6-5b8f-2fd3">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d6eb-5124-8fbd-c19b" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d858-39ea-ee8a-4a16" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d858-39ea-ee8a-4a16" includeChildSelections="false"/>
           </constraints>
           <profiles>
             <profile name="Utegon" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="586b-ec1b-8a69-64ce">
@@ -535,33 +535,33 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Agile, Brute, Burrowing Terror, Tunnelling Ascent, Vhokys Drugs (1-2)</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Burrowing Terror, Unique Command: Tunnelling Ascent, Underground Dweller, Vhokys Drugs (1-2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Tunneling Ascent" id="9762-7cd3-645e-ca49" hidden="false" type="rule" targetId="e3b8-0bce-9a2d-0fb1"/>
+            <infoLink name="Unique Command: Tunnelling Ascent" id="9762-7cd3-645e-ca49" hidden="false" type="rule" targetId="e3b8-0bce-9a2d-0fb1"/>
             <infoLink name="Vhokys Drugs (1-2)" id="31fe-9454-732c-7ee5" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
             <infoLink name="Brute" id="996d-da99-2400-5af3" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
-            <infoLink name="Agile" id="ae9b-4c20-94e6-b9df" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+            <infoLink name="Underground Dweller" id="ae9b-4c20-94e6-b9df" hidden="false" type="rule" targetId="deb1-fc79-5b6c-785c"/>
             <infoLink name="Burrowing Terror" id="4bbe-7dc2-363e-5d51" hidden="false" type="rule" targetId="2e77-867f-f692-574b"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Req &amp; Morale</comment>
           <modifiers>
-            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
               <conditions>
                 <condition type="equalTo" value="4" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
               <conditions>
                 <condition type="equalTo" value="3" field="selections" scope="self" childId="7496-2af6-5b8f-2fd3" shared="true"/>
               </conditions>
@@ -595,9 +595,9 @@
                 <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
                 <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
-                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Vhokys Drugs (1-3)</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Gorath Might, Vhokys Drugs (1-3)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -607,7 +607,7 @@
           </constraints>
           <infoLinks>
             <infoLink name="Vhokys Drugs (1-3)" id="c147-79ae-77dd-2747" hidden="false" type="rule" targetId="ed3b-71e5-a9be-6375"/>
-            <infoLink name="Brute" id="3f35-15f7-51d3-e66e" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+            <infoLink name="Gorath Might" id="3f35-15f7-51d3-e66e" hidden="false" type="rule" targetId="6884-31d5-0977-d00d"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Heavy Shock Rifles" hidden="false" id="8d85-46d0-bdda-9da5">
@@ -618,38 +618,39 @@
               <profiles>
                 <profile name="Heavy Shock Rifles" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="bfe4-9e9f-2525-ebb6">
                   <characteristics>
-                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-                    <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
                     <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Charge Up! (D4+1), Galvanic Detonation (1), Shock Bolt (1)</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (3&quot;), Charge Up! (2D4), Galvanic Detonation (1), Shock Bolt (2)</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Heavy Shock Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="95c2-9e82-0129-5db7">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+1</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+1</characteristic>
-                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+1</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/D4+1</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/D4+1</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2D4</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2D4</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/2D4</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/2D4</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/2D4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Charge Up! (D4+1)" id="71d3-85cb-c5eb-c602" hidden="false" type="rule" targetId="1d24-c5ef-03d5-b59f"/>
+                <infoLink name="Charge Up! (2D4)" id="71d3-85cb-c5eb-c602" hidden="false" type="rule" targetId="6853-9d39-77dc-d83d"/>
                 <infoLink name="Galvanic Detonation (1)" id="3371-057e-abfb-08c6" hidden="false" type="rule" targetId="85ab-e1b1-c98e-274f"/>
-                <infoLink name="Shock Bolt (1)" id="e926-8ad7-5507-1c2a" hidden="false" type="rule" targetId="bad0-9c8b-df01-4061"/>
+                <infoLink name="Shock Bolt (2)" id="e926-8ad7-5507-1c2a" hidden="false" type="rule" targetId="1caa-30b9-a34e-e939"/>
+                <infoLink name="Assault Move (3&quot;)" id="da72-225c-0fdf-a3c0" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Req" typeId="Requisition" value="70"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Reaver Attack Buggy" hidden="false" id="88c3-9a4b-90e8-0ab0">
@@ -720,7 +721,7 @@
           </infoLinks>
           <costs>
             <cost name="Req" typeId="Requisition" value="30"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="Attack Buggy Weapons" hidden="false" id="900c-eacc-0cae-2af8" type="selectionEntryGroup" targetId="6b8f-aaf5-2194-1735"/>
@@ -729,7 +730,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="30"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Reaver Rocket Buggy" hidden="false" id="3fe6-695d-eb84-da2a">
@@ -803,7 +804,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="30"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Taurus APC" hidden="false" id="3961-7778-e1f4-b512">
@@ -863,7 +864,7 @@
               <infoLinks>
                 <infoLink name="Exposed Gunner" id="a355-8441-e336-79c0" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
                 <infoLink name="Assault Move (4&quot;)" id="1b45-2ace-6798-49cd" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
-                <infoLink name="Free Command: Defence Fire" id="6365-2271-3c56-e348" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                <infoLink name="Snap React (7+; Engage)" id="6365-2271-3c56-e348" hidden="false" type="rule" targetId="c54a-b04b-5a50-75dc"/>
                 <infoLink name="Rapid Fire (16&quot;/12+)" id="0db1-95cc-171f-17ac" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
               </infoLinks>
             </selectionEntry>
@@ -887,7 +888,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhino Assault Tank" hidden="false" id="f138-8dd4-ed7d-aefa">
@@ -925,7 +926,7 @@
               <infoLinks>
                 <infoLink name="Exposed Gunner" id="f972-187f-bb19-49fe" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
                 <infoLink name="Assault Move (4&quot;)" id="0f6d-9180-8fd4-3f53" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
-                <infoLink name="Free Command: Defence Fire" id="f73c-62e0-27d9-9aa1" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                <infoLink name="Snap React (7+; Engage)" id="f73c-62e0-27d9-9aa1" hidden="false" type="rule" targetId="c54a-b04b-5a50-75dc"/>
                 <infoLink name="Rapid Fire (16&quot;/12+)" id="4398-c6bd-b2d3-20fc" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
               </infoLinks>
             </selectionEntry>
@@ -949,8 +950,8 @@
                 </profile>
                 <profile name="140mm Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="742b-cbd4-51da-381d">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/7</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/7</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/7</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/7</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/6</characteristic>
                     <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/6</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/6</characteristic>
@@ -1004,7 +1005,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="85"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1053,7 +1054,7 @@
           </selectionEntries>
           <costs>
             <cost name="Req" typeId="Requisition" value="10"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
           </costs>
           <rules>
             <rule name="Attachment" id="9247-1f4a-502b-e98a" hidden="false">
@@ -1112,7 +1113,7 @@
           </selectionEntries>
           <costs>
             <cost name="Req" typeId="Requisition" value="10"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
           </costs>
           <rules>
             <rule name="Attachment" id="69a8-a882-d769-ae61" hidden="false">
@@ -1160,7 +1161,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Assault Move (4&quot;)" id="ad27-f036-cf1b-c524" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
-            <infoLink name="Free Command: Defence Fire" id="7fad-d270-3986-0b10" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+            <infoLink name="Snap React (7+; Engage)" id="7fad-d270-3986-0b10" hidden="false" type="rule" targetId="c54a-b04b-5a50-75dc"/>
             <infoLink name="Incendiary Rounds" id="32b3-0b05-9248-54ce" hidden="false" type="rule" targetId="8251-2a55-e30e-c8e0"/>
             <infoLink name="Rapid Fire (24&quot;/11+)" id="acae-7a7b-9841-5224" hidden="false" type="rule" targetId="bb24-2bc0-e3c8-d176"/>
           </infoLinks>

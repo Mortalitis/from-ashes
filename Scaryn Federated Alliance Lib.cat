@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="36c0-b435-6935-ad36" name="Scaryn Federated Alliance Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="36c0-b435-6935-ad36" name="Scaryn Federated Alliance Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pathfinder LMG Gunners" hidden="false" id="0010-f7fd-c067-b5d3">
       <selectionEntries>
@@ -238,7 +238,7 @@
           <infoLinks>
             <infoLink name="Sidearms" id="90e4-92a6-4759-1bfc" hidden="false" type="rule" targetId="6a33-85d0-d353-5615"/>
             <infoLink name="Smokescreen" id="5454-700b-5d49-37a9" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-            <infoLink name="Leader [12&quot;]" id="019f-fd17-1527-47df" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
+            <infoLink name="Leader (12&quot;)" id="019f-fd17-1527-47df" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
             <infoLink name="Free Command: Medic" id="a3a9-7181-c3d0-945d" hidden="false" type="rule" targetId="8a22-8cc3-2f31-9ce3"/>
             <infoLink name="Unique Command: Boost the Signal" id="13b9-06d7-18ce-8754" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
             <infoLink name="Radio" id="6715-6e3c-fae8-b972" hidden="false" type="rule" targetId="c624-2e96-d693-89ce"/>
@@ -287,7 +287,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pathfinder Dragoons" hidden="false" id="352d-ad56-297c-64e5">
@@ -344,7 +344,7 @@
             <infoLink name="Smokescreen" id="16c5-da6d-0d62-f417" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
             <infoLink name="Special Forces" id="8472-e06d-6f3f-b844" hidden="false" type="rule" targetId="5096-e749-8137-d48c"/>
             <infoLink name="Target Identified" id="47b8-937c-b463-4ce9" hidden="false" type="rule" targetId="11b8-132f-8627-9bae"/>
-            <infoLink name="Squad Leader" id="8b4f-c66a-16e3-fc6f" hidden="false" type="rule" targetId="35c6-5c3c-a3c7-640c"/>
+            <infoLink name="Overseer (8+)" id="8b4f-c66a-16e3-fc6f" hidden="false" type="rule" targetId="0a22-0c5c-f16e-bad0"/>
             <infoLink name="Advanced Radio" id="9747-ec9e-7409-3741" hidden="false" type="rule" targetId="67a9-a2ad-9787-f656"/>
           </infoLinks>
           <profiles>
@@ -369,7 +369,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
       <modifierGroups>
         <modifierGroup type="and">
@@ -379,7 +379,7 @@
                 <condition type="equalTo" value="2" field="selections" scope="self" childId="2042-e293-14e4-f7e1" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
               <conditions>
                 <condition type="equalTo" value="2" field="selections" scope="self" childId="2042-e293-14e4-f7e1" shared="true" includeChildSelections="false"/>
               </conditions>
@@ -886,7 +886,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aurora MRS" hidden="false" id="7863-2d93-d2ad-fd42">
@@ -998,7 +998,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Grendel APC" hidden="false" id="9d0b-06b9-4f35-65a4">
@@ -1111,7 +1111,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Snapdragon SPAAG" hidden="false" id="afb8-8015-b269-d862">
@@ -1281,7 +1281,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Raven Command Vehicle" hidden="false" id="0c69-7f1f-bdbf-7096">
@@ -1316,7 +1316,7 @@
             <infoLink name="Smokescreen" id="0bdb-e88d-4920-276b" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
             <infoLink name="Electro-Pads" id="c17b-7f03-5067-16f8" hidden="false" type="rule" targetId="fbca-b732-83b1-0e49"/>
             <infoLink name="Transport [1x Infantry]" id="a750-8de5-3e06-30ea" hidden="false" type="rule" targetId="d69f-afa2-e259-8641"/>
-            <infoLink name="Leader [18&quot;]" id="9cc0-d6bd-abc9-ba70" hidden="false" type="rule" targetId="cf4b-e9a0-d530-1456"/>
+            <infoLink name="Leader (18&quot;)" id="9cc0-d6bd-abc9-ba70" hidden="false" type="rule" targetId="cf4b-e9a0-d530-1456"/>
             <infoLink name="Command Post" id="fbc1-9d77-d079-95cd" hidden="false" type="rule" targetId="063d-ef93-56a8-ac09"/>
             <infoLink name="Unique Command: Comms Jammer" id="6d58-805c-53b3-6ce1" hidden="false" type="rule" targetId="2ef4-fe65-027e-ef27"/>
           </infoLinks>
@@ -1361,7 +1361,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hammerhead IFV" hidden="false" id="2f08-0717-9d9b-6376">
@@ -1381,8 +1381,8 @@
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
                     <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
                     <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
@@ -1567,7 +1567,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lancer CRV" hidden="false" id="5b64-aa0c-80f8-f5dd">
@@ -1726,8 +1726,8 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Req" typeId="Requisition" value="75"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Harpoon Glide Pods" hidden="false" id="d29c-3997-abf2-b813">
@@ -1757,7 +1757,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Transport [1x Infantry]" id="577d-b0a3-5c39-9d32" hidden="false" type="rule" targetId="d69f-afa2-e259-8641"/>
-            <infoLink name="Orbital Drop" id="9aa6-1dcb-e29c-43a0" hidden="false" type="rule" targetId="7930-2bd6-c120-a01a"/>
+            <infoLink name="Special Advanced Command: Orbital Drop" id="9aa6-1dcb-e29c-43a0" hidden="false" type="rule" targetId="7930-2bd6-c120-a01a"/>
             <infoLink name="Crew Operated" id="4bcf-7f93-c257-c23a" hidden="false" type="rule" targetId="b917-605b-a7b8-acf7"/>
             <infoLink name="Auxiliary" id="5e32-9c85-206a-1bc2" hidden="false" type="rule" targetId="79e3-d0fa-6443-e95c"/>
             <infoLink name="Ejector Braces" id="8682-7fe7-f7f6-ce63" hidden="false" type="rule" targetId="d605-baf8-21b1-76fc"/>
@@ -1994,7 +1994,7 @@
       <infoLinks>
         <infoLink name="Assault Move (5&quot;, Stabilised)" id="e797-c1b3-fcb8-e6d7" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
         <infoLink name="Rapid Fire (16&quot;/12+)" id="2d67-21ae-9690-cb30" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
-        <infoLink name="Free Command: Defence Fire" id="624a-7440-dc91-23a5" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+        <infoLink name="Snap React (5+; Engage)" id="624a-7440-dc91-23a5" hidden="false" type="rule" targetId="2988-abad-8044-78cd"/>
       </infoLinks>
       <profiles>
         <profile name="Stabilised HMG Turret" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="8e6e-5f4a-c454-c8cf">
@@ -2033,12 +2033,20 @@
           <description>A Tank Commander Upgrade provides the following benefits to the host Unit
 - Increases the OP value by 1
 - Changes their Discipline value to 4+
-- Gives the Leader [12&quot;], Lone Wolf and Spearhead abilities</description>
+- Gives the Leader [12&quot;] and Spearhead abilities</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Spearhead" id="d938-2bec-ad03-3828" hidden="false" type="rule" targetId="2a3b-0701-bfd9-85de"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="9617-8752-47e1-8214" affects="self.entries.profiles.Unit" scope="parent"/>
+        <modifier type="set" value="4+" field="f8c4-0643-9fe4-3b67" affects="self.entries.profiles.Unit" scope="parent"/>
+      </modifiers>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="0"/>
+        <cost name="Starting OP" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="HK Module Upgrade" hidden="false" id="dc06-4d3f-f92e-6e2c">
       <rules>
@@ -2086,7 +2094,7 @@
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Vehicle</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">5+</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">4+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">4</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">8&quot;</characteristic>
                 <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">12/11/10</characteristic>
@@ -2115,6 +2123,7 @@
             <entryLink import="true" name="Tank Commander Upgrade" hidden="false" id="a3c2-d749-1cb6-cfad" type="selectionEntry" targetId="2541-0670-d103-cbf3" sortIndex="2">
               <costs>
                 <cost name="Req" typeId="Requisition" value="15"/>
+                <cost name="Starting OP" typeId="32f3-2311-8978-b603" value="0"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86ac-dabc-05ea-fc53-min" includeChildSelections="false"/>
@@ -2185,7 +2194,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Grendel APC (Tank Commander)" hidden="false" id="df9a-dd13-093e-b987">
@@ -2270,7 +2279,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lancer CRV (Tank Commander)" hidden="false" id="16a4-6065-7e4c-e135">
@@ -2429,8 +2438,8 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Req" typeId="Requisition" value="75"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anvil HEMR Battle Tank (Tank Commander)" hidden="false" id="192a-99e4-dd1b-a59e">
@@ -2594,7 +2603,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="135"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anvil Battle Tank (Tank Commander)" hidden="false" id="1141-951e-35b4-c495">
@@ -2790,7 +2799,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anvil Battle Tank" hidden="false" id="7efb-11ed-8bc1-6a6c">
@@ -2984,7 +2993,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="115"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anvil HEMR Battle Tank" hidden="false" id="bfae-7ef5-1556-ac7b">
@@ -3146,7 +3155,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="135"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

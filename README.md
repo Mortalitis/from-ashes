@@ -2,7 +2,7 @@
 
 [From Ashes](https://voidscarminiatures.com)
 
-Current Game Version: 0.1.2
+Current Game Version: 0.1.3
 
 ## Supported Factions
 - Xeraak Triarchy
