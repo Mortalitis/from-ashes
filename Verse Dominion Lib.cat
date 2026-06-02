@@ -649,7 +649,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Req" typeId="Requisition" value="70"/>
+        <cost name="Req" typeId="Requisition" value="60"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
       </costs>
     </selectionEntry>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="4fa0-3a9c-909b-9712" name="Devin Pact Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="6" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="4fa0-3a9c-909b-9712" name="Devin Pact Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="6" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pathfinder Riflemen" hidden="false" id="3bc4-5754-1ec6-c7ff">
       <selectionEntryGroups>
@@ -424,8 +424,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Full Auto, Optics, Rapid Fire (16&quot;/12+)
-</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Full Auto, Optics, Rapid Fire (16&quot;/12+)</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="M74 Assault Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="4389-461e-3243-9faf">
@@ -452,7 +451,7 @@
           <infoLinks>
             <infoLink name="Vhokys Drugs (1-2)" id="25b4-8ef4-b1c7-ea76" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
             <infoLink name="Smokescreen" id="f17f-6df6-ae36-0fae" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-            <infoLink name="Leader [12&quot;]" id="ca92-ba51-61a9-d4fd" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
+            <infoLink name="Leader (12&quot;)" id="ca92-ba51-61a9-d4fd" hidden="false" type="rule" targetId="e397-d083-8cc5-ca66"/>
             <infoLink name="Free Command: Medic" id="c540-c109-b7ce-2fec" hidden="false" type="rule" targetId="8a22-8cc3-2f31-9ce3"/>
             <infoLink name="Radio" id="dda1-6dec-0888-3ad0" hidden="false" type="rule" targetId="c624-2e96-d693-89ce"/>
             <infoLink name="Unique Command: Boost the Signal" id="9e91-afb6-34bf-b759" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
@@ -461,7 +460,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gorath Shock Mutants" hidden="false" id="0c8d-2167-21fa-547b">
@@ -473,7 +472,7 @@
           </constraints>
           <infoLinks>
             <infoLink name="Vhokys Drugs (1-3)" id="f1c5-ab5c-60d6-3de2" hidden="false" type="rule" targetId="ed3b-71e5-a9be-6375"/>
-            <infoLink name="Brute" id="e742-914e-a539-1704" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+            <infoLink name="Gorath Might" id="e742-914e-a539-1704" hidden="false" type="rule" targetId="6884-31d5-0977-d00d"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Heavy Shock Rifles" hidden="false" id="b7ff-f511-faa2-9f6a">
@@ -482,30 +481,31 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70d3-2902-bcb1-06bb-max" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Charge Up! (D4+1)" id="e741-9cd5-635c-7967" hidden="false" type="rule" targetId="1d24-c5ef-03d5-b59f"/>
+                <infoLink name="Charge Up! (2D4)" id="e741-9cd5-635c-7967" hidden="false" type="rule" targetId="6853-9d39-77dc-d83d"/>
                 <infoLink name="Galvanic Detonation (1)" id="c2f5-6bdc-c11b-626b" hidden="false" type="rule" targetId="85ab-e1b1-c98e-274f"/>
                 <infoLink name="Shock Bolt (1)" id="d9be-d137-0a98-e3cd" hidden="false" type="rule" targetId="bad0-9c8b-df01-4061"/>
+                <infoLink name="Assault Move (3&quot;)" id="a5cb-1bfe-9973-c728" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
               </infoLinks>
               <profiles>
                 <profile name="Heavy Shock Rifles" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="efdb-32a9-db84-79be">
                   <characteristics>
-                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">2</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-                    <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
                     <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Charge Up! (D4+1), Galvanic Detonation (1), Shock Bolt (1)</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (3&quot;), Charge Up! (2D4), Galvanic Detonation (1), Shock Bolt (1)</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Heavy Shock Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="0533-8891-8181-4124">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+1</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+1</characteristic>
-                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+1</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/D4+1</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/D4+1</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2D4</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2D4</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">7+/2D4</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/2D4</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/2D4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -525,7 +525,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Vhokys Drugs (1-3)</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Gorath Might, Vhokys Drugs (1-3)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -535,8 +535,8 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f546-394f-a0f7-fbb1" includeChildSelections="false"/>
       </constraints>
       <costs>
-        <cost name="Req" typeId="Requisition" value="70"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vanguard Infantry Cohort" hidden="false" id="e818-c831-8d6d-69f0">
@@ -716,7 +716,7 @@
     <selectionEntry type="unit" import="true" name="Reaver Attack Buggy" hidden="false" id="b111-59fa-40b8-9d6b">
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Reaver Attack" hidden="false" id="a47b-8c7c-f75a-9bf5">
@@ -762,7 +762,7 @@
           </infoLinks>
           <costs>
             <cost name="Req" typeId="Requisition" value="35"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -836,7 +836,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hull HMG" hidden="false" id="f63e-d5fd-dddb-0e68">
@@ -980,7 +980,7 @@
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="35"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aurora MRS" hidden="false" id="2e2f-d3a6-9a5c-68c0">
@@ -1058,7 +1058,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aurora MRS (Dominion Allies)" hidden="false" id="36fc-8c76-ddb7-318f">
@@ -1174,7 +1174,7 @@
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="50"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Raven CV" hidden="false" id="78f0-01cb-3d44-1fa5">
@@ -1205,7 +1205,7 @@
           <infoLinks>
             <infoLink name="Transport [1x Infantry]" id="1b19-9e12-5d24-97a7" hidden="false" type="rule" targetId="d69f-afa2-e259-8641"/>
             <infoLink name="Smokescreen" id="b72b-22ac-cc87-cb5d" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-            <infoLink name="Leader [18&quot;]" id="c754-9e7d-ab9b-c3f1" hidden="false" type="rule" targetId="cf4b-e9a0-d530-1456"/>
+            <infoLink name="Leader (18&quot;)" id="c754-9e7d-ab9b-c3f1" hidden="false" type="rule" targetId="cf4b-e9a0-d530-1456"/>
             <infoLink name="Command Post" id="d5c0-0703-edde-a329" hidden="false" type="rule" targetId="063d-ef93-56a8-ac09"/>
             <infoLink name="Unique Command: Comms Jammer" id="569e-2e9d-534b-fd07" hidden="false" type="rule" targetId="2ef4-fe65-027e-ef27"/>
             <infoLink name="Shock Field" id="e014-bc31-28ff-e32a" hidden="false" type="rule" targetId="3f94-26ae-7625-b845"/>
@@ -1220,7 +1220,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Raven CV (Dominion Allies)" hidden="false" id="0d58-bed2-fabc-4815">
@@ -1250,7 +1250,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Transport [1x Infantry]" id="f7f1-7b25-aca2-e375" hidden="false" type="rule" targetId="d69f-afa2-e259-8641"/>
-            <infoLink name="Leader [18&quot;]" id="6027-5c64-be42-ea88" hidden="false" type="rule" targetId="cf4b-e9a0-d530-1456"/>
+            <infoLink name="Leader (18&quot;)" id="6027-5c64-be42-ea88" hidden="false" type="rule" targetId="cf4b-e9a0-d530-1456"/>
             <infoLink name="Command Post" id="eb1b-9108-7e51-0e72" hidden="false" type="rule" targetId="063d-ef93-56a8-ac09"/>
             <infoLink name="Unique Command: Comms Jammer" id="ab96-3016-92a4-1571" hidden="false" type="rule" targetId="2ef4-fe65-027e-ef27"/>
             <infoLink name="Shock Field" id="f4d0-4b72-3a4b-7b30" hidden="false" type="rule" targetId="3f94-26ae-7625-b845"/>
@@ -1306,7 +1306,7 @@
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="55"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hammerhead IFV" hidden="false" id="a87b-c67e-43e8-050e">
@@ -1326,8 +1326,8 @@
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
                     <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
                     <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
@@ -1479,7 +1479,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hammerhead IFV (Dominion Allies)" hidden="false" id="8497-1ceb-6664-d0bc">
@@ -1499,8 +1499,8 @@
                     <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
                     <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
                     <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Assault Move (5&quot;, Stabilised)</characteristic>
                   </characteristics>
                 </profile>
@@ -1690,7 +1690,7 @@
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhino Assault Tank" hidden="false" id="e068-553b-ef2a-1eac">
@@ -1751,10 +1751,10 @@
                 </profile>
                 <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="c5c9-bda4-7e69-e01d">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/6</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/6</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/6</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/6</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/6</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/6</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/6</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/6</characteristic>
                   </characteristics>
                 </profile>
@@ -1813,7 +1813,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Free Command: Defence Fire, Rapid Fire (16&quot;/12+)</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Snap React (6+; Engage), Rapid Fire (16&quot;/12+)</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Pintle HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="d6ba-f9ef-95a9-0104">
@@ -1829,7 +1829,7 @@
               <infoLinks>
                 <infoLink name="Exposed Gunner" id="8060-f9dc-9118-de6e" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
                 <infoLink name="Assault Move (4&quot;)" id="0093-7968-306b-0c07" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
-                <infoLink name="Free Command: Defence Fire" id="daf1-0277-c327-239c" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                <infoLink name="Snap React (6+; Engage)" id="daf1-0277-c327-239c" hidden="false" type="rule" targetId="d427-320a-ac72-f342"/>
                 <infoLink name="Rapid Fire (16&quot;/12+)" id="2aba-9325-7c9f-4d0e" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
               </infoLinks>
             </selectionEntry>
@@ -1841,7 +1841,7 @@
               <infoLinks>
                 <infoLink name="Slow Reload" id="c2c3-f258-b13a-90f0" hidden="false" type="rule" targetId="c534-2c5e-d2ab-c844"/>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="1c4b-2341-e507-a2ec" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Smoke Blast (3)" id="5387-cfd7-3d86-6d55" hidden="false" type="rule" targetId="b8ac-de73-8001-a1bc"/>
+                <infoLink name="Smoke Blast (4)" id="5387-cfd7-3d86-6d55" hidden="false" type="rule" targetId="f971-90cc-33ec-098f"/>
                 <infoLink name="Erratic Warhead (D4+4)" id="8ff4-9471-7540-12b7" hidden="false" type="rule" targetId="c18d-d499-9a29-e285"/>
                 <infoLink name="Anti-Armour" id="2d0a-c392-d507-3477" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
               </infoLinks>
@@ -1874,7 +1874,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="95"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhino Assault Tank (Dominion Allies)" hidden="false" id="7da7-5f6f-e731-4f9c">
@@ -1922,10 +1922,10 @@
               <profiles>
                 <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="5726-e9ca-83df-a5d2">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/6</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/6</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/6</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/6</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/6</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/6</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/6</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/6</characteristic>
                   </characteristics>
                 </profile>
@@ -2005,14 +2005,14 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Free Command: Defence Fire, Rapid Fire (16&quot;/12+)</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Snap React (6+; Engage), Rapid Fire (16&quot;/12+)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Exposed Gunner" id="f93c-949c-5003-3cd8" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
                 <infoLink name="Assault Move (4&quot;)" id="c250-e47a-5877-cb8f" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
-                <infoLink name="Free Command: Defence Fire" id="815e-60a7-a1c8-070e" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+                <infoLink name="Snap React (6+; Engage)" id="815e-60a7-a1c8-070e" hidden="false" type="rule" targetId="d427-320a-ac72-f342"/>
                 <infoLink name="Rapid Fire (16&quot;/12+)" id="2afb-a0bb-f64e-b0e0" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
               </infoLinks>
             </selectionEntry>
@@ -2024,7 +2024,7 @@
               <infoLinks>
                 <infoLink name="Slow Reload" id="197b-e0fb-2b30-5dc2" hidden="false" type="rule" targetId="c534-2c5e-d2ab-c844"/>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="5df2-6ef7-928e-c18e" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Smoke Blast (3)" id="f47e-c8a6-d3d2-60d7" hidden="false" type="rule" targetId="b8ac-de73-8001-a1bc"/>
+                <infoLink name="Smoke Blast (4)" id="f47e-c8a6-d3d2-60d7" hidden="false" type="rule" targetId="f971-90cc-33ec-098f"/>
                 <infoLink name="Erratic Warhead (D4+4)" id="e9e0-6f9a-3617-9114" hidden="false" type="rule" targetId="c18d-d499-9a29-e285"/>
                 <infoLink name="Anti-Armour" id="3be2-dcb2-50fe-4048" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
               </infoLinks>
@@ -2096,7 +2096,7 @@
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="95"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anvil Battle Tank" hidden="false" id="018f-b043-6d68-1f36">
@@ -2146,7 +2146,7 @@
                   <characteristics>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-                    <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">3</characteristic>
                     <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">3</characteristic>
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
@@ -2156,8 +2156,8 @@
                 </profile>
                 <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="cdd6-1fc8-b9a2-61c4">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/6</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/6</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/6</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/6</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/6</characteristic>
                     <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/6</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/6</characteristic>
@@ -2249,7 +2249,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="110"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anvil Battle Tank (Dominion Allies)" hidden="false" id="d38c-08a0-f9b2-0e57">
@@ -2298,7 +2298,7 @@
                   <characteristics>
                     <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-                    <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">3</characteristic>
                     <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">3</characteristic>
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">3</characteristic>
@@ -2308,8 +2308,8 @@
                 </profile>
                 <profile name="135mm Main Cannon (HESH)" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="c466-8c0c-cb82-c5b8">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/6</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/6</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/6</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/6</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/6</characteristic>
                     <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/6</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">10+/6</characteristic>
@@ -2440,7 +2440,7 @@
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="110"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anvil Shock Tank" hidden="false" id="fe04-4b65-8c0f-dd01">
@@ -2528,22 +2528,22 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Charge Up! (D4+2), Galvanic Detonation (3), Shock Bolt (3)</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Charge Up! (D4+4), Galvanic Detonation (3), Shock Bolt (3)</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Shock Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="4fde-29c5-747d-aa80">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+2</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+2</characteristic>
-                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+2</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/D4+2</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/D4+2</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+4</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+4</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+4</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/D4+4</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/D4+4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="1617-6595-fdb8-e8b1" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Charge Up! (D4+2)" id="9fa0-ed08-b5ed-fd49" hidden="false" type="rule" targetId="3097-20dc-c4bd-a966"/>
+                <infoLink name="Charge Up! (D4+4)" id="9fa0-ed08-b5ed-fd49" hidden="false" type="rule" targetId="81d0-92ff-acf6-3177"/>
                 <infoLink name="Galvanic Detonation (3)" id="7518-da63-a6c6-ab23" hidden="false" type="rule" targetId="f118-2660-8ef4-ee9e"/>
                 <infoLink name="Shock Bolt (3)" id="2ca9-389d-469c-4f3f" hidden="false" type="rule" targetId="3e5b-2a0f-1053-c663"/>
               </infoLinks>
@@ -2556,7 +2556,7 @@
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="125"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anvil Shock Tank (Dominion Allies)" hidden="false" id="a41c-387b-d311-b253">
@@ -2636,11 +2636,11 @@
               <profiles>
                 <profile name="Shock Cannon" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="0d99-4488-35e0-f6b2">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/D4+2</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+2</characteristic>
-                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+2</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/D4+2</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/D4+2</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/D4+4</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/D4+4</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/D4+4</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/D4+4</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/D4+4</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Shock Cannon" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="051f-9ca6-68d5-aa7e">
@@ -2652,13 +2652,13 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Charge Up! (D4+2), Galvanic Detonation (3), Shock Bolt (3)</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (5&quot;, Stabilised), Charge Up! (D4+4), Galvanic Detonation (3), Shock Bolt (3)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Assault Move (5&quot;, Stabilised)" id="3f0b-0e30-05d2-9b70" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-                <infoLink name="Charge Up! (D4+2)" id="683b-b6ad-c609-9601" hidden="false" type="rule" targetId="3097-20dc-c4bd-a966"/>
+                <infoLink name="Charge Up! (D4+4)" id="683b-b6ad-c609-9601" hidden="false" type="rule" targetId="81d0-92ff-acf6-3177"/>
                 <infoLink name="Galvanic Detonation (3)" id="c38a-2030-ae1a-3109" hidden="false" type="rule" targetId="f118-2660-8ef4-ee9e"/>
                 <infoLink name="Shock Bolt (3)" id="ba16-b9e9-2eb7-731f" hidden="false" type="rule" targetId="3e5b-2a0f-1053-c663"/>
               </infoLinks>
@@ -2710,7 +2710,7 @@
       </modifiers>
       <costs>
         <cost name="Req" typeId="Requisition" value="125"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2759,7 +2759,7 @@
           </selectionEntries>
           <costs>
             <cost name="Req" typeId="Requisition" value="10"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
           </costs>
           <rules>
             <rule name="Attachment" id="8b40-a381-78c1-b28e" hidden="false">
@@ -2817,7 +2817,7 @@
           </selectionEntries>
           <costs>
             <cost name="Req" typeId="Requisition" value="10"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
+            <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
           </costs>
           <rules>
             <rule name="Attachment" id="bff5-0e13-e7c4-d366" hidden="false">
@@ -2865,7 +2865,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Assault Move (4&quot;)" id="b321-2116-6a64-23e4" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
-            <infoLink name="Free Command: Defence Fire" id="43b4-a456-bba7-26c0" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+            <infoLink name="Snap React (6+; Engage)" id="43b4-a456-bba7-26c0" hidden="false" type="rule" targetId="d427-320a-ac72-f342"/>
             <infoLink name="AP Rounds" id="3507-764c-eb0e-39ad" hidden="false" type="rule" targetId="2c8f-76d1-13a3-d49f"/>
             <infoLink name="Rapid Fire (24&quot;/11+)" id="5189-fc99-0d15-bb66" hidden="false" type="rule" targetId="bb24-2bc0-e3c8-d176"/>
           </infoLinks>
@@ -2928,7 +2928,7 @@
                 <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                 <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
                 <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Free Command: Defence Fire, Rapid Fire (16&quot;/12+)</characteristic>
+                <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Exposed Gunner, Snap React (6+; Engage), Rapid Fire (16&quot;/12+)</characteristic>
               </characteristics>
             </profile>
             <profile name="Pintle HMG" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="e67d-71cc-6506-e06e">
@@ -2944,7 +2944,7 @@
           <infoLinks>
             <infoLink name="Exposed Gunner" id="957c-d615-f3d0-f94a" hidden="false" type="rule" targetId="a320-67e8-764c-f2c6"/>
             <infoLink name="Assault Move (4&quot;)" id="fe0d-e8db-e9fb-7512" hidden="false" type="rule" targetId="0c3f-c936-3653-194b"/>
-            <infoLink name="Free Command: Defence Fire" id="b55c-566f-56de-a8ec" hidden="false" type="rule" targetId="5deb-d9d6-7bfc-3478"/>
+            <infoLink name="Snap React (6+; Engage)" id="b55c-566f-56de-a8ec" hidden="false" type="rule" targetId="d427-320a-ac72-f342"/>
             <infoLink name="Rapid Fire (16&quot;/12+)" id="fa7e-438a-4419-c75d" hidden="false" type="rule" targetId="12fd-78ee-e505-2fba"/>
           </infoLinks>
         </selectionEntry>
@@ -2983,7 +2983,7 @@
           <infoLinks>
             <infoLink name="Slow Reload" id="80d9-28ca-8160-a811" hidden="false" type="rule" targetId="c534-2c5e-d2ab-c844"/>
             <infoLink name="Assault Move (5&quot;, Stabilised)" id="7fb2-511b-56ed-d13a" hidden="false" type="rule" targetId="057f-77b8-2c9e-e67b"/>
-            <infoLink name="Smoke Blast (3)" id="4600-5c7f-0381-99c3" hidden="false" type="rule" targetId="b8ac-de73-8001-a1bc"/>
+            <infoLink name="Smoke Blast (4)" id="4600-5c7f-0381-99c3" hidden="false" type="rule" targetId="f971-90cc-33ec-098f"/>
             <infoLink name="Erratic Warhead (D4+4)" id="92a1-97a9-34a7-bcfd" hidden="false" type="rule" targetId="c18d-d499-9a29-e285"/>
             <infoLink name="Anti-Armour" id="510b-e63b-52bd-881a" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
           </infoLinks>
