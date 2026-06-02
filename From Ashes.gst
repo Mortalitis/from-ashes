@@ -693,13 +693,13 @@ If an enemy Squad Reacts and Engages the Formed Up Squads, and have been hit by 
       <description>This Unit&apos;s Armour cannot be reduced below 7 due to attacks from weapons with Blast: Small Arms</description>
     </rule>
     <rule name="Ravenous" id="513c-31fc-4e30-50cb" hidden="false">
-      <description>This Unit does not roll any bonus Storm Strike dice but instead rerolls Strike rolls of a 1-2, even if not in base contact</description>
+      <description>This Unit does not roll any bonus Charge dice but instead rerolls Strike rolls of a 1-2, even if not in base contact</description>
     </rule>
-    <rule name="Infect (8+)" id="0907-2651-42e2-3d37" hidden="false">
-      <description>When Storming, roll a D12 for each HP removed from an enemy Infantry unit with Enclosed 0. On an 8+ replenish a lost HP to a unit in this Squad. If all Units are at full HP, instead add a brand new Zombie Horde Unit to this Squad but with only 1 HP</description>
+    <rule name="Infect (9+)" id="0907-2651-42e2-3d37" hidden="false">
+      <description>When Storming, roll a D12 for each HP removed from an enemy Infantry unit with Enclosed 0. On an 9+ replenish a lost HP to a unit in this Squad. If all Units are at full HP, instead add a brand new Zombie Horde Unit to this Squad but with only 1 HP</description>
     </rule>
     <rule name="Spore Cloud" id="7c37-05ee-4a53-b1af" hidden="false">
-      <description>Units targeting this Squad must reroll successful Accuracy and Storm Strike rolls of 11+. This happens before Low Visibility.</description>
+      <description>This Squad improves Low Visibility by 1 if it is within suitable terrain. Otherwise, it has a Low Visibility (11+) when outside suitable terrain</description>
     </rule>
     <rule name="Corrupting Aura" id="79b0-34b2-5c80-217e" hidden="false">
       <description>Enemy Enclosed 0 Infantry Units which starts a Command or a move in base contact with this Unit, or touching the same terrain piece, must immediately take a Collateral Damage (11+) test. This applies once per Command.</description>
@@ -720,13 +720,13 @@ If an enemy Squad Reacts and Engages the Formed Up Squads, and have been hit by 
       <description>This Unit&apos;s Armour cannot be reduced below 5 due to attacks from weapons with Blast: Small Arms</description>
     </rule>
     <rule name="Drag Down" id="52ac-6851-bd1b-9127" hidden="false">
-      <description>After this Unit has been targeted by an enemy Storm attack and survives, then for each successful Armour Save, this Unit makes a Strike roll against the Storming Squad. Damage caused to enemies in this way are still subjected to Infect (8+).</description>
+      <description>After this Unit has been targeted by an enemy Storm attack and survives, then for each successful Armour Save, this Unit makes a Strike roll against the Storming Squad. Damage caused to enemies in this way are still subjected to listed Infect rule</description>
     </rule>
     <rule name="Braindead" id="f911-e118-d8a8-90f8" hidden="false">
-      <description>If the majority of a Squad&apos;s Units have the Braindead ability it never benefits from Fast Target. Lastly, Squads which start the battle with only Braindead Units cannot be Captured nor award HVT OPS to the enemy</description>
+      <description>Braindead Units cannot be Captured nor do they award HVT OPs to the enemy</description>
     </rule>
-    <rule name="Blight Rounds (8+)" id="7057-9560-80c5-26ad" hidden="false">
-      <description>If an enemy Enclosed 0 Infantry Unit loses an HP from this weapon, roll a D12 for each. On an 8+, replenish a lost HP to an existing friendly Zombie Horde Unit within 4” of the target. If there are none, instead place a brand new Zombie Horde Squad consisting of 1 Unit with 1 HP within 1” of the target Squad (placed before the last enemy Unit is removed if all Units are destroyed).</description>
+    <rule name="Blight Rounds (10+)" id="7057-9560-80c5-26ad" hidden="false">
+      <description>If an enemy Enclosed 0 Infantry Unit fails their Armour Save on a 10+ and loses an HP, replenish a lost HP to a friendly Zombie Horde Unit within 4” of the target. If there are none, instead place a brand new Zombie Horde Squad consisting of 1 Unit with 1 HP and both Commands as Unique within 1&quot; if the damaged Unit (placed before it is removed if destroyed).</description>
     </rule>
     <rule name="Assimilated Biomass (6)" id="6c8f-3c4a-97c5-892e" hidden="false">
       <description>This Unit&apos;s Armour cannot be reduced below 6 due to attacks from weapons with Blast: Small Arms</description>
@@ -799,6 +799,15 @@ Units can attempt to recharge their Shields During the Recover step of the SitRe
     </rule>
     <rule name="Snap React (5+; Engage)" id="2988-abad-8044-78cd" hidden="false">
       <description>Snap React allows a Squad to choose to use its Order capacity to React with (not for Overwatches), but the Discipline test is changed to whatever is written in brackets (and cannot be modified further), as are the available Reaction Commands. As these are Orders, a red Order dice must be placed. If the Discipline test is failed, place an Order dice as a 6 for Unique, but if any damage has been taken, do not need to Withdraw. Snap React cannot be used at the same time as a Free Command or a regular Reaction.</description>
+    </rule>
+    <rule name="Infect (8+)" id="f15f-402b-658a-7ef4" hidden="false">
+      <description>When Storming, roll a D12 for each HP removed from an enemy Infantry unit with Enclosed 0. On an 8+ replenish a lost HP to a unit in this Squad. If all Units are at full HP, instead add a brand new Zombie Horde Unit to this Squad but with only 1 HP</description>
+    </rule>
+    <rule name="Assimilated Biomass (8)" id="79df-4357-64f6-884e" hidden="false">
+      <description>This Unit&apos;s Armour cannot be reduced below 8 due to attacks from weapons with Blast: Small Arms</description>
+    </rule>
+    <rule name="Rampage" id="cba7-178c-d18c-5eac" hidden="false">
+      <description>Strike Rolls of a 12 (before modifiers) can roll another Strike roll (which can keep going)</description>
     </rule>
   </sharedRules>
 </gameSystem>

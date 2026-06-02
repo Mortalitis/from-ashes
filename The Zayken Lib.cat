@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Acid Belch" hidden="false" id="ece4-42bc-b0ce-5309">
       <constraints>
@@ -36,7 +36,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zombie Horde" hidden="false" id="6006-bbcf-8c58-e667">
       <costs>
-        <cost name="Req" typeId="Requisition" value="30"/>
+        <cost name="Req" typeId="Requisition" value="36"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
       <modifiers>
@@ -45,7 +45,7 @@
             <condition type="equalTo" value="4" field="selections" scope="self" childId="ef22-4c66-8544-1cac" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="10" field="Requisition">
+        <modifier type="increment" value="12" field="Requisition">
           <conditions>
             <condition type="equalTo" value="4" field="selections" scope="self" childId="ef22-4c66-8544-1cac" shared="true"/>
           </conditions>
@@ -65,53 +65,16 @@
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
                 <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">8+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
-                <characteristic name="Move" typeId="863f-c803-2ef3-b555">2D4&quot;</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
                 <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">5</characteristic>
                 <characteristic name="HP" typeId="b3fc-385d-241f-565b">6</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Assimilated Biomass (5), Ravenous, Infect (8+), Drag Down, Braindead</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Assimilated Biomass (5), Ravenous, Infect (9+), Drag Down, Braindead</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Acid Belch" hidden="false" id="f3b4-8eb9-2cda-26bc" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Blighted Spit" hidden="false" id="9f48-7f6f-ae16-1666" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f32b-016f-02d1-5b4a" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef32-8898-a27a-1665" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Blighted Spit" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="f3e2-7ec0-10c6-99ea">
-                  <characteristics>
-                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">D4</characteristic>
-                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Blight Rounds (8+)</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Blighted Spit" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="d715-a9d1-0f26-c9f4">
-                  <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/0</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
-                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">-/0</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">-/0</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">-/0</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Blight Rounds (8+)" id="0c43-5221-bc0f-1346" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
           <infoLinks>
             <infoLink name="Assimilated Biomass (5)" id="86e7-ec75-4013-1933" hidden="false" type="rule" targetId="a11c-4d8e-d41e-31a3"/>
             <infoLink name="Ravenous" id="9126-93f0-63b9-94bb" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
@@ -145,8 +108,8 @@
                 <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
-                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Assimilated Biomass (6), Drag Down, Infect (8+), Ravenous, Recon</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Assimilated Biomass (6), Drag Down, Infect (8+), Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -155,7 +118,6 @@
             <infoLink name="Ravenous" id="42ae-065e-c4bf-cfad" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
             <infoLink name="Infect (8+)" id="a89d-383c-e42d-2886" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
             <infoLink name="Drag Down" id="5bab-2a49-f55b-ecf9" hidden="false" type="rule" targetId="52ac-6851-bd1b-9127"/>
-            <infoLink name="Recon" id="c6b6-763e-fdb3-ec9c" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Acid Belch" hidden="false" id="dc82-e3b5-f90c-dfbe" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
@@ -224,7 +186,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Slow Reload, Anti-Armour, Blight Rounds (8+)</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Blight Rounds (8+)</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Rocket Launchers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="4f55-c71a-8759-0709">
@@ -242,7 +204,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd00-833e-f61d-9a56" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Slow Reload" id="7f4b-fb73-19e7-458a" hidden="false" type="rule" targetId="c534-2c5e-d2ab-c844"/>
                 <infoLink name="Anti-Armour" id="95d2-b1bb-8e62-0734" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
                 <infoLink name="Blight Rounds (8+)" id="2a81-f2cc-8dae-972b" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
@@ -261,7 +222,7 @@
                 <characteristic name="HP" typeId="b3fc-385d-241f-565b">2</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
-                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
                 <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Assimilated Biomass (6), Drag Down, Infect (8+), Ravenous, Recon</characteristic>
               </characteristics>
             </profile>
@@ -269,7 +230,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Req" typeId="Requisition" value="44"/>
+        <cost name="Req" typeId="Requisition" value="40"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
       <modifiers>
@@ -278,7 +239,7 @@
             <condition type="equalTo" value="3" field="selections" scope="self" childId="849e-7c75-2f4b-d858" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="12" field="Requisition">
+        <modifier type="increment" value="10" field="Requisition">
           <conditions>
             <condition type="equalTo" value="3" field="selections" scope="self" childId="849e-7c75-2f4b-d858" shared="true"/>
           </conditions>
@@ -300,8 +261,8 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Corrupted Anvil" hidden="false" id="fa6a-f10a-6a1a-7b79">
       <costs>
-        <cost name="Req" typeId="Requisition" value="100"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Req" typeId="Requisition" value="90"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="5"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Corrupted Anvil" hidden="false" id="c0e1-4eee-a764-d876">
@@ -332,38 +293,35 @@
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Spore Burst Launcher" hidden="false" id="e5b8-ac70-a1a3-fb8e" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Spore Hive" hidden="false" id="e5b8-ac70-a1a3-fb8e" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b697-fd61-a707-04f6" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ff7-6594-40f6-e45d" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Barrage" id="ee4b-f9f8-6222-4d05" hidden="false" type="rule" targetId="977a-72f5-8575-939a"/>
-                <infoLink name="Smoke Burst" id="f023-6fbd-f881-8656" hidden="false" type="rule" targetId="42c3-8f39-bccd-3ee8"/>
-                <infoLink name="Counter Cover" id="a258-42d7-c68e-c94b" hidden="false" type="rule" targetId="61fe-ff3e-2ed5-9474"/>
                 <infoLink name="Acid" id="f3e6-6cbf-a658-6b8d" hidden="false" type="rule" targetId="bb2c-9bc8-bd91-4a99"/>
                 <infoLink name="Blight Rounds (8+)" id="0221-35f4-3a6f-7c45" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
               <profiles>
-                <profile name="Spore Burst Launcher" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="b6c1-bca9-4575-db70">
+                <profile name="Spore Hive" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="b6c1-bca9-4575-db70">
                   <characteristics>
-                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">5</characteristic>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
                     <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-                    <characteristic name="Blast" typeId="0072-c918-4223-1011">1</characteristic>
-                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
-                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
-                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
-                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Acid, Barrage, Blight Rounds (8+), Counter Cover, Smoke Burst</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Acid, Blight Rounds (10+)</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Spore Burst Launcher" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="7191-b3b4-dcb6-38f4">
+                <profile name="Spore Hive" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="7191-b3b4-dcb6-38f4">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/0</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/0</characteristic>
-                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/0</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/0</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/0</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/0</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/0</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -501,7 +459,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="a5ad-7038-fdf8-b39f" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (1)" id="a5ad-7038-fdf8-b39f" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
             <infoLink name="Recon" id="dbde-1e47-57ba-3688" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
             <infoLink name="Agile" id="b878-a8df-872a-2555" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
             <infoLink name="Networked Scanning Sensors" id="35fc-86d5-2ea5-58c7" hidden="false" type="rule" targetId="0bb1-6f4f-5a72-3fb3"/>
@@ -584,7 +542,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="494f-149a-cc5f-bba4" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (1)" id="494f-149a-cc5f-bba4" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
             <infoLink name="Distorted Nervous System" id="270e-8e3e-d578-55df" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
         </selectionEntry>
@@ -726,7 +684,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Shield (2) Recharge 6+" id="11bb-6da9-62da-0afa" hidden="false" type="rule" targetId="93cd-12d5-25e8-fc7b"/>
-            <infoLink name="Overseer (8+)" id="8b8b-9470-f894-fdd1" hidden="false" type="rule" targetId="426f-96e1-451a-d459"/>
+            <infoLink name="Overseer (10+)" id="8b8b-9470-f894-fdd1" hidden="false" type="rule" targetId="426f-96e1-451a-d459"/>
           </infoLinks>
           <rules>
             <rule name="Non-Combat Unit" id="78d0-a631-0556-20c0" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
@@ -811,7 +769,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="87c8-0825-8008-56d8" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (1)" id="87c8-0825-8008-56d8" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
             <infoLink name="Arc Blades" id="775d-2e89-9f9e-143d" hidden="false" type="rule" targetId="0123-ec80-d72e-d6ce"/>
             <infoLink name="Reassemble" id="126d-b3ce-ae22-3fda" hidden="false" type="rule" targetId="60bc-f259-f153-6494"/>
             <infoLink name="Agile" id="c9dc-5947-c3e7-ba66" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
@@ -902,7 +860,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="afd8-b09c-088f-8955" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (1)" id="afd8-b09c-088f-8955" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
             <infoLink name="Arc Blades" id="c54c-58d1-0af9-1cbe" hidden="false" type="rule" targetId="0123-ec80-d72e-d6ce"/>
             <infoLink name="Reassemble" id="e3ee-4ee4-0074-3aed" hidden="false" type="rule" targetId="60bc-f259-f153-6494"/>
             <infoLink name="Distorted Nervous System" id="c526-d8cd-e0dc-8aa0" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
@@ -965,12 +923,12 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone (1), Distorted Nervous System</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone" id="119f-5ca0-011c-f054" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (1)" id="119f-5ca0-011c-f054" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
             <infoLink name="Distorted Nervous System" id="af60-2a9d-e859-403d" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <entryLinks>
@@ -1016,7 +974,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Spore Slavers" hidden="false" id="5260-b397-d520-6e69">
       <costs>
-        <cost name="Req" typeId="Requisition" value="24"/>
+        <cost name="Req" typeId="Requisition" value="28"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <selectionEntries>
@@ -1085,7 +1043,7 @@
             <entryLink import="true" name="Acid Belch" hidden="false" id="ad0f-33f4-9735-cda8" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Creep (5&quot;)" id="86fa-5477-12d2-da1b" hidden="false" type="rule" targetId="c0cd-c842-4c3b-cc50"/>
+            <infoLink name="Recon" id="86fa-5477-12d2-da1b" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
             <infoLink name="Assimilated Biomass (7)" id="8f05-7e2f-b898-8412" hidden="false" type="rule" targetId="d193-f1f8-483f-fe00"/>
             <infoLink name="Ravenous" id="6bf8-305a-06c8-b59c" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
             <infoLink name="Infect (8+)" id="e893-4c95-c5b9-6afd" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
@@ -1163,7 +1121,7 @@
         <entryLink import="true" name="Acid Belch" hidden="false" id="2c4b-2d11-c58a-455e" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Creep (5&quot;)" id="2fa3-4a12-66b2-32f7" hidden="false" type="rule" targetId="c0cd-c842-4c3b-cc50"/>
+        <infoLink name="Recon" id="2fa3-4a12-66b2-32f7" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
         <infoLink name="Assimilated Biomass (7)" id="e6d3-17b0-93bf-0273" hidden="false" type="rule" targetId="d193-f1f8-483f-fe00"/>
         <infoLink name="Ravenous" id="8eb3-e05b-d6bb-a9af" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
         <infoLink name="Infect (8+)" id="de69-bb15-03d7-4fe7" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
@@ -2845,7 +2803,7 @@
                 <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
-                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
                 <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Assimilated Biomass (6), Drag Down, Infect (8+), Ravenous, Recon</characteristic>
               </characteristics>
             </profile>
@@ -2907,7 +2865,6 @@
             <infoLink name="Drag Down" id="0c25-51e4-16dc-bc52" hidden="false" type="rule" targetId="52ac-6851-bd1b-9127"/>
             <infoLink name="Infect (8+)" id="8d0f-980e-ee3b-e963" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
             <infoLink name="Ravenous" id="1077-beb2-1f18-9cdb" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
-            <infoLink name="Recon" id="eb0a-0aa5-b4bc-29d5" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Acid Belch" hidden="false" id="5d24-5fc8-7633-4ed2" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
@@ -2924,7 +2881,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Slow Reload, Anti-Armour, Blight Rounds (8+)</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Anti-Armour, Blight Rounds (8+)</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Rocket Launchers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="031b-98ce-0cf4-b3b8">
@@ -2942,7 +2899,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ea2-a655-754d-318a" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Slow Reload" id="1fac-5f01-aea7-0fed" hidden="false" type="rule" targetId="c534-2c5e-d2ab-c844"/>
                 <infoLink name="Anti-Armour" id="4e98-03bb-c216-ed7c" hidden="false" type="rule" targetId="9c3e-550c-cf1d-5745"/>
                 <infoLink name="Blight Rounds (8+)" id="5982-88e0-1401-7dca" hidden="false" type="rule" targetId="7057-9560-80c5-26ad"/>
               </infoLinks>
@@ -2961,7 +2917,7 @@
                 <characteristic name="HP" typeId="b3fc-385d-241f-565b">2</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
-                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
                 <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Assimilated Biomass (6), Drag Down, Infect (8+), Ravenous, Recon</characteristic>
               </characteristics>
             </profile>
@@ -2969,7 +2925,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Req" typeId="Requisition" value="44"/>
+        <cost name="Req" typeId="Requisition" value="40"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
       </costs>
       <modifiers>
@@ -2978,7 +2934,7 @@
             <condition type="equalTo" value="3" field="selections" scope="self" childId="7853-660b-151c-904a" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="12" field="Requisition">
+        <modifier type="increment" value="10" field="Requisition">
           <conditions>
             <condition type="equalTo" value="3" field="selections" scope="self" childId="7853-660b-151c-904a" shared="true"/>
           </conditions>
@@ -3499,6 +3455,59 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Brawlers" hidden="false" id="d82d-d5ee-be43-1f91">
+      <costs>
+        <cost name="Req" typeId="Requisition" value="45"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
+      </costs>
+      <modifiers>
+        <modifier type="increment" value="1" field="32f3-2311-8978-b603">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="91c1-afba-68c8-3228" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="15" field="Requisition">
+          <conditions>
+            <condition type="equalTo" value="4" field="selections" scope="self" childId="91c1-afba-68c8-3228" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Brawler" hidden="false" id="91c1-afba-68c8-3228" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0554-1399-e1b6-d3d2" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f4fd-afae-a0b3-094a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Brawler" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="af11-9a98-d2cb-b5c7">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Assimilated Biomass (8), Heavy Charge, Rampage, Infect (9+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Assimilated Biomass (8)" id="55fc-3822-cfac-b362" hidden="false" type="rule" targetId="79df-4357-64f6-884e"/>
+            <infoLink name="Rampage" id="56f0-c745-61bd-b4e1" hidden="false" type="rule" targetId="cba7-178c-d18c-5eac"/>
+            <infoLink name="Heavy Charge" id="982f-bf79-4a7b-a89c" hidden="false" type="rule" targetId="593d-6e04-b46b-328c"/>
+            <infoLink name="Infect (9+)" id="0e32-b9fd-3d29-b492" hidden="false" type="rule" targetId="0907-2651-42e2-3d37"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="4be7-1fef-b89f-cbe3" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Infantry Upgrades" id="c477-5c14-8e81-cf93" hidden="false">
@@ -3555,11 +3564,11 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Barrage" id="163f-0bbe-639d-f69e" hidden="false" type="rule" targetId="977a-72f5-8575-939a"/>
-                <infoLink name="Smoke Burst" id="76c6-c7fa-14db-f2f9" hidden="false" type="rule" targetId="42c3-8f39-bccd-3ee8"/>
                 <infoLink name="Acid" id="40ce-2262-6dcc-35a0" hidden="false" type="rule" targetId="bb2c-9bc8-bd91-4a99"/>
                 <infoLink name="Mind Control" id="30c6-ed66-23b4-9711" hidden="false" type="rule" targetId="ff64-7468-687f-9dbe"/>
                 <infoLink name="Counter Cover" id="d1e7-3b85-944f-5f3f" hidden="false" type="rule" targetId="61fe-ff3e-2ed5-9474"/>
                 <infoLink name="Advisor Weapon" id="6952-7b30-b337-5e0b" hidden="false" type="rule" targetId="3935-1ff5-1b61-e3e0"/>
+                <infoLink name="Smoke Burst" id="58e3-5ad7-90ac-a34b" hidden="false" type="rule" targetId="42c3-8f39-bccd-3ee8"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
