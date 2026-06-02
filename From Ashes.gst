@@ -290,7 +290,7 @@ However, failed Sidearm Reactions do not place a White Command Dice if failed.</
       <description>This Unity is not counted when establishing the Detachment&apos;s Morale Value or counted towards Routed when destroyed</description>
     </rule>
     <rule name="Adaptive Tactics" id="a38e-dc52-10cb-dfd3" hidden="false">
-      <description>This Squad may Form Up if it consists of 1-2 Units, not the usual 1</description>
+      <description>This Squad may Form Up if it consists of 1-2 Units, not the usual 1. See Unit Abilities from the main From Ashes rules.</description>
     </rule>
     <rule name="Advanced Radio" id="67a9-a2ad-9787-f656" hidden="false">
       <description>Any friendly Leader can extend their Leader range by 16&quot; when attempting to Order this Squad</description>
@@ -311,13 +311,13 @@ However, failed Sidearm Reactions do not place a White Command Dice if failed.</
       <description>When this Squad is first placed in the AO, the owning okayer may immediately declare the transported Squad is spending one or more of their Commands to Overwatch</description>
     </rule>
     <rule name="Electro-Pads" id="fbca-b732-83b1-0e49" hidden="false">
-      <description>Before rolling Armour saves to a hit from the front or side, roll a D12. On a 1-7 reduce that Hit&apos;s AP value by 2 to a minimum of 0. This ability has no effect against Melee attacks or Autohits.</description>
+      <description>Accuracy rolls of a 10+ against this Squad&apos;s front or sides reduce their AP by 2 (to a minimum of 0)</description>
     </rule>
     <rule name="Free Command: Autofire" id="e35f-a703-f839-077c" hidden="false">
       <description>If a Flyer Squad within 16&quot; (or other Unit Type within 8&quot;) and LOS ends moving its Units, this weapon can immediately Engage it but with [Accuracy → 2]. This can potentially interrupt the Command.</description>
     </rule>
     <rule name="Free Command: Medic" id="8a22-8cc3-2f31-9ce3" hidden="false">
-      <description>If this Squad is dismounted and carries out an Advance or Unique Command (not a Special Command), roll a Skill test afterwards. If passed, replenish a lost HP to a friendly dismounted Infantry Squad withing 4&quot; (including itself).</description>
+      <description>If this Squad is Dismounted, then at the start of a Command it may attempt a Skill test. If passed, replenish a lost HP to a friendly Dismounted Infantry Squad within 4” (including itself).</description>
     </rule>
     <rule name="Glide Pod" id="ece0-1301-74ba-86d3" hidden="false">
       <description>This Squad may reroll the Scatter Distance when using the Scatter ability, but must stand by the 2nd result</description>
@@ -334,8 +334,8 @@ However, failed Sidearm Reactions do not place a White Command Dice if failed.</
     <rule name="Optics" id="af11-7245-7a78-44c8" hidden="false">
       <description>If this Squad has not moved this turn, it may attempt a Skill test. If passed, receive [Accuracy ← 1]</description>
     </rule>
-    <rule name="Overseer (6+)" id="0a22-0c5c-f16e-bad0" hidden="false">
-      <description>When this Squad passes a Discipline test when taking an Order, roll a D12. On a 6+ the Order comes the Leader&apos;s own Order capacity instead of its Commands (if it has any Order capacity available).</description>
+    <rule name="Overseer (8+)" id="0a22-0c5c-f16e-bad0" hidden="false">
+      <description>When this Squad takes an Order and rolls an 8+ for its Discipline test, the Leader issuing the Order places a red Order dice instead of a white Command dice (if the Leader has any Order capacity available).</description>
     </rule>
     <rule name="Silencers" id="d8d0-d66f-7ed4-7097" hidden="false">
       <description>Target Squads must pass an additional Discipline test to successfully React to this weapon&apos;s hits</description>

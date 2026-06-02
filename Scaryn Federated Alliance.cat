@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="26d0-ece6-9126-7ee3" name="Scaryn Federated Alliance" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="26d0-ece6-9126-7ee3" name="Scaryn Federated Alliance" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Scaryn Federated Alliance Lib" id="0b4b-306a-53e6-7c0e" targetId="36c0-b435-6935-ad36"/>
   </catalogueLinks>
@@ -759,6 +759,9 @@
           <categoryLinks>
             <categoryLink targetId="857e-b03a-a081-0acc" id="92da-68a1-6a04-358c" primary="false" name="Configuration"/>
           </categoryLinks>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Seinar (Advanced Military Tech)" hidden="false" id="9872-12ac-466c-59c7" sortIndex="2">
           <rules>
@@ -766,12 +769,8 @@
               <description>Smoke Grenades result in a [Accuracy → 2] instead of [Accuracy → 1]. In Addition, MB17 LAWS, Hammerhead Missile Launchers and Snapdragon Dual Missile Launchers receive the Top Attack special ability</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink name="Top Attack (10+)" id="26ae-61c6-1383-aa36" hidden="false" type="rule" targetId="b485-729f-0972-dde8"/>
-          </infoLinks>
           <costs>
             <cost name="Req" typeId="Requisition" value="25"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="857e-b03a-a081-0acc" id="08b7-e9ce-0c60-f5c1" primary="false" name="Configuration"/>
@@ -791,7 +790,6 @@
           </rules>
           <costs>
             <cost name="Req" typeId="Requisition" value="25"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Deygra (Shoot And Scoot)" hidden="false" id="bccf-e697-60f7-0bcb" sortIndex="4">
@@ -800,7 +798,6 @@
           </categoryLinks>
           <costs>
             <cost name="Req" typeId="Requisition" value="25"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
           <rules>
             <rule name="Shoot And Scoot" id="ab0e-a586-ece8-b121" hidden="false">
@@ -814,7 +811,6 @@
           </categoryLinks>
           <costs>
             <cost name="Req" typeId="Requisition" value="25"/>
-            <cost name="Morale" typeId="32f3-2311-8978-b603" value="0"/>
           </costs>
           <rules>
             <rule name="Mechanised Assault" id="898a-4f04-cbde-fd5b" hidden="false">
@@ -831,6 +827,9 @@
               <description>Borego Infantry Squads can reroll Discipline tests when attempting to Overwatch. In addition, Borego Vehicles reduce their Move value by 1 but increase their Side Armour by 1</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Req" typeId="Requisition" value="25"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <constraints>
