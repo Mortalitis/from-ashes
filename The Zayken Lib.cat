@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Acid Belch" hidden="false" id="ece4-42bc-b0ce-5309">
       <constraints>
@@ -399,6 +399,7 @@
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (1)" id="90b3-d8ab-6a1f-9836" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
                 <infoLink name="Plasma (11+)" id="89f5-a235-c4cb-f8f8" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
+                <infoLink name="Extra Weapon" id="b327-b17a-3077-0373" hidden="false" type="rule" targetId="cf63-b1b2-84c6-1b5d"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma Carbine" hidden="false" id="f08b-8c1d-899f-7fb9">
@@ -432,7 +433,6 @@
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (1)" id="6fbd-6a00-647b-efed" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
                 <infoLink name="Plasma (12+)" id="4f4f-14a5-7581-64b4" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
-                <infoLink name="Extra Weapon" id="b327-b17a-3077-0373" hidden="false" type="rule" targetId="cf63-b1b2-84c6-1b5d"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -446,7 +446,7 @@
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">7&quot;</characteristic>
                 <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
@@ -459,12 +459,18 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone (1)" id="a5ad-7038-fdf8-b39f" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="a5ad-7038-fdf8-b39f" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Recon" id="dbde-1e47-57ba-3688" hidden="false" type="rule" targetId="97a1-8277-5ebe-dea0"/>
-            <infoLink name="Agile" id="b878-a8df-872a-2555" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
+            <infoLink name="Snap React (5+; Advance)" id="b878-a8df-872a-2555" hidden="false" type="rule" targetId="5950-f695-7f53-773f"/>
             <infoLink name="Networked Scanning Sensors" id="35fc-86d5-2ea5-58c7" hidden="false" type="rule" targetId="0bb1-6f4f-5a72-3fb3"/>
             <infoLink name="Distorted Nervous System" id="8252-d615-744e-d1cf" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="b0db-f60f-dc03-9940" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Heavy Charge" id="8e9b-0d42-6802-53da" hidden="false" type="rule" targetId="593d-6e04-b46b-328c"/>
+            <infoLink name="Dodge" id="3ddb-cd9e-618b-e2bf" hidden="false" type="rule" targetId="db4d-a462-5a4c-bed1"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -478,7 +484,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Xeraak] Hunchback Gun Cyborgs" hidden="false" id="6075-3b8c-8852-12e6" publicationId="38b2-0d05-f0c9-eb32" page="11">
       <costs>
-        <cost name="Req" typeId="Requisition" value="28"/>
+        <cost name="Req" typeId="Requisition" value="26"/>
         <cost name="Routed Checkpoint" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
       <selectionEntries>
@@ -529,7 +535,7 @@
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">8+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
                 <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">7</characteristic>
@@ -542,9 +548,13 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone (1)" id="494f-149a-cc5f-bba4" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="494f-149a-cc5f-bba4" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Distorted Nervous System" id="270e-8e3e-d578-55df" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="50dc-a470-ffae-7e41" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -560,12 +570,12 @@
                 <condition type="equalTo" value="3" field="selections" scope="self" childId="a31c-9582-b974-9cc4" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="14" field="Requisition">
+            <modifier type="increment" value="13" field="Requisition">
               <conditions>
                 <condition type="equalTo" value="3" field="selections" scope="self" childId="a31c-9582-b974-9cc4" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="28" field="Requisition">
+            <modifier type="increment" value="26" field="Requisition">
               <conditions>
                 <condition type="equalTo" value="4" field="selections" scope="self" childId="a31c-9582-b974-9cc4" shared="true"/>
               </conditions>
@@ -644,7 +654,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone Controller, Consumed Memories, Shield (2) Recharge 6+, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone Controller, Consumed Memories, Shield (2) Recharge 6+, Distorted Nervous System, Shield Projector</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -652,8 +662,13 @@
             <infoLink name="Consumed Memories" id="9654-59b1-d581-c9fb" hidden="false" type="rule" targetId="45f6-5f49-69f9-794a"/>
             <infoLink name="Shield (2) Recharge 6+" id="e075-bca3-5bfd-a8bd" hidden="false" type="rule" targetId="93cd-12d5-25e8-fc7b"/>
             <infoLink name="Drone Controller" id="77e5-c599-800c-dd1a" hidden="false" type="rule" targetId="07cf-aeb3-a712-e464"/>
-            <infoLink name="Distorted Nervous System" id="c701-6914-503b-0fa3" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="503a-7c95-89a2-d262" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="720f-606c-3d6e-7da2" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Shield Projector" id="c1f4-1627-8106-7637" hidden="false" type="rule" targetId="f3f4-23d3-94d5-b4d4"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -670,7 +685,7 @@
                 <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
                 <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">7</characteristic>
@@ -685,6 +700,8 @@
           <infoLinks>
             <infoLink name="Shield (2) Recharge 6+" id="11bb-6da9-62da-0afa" hidden="false" type="rule" targetId="93cd-12d5-25e8-fc7b"/>
             <infoLink name="Overseer (10+)" id="8b8b-9470-f894-fdd1" hidden="false" type="rule" targetId="426f-96e1-451a-d459"/>
+            <infoLink name="Ravenous" id="96b2-3233-2020-2765" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="4851-8201-b02f-d36c" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <rules>
             <rule name="Non-Combat Unit" id="78d0-a631-0556-20c0" hidden="false" publicationId="38b2-0d05-f0c9-eb32" page="9">
@@ -694,6 +711,9 @@
               <description>Friendly Xeraak Triarchy Leader Units within 12&quot; can measure their Leader range up to 12&quot; further from this Unit</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -716,7 +736,7 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a702-0c98-a951-eb6e"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Berserker Plasma Weapons" hidden="false" id="ecba-fd1b-7f0c-e368">
+            <selectionEntry type="upgrade" import="true" name="Berserker Plasma Weapons" hidden="false" id="ecba-fd1b-7f0c-e368" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0c1-281e-1044-f7d6"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ff7-c3ab-75bb-70e4"/>
@@ -737,7 +757,7 @@
                 <profile name="Berserker Plasma Weapons" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="bfe1-e506-891c-dc40">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/2</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
                     <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/1</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
@@ -746,7 +766,7 @@
               </profiles>
               <infoLinks>
                 <infoLink name="Free Command: Run &amp; Gun (1)" id="9bcc-1484-f1fe-57c2" hidden="false" type="rule" targetId="b2a5-aecd-db49-13b8"/>
-                <infoLink name="Plasma (11+)" id="f3d1-7c3e-f8f1-deaa" hidden="false" type="rule" targetId="ff23-556f-e1f8-33cc"/>
+                <infoLink name="Plasma (12+)" id="f3d1-7c3e-f8f1-deaa" hidden="false" type="rule" targetId="fd5b-5088-f302-e860"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -758,8 +778,8 @@
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">1</characteristic>
                 <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
-                <characteristic name="Move" typeId="863f-c803-2ef3-b555">4+D4&quot;</characteristic>
-                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">6</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">7</characteristic>
                 <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
@@ -769,18 +789,20 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone (1)" id="87c8-0825-8008-56d8" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="87c8-0825-8008-56d8" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Arc Blades" id="775d-2e89-9f9e-143d" hidden="false" type="rule" targetId="0123-ec80-d72e-d6ce"/>
             <infoLink name="Reassemble" id="126d-b3ce-ae22-3fda" hidden="false" type="rule" targetId="60bc-f259-f153-6494"/>
-            <infoLink name="Agile" id="c9dc-5947-c3e7-ba66" hidden="false" type="rule" targetId="313a-9ac7-c420-6a26"/>
             <infoLink name="Berserk" id="663f-0a72-7049-ee72" hidden="false" type="rule" targetId="b4a2-e55e-16dd-7c10"/>
-            <infoLink name="Auxiliary" id="56a1-2b78-0831-ff44" hidden="false" type="rule" targetId="79e3-d0fa-6443-e95c"/>
             <infoLink name="A Madness Grips Them" id="f09a-4ea6-26c1-d568" hidden="false" type="rule" targetId="4fef-152a-0271-4085"/>
-            <infoLink name="Distorted Nervous System" id="d005-47aa-8cb4-5e6b" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="242f-c8a7-6349-7979" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="78e7-8a82-1d54-7c97" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Acid Belch" hidden="false" id="7338-b88d-e819-3a5f" type="selectionEntry" targetId="ece4-42bc-b0ce-5309"/>
+            <entryLink import="true" name="Acid Belch" hidden="false" id="7338-b88d-e819-3a5f" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -828,7 +850,7 @@
                 <profile name="Plasma Carbines" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="1798-1296-1af1-15b4">
                   <characteristics>
                     <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/1</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/1</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/1</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/1</characteristic>
                     <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/0</characteristic>
                     <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/0</characteristic>
@@ -860,14 +882,18 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone (1)" id="afd8-b09c-088f-8955" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
+            <infoLink name="Drone (2)" id="afd8-b09c-088f-8955" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
             <infoLink name="Arc Blades" id="c54c-58d1-0af9-1cbe" hidden="false" type="rule" targetId="0123-ec80-d72e-d6ce"/>
             <infoLink name="Reassemble" id="e3ee-4ee4-0074-3aed" hidden="false" type="rule" targetId="60bc-f259-f153-6494"/>
             <infoLink name="Distorted Nervous System" id="c526-d8cd-e0dc-8aa0" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="00f0-f882-a458-15e2" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Acid Belch" hidden="false" id="6c2a-0622-ac8a-a375" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Revenant Heavies" hidden="false" id="c20d-a580-df6a-4133" publicationId="38b2-0d05-f0c9-eb32" page="14" sortIndex="2">
           <constraints>
@@ -895,11 +921,11 @@
                 </profile>
                 <profile name="Plasma Accelerators" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="a79f-1982-807f-2ec2">
                   <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">6+/3</characteristic>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/3</characteristic>
                     <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">7+/3</characteristic>
                     <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">9+/3</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/2</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/1</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">11+/2</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">12+/1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -928,12 +954,16 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Drone (1)" id="119f-5ca0-011c-f054" hidden="false" type="rule" targetId="2d3e-fe0b-2990-2861"/>
-            <infoLink name="Distorted Nervous System" id="af60-2a9d-e859-403d" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Drone (2)" id="119f-5ca0-011c-f054" hidden="false" type="rule" targetId="4056-74b1-2640-1654"/>
+            <infoLink name="Ravenous" id="aade-6f6b-2959-01e9" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="e8d6-a2fc-bb05-9e8d" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Acid Belch" hidden="false" id="4cff-055d-9179-a588" type="selectionEntry" targetId="ece4-42bc-b0ce-5309"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1133,85 +1163,85 @@
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="[Verse] Ringleader Command Unit" hidden="false" id="30a9-f5d3-9e7b-15c4">
+    <selectionEntry type="unit" import="true" name="[Verse] Gorath Shock Mutants" hidden="false" id="30a9-f5d3-9e7b-15c4">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Ringleader" hidden="false" id="b6e5-8008-1ae5-6f40" sortIndex="1">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="2089-4b40-ffd0-4b5b">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9641-1ec5-540d-fcc2" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2f7-542d-6201-854a" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Shotgun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="dc52-3fec-d43d-ec5a">
-                  <characteristics>
-                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
-                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
-                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
-                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
-                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
-                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
-                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Scatter Shot</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Shotgun" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="45e5-20df-cb99-a1b7">
-                  <characteristics>
-                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">2+/2</characteristic>
-                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/2</characteristic>
-                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">10+/0</characteristic>
-                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
-                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Scatter Shot" id="deff-c482-f425-4d65" hidden="false" type="rule" targetId="321f-4a1a-01c4-1ef8"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Acid Belch" hidden="false" id="6bdc-4d69-8bf2-385d" type="selectionEntry" targetId="ece4-42bc-b0ce-5309"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3592-babf-3b24-5878" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4451-424c-74e5-4a54" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry type="model" import="true" name="Gorath" hidden="false" id="2202-8554-cf10-6f02" sortIndex="1">
           <profiles>
-            <profile name="Ringleader" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="44b4-894b-2eae-23e3">
+            <profile name="Gorath" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="58ca-b5ed-e20e-b36f">
               <characteristics>
-                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Walker</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
                 <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
                 <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
-                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">6</characteristic>
-                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
-                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
-                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Consumed Memories, Pyromaniac, Vhokys Drugs (1-2), Zealot, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Gorath Might, Vhokys Drugs (1-3)</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b893-200e-aa4e-97df" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2e7d-c180-8cfe-acd7" includeChildSelections="false"/>
+          </constraints>
           <infoLinks>
-            <infoLink name="Consumed Memories" id="1103-1131-7925-cb0c" hidden="false" type="rule" targetId="45f6-5f49-69f9-794a"/>
-            <infoLink name="Zealot" id="8283-49b5-9722-ac0c" hidden="false" type="rule" targetId="88c5-b86f-11ba-0f01"/>
-            <infoLink name="Pyromaniac" id="c71e-dc5d-18cb-c8e6" hidden="false" type="rule" targetId="8b43-95e4-4972-ee77"/>
-            <infoLink name="Vhokys Drugs (1-2)" id="81bb-7e23-de94-a4a2" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
-            <infoLink name="Brute" id="4dcd-ff99-0671-e8e5" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
-            <infoLink name="Distorted Nervous System" id="77bc-e3c4-56ce-bfb5" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Vhokys Drugs (1-3)" id="4122-6f9a-eb86-9a16" hidden="false" type="rule" targetId="ed3b-71e5-a9be-6375"/>
+            <infoLink name="Gorath Might" id="1b68-96e3-2981-e01c" hidden="false" type="rule" targetId="6884-31d5-0977-d00d"/>
+            <infoLink name="Ravenous" id="ab96-1e26-d332-3ebf" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="7209-87a6-3a4a-b335" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Shock Rifles" hidden="false" id="2e00-97e7-d4c2-e409">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a559-d9b6-d609-d79b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0a2-ab7d-4462-7fd1" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Heavy Shock Rifles" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="0779-cd16-c054-d4a5">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (3&quot;), Charge Up! (2D4), Galvanic Detonation (1), Shock Bolt (2)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Heavy Shock Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="50ac-dbf7-e91a-0dd9">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2D4</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2D4</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">8+/2D4</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">10+/2D4</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/2D4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Charge Up! (2D4)" id="1182-8f57-1360-4417" hidden="false" type="rule" targetId="6853-9d39-77dc-d83d"/>
+                <infoLink name="Galvanic Detonation (1)" id="b899-5d0c-251f-fc4b" hidden="false" type="rule" targetId="85ab-e1b1-c98e-274f"/>
+                <infoLink name="Shock Bolt (2)" id="4006-303e-279d-bc67" hidden="false" type="rule" targetId="1caa-30b9-a34e-e939"/>
+                <infoLink name="Assault Move (3&quot;)" id="f8a4-cecc-9472-0678" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Req" typeId="Requisition" value="20"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="33b9-ec9e-4f39-f0f0" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="64fb-6e61-63f0-ac84" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Verse] Vanguard Infantry Cohort" hidden="false" id="6a85-0966-361e-f4ba">
@@ -1263,6 +1293,7 @@
           <infoLinks>
             <infoLink name="Vhokys Drugs (1-2)" id="7618-48fe-528a-8a46" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
             <infoLink name="Distorted Nervous System" id="5691-3d23-8a83-f143" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="a57b-19fc-148f-e13f" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
           </infoLinks>
           <profiles>
             <profile name="Vanguard Rifleman" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="0c78-ba4d-30a6-0369">
@@ -1282,6 +1313,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Vanguard Rocket Trooper" hidden="false" id="0b8b-67b6-9488-3349" sortIndex="2">
           <entryLinks>
@@ -1293,7 +1327,8 @@
           </constraints>
           <infoLinks>
             <infoLink name="Vhokys Drugs (1-2)" id="fdcd-3f5b-8a07-5bda" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
-            <infoLink name="Distorted Nervous System" id="f3cc-8bb8-d2a1-483a" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="fda9-d6bf-0462-ce42" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="65ae-60d2-611a-a960" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="RPGs" hidden="false" id="13ba-272c-0653-e43e" sortIndex="1">
@@ -1348,6 +1383,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1414,6 +1452,7 @@
                 <condition type="equalTo" value="2" field="selections" scope="parent" childId="55b9-4725-2d90-148f" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
           </modifiers>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="M74 Assault Rifles" hidden="false" id="9ea1-d5e7-2643-146c" sortIndex="1">
@@ -1453,6 +1492,7 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Distorted Nervous System" id="6797-08f3-fa5b-465e" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="d6f1-3839-f7f0-740b" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Guardsmen Anti-Tank Unit" hidden="false" id="8f38-32d3-81b5-fa59" sortIndex="2">
@@ -1496,8 +1536,12 @@
             <entryLink import="true" name="Acid Belch" hidden="false" id="8430-09b4-f8d9-865d" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Distorted Nervous System" id="4544-461e-183e-521c" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="87cc-445e-3bcf-2b48" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="5628-99d4-42d4-7c2a" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Guardsmen HMG Team Unit" hidden="false" id="55b9-4725-2d90-148f" sortIndex="3">
           <constraints>
@@ -1535,7 +1579,8 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Cumbersome" id="6664-52b3-8a5c-4066" hidden="false" type="rule" targetId="c3cb-c914-043d-4221"/>
-            <infoLink name="Distorted Nervous System" id="bb32-94c3-3345-f3ad" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="328a-f034-39ae-cf87" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="451b-f706-ad92-e697" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <profiles>
             <profile name="Guardsmen HMG Team Unit" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="8575-51d3-2c80-6779">
@@ -1555,6 +1600,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1696,8 +1744,12 @@
             <entryLink import="true" name="Acid Belch" hidden="false" id="49f7-5643-76fa-201d" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Distorted Nervous System" id="ad3f-f137-73e5-5c69" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="2f75-85b5-4d09-2e6f" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="77f6-4428-fef7-f808" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1779,7 +1831,8 @@
             <infoLink name="Guard" id="9121-3f1b-fdea-0411" hidden="false" type="rule" targetId="1d70-9615-1292-a2bc"/>
             <infoLink name="Inspirational Hero" id="716c-ddf1-f7fe-b0dc" hidden="false" type="rule" targetId="c5cc-2701-61d1-b83b"/>
             <infoLink name="Radio" id="4a28-76f1-c0ce-e59c" hidden="false" type="rule" targetId="c624-2e96-d693-89ce"/>
-            <infoLink name="Distorted Nervous System" id="a3bf-ac0f-0b30-da4f" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="fca9-ff65-105d-cfa1" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="ad8b-d899-1cdd-8140" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <profiles>
             <profile name="Guardsmen Command Unit" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="5384-8859-ffdc-ad1d">
@@ -1799,6 +1852,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1852,7 +1908,8 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Cumbersome" id="84f3-7205-a613-3379" hidden="false" type="rule" targetId="c3cb-c914-043d-4221"/>
-            <infoLink name="Distorted Nervous System" id="eae7-3213-f41f-e3ba" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="4d5d-6880-359f-5aa6" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="937c-b1cc-20f2-8d4c" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <profiles>
             <profile name="Guardsmen HMG Team Unit" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="0756-9be4-61bc-4273">
@@ -1872,6 +1929,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifierGroups>
@@ -1974,7 +2034,8 @@
             <infoLink name="Smokescreen" id="5855-ca4d-8835-1b11" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
             <infoLink name="Adaptive Tactics" id="230d-0587-c78f-a7f6" hidden="false" type="rule" targetId="a38e-dc52-10cb-dfd3"/>
             <infoLink name="Sidearms" id="16d6-a0f6-8fd4-92e3" hidden="false" type="rule" targetId="6a33-85d0-d353-5615"/>
-            <infoLink name="Distorted Nervous System" id="dda2-11eb-3f3d-cdc5" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="8086-8e1a-a1d8-716e" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="620b-f074-ad5f-37f2" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="MB17 Laws" hidden="false" id="a617-0d1f-c897-7b54" sortIndex="1">
@@ -2014,6 +2075,9 @@
           <entryLinks>
             <entryLink import="true" name="Acid Belch" hidden="false" id="9bdd-a651-0299-7638" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2084,7 +2148,8 @@
             <infoLink name="Free Command: Medic" id="8d64-aa12-3604-83e4" hidden="false" type="rule" targetId="8a22-8cc3-2f31-9ce3"/>
             <infoLink name="Unique Command: Boost the Signal" id="5098-7e10-e981-aca8" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
             <infoLink name="Radio" id="a4b4-7039-a226-895e" hidden="false" type="rule" targetId="c624-2e96-d693-89ce"/>
-            <infoLink name="Distorted Nervous System" id="3219-8168-23d7-a97a" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="20aa-250e-845b-872c" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="5a19-04b4-58f4-a30d" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="M74 Assault Rifles" hidden="false" id="97c0-5bd9-d102-378a" sortIndex="1">
@@ -2126,6 +2191,9 @@
           <entryLinks>
             <entryLink import="true" name="Acid Belch" hidden="false" id="8720-ccdc-b0d2-8123" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2173,8 +2241,12 @@
             <infoLink name="Special Forces" id="de34-82b6-30eb-7de6" hidden="false" type="rule" targetId="5096-e749-8137-d48c"/>
             <infoLink name="Target Identified" id="7b4b-d5a8-793d-42e8" hidden="false" type="rule" targetId="11b8-132f-8627-9bae"/>
             <infoLink name="Det Charges" id="1f3b-d147-ca5f-77a4" hidden="false" type="rule" targetId="4d41-49f9-9e6e-13a1"/>
-            <infoLink name="Distorted Nervous System" id="aeca-7fd7-8e7f-1206" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="3d94-fd11-9a7d-182a" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="bcfa-7f0b-d077-097a" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Pathfinder Dragoon Captain" hidden="false" id="b3c6-7436-44f7-59f1" sortIndex="1">
           <constraints>
@@ -2192,9 +2264,10 @@
             <infoLink name="Smokescreen" id="a653-6845-1532-45d6" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
             <infoLink name="Special Forces" id="15af-2e53-edd4-2208" hidden="false" type="rule" targetId="5096-e749-8137-d48c"/>
             <infoLink name="Target Identified" id="51f7-ad15-2240-8d1b" hidden="false" type="rule" targetId="11b8-132f-8627-9bae"/>
-            <infoLink name="Squad Leader" id="3242-98fa-f344-b0e5" hidden="false" type="rule" targetId="35c6-5c3c-a3c7-640c"/>
+            <infoLink name="Overseer (7+)" id="3242-98fa-f344-b0e5" hidden="false" type="rule" targetId="392f-7f68-5b90-d639"/>
             <infoLink name="Advanced Radio" id="f036-ea95-fe27-552a" hidden="false" type="rule" targetId="67a9-a2ad-9787-f656"/>
-            <infoLink name="Distorted Nervous System" id="8668-c1f9-3881-19b4" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="7f90-a46b-8b19-12a9" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="8d0c-6f7c-585e-16e0" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <profiles>
             <profile name="Pathfinder Dragoon Captain" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="8cdf-de22-84ce-13d3">
@@ -2214,6 +2287,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2311,8 +2387,12 @@
             <infoLink name="Adaptive Tactics" id="ed8e-eea5-3d1e-a687" hidden="false" type="rule" targetId="a38e-dc52-10cb-dfd3"/>
             <infoLink name="Sidearms" id="aa84-c7a0-c57d-c6ca" hidden="false" type="rule" targetId="6a33-85d0-d353-5615"/>
             <infoLink name="Smokescreen" id="277c-ec0a-a6a4-8916" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-            <infoLink name="Distorted Nervous System" id="0cef-e957-7009-f227" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="a416-a09b-806b-6c79" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="879a-e849-174f-157c" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2421,8 +2501,12 @@
             <infoLink name="Adaptive Tactics" id="7318-94a9-b9c9-0231" hidden="false" type="rule" targetId="a38e-dc52-10cb-dfd3"/>
             <infoLink name="Sidearms" id="34b9-f527-ead2-1337" hidden="false" type="rule" targetId="6a33-85d0-d353-5615"/>
             <infoLink name="Smokescreen" id="626c-5e67-49cd-d403" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-            <infoLink name="Distorted Nervous System" id="5fd4-3c45-daa8-7803" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="7c84-b159-be7e-b90a" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="15f5-8aca-e5c7-4a20" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2548,7 +2632,8 @@
                 <infoLink name="Smokescreen" id="3c6c-dcfa-0157-2a54" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
                 <infoLink name="Adaptive Tactics" id="79cc-a73a-a73d-207c" hidden="false" type="rule" targetId="a38e-dc52-10cb-dfd3"/>
                 <infoLink name="Sidearms" id="6c26-5223-1167-c668" hidden="false" type="rule" targetId="6a33-85d0-d353-5615"/>
-                <infoLink name="Distorted Nervous System" id="bf7f-d87f-560f-8bd5" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+                <infoLink name="Ravenous" id="c9a9-97ab-d809-cadd" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+                <infoLink name="Distorted Nervous System" id="40b3-10b5-4976-bca5" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
               </infoLinks>
               <profiles>
                 <profile name="Pathfinder Riflemen (w/ MB17 LAW)" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="e0d1-7126-29e5-6948">
@@ -2568,6 +2653,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Pathfinder Riflemen" hidden="false" id="3a52-27e4-1280-643e" sortIndex="2">
               <selectionEntries>
@@ -2636,8 +2724,12 @@
                 <infoLink name="Adaptive Tactics" id="4fe9-0c2e-d4bd-3672" hidden="false" type="rule" targetId="a38e-dc52-10cb-dfd3"/>
                 <infoLink name="Sidearms" id="e2fc-2609-e254-accf" hidden="false" type="rule" targetId="6a33-85d0-d353-5615"/>
                 <infoLink name="Smokescreen" id="5942-af13-c94e-b51a" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-                <infoLink name="Distorted Nervous System" id="fc5e-b66e-c4e4-bc27" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+                <infoLink name="Ravenous" id="b75f-fa88-2f05-5085" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+                <infoLink name="Distorted Nervous System" id="f91a-4de2-0bda-be49" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3021,8 +3113,12 @@
           <infoLinks>
             <infoLink name="Smokescreen" id="be84-6698-85d6-9816" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
             <infoLink name="Vhokys Drugs (1-2)" id="24ed-2882-e7e4-270f" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
-            <infoLink name="Distorted Nervous System" id="2371-1e65-cc0a-f518" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="68c5-0650-1d86-1c2e" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="a23b-f61b-54f2-912c" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3071,10 +3167,10 @@
           <profiles>
             <profile name="Pathfinder Command" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="6771-50c2-c250-4e34">
               <characteristics>
-                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">2</characteristic>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
                 <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
-                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">5+</characteristic>
-                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">0</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">5+</characteristic>
                 <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
                 <characteristic name="Move" typeId="863f-c803-2ef3-b555">6&quot;</characteristic>
                 <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">7</characteristic>
@@ -3133,12 +3229,17 @@
             <infoLink name="Free Command: Medic" id="c852-71f0-6605-b0a9" hidden="false" type="rule" targetId="8a22-8cc3-2f31-9ce3"/>
             <infoLink name="Radio" id="eb15-14d9-ad75-d01f" hidden="false" type="rule" targetId="c624-2e96-d693-89ce"/>
             <infoLink name="Unique Command: Boost the Signal" id="0a54-02d3-0f50-38dd" hidden="false" type="rule" targetId="f216-6748-8ce2-4ed9"/>
+            <infoLink name="Ravenous" id="4e09-b198-10d1-c5f5" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="421b-8132-153f-9019" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Req" typeId="Requisition" value="40"/>
-        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="3"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="3583-2d36-54b9-b7e0" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
@@ -3245,11 +3346,15 @@
           <infoLinks>
             <infoLink name="Vhokys Drugs (1-2)" id="9e5e-3c3d-8b53-198c" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
             <infoLink name="Smokescreen" id="f048-84f5-b99b-6f00" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-            <infoLink name="Distorted Nervous System" id="c1c4-0c27-a4da-21bd" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="18ba-e075-1c45-4e98" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="71e1-42b0-0511-fdef" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Acid Belch" hidden="false" id="8a10-1434-b91c-f608" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="3"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3348,8 +3453,12 @@
           <infoLinks>
             <infoLink name="Vhokys Drugs (1-2)" id="1ea2-c3a7-c240-f026" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
             <infoLink name="Smokescreen" id="1bfc-1497-d467-b1e9" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-            <infoLink name="Distorted Nervous System" id="b7dc-ad65-337a-e843" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="6778-ef50-a675-ddee" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="d20f-de69-f735-b67c" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Vanguard Rocket Troopers" hidden="false" id="e339-9d9c-e540-d250" sortIndex="2">
           <constraints>
@@ -3377,7 +3486,8 @@
           <infoLinks>
             <infoLink name="Vhokys Drugs (1-2)" id="7d1c-1bfe-9a78-ece6" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
             <infoLink name="Smokescreen" id="38b7-3419-2bbf-33d5" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
-            <infoLink name="Distorted Nervous System" id="0914-774a-a69f-cd15" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+            <infoLink name="Ravenous" id="9f9a-4793-7bb2-192c" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="236c-f311-8b6c-f895" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Acid Belch" hidden="false" id="50a3-f5e7-1bb6-e52b" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
@@ -3417,6 +3527,9 @@
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3507,6 +3620,251 @@
       <entryLinks>
         <entryLink import="true" name="Infantry Upgrades" hidden="false" id="4be7-1fef-b89f-cbe3" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="2"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[Devin] Gorath Shock Mutants" hidden="false" id="9e21-5c78-5f36-9ff0">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Gorath" hidden="false" id="a91f-ac9f-009a-a812" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="bbb0-80b8-2cef-6983" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1717-b24f-8996-2a17" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Vhokys Drugs (1-3)" id="4962-8a9e-ae30-c38a" hidden="false" type="rule" targetId="ed3b-71e5-a9be-6375"/>
+            <infoLink name="Gorath Might" id="563b-4361-370f-38b5" hidden="false" type="rule" targetId="6884-31d5-0977-d00d"/>
+            <infoLink name="Ravenous" id="f088-459f-5138-0998" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="e917-04dc-bbcb-9187" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Shock Rifles" hidden="false" id="8d4b-c7d2-9f68-2579">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c4a-0ae5-52b8-d22c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0ce-e7c5-bd5e-1f07" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Charge Up! (2D4)" id="e0d0-0cc6-0290-4d8a" hidden="false" type="rule" targetId="6853-9d39-77dc-d83d"/>
+                <infoLink name="Galvanic Detonation (1)" id="d743-d4f3-607d-c186" hidden="false" type="rule" targetId="85ab-e1b1-c98e-274f"/>
+                <infoLink name="Shock Bolt (1)" id="b9c5-a00c-72ab-2759" hidden="false" type="rule" targetId="bad0-9c8b-df01-4061"/>
+                <infoLink name="Assault Move (3&quot;)" id="4e10-a425-5b52-7c3b" hidden="false" type="rule" targetId="aaff-02cd-c899-c6d0"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Heavy Shock Rifles" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="30ed-25e7-fd72-709d">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">1</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">2</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">2</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">2</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">2</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">2</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (3&quot;), Charge Up! (2D4), Galvanic Detonation (1), Shock Bolt (1)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Heavy Shock Rifles" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="1c68-9f64-b637-d2f4">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">5+/2D4</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">6+/2D4</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">7+/2D4</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">9+/2D4</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">11+/2D4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Mind Slaves</comment>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Gorath" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="eb2d-6701-b657-72ae">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Walker</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Gorath Might, Vhokys Drugs (1-3), Consumed Memories, Distorted Nervous System, Ravenouss</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="60"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="6"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Spore Slaver" hidden="false" id="5c3f-2b33-b05f-26cd" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[Verse] Ringleader Command Unit" hidden="false" id="d8bc-9a90-0863-45bc">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ringleader" hidden="false" id="d613-d610-3991-1233" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="404a-c36e-8809-b611">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e509-9e5a-f94a-a17a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9c0-cba5-3a49-8049" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shotgun" typeId="dc09-e8f7-1bee-9d70" typeName="Weapon Stats" hidden="false" id="8dfe-c73d-b45f-09a1">
+                  <characteristics>
+                    <characteristic name="Attacks" typeId="8cb0-64ed-d1f4-6cd0">HP</characteristic>
+                    <characteristic name="Arc" typeId="1f74-4c02-05ba-2dae">All</characteristic>
+                    <characteristic name="Blast" typeId="0072-c918-4223-1011">Small Arms</characteristic>
+                    <characteristic name="Infantry" typeId="bd4e-991b-463f-b91f">1</characteristic>
+                    <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">1</characteristic>
+                    <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">1</characteristic>
+                    <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">1</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Scatter Shot</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Shotgun" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="a47a-6b6f-8549-e522">
+                  <characteristics>
+                    <characteristic name="Close 0-4&quot;" typeId="1569-3b79-5cb4-ddd5">2+/2</characteristic>
+                    <characteristic name="Short 5-8&quot;" typeId="1d92-e4f7-a30d-7ef9">5+/2</characteristic>
+                    <characteristic name="Medium 9-16&quot;" typeId="ed23-ad24-dbb8-4ca0">10+/0</characteristic>
+                    <characteristic name="Long 17-24&quot;" typeId="89ad-56d1-0b2d-ac7b">N/A</characteristic>
+                    <characteristic name="Extreme 25+&quot;" typeId="b31b-047a-dbff-3f96">N/A</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Scatter Shot" id="cc10-ad16-cede-3765" hidden="false" type="rule" targetId="321f-4a1a-01c4-1ef8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Acid Belch" hidden="false" id="75ad-e605-8523-2ce7" type="selectionEntry" targetId="ece4-42bc-b0ce-5309"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd50-f730-70e9-3b89" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c3-f67d-df7f-9ee7" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ringleader" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="9457-2fcc-f641-2169">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Infantry</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">6+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">5&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">6</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">3</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Consumed Memories, Pyromaniac, Vhokys Drugs (1-2), Zealot, Distorted Nervous System</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Consumed Memories" id="4d8a-b9ab-2b45-596a" hidden="false" type="rule" targetId="45f6-5f49-69f9-794a"/>
+            <infoLink name="Zealot" id="4847-b12c-32ef-d7be" hidden="false" type="rule" targetId="88c5-b86f-11ba-0f01"/>
+            <infoLink name="Pyromaniac" id="2161-a2d4-d3f6-62cc" hidden="false" type="rule" targetId="8b43-95e4-4972-ee77"/>
+            <infoLink name="Vhokys Drugs (1-2)" id="d853-c436-db94-ed21" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
+            <infoLink name="Brute" id="6a0e-83a5-ddab-efb8" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+            <infoLink name="Ravenous" id="7482-fd3b-f922-ceca" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="a8d7-60e1-8584-d8a9" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="20"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="1"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Spore Slaver" hidden="false" id="58e7-9a2c-552a-19f6" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
+        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="c7eb-8f33-e37c-496b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[Verse] Utegon Assault Mutants" hidden="false" id="3c79-08e4-2b42-091a">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Utegon" hidden="false" id="0c2a-611f-0505-ad1b" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8704-08df-5bd9-2ffe" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="09d4-9d02-e3d1-1a96" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Utegon" typeId="3fbb-5413-4bb9-5545" typeName="Unit" hidden="false" id="8792-8149-5302-a01a">
+              <characteristics>
+                <characteristic name="Type" typeId="9526-d4e8-4a1b-d32c">Walker</characteristic>
+                <characteristic name="Commands" typeId="ccc6-4e9b-c5c5-622b">2</characteristic>
+                <characteristic name="Orders" typeId="39a7-2fed-199c-fcb9">2</characteristic>
+                <characteristic name="Discipline" typeId="f8c4-0643-9fe4-3b67">7+</characteristic>
+                <characteristic name="Enclosed" typeId="16d5-9d27-2d05-32ac">0</characteristic>
+                <characteristic name="Move" typeId="863f-c803-2ef3-b555">8&quot;</characteristic>
+                <characteristic name="Armour" typeId="bb04-e232-a0f9-6503">8</characteristic>
+                <characteristic name="HP" typeId="b3fc-385d-241f-565b">4</characteristic>
+                <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
+                <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
+                <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Burrowing Terror, Unique Command: Tunnelling Ascent, Underground Dweller, Vhokys Drugs (1-2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Unique Command: Tunnelling Ascent" id="190c-2ba7-8763-9e0e" hidden="false" type="rule" targetId="e3b8-0bce-9a2d-0fb1"/>
+            <infoLink name="Vhokys Drugs (1-2)" id="d716-45a8-6517-8264" hidden="false" type="rule" targetId="9444-a927-fe72-e1ab"/>
+            <infoLink name="Brute" id="e4e5-5171-943b-62d6" hidden="false" type="rule" targetId="4b97-6f8b-7669-f38a"/>
+            <infoLink name="Underground Dweller" id="0ff9-13e4-c357-6bd5" hidden="false" type="rule" targetId="deb1-fc79-5b6c-785c"/>
+            <infoLink name="Burrowing Terror" id="f16a-78d2-9045-df88" hidden="false" type="rule" targetId="2e77-867f-f692-574b"/>
+            <infoLink name="Ravenous" id="1e17-4deb-64ea-1106" hidden="false" type="rule" targetId="513c-31fc-4e30-50cb"/>
+            <infoLink name="Distorted Nervous System" id="9059-c28c-bffb-b4b3" hidden="false" type="rule" targetId="6249-777b-cfa3-6c6c"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="7+" field="f8c4-0643-9fe4-3b67" affects="self.forces.profiles.Unit"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Req" typeId="Requisition" value="40"/>
+        <cost name="Morale" typeId="32f3-2311-8978-b603" value="4"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Spore Slaver" hidden="false" id="3db5-ca23-fc39-d684" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Req &amp; Morale</comment>
+          <modifiers>
+            <modifier type="increment" value="4" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="0c2a-611f-0505-ad1b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="32f3-2311-8978-b603">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="0c2a-611f-0505-ad1b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="20" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="self" childId="0c2a-611f-0505-ad1b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="40" field="Requisition">
+              <conditions>
+                <condition type="equalTo" value="4" field="selections" scope="self" childId="0c2a-611f-0505-ad1b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="36c0-b435-6935-ad36" name="Scaryn Federated Alliance Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="36c0-b435-6935-ad36" name="Scaryn Federated Alliance Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pathfinder LMG Gunners" hidden="false" id="0010-f7fd-c067-b5d3">
       <selectionEntries>
@@ -344,7 +344,7 @@
             <infoLink name="Smokescreen" id="16c5-da6d-0d62-f417" hidden="false" type="rule" targetId="67d7-fb01-15af-53b1"/>
             <infoLink name="Special Forces" id="8472-e06d-6f3f-b844" hidden="false" type="rule" targetId="5096-e749-8137-d48c"/>
             <infoLink name="Target Identified" id="47b8-937c-b463-4ce9" hidden="false" type="rule" targetId="11b8-132f-8627-9bae"/>
-            <infoLink name="Overseer (8+)" id="8b4f-c66a-16e3-fc6f" hidden="false" type="rule" targetId="0a22-0c5c-f16e-bad0"/>
+            <infoLink name="Overseer (7+)" id="8b4f-c66a-16e3-fc6f" hidden="false" type="rule" targetId="392f-7f68-5b90-d639"/>
             <infoLink name="Advanced Radio" id="9747-ec9e-7409-3741" hidden="false" type="rule" targetId="67a9-a2ad-9787-f656"/>
           </infoLinks>
           <profiles>
@@ -591,7 +591,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f617-9275-5730-5f64" includeChildSelections="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Overseer (6+)" id="2b5d-00cf-784d-3fd6" hidden="false" type="rule" targetId="0a22-0c5c-f16e-bad0"/>
+                    <infoLink name="Overseer (8+)" id="2b5d-00cf-784d-3fd6" hidden="false" type="rule" targetId="0a22-0c5c-f16e-bad0"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Pathfinder Radioman Upgrade" hidden="false" id="ecb8-e03d-00de-460c">
@@ -3180,7 +3180,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb79-b0d5-6238-991a" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Overseer (6+)" id="a17e-2b91-bdaf-0f5f" hidden="false" type="rule" targetId="0a22-0c5c-f16e-bad0"/>
+            <infoLink name="Overseer (8+)" id="a17e-2b91-bdaf-0f5f" hidden="false" type="rule" targetId="0a22-0c5c-f16e-bad0"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pathfinder Radioman Upgrade" hidden="false" id="3a9c-7a9a-9268-21c4">
