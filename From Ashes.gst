@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
+<gameSystem id="sys-3b21-7aa2-cbe5-a479" name="From Ashes" battleScribeVersion="2.03" revision="16" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Arron Hooks" authorUrl="https://github.com/Mortalitis/from-ashes">
   <categoryEntries>
     <categoryEntry name="Detachment Commander" id="a9a7-132c-6641-0946"/>
     <categoryEntry name="Core Squads" id="0e7c-b40e-8e07-6f1c" hidden="false"/>
@@ -740,7 +740,7 @@ If an enemy Squad Reacts and Engages the Formed Up Squads, and have been hit by 
       <description>When Storming, roll a D12 for each HP removed from an enemy Unit with Enclosed 0. On a 10+, replenish a lost HP.</description>
     </rule>
     <rule name="Distorted Nervous System" id="6249-777b-cfa3-6c6c" hidden="false">
-      <description>Any ranged weapon this Unit has suffers from [Accuracy→1]</description>
+      <description>Reduce any Accuracy rolls this Unit makes by 1</description>
     </rule>
     <rule name="Consumed Memories" id="45f6-5f49-69f9-794a" hidden="false">
       <description>If a Mind Slave Unit has the Leader Ability, it loses it and instead while it is alive, generates an extra Hive Mind token for the Zayken side.</description>
@@ -822,6 +822,9 @@ Units can attempt to recharge their Shields During the Recover step of the SitRe
     </rule>
     <rule name="Auto Turret" id="bec8-0b53-06f0-b2d5" hidden="false">
       <description>When this Squad Snap Reacts, it may do so on a 4+ instead of 6+ but only use Auto Turrets.</description>
+    </rule>
+    <rule name="Overseer (7+)" id="392f-7f68-5b90-d639" hidden="false">
+      <description>When this Squad takes an Order and rolls an 7+ for its Discipline test, the Leader issuing the Order places a red Order dice instead of a white Command dice (if the Leader has any Order capacity available).</description>
     </rule>
   </sharedRules>
 </gameSystem>
