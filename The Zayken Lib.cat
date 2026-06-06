@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Acid Belch" hidden="false" id="ece4-42bc-b0ce-5309">
       <constraints>
@@ -454,7 +454,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Agile, Drone, Networked Scanning Sensors, Recon, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone (2), Dodge, Heavy Charge, Networked Scanning Sensors, Recon, Snap React (5+; Advance), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -543,7 +543,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone (2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -654,7 +654,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone Controller, Consumed Memories, Shield (2) Recharge 6+, Distorted Nervous System, Shield Projector</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone Controller, Consumed Memories, Shield (2) Recharge 6+, Shield Projector, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -693,7 +693,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Non-Combat Unit, Overseer (8+), Shield (2) Recharge 6+, Synapse</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Non-Combat Unit, Overseer (10+), Shield (2) Recharge 6+, Synapse, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -784,7 +784,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">A Madness Grips Them, Agile, Arc Blades, Auxiliary, Berserk, Drone, Reassemble, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">A Madness Grips Them, Arc Blades, Berserk, Drone (2), Reassemble, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -877,7 +877,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Arc Blades, Drone, Reassemble, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Arc Blades, Drone (2), Reassemble, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -949,7 +949,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone (1), Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Drone (2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1180,7 +1180,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">4</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Gorath Might, Vhokys Drugs (1-3)</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Gorath Might, Vhokys Drugs (1-3), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1242,6 +1242,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="33b9-ec9e-4f39-f0f0" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
+        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="5152-4622-5807-e1a1" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Verse] Vanguard Infantry Cohort" hidden="false" id="6a85-0966-361e-f4ba">
@@ -1309,7 +1310,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Vhokys Drugs (1-2), Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Vhokys Drugs (1-2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1379,7 +1380,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Vhokys Drugs (1-2), Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Vhokys Drugs (1-2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1483,7 +1484,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1514,7 +1515,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1596,7 +1597,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Cumbersome, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Cumbersome, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1722,7 +1723,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1848,7 +1849,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Guard, Heirloom Scimitar, Inspirational Hero, Consumed Memories, Radio, Unique Command: Boost the Signal, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Guard, Heirloom Scimitar, Inspirational Hero, Consumed Memories, Radio, Unique Command: Boost the Signal, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1925,7 +1926,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Cumbersome, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Cumbersome, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2026,7 +2027,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous Sytem</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2137,7 +2138,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">3</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Free Command: Medic, Consumed Memories, Radio, Sidearms, Smokescreen, Unique Command: Boost the Signal, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Free Command: Medic, Consumed Memories, Radio, Sidearms, Smokescreen, Unique Command: Boost the Signal, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2230,7 +2231,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Det Charges, Sidearms, Smokescreen, Special Forces, Target Identified, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Det Charges, Sidearms, Smokescreen, Special Forces, Target Identified, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2283,7 +2284,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Advanced Radio, Det Charges, Sidearms, Smokescreen, Special Forces, Squad Leader, Target Identified, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Advanced Radio, Det Charges, Sidearms, Smokescreen, Special Forces, Squad Leader, Target Identified, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2339,7 +2340,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2493,7 +2494,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2649,7 +2650,7 @@
                     <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                     <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                     <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                    <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System</characteristic>
+                    <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System, Ravenous</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2716,7 +2717,7 @@
                     <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                     <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                     <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                    <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System</characteristic>
+                    <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Adaptive Tactics, Sidearms, Smokescreen, Distorted Nervous System, Ravenous</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3106,7 +3107,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2), Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3178,7 +3179,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">3</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Free Command: Medic, Consumed Memories, Radio, Smokescreen, Unique Command: Boost the Signal, Vhokys Drugs (1-2), Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Free Command: Medic, Consumed Memories, Radio, Smokescreen, Unique Command: Boost the Signal, Vhokys Drugs (1-2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3263,7 +3264,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2), Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3407,7 +3408,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2), Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3479,7 +3480,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">1</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2), Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Smokescreen, Vhokys Drugs (1-2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3690,7 +3691,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">1</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">1</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Gorath Might, Vhokys Drugs (1-3), Consumed Memories, Distorted Nervous System, Ravenouss</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Gorath Might, Vhokys Drugs (1-3), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3705,6 +3706,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="5c3f-2b33-b05f-26cd" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
+        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="cec6-8a9e-5025-6a24" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Verse] Ringleader Command Unit" hidden="false" id="d8bc-9a90-0863-45bc">
@@ -3765,7 +3767,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">0</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Consumed Memories, Pyromaniac, Vhokys Drugs (1-2), Zealot, Distorted Nervous System</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Consumed Memories, Pyromaniac, Vhokys Drugs (1-2), Zealot, Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3813,7 +3815,7 @@
                 <characteristic name="Size" typeId="a69d-0fc5-7767-22db">0</characteristic>
                 <characteristic name="Melee" typeId="b872-9bb3-8308-708d">2</characteristic>
                 <characteristic name="OP" typeId="9617-8752-47e1-8214">2</characteristic>
-                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Burrowing Terror, Unique Command: Tunnelling Ascent, Underground Dweller, Vhokys Drugs (1-2)</characteristic>
+                <characteristic name="Rules" typeId="9d97-4f6a-64e7-245f">Brute, Burrowing Terror, Unique Command: Tunnelling Ascent, Underground Dweller, Vhokys Drugs (1-2), Distorted Nervous System, Ravenous</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3868,7 +3870,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Infantry Upgrades" id="c477-5c14-8e81-cf93" hidden="false">
+    <selectionEntryGroup name="Spore Slaver Upgrade" id="c477-5c14-8e81-cf93" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Spore Slaver Upgrade" hidden="false" id="d5d5-fb5a-6165-c85e">
           <costs>
