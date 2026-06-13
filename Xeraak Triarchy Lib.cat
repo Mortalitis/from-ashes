@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -109,7 +109,7 @@
         <entryLink import="true" name="Infantry Upgrades" hidden="false" id="12c1-7c14-55ec-b4ba" type="selectionEntryGroup" targetId="265f-273b-2d4c-3f44" sortIndex="2"/>
       </entryLinks>
       <costs>
-        <cost name="Req" typeId="Requisition" value="36"/>
+        <cost name="Req" typeId="Requisition" value="30"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
