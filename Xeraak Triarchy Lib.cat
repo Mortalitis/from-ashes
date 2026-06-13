@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0826-4b5a-0d9b-aede" name="Xeraak Triarchy Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="2" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Centaur Scout Cyborgs" hidden="false" id="23c3-f858-d21e-38b7" publicationId="38b2-0d05-f0c9-eb32" page="13">
       <selectionEntries>
@@ -255,7 +255,7 @@
                     <characteristic name="Walkers" typeId="e1ce-a868-d771-69b8">3</characteristic>
                     <characteristic name="Vehicles" typeId="aa27-9f00-d413-1c5b">4</characteristic>
                     <characteristic name="Flyers" typeId="8f25-1699-f943-aa2f">4</characteristic>
-                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Plasma (11+), Voltaic Snap</characteristic>
+                    <characteristic name="Rules" typeId="1666-854d-8d33-3d5d">Assault Move (4&quot;), Plasma (11+), Voltaic Burst</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Plasma Destroyers" typeId="9054-da59-7d68-5c1b" typeName="Weapon Accuracy/AP" hidden="false" id="dbd1-5f92-9757-32f8">
