@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0139-1fdc-0631-d2e4" name="The Zayken Lib" gameSystemId="sys-3b21-7aa2-cbe5-a479" gameSystemRevision="7" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Acid Belch" hidden="false" id="ece4-42bc-b0ce-5309">
       <constraints>
@@ -85,7 +85,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="ead2-4946-e6d9-3e43" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="2"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="ead2-4946-e6d9-3e43" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Neophyte Mob (Military Base)" hidden="true" id="e856-dda4-7be8-775a">
@@ -256,7 +256,7 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="87c9-22c8-bcd6-b8bf" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="87c9-22c8-bcd6-b8bf" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Corrupted Anvil" hidden="false" id="fa6a-f10a-6a1a-7b79">
@@ -475,10 +475,10 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="c6ea-5dc2-925d-3366" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="6dc2-087d-7a4d-a676" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="6dc2-087d-7a4d-a676" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
       </entryLinks>
       <costs>
-        <cost name="Req" typeId="Requisition" value="36"/>
+        <cost name="Req" typeId="Requisition" value="30"/>
         <cost name="Morale" typeId="32f3-2311-8978-b603" value="2"/>
       </costs>
     </selectionEntry>
@@ -559,7 +559,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="23df-39d1-3ea3-70b1" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="2fdf-a7d7-7167-320a" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="2fdf-a7d7-7167-320a" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -632,7 +632,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Infantry Upgrades" hidden="false" id="79fb-d0fe-366f-9b45" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="5"/>
+            <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="79fb-d0fe-366f-9b45" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="5"/>
             <entryLink import="true" name="Acid Belch" hidden="false" id="4005-9ba7-03ba-585f" type="selectionEntry" targetId="ece4-42bc-b0ce-5309" sortIndex="2"/>
             <entryLink import="true" name="Spore Slaver" hidden="false" id="b274-d2ac-788a-113a" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="3"/>
           </entryLinks>
@@ -717,7 +717,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="cf92-5fb5-68b8-2652" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="cf92-5fb5-68b8-2652" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="5de7-04d7-2fe3-5a23" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
       </entryLinks>
       <costs>
@@ -807,7 +807,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="07b3-08b2-7005-f13a" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="3"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="60b9-9a17-28b5-6ece" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="60b9-9a17-28b5-6ece" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="20"/>
@@ -968,7 +968,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="5559-4f94-c3fb-18e3" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="3"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="c504-3a35-4189-93ad" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="5"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="c504-3a35-4189-93ad" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="5"/>
       </entryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="50"/>
@@ -1083,7 +1083,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="560a-d16b-e1c2-8f15" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="2"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="560a-d16b-e1c2-8f15" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Spore Slaver" hidden="false" id="33f1-a836-2c87-2555">
@@ -1242,7 +1242,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="33b9-ec9e-4f39-f0f0" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="5152-4622-5807-e1a1" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="5152-4622-5807-e1a1" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Verse] Vanguard Infantry Cohort" hidden="false" id="6a85-0966-361e-f4ba">
@@ -1390,7 +1390,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="973f-81a4-897d-84b4" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="5"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="973f-81a4-897d-84b4" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="5"/>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="e990-04d5-bbac-8aa4" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="4"/>
       </entryLinks>
       <costs>
@@ -1608,7 +1608,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="ab70-ce19-042b-b207" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="5"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="298c-8a74-83a8-7ada" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="6"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="298c-8a74-83a8-7ada" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="6"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -1755,7 +1755,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="4749-9a31-4922-421f" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="3"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="379d-782e-2f2c-f81c" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="379d-782e-2f2c-f81c" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="22"/>
@@ -1864,13 +1864,13 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="b7d8-112d-345a-02de" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="eb0d-513f-ef22-983c" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="eb0d-513f-ef22-983c" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="[Sol] Guardsmen Machine Gun Squad" hidden="false" id="7eee-01dd-bd9b-d8ea">
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="c8dd-3f9e-0193-16bf" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="3"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="5b7e-c0fc-75dd-f5d2" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="5b7e-c0fc-75dd-f5d2" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Guardsmen HMG Team Unit" hidden="false" id="cddb-8384-3746-2691" sortIndex="1">
@@ -2114,7 +2114,7 @@
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="e53b-4850-3b3d-66a2" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="c795-2b83-6608-1913" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="c795-2b83-6608-1913" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[SFA] Pathfinder Command Unit" hidden="false" id="50a6-1229-8386-a42e">
@@ -2203,7 +2203,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="031d-2141-a0dd-b38f" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="907b-63f7-cf6e-1029" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="907b-63f7-cf6e-1029" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[SFA] Pathfinder Dragoons" hidden="false" id="0e5f-9760-db84-86de">
@@ -2316,7 +2316,7 @@
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="26a0-e785-a534-fd9c" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="3"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="2290-f824-1b52-315b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="2290-f824-1b52-315b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[SFA] Pathfinder LMG Gunners" hidden="false" id="306b-1bf6-41f5-adc6">
@@ -2429,7 +2429,7 @@
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="d4a8-6dfc-c823-0236" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="e229-528d-f41f-4dae" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="e229-528d-f41f-4dae" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[SFA] Pathfinder Railgunners" hidden="false" id="8742-4ca3-cccd-a4b5">
@@ -2543,7 +2543,7 @@
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="9e16-2edf-d891-d0eb" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="0567-8ffd-c065-ca94" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="0567-8ffd-c065-ca94" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[SFA] Pathfinder Riflemen" hidden="false" id="a871-28a4-094a-76ef">
@@ -2873,7 +2873,7 @@
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="edc7-b2ba-163a-487a" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="d637-d951-abc8-139c" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="d637-d951-abc8-139c" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Neophyte Mob" hidden="false" id="aade-5fdc-d647-094f">
@@ -3044,7 +3044,7 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="9f09-27dd-8541-9c4b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="9f09-27dd-8541-9c4b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Devin] Pathfinder Anti-Tank Unit" hidden="false" id="b3f0-c552-f1ec-b80f">
@@ -3155,7 +3155,7 @@
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="a2c8-0b40-8753-9056" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="0a02-081f-7e7d-769e" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="0a02-081f-7e7d-769e" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Devin] Pathfinder Command Unit" hidden="false" id="6c85-f6eb-75d7-d623">
@@ -3244,7 +3244,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="3583-2d36-54b9-b7e0" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="b3d6-c16e-8b2b-f0b2" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="b3d6-c16e-8b2b-f0b2" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Devin] Pathfinder Riflemen" hidden="false" id="fb2d-2134-91f0-6dab">
@@ -3381,7 +3381,7 @@
       </modifierGroups>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="9c14-439d-20db-eac3" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="a9f7-a68a-37af-f6ad" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="a9f7-a68a-37af-f6ad" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Devin] Vanguard Infantry Cohort" hidden="false" id="3acb-dbd2-7a93-c11a">
@@ -3535,7 +3535,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="ee70-bae4-9386-5354" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="3"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="cd06-5800-00e5-7a4b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="cd06-5800-00e5-7a4b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="Req" typeId="Requisition" value="60"/>
@@ -3619,7 +3619,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="4be7-1fef-b89f-cbe3" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="2"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="4be7-1fef-b89f-cbe3" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Devin] Gorath Shock Mutants" hidden="false" id="9e21-5c78-5f36-9ff0">
@@ -3706,7 +3706,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="5c3f-2b33-b05f-26cd" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="cec6-8a9e-5025-6a24" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="cec6-8a9e-5025-6a24" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Verse] Ringleader Command Unit" hidden="false" id="d8bc-9a90-0863-45bc">
@@ -3791,7 +3791,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Spore Slaver" hidden="false" id="58e7-9a2c-552a-19f6" type="selectionEntry" targetId="33f1-a836-2c87-2555" sortIndex="2"/>
-        <entryLink import="true" name="Infantry Upgrades" hidden="false" id="c7eb-8f33-e37c-496b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
+        <entryLink import="true" name="Spore Slaver Upgrade" hidden="false" id="c7eb-8f33-e37c-496b" type="selectionEntryGroup" targetId="c477-5c14-8e81-cf93" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Verse] Utegon Assault Mutants" hidden="false" id="3c79-08e4-2b42-091a">
